@@ -10,7 +10,7 @@
 // -------------------------
 
 @gray-darker:            lighten(#000, 13.5%); // #222
-@gray-dark:              lighten(#000, 20%);   // #333
+@gray-dark:              lighten(#000, 20%);   // #444
 @gray:                   lighten(#000, 33.5%); // #555
 @gray-light:             lighten(#000, 60%);   // #999
 @gray-lighter:           lighten(#000, 93.5%); // #eee
@@ -18,11 +18,19 @@
 // Brand colors
 // -------------------------
 
-@brand-primary:         #428bca;
+@brand-primary:         #732843; /*  Teachscape Burgundy */
+@ts-deep:			      #3B2030; 
 @brand-success:         #5cb85c;
 @brand-warning:         #f0ad4e;
 @brand-danger:          #d9534f;
 @brand-info:            #5bc0de;
+
+// Product colors
+// -------------------------
+@focus:						#175473;
+@reflect: 					#006b33;
+@learn: 					#6c2a92;
+@advance: 					#bd4800;
 
 // Scaffolding
 // -------------------------
@@ -33,18 +41,18 @@
 // Links
 // -------------------------
 
-@link-color:            @brand-primary;
+@link-color:            #2F4FA2;
 @link-hover-color:      darken(@link-color, 15%);
 
 // Typography
 // -------------------------
 
-@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-sans-serif:  Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 @font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
-@font-size-base:          14px;
+@font-size-base:          16px; /* changed from 14px */
 @font-size-large:         ceil(@font-size-base * 1.25); // ~18px
 @font-size-small:         ceil(@font-size-base * 0.85); // ~12px
 
@@ -52,14 +60,14 @@
 @line-height-computed:    floor(@font-size-base * @line-height-base); // ~20px
 
 @headings-font-family:    @font-family-base;
-@headings-font-weight:    500;
+@headings-font-weight:    normal;
 @headings-line-height:    1.1;
 
 // Iconography
 // -------------------------
 
 @icon-font-path:          "../fonts/";
-@icon-font-name:          "glyphicons-halflings-regular";
+@icon-font-name:          "TS"; /* changed from glyphicons-halflings-regular */
 
 
 // Components
@@ -78,9 +86,9 @@
 @line-height-large:              1.33;
 @line-height-small:              1.5;
 
-@border-radius-base:             4px;
-@border-radius-large:            6px;
-@border-radius-small:            3px;
+@border-radius-base:             0.5em;
+@border-radius-large:            0.5em;
+@border-radius-small:            0.5em;
 
 @component-active-bg:            @brand-primary;
 
@@ -106,12 +114,12 @@
 
 @btn-font-weight:                normal;
 
-@btn-default-color:              #333;
+@btn-default-color:              @link-color;
 @btn-default-bg:                 #fff;
-@btn-default-border:             #ccc;
+@btn-default-border:             fade(@btn-primary-bg, 80%);
 
 @btn-primary-color:              #fff;
-@btn-primary-bg:                 @brand-primary;
+@btn-primary-bg:                 @link-color;
 @btn-primary-border:             darken(@btn-primary-bg, 5%);
 
 @btn-success-color:              #fff;
@@ -140,8 +148,8 @@
 @input-bg-disabled:              @gray-lighter;
 
 @input-color:                    @gray;
-@input-border:                   #ccc;
-@input-border-radius:            @border-radius-base;
+@input-border:                   #979CA1;
+@input-border-radius:            0;
 @input-border-focus:             #66afe9;
 
 @input-color-placeholder:        @gray-light;
@@ -605,6 +613,8 @@
 
 // Horizontal forms & lists
 @component-offset-horizontal: 180px;
+
+
 
 
 // Container sizes
