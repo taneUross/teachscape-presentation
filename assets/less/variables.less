@@ -15,14 +15,23 @@
 @gray-light:             lighten(#000, 60%);   // #999
 @gray-lighter:           lighten(#000, 93.5%); // #eee
 
-// Brand colors
-// -------------------------
-
+ // Brand colors
+ // -------------------------
+ 
+@brand-primary:         #732843; /*  Teachscape Burgundy */
+@ts-deep:			      #3B2030; 
 @brand-primary:         #428bca;
 @brand-success:         #5cb85c;
 @brand-warning:         #f0ad4e;
 @brand-danger:          #d9534f;
 @brand-info:            #5bc0de;
+ 
+// Product colors
+// -------------------------
+@focus:						#175473;
+@reflect: 					#006b33;
+@learn: 					#6c2a92;
+@advance: 					#bd4800;
 
 // Scaffolding
 // -------------------------
@@ -635,13 +644,3 @@
 // Large screen / wide desktop
 @container-large-desktop:      ((1140px + @grid-gutter-width));
 @container-lg:                 @container-large-desktop;
-
-
-// Product Specific
-// -------------------------
-.reflect		{ color: @reflect; }
-.focus			{ color: @focus; }
-.learn			{ color: @learn; }
-.advance		{ color: @advance; }
-
-
