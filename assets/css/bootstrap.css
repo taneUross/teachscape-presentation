@@ -3733,9 +3733,9 @@ input[type="button"].btn-block {
 
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
-  color: #ffffff;
+  color: #333333;
   text-decoration: none;
-  background-color: #732843;
+  background-color: #eff2fa;
 }
 
 .dropdown-menu > .active > a,
@@ -3775,7 +3775,7 @@ input[type="button"].btn-block {
   padding: 3px 20px;
   font-size: 14px;
   line-height: 1.428571429;
-  color: #999999;
+  color: #732843;
 }
 
 .dropdown-backdrop {
@@ -7553,7 +7553,7 @@ a:hover {
 
 .icon {
   padding-bottom: 20px;
-  font-size: 300px;
+  font-size: 900%;
   color: rgba(153, 153, 153, 0.5);
 }
 
