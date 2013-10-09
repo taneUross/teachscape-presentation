@@ -16,3 +16,16 @@ What needs to be updated/added
 
 teachscape-presentation
 =======================
+
+
+dot.LESS custom files to edit
+==============================
+* custom-font.less
+* custom-font-icomoon.less
+* custom-ts.less
+
+
+dot.LESS custom files that can be created, for example
+===========================================
+* custom-focus.less
+* custom-(application).less
