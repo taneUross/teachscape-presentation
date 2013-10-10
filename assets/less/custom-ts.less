@@ -29,3 +29,21 @@ h4, h5{
 .focus			{ color: @focus; }
 .learn			{ color: @learn; }
 .advance		{ color: @advance; }
+
+// Let nav bar custom changes
+// -------------------------
+
+.bs-sidenav {
+	line-height:1em;
+	font-size:14px;
+}
+
+// Modal custom changes
+// -------------------------
+
+// Modal background
+.modal-backdrop {
+  // Fade for backdrop
+  &.fade { .opacity(0); }
+  &.in { .opacity(.7); }
+}
