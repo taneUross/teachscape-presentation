@@ -1,18 +1,34 @@
 <!doctype html>
 <html>
-  <head>
-    <!-- Meta, title, CSS, favicons, etc. -->
-    <meta charset="utf-8">
+<head>
+<!-- Meta, title, CSS, favicons, etc. -->
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="">
-
-<title>
-  
-    IcoMoon Icons &middot; Teachscape Bootstrap Theme
-  
-</title>
-
+<title>IcoMoon Icons &middot; Teachscape Bootstrap Theme</title>
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<style type="text/css">
+th.column-usage {
+	width: 25%;
+}
+th.column-icon {
+	width: 20%;
+}
+th.column-dataicon {
+	width: 20%;
+}
+th.column-classname {
+	width: 20%;
+}
+.icomoon-icon {
+	font-size: 150%;
+}
+</style>
 <!-- Bootstrap core CSS -->
 <link href="assets/css/bootstrap.css" rel="stylesheet">
 
@@ -32,718 +48,820 @@
 <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
 <link rel="shortcut icon" href="assets/ico/favicon.png">
 
-    <!-- Place anything custom after this. -->
-  </head>
-  <body>
-    <a class="sr-only" href="#content">Skip navigation</a>
+<!-- Place anything custom after this. -->
+</head>
+<body>
+<a class="sr-only" href="#content">Skip navigation</a> 
 
-    <!-- Docs master nav -->
-    <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+<!-- Docs master nav -->
+<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
   <div class="container">
     <div class="navbar-header">
-      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a href="index.html" class="navbar-brand"><span aria-hidden="true" data-icon="&#xe001;"><span class="visuallyhidden">Teachscape Bootstrap Theme</span></span></a>
-    </div>
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a href="index.html" class="navbar-brand"><span aria-hidden="true" data-icon="&#xe001;"><span class="visuallyhidden">Teachscape Bootstrap Theme</span></span></a> </div>
     <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">
-        <li>
-          <a href="getting-started.html">Getting started</a>
-        </li>
-        <li>
-          <a href="css.html">CSS</a>
-        </li>
-        <li>
-          <a href="components.html">Components</a>
-        </li>
-        <li>
-          <a href="javascript.html">JavaScript</a>
-        </li>
-        <li class="active">
-          <a href="icomoon.html">IcoMoon</a>
-        </li>
-         <li>
-          <a href="product-specific.html">Product Specific</a>
-        </li>
-        <li>
-          <a href="accessibility.html">Accessibility</a>
-        </li>
+        <li> <a href="getting-started.html">Getting started</a> </li>
+        <li> <a href="css.html">CSS</a> </li>
+        <li> <a href="components.html">Components</a> </li>
+        <li> <a href="javascript.html">JavaScript</a> </li>
+        <li class="active"> <a href="icomoon.html">IcoMoon</a> </li>
+        <li> <a href="product-specific.html">Product Specific</a> </li>
+        <li> <a href="accessibility.html">Accessibility</a> </li>
       </ul>
     </nav>
   </div>
 </header>
 
+<!-- Docs page layout -->
+<div class="bs-header" id="content">
+  <div class="container">
+    <h1>IcoMoon Font Based Icons</h1>
+    <p>Custom Built and Crisp Icon Fonts, Done Right.</p>
+  </div>
+</div>
 
-    <!-- Docs page layout -->
-    <div class="bs-header" id="content">
-      <div class="container">
-        <h1>IcoMoon Font Based Icons</h1>
-        <p>Custom Built and Crisp Icon Fonts, Done Right.</p>
-      </div>
-    </div>
-
-	<!-- Callout -->
-    <div class="bs-old-docs">
-  		<div class="container"> <strong>For full documentation on IcoMoon visit, <a href="http://icomoon.io/" target="_blank">http://icomoon.io <span aria-hidden="true" data-icon="&#xe017"><span class="visuallyhidden">Link opens new window</span></span></a>.
-      </strong></div>
-    </div>
-
-    <div class="container bs-docs-container">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="bs-sidebar hidden-print" role="complementary">
-            <ul class="nav bs-sidenav">
-                <li>
-                  <a href="#Icon-strategy">Our Icon Strategy</a>
-                </li>
-                <li>
-                  <a href="#IcoMoon-Icons">IcoMoon Icons</a>
-                </li>
-                <li>
-                  <a href="#IcoMoon-classes">Class Names</a>
-                </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-9" role="main">
-
-
- <!-- Our Icon Strategy
-  ================================================== -->       
-	<section class="bs-docs-section mtm clearfix" id="glyphs">
-	<header>
-		<h1 id="Icon-strategy">Our Icon Strategy</h1>
-	</header>
-	<ul>
-  <li>  While icons may be attractive, they are oftentimes poor communicator so reduce its use.</li>
-  <li>All icons should be documented on this page and should be used consistently.</li>
-  <li>All icons come from our custom IcoMoon. No exception.</li>
-  <li>Icons should have a distinct shape and integrate with the Teachscape icon logos. </li>
+<!-- Callout -->
+<div class="bs-old-docs">
+  <div class="container"> <strong>For full documentation on IcoMoon visit, <a href="http://icomoon.io/" target="_blank">http://icomoon.io <span aria-hidden="true" data-icon="&#xe00e"><span class="visuallyhidden">Link opens new window</span></span></a>. </strong></div>
+</div>
+<div class="container bs-docs-container">
+<div class="row">
+<div class="col-md-3">
+  <div class="bs-sidebar hidden-print" role="complementary">
+    <ul class="nav bs-sidenav">
+      <li> <a href="#Icon-strategy">Our Icon Strategy</a> </li>
+      <li> <a href="#Indicators">Indicators &amp; Controls</a> </li>
+      <li> <a href="#Checkbox-Radio">Icon-Based Checkbox &amp; Radio Button </a> </li>
+      <li> <a href="#Arrows">Arrows</a> </li>
+      <li> <a href="#Social-Media">Social Media</a> </li>
+      <li> <a href="#Pictorial">Pictorial</a> </li>
+      <li> <a href="#Artifact">Artifact Types</a> </li>
+      <li> <a href="#Logos">Logos</a> </li>
     </ul>
-    <h2 id="Icons-IconsNottoUse">Icons Not to Use</h2>
-    <ul>
-      <li>Printer to indicate print</li>
-      <li>Envelope to indicate contact/mail</li>
-    </ul>
-    
-	</section>
- 
+  </div>
+</div>
+<div class="col-md-9" role="main">
 
-
-
-<!-- IcoMoon Icons
+<!-- Our Icon Strategy
   ================================================== -->
-  <div class="bs-docs-section" id="glyphs">
-    <div class="page-header">
-      <h1 id="IcoMoon-Icons">IcoMoon Icons</h1>
-    </div>
-    <p class="lead">The generated SVG font can be imported back to <a href="http://icomoon.io/app" target="_blank">IcoMoon <span aria-hidden="true" data-icon="&#xe017"><span class="visuallyhidden">Link opens new window</span></span></a> for modification.</p>
+<section class="bs-docs-section mtm clearfix" id="glyphs">
+  <header>
+    <h1 id="Icon-strategy">Our Icon Strategy</h1>
+  </header>
+  <ul>
+    <li> While icons may be attractive, they are oftentimes poor communicator so reduce its use.</li>
+    <li>All icons should be documented on this page and should be used consistently.</li>
+    <li>All icons come from our custom IcoMoon. No exception.</li>
+    <li>Icons should have a distinct shape and integrate with the Teachscape icon logos. </li>
+  </ul>
+  <h2 id="Icons-IconsNottoUse">Icons Not to Use</h2>
+  <ul>
+    <li>Printer to indicate print</li>
+    <li>Envelope to indicate contact/mail</li>
+  </ul>
+</section>
+
+<!-- Indicators & Controls
+  ================================================== -->
+<div class="bs-docs-section" id="glyphs">
+  <div class="page-header">
+    <h1 id="Indicators">Indicators &amp; Controls</h1>
+  </div>
+  <table  class="table table-hover">
+
+    <tr>
+      <th scope="col" class="column-usage">Usage</th>
+      <th scope="col" class="column-icon">Icon</th>
+      <th scope="col" class="column-dataicon">Data Icon</th>
+      <th scope="col" class="classname">Class Name</th>
+      <th scope="col">Note</th>
+    </tr>
+    <tr>
+      <th scope="row">Add</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf067;"></div></td>
+      <td>&amp;#xf067;</td>
+      <td>icon-plus</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">Asterisk</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf069;"></div></td>
+      <td>&amp;#xff069;</td>
+      <td>icon-asterisk</td>
+      <td>To indicate required form fields</td>
+    </tr>
+    <tr>
+      <th scope="row">Audio - Off</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf131;"></div></td>
+      <td>&amp;#xf131;</td>
+      <td>icon-microphone </td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">Audio - On</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf130;"></div></td>
+      <td>&amp;#xf130;</td>
+      <td>icon-microphone </td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">Breadcrumb - Right</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf0da;"></div></td>
+      <td>&amp;#xf0da;</td>
+      <td>icon-caret-right </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">Breadcrumb - Left</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf0d9;"></div></td>
+      <td>&amp;#xf0d9;</td>
+      <td>caret-left </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">Certificate</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf0a3;"></div></td>
+      <td>&amp;#xf0a3;</td>
+      <td>icon-certificate </td>
+      <td>Used as an indicator in Focus</td>
+    </tr>
+    <tr>
+      <th scope="row">Chevron - Down</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf078;"></div></td>
+      <td>&amp;#xf078;</td>
+      <td>icon-chevron-down </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">Chevron - Left</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf053;"></div></td>
+      <td>&amp;#xf053;</td>
+      <td>icon-chevron-left </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">Chevron - Right</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf054;"></div></td>
+      <td>&amp;#xf054;</td>
+      <td>icon-chevron-right </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">Chevron - Up</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf077;"></div></td>
+      <td>&amp;#xf077;</td>
+      <td>icon-chevron-up </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">Collapse</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf146;"></div></td>
+      <td>&amp;#xf146;</td>
+      <td>icon-minus-sign-alt </td>
+      <td>Part of the progressive disclosure.</td>
+    </tr>
+    <tr>
+      <th scope="row">Comment</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf075;"></div></td>
+      <td>&amp;#xf075;</td>
+      <td>icon-comment </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">Comment 2</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf086;"></div></td>
+      <td>&amp;#xf086;</td>
+      <td>icon-comments </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">Cut, Trim</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf0c4;"></div></td>
+      <td>&amp;#xf0c4;</td>
+      <td>icon-cut </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">Delete</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf014;"></div></td>
+      <td>&amp;#xf014;</td>
+      <td>icon-trash </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">Download</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xe000;"></div></td>
+      <td>&amp;#xe000;</td>
+      <td>icon-download </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">Edit</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf040;"></div></td>
+      <td>&amp;#xf040;</td>
+      <td>icon-pencil</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">Expand</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf0fe;"></div></td>
+      <td>&amp;#xf0fe;</td>
+      <td>icon-plus-sign </td>
+      <td>Part of the progressive disclosure.</td>
+    </tr>
+    <tr>
+      <th scope="row">Home</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xe008;"></div></td>
+      <td>&amp;#e008;</td>
+      <td>icon-upleft </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">Info</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf129;"></div></td>
+      <td>&amp;#xf129;</td>
+      <td> icon-info </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">Lock, Private, Secure</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf024;"></div></td>
+      <td>&amp;#xf024;</td>
+      <td>icon-lock </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">Menu for Mobile</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf0c9;"></div></td>
+      <td>&amp;#xf0c9;</td>
+      <td>icon-reorder </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">Minus</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf068;"></div></td>
+      <td>&amp;#xf068;</td>
+      <td>icon-minus </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">Opens in New Window</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xe00e;"></div></td>
+      <td>&amp;#xe00e;</td>
+      <td>  icon-new-tab </td>
+      <td>Display after text link that upon click spawns open a new window.</td>
+    </tr>
+    <tr>
+      <th scope="row">OK</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf00c;"></div></td>
+      <td>&amp;#xf00c;</td>
+      <td>icon-ok </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">Play Video</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf144;"></div></td>
+      <td>&amp;#xf144;</td>
+      <td>icon-play-sign </td>
+      <td>Only displayed overlapping a video.</td>
+    </tr>
+    <tr>
+      <th scope="row">Plus</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf067;"></div></td>
+      <td>&amp;#xf067;</td>
+      <td>icon-plus </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">Question</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf059;"></div></td>
+      <td>&amp;#xf059;</td>
+      <td> icon-question-sign </td>
+      <td>For contextual help, when absolutely necessary.</td>
+    </tr>
+    <tr>
+      <th scope="row">Refresh</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf021;"></div></td>
+      <td>&amp;#xf021;</td>
+      <td> icon-refresh </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">Remove</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf00d;"></div></td>
+      <td>&amp;#xf00d;</td>
+      <td> icon-remove </td>
+      <td>For remove, use the @danger class, like this <a href="#"  class="text-danger" ></a> with appropriate tooltip on hover.</td>
+    </tr>
+    <tr>
+      <th scope="row">Sort - Ascending</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf0d8;"></div></td>
+      <td>&amp;#xf0d8;</td>
+      <td>icon-caret-up</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">Sort - Descending</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf0d7;"></div></td>
+      <td>&amp;#xf0d7;</td>
+      <td> icon-caret-down </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">Sort 1 to 9</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf162;"></div></td>
+      <td>&amp;#xf162;</td>
+      <td> icon-sort-by-order </td>
+      <td>Only used for numbers, not dates/time</td>
+    </tr>
+    <tr>
+      <th scope="row">Sort 9 to 1</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf163;"></div></td>
+      <td>&amp;#xf163;</td>
+      <td>icon-sort-by-order-alt </td>
+      <td>Only used for numbers, not dates/time</td>
+    </tr>
+    <tr>
+      <th scope="row">Sort A to Z</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf15d;"></div></td>
+      <td>&amp;#xf15d;</td>
+      <td>icon-sort-by-alphabet </td>
+      <td>Only for text</td>
+    </tr>
+    <tr>
+      <th scope="row">Sort Z to A</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf15e;"></div></td>
+      <td>&amp;#xf15e;</td>
+      <td> icon-sort-by-alphabet-alt </td>
+      <td>Only for text</td>
+    </tr>
+    <tr>
+      <th scope="row">Spellcheck</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xe00a;"></div></td>
+      <td>&amp;#xe00a;</td>
+      <td>icon-spell-check </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">Star</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf005;"></div></td>
+      <td>&amp;#xf005</td>
+      <td>icon-star </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">Star - empty</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf006;"></div></td>
+      <td>&amp;#xf006</td>
+      <td>icon-star-empty </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">View - Thumbnails, Grid</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf00a;"></div></td>
+      <td>&amp;#xf00a;</td>
+      <td>icon-th </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">View - Details</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf00b;"></div></td>
+      <td>&amp;#xf00b;</td>
+      <td>icon-th-list </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th scope="row">Warning</th>
+      <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xe009;"></div></td>
+      <td>&amp;#xe009;</td>
+      <td> icon-warning </td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+  <div class="clear"></div>
+</div>
+
+
+<!-- Icon-Based Checkbox & Radio Button
+  ================================================== -->
+<div class="bs-docs-section" id="glyphs">
+  <div class="page-header">
+    <h1 id="Checkbox-Radio">Icon-Based Checkbox &amp; Radio Button </h1>
   </div>
 
-	<section class="bs-docs-section mtm clearfix" id="glyphs">
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe000;"></div>
-		<input type="text" readonly value="&amp;#xe000;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe001;"></div>
-		<input type="text" readonly value="&amp;#xe001;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe002;"></div>
-		<input type="text" readonly value="&amp;#xe002;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe003;"></div>
-		<input type="text" readonly value="&amp;#xe003;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe004;"></div>
-		<input type="text" readonly value="&amp;#xe004;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe005;"></div>
-		<input type="text" readonly value="&amp;#xe005;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe006;"></div>
-		<input type="text" readonly value="&amp;#xe006;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe007;"></div>
-		<input type="text" readonly value="&amp;#xe007;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe008;"></div>
-		<input type="text" readonly value="&amp;#xe008;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe009;"></div>
-		<input type="text" readonly value="&amp;#xe009;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe00a;"></div>
-		<input type="text" readonly value="&amp;#xe00a;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe00b;"></div>
-		<input type="text" readonly value="&amp;#xe00b;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe00c;"></div>
-		<input type="text" readonly value="&amp;#xe00c;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe00d;"></div>
-		<input type="text" readonly value="&amp;#xe00d;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe00e;"></div>
-		<input type="text" readonly value="&amp;#xe00e;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe00f;"></div>
-		<input type="text" readonly value="&amp;#xe00f;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe010;"></div>
-		<input type="text" readonly value="&amp;#xe010;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe011;"></div>
-		<input type="text" readonly value="&amp;#xe011;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe012;"></div>
-		<input type="text" readonly value="&amp;#xe012;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe013;"></div>
-		<input type="text" readonly value="&amp;#xe013;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe014;"></div>
-		<input type="text" readonly value="&amp;#xe014;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe015;"></div>
-		<input type="text" readonly value="&amp;#xe015;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe016;"></div>
-		<input type="text" readonly value="&amp;#xe016;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe017;"></div>
-		<input type="text" readonly value="&amp;#xe017;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe018;"></div>
-		<input type="text" readonly value="&amp;#xe018;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe019;"></div>
-		<input type="text" readonly value="&amp;#xe019;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe01a;"></div>
-		<input type="text" readonly value="&amp;#xe01a;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe01b;"></div>
-		<input type="text" readonly value="&amp;#xe01b;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe01c;"></div>
-		<input type="text" readonly value="&amp;#xe01c;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe01d;"></div>
-		<input type="text" readonly value="&amp;#xe01d;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe01e;"></div>
-		<input type="text" readonly value="&amp;#xe01e;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe01f;"></div>
-		<input type="text" readonly value="&amp;#xe01f;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe020;"></div>
-		<input type="text" readonly value="&amp;#xe020;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe021;"></div>
-		<input type="text" readonly value="&amp;#xe021;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe022;"></div>
-		<input type="text" readonly value="&amp;#xe022;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe023;"></div>
-		<input type="text" readonly value="&amp;#xe023;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe024;"></div>
-		<input type="text" readonly value="&amp;#xe024;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe025;"></div>
-		<input type="text" readonly value="&amp;#xe025;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe026;"></div>
-		<input type="text" readonly value="&amp;#xe026;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe027;"></div>
-		<input type="text" readonly value="&amp;#xe027;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe028;"></div>
-		<input type="text" readonly value="&amp;#xe028;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe029;"></div>
-		<input type="text" readonly value="&amp;#xe029;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe02a;"></div>
-		<input type="text" readonly value="&amp;#xe02a;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe02b;"></div>
-		<input type="text" readonly value="&amp;#xe02b;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe02c;"></div>
-		<input type="text" readonly value="&amp;#xe02c;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe02d;"></div>
-		<input type="text" readonly value="&amp;#xe02d;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe02e;"></div>
-		<input type="text" readonly value="&amp;#xe02e;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe02f;"></div>
-		<input type="text" readonly value="&amp;#xe02f;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe030;"></div>
-		<input type="text" readonly value="&amp;#xe030;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe031;"></div>
-		<input type="text" readonly value="&amp;#xe031;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe032;"></div>
-		<input type="text" readonly value="&amp;#xe032;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe033;"></div>
-		<input type="text" readonly value="&amp;#xe033;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe034;"></div>
-		<input type="text" readonly value="&amp;#xe034;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe035;"></div>
-		<input type="text" readonly value="&amp;#xe035;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe036;"></div>
-		<input type="text" readonly value="&amp;#xe036;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe037;"></div>
-		<input type="text" readonly value="&amp;#xe037;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe038;"></div>
-		<input type="text" readonly value="&amp;#xe038;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe039;"></div>
-		<input type="text" readonly value="&amp;#xe039;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe03a;"></div>
-		<input type="text" readonly value="&amp;#xe03a;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe03b;"></div>
-		<input type="text" readonly value="&amp;#xe03b;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe03c;"></div>
-		<input type="text" readonly value="&amp;#xe03c;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe03d;"></div>
-		<input type="text" readonly value="&amp;#xe03d;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe03e;"></div>
-		<input type="text" readonly value="&amp;#xe03e;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe03f;"></div>
-		<input type="text" readonly value="&amp;#xe03f;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe040;"></div>
-		<input type="text" readonly value="&amp;#xe040;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe041;"></div>
-		<input type="text" readonly value="&amp;#xe041;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe042;"></div>
-		<input type="text" readonly value="&amp;#xe042;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xf139;"></div>
-		<input type="text" readonly value="&amp;#xf139;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xf13a;"></div>
-		<input type="text" readonly value="&amp;#xf13a;" />
-	</div>
-	<div class="glyph">
-		<div class="fs1" aria-hidden="true" data-icon="&#xe043;"></div>
-		<input type="text" readonly value="&amp;#xe043;" />
-	</div>
-	</section>
-    
-	<div class="clear"></div>
-    
+<table  class="table table-hover">
+  <tr>
+    <th scope="col" class="column-usage">Usage</th>
+    <th scope="col" class="column-icon">Icon</th>
+    <th scope="col" class="column-dataicon">Data Icon</th>
+    <th scope="col" class="classname">Class Name</th>
+    <th scope="col">Note</th>
+  </tr>
+  <tr>
+    <th scope="row">Checkmark - Checked</th>
+    <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf046;"></div></td>
+    <td>&amp;#xf046;</td>
+    <td>icon-down</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row">Checkmark - Unchecked</th>
+    <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf096;"></div></td>
+    <td>&amp;#xf096;s</td>
+    <td>icon-downleft </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row">Checkmark - Indeterminate</th>
+    <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xe00d;"></div></td>
+    <td>&amp;#xe00d;</td>
+    <td>icon-downright </td>
+    <td>Used in Walkthrough Form</td>
+  </tr>
+  <tr>
+    <th scope="row">Radio Button- Selected</th>
+    <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf111;"></div></td>
+    <td>&amp;#xf111;</td>
+    <td>icon-up</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row">Radio Button - Unselected</th>
+    <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf10c;"></div></td>
+    <td>&amp;#xf10c;</td>
+    <td>icon-upleft </td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
 
- <!-- IcoMoon Classes
-  ================================================== -->       
-	<section class="bs-docs-section mtm clearfix" id="glyphs">
-	<header>
-		<h1 id="IcoMoon-classes">IcoMoon Classes</h1>
-	</header>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-teachscape"></span>
-		&nbsp;icon-teachscape
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-teachscape-logo"></span>
-		&nbsp;icon-teachscape-logo
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-focus"></span>
-		&nbsp;icon-focus
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-reflect"></span>
-		&nbsp;icon-reflect
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-learn"></span>
-		&nbsp;icon-learn
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-advance"></span>
-		&nbsp;icon-advance
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-walk"></span>
-		&nbsp;icon-walk
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-classroom"></span>
-		&nbsp;icon-classroom
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-ok"></span>
-		&nbsp;icon-ok
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-remove"></span>
-		&nbsp;icon-remove
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-trash"></span>
-		&nbsp;icon-trash
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-home"></span>
-		&nbsp;icon-home
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-lock"></span>
-		&nbsp;icon-lock
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-pencil"></span>
-		&nbsp;icon-pencil
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-check"></span>
-		&nbsp;icon-check
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-facebook-sign"></span>
-		&nbsp;icon-facebook-sign
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-calendar"></span>
-		&nbsp;icon-calendar
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-warning-sign"></span>
-		&nbsp;icon-warning-sign
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-linkedin-sign"></span>
-		&nbsp;icon-linkedin-sign
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-minus-sign-alt"></span>
-		&nbsp;icon-minus-sign-alt
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-plus-sign"></span>
-		&nbsp;icon-plus-sign
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-youtube-play"></span>
-		&nbsp;icon-youtube-play
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-twitter"></span>
-		&nbsp;icon-twitter
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-new-tab"></span>
-		&nbsp;icon-new-tab
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-spinner"></span>
-		&nbsp;icon-spinner
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-download"></span>
-		&nbsp;icon-download
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-list-alt"></span>
-		&nbsp;icon-list-alt
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-file"></span>
-		&nbsp;icon-file
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-paste"></span>
-		&nbsp;icon-paste
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-caret-right"></span>
-		&nbsp;icon-caret-right
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-caret-down"></span>
-		&nbsp;icon-caret-down
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-caret-up"></span>
-		&nbsp;icon-caret-up
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-info"></span>
-		&nbsp;icon-info
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-check-empty"></span>
-		&nbsp;icon-check-empty
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-picture"></span>
-		&nbsp;icon-picture
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-headphones"></span>
-		&nbsp;icon-headphones
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-circle"></span>
-		&nbsp;icon-circle
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-circle-blank"></span>
-		&nbsp;icon-circle-blank
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-sort-by-alphabet"></span>
-		&nbsp;icon-sort-by-alphabet
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-sort-by-alphabet-alt"></span>
-		&nbsp;icon-sort-by-alphabet-alt
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-sort-by-order"></span>
-		&nbsp;icon-sort-by-order
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-sort-by-order-alt"></span>
-		&nbsp;icon-sort-by-order-alt
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-certificate"></span>
-		&nbsp;icon-certificate
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-table"></span>
-		&nbsp;icon-table
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-folder-close"></span>
-		&nbsp;icon-folder-close
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-film"></span>
-		&nbsp;icon-film
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-facetime-video"></span>
-		&nbsp;icon-facetime-video
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-user"></span>
-		&nbsp;icon-user
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-search"></span>
-		&nbsp;icon-search
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-star"></span>
-		&nbsp;icon-star
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-exclamation-sign"></span>
-		&nbsp;icon-exclamation-sign
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-refresh"></span>
-		&nbsp;icon-refresh
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-ban-circle"></span>
-		&nbsp;icon-ban-circle
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-remove-circle"></span>
-		&nbsp;icon-remove-circle
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-question-sign"></span>
-		&nbsp;icon-question-sign
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-chevron-right"></span>
-		&nbsp;icon-chevron-right
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-chevron-left"></span>
-		&nbsp;icon-chevron-left
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-chevron-up"></span>
-		&nbsp;icon-chevron-up
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-chevron-down"></span>
-		&nbsp;icon-chevron-down
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-users"></span>
-		&nbsp;icon-users
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-dashboard"></span>
-		&nbsp;icon-dashboard
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-star-empty"></span>
-		&nbsp;icon-star-empty
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-plus"></span>
-		&nbsp;icon-plus
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-minus"></span>
-		&nbsp;icon-minus
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-asterisk"></span>
-		&nbsp;icon-asterisk
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-quotes-left"></span>
-		&nbsp;icon-quotes-left
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-cog"></span>
-		&nbsp;icon-cog
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-chevron-sign-up"></span>
-		&nbsp;icon-chevron-sign-up
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-chevron-sign-down"></span>
-		&nbsp;icon-chevron-sign-down
-	</span>
-	<span class="box1">
-		<span aria-hidden="true" class="icon-spell-check"></span>
-		&nbsp;icon-spell-check
-	</span>
-	</section>
-        </div>
-      </div>
+  <div class="clear"></div>
+</div>
 
-    </div>
+<!-- Arrows
+  ================================================== -->
+<div class="bs-docs-section" id="glyphs">
+  <div class="page-header">
+    <h1 id="Arrows">Arrows</h1>
+  </div>
+<table  class="table table-hover">
 
-    <!-- Footer
+  <tr>
+    <th scope="col" class="column-usage">Usage</th>
+    <th scope="col" class="column-icon">Icon</th>
+    <th scope="col" class="column-dataicon">Data Icon</th>
+    <th scope="col" class="classname">Class Name</th>
+    <th scope="col">Note</th>
+  </tr>
+  <tr>
+    <th scope="row">Down</th>
+    <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf2fe;"></div></td>
+    <td>&amp;#xf2fe;</td>
+    <td>icon-down</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row">Down Left</th>
+    <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf2ff;"></div></td>
+    <td>&amp;#xf2ff;</td>
+    <td>icon-downleft </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row">Down Right</th>
+    <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf300;"></div></td>
+    <td>&amp;#xf300;</td>
+    <td>icon-downright </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row">Up</th>
+    <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf301;"></div></td>
+    <td>&amp;#xf301;</td>
+    <td>icon-up</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row">Up Left</th>
+    <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf302;"></div></td>
+    <td>&amp;#xf302;</td>
+    <td>icon-upleft </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row">Up Right</th>
+    <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf303;"></div></td>
+    <td>&amp;#xf303;</td>
+    <td>icon-upright </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row">Right</th>
+    <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf304;"></div></td>
+    <td>&amp;#xf304;</td>
+    <td>icon-right </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row">Left</th>
+    <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf305;"></div></td>
+    <td>&amp;#xf305;</td>
+    <td>icon-left </td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+
+
+  <div class="clear"></div>
+</div>
+
+<!-- Social Media
+  ================================================== -->
+<div class="bs-docs-section" id="glyphs">
+  <div class="page-header">
+    <h1 id="Social-Media">Social Media</h1>
+  </div>
+
+<table  class="table table-hover">
+  <tr>
+    <th scope="col" class="column-usage">Usage</th>
+    <th scope="col" class="column-icon">Icon</th>
+    <th scope="col" class="column-dataicon">Data Icon</th>
+    <th scope="col" class="classname">Class Name</th>
+    <th scope="col">Note</th>
+  </tr>
+  <tr>
+    <th scope="row">Facebook</th>
+    <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf082;"></div></td>
+    <td>&amp;#xf082;</td>
+    <td>icon-facebook-sign </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row">Linkedin</th>
+    <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf08c;"></div></td>
+    <td>&amp;#xf08c;</td>
+    <td>icon-linkedin-sign </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row">Twitter</th>
+    <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf099;"></div></td>
+    <td>&amp;#xf099;</td>
+    <td>icon-twitter</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+  <div class="clear"></div>
+</div>
+
+
+<!-- Pictorial
+  ================================================== -->
+<div class="bs-docs-section" id="glyphs">
+  <div class="page-header">
+    <h1 id="Pictorial">Pictorial</h1>
+  </div>
+
+<table  class="table table-hover">
+  <tr>
+    <th scope="col" class="column-usage">Usage</th>
+    <th scope="col" class="column-icon">Icon</th>
+    <th scope="col" class="column-dataicon">Data Icon</th>
+    <th scope="col" class="classname">Class Name</th>
+    <th scope="col">Note</th>
+  </tr>
+  <tr>
+    <th scope="row">Teacher, Classroom Instruction, Instruction</th>
+    <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xe007;"></div></td>
+    <td>&amp;#xe007;</td>
+    <td>icon-Classroom </td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+  <div class="clear"></div>
+</div>
+
+
+<!-- Artifact Types
+  ================================================== -->
+<div class="bs-docs-section" id="glyphs">
+  <div class="page-header">
+    <h1 id="Artifact">Artifact Types</h1>
+  </div>
+
+<table  class="table table-hover">
+  <tr>
+    <th scope="col" class="column-usage">Usage</th>
+    <th scope="col" class="column-icon">Icon</th>
+    <th scope="col" class="column-dataicon">Data Icon</th>
+    <th scope="col" class="classname">Class Name</th>
+    <th scope="col">Note</th>
+  </tr>
+  <tr>
+    <th scope="row">Artifact/Lesson Plan</th>
+    <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf016;"></div></td>
+    <td>&amp;#xf016;</td>
+    <td>icon-file </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row">Events</th>
+    <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf073;"></div></td>
+    <td>&amp;#xf073;</td>
+    <td>icon-calendar</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row">External Measure</th>
+    <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf0e4;"></div></td>
+    <td>&amp;#xf0e4;</td>
+    <td>icon-dashboard </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row">Form</th>
+    <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf022;"></div></td>
+    <td>&amp;#xf022;</td>
+    <td>icon-list-alt </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row">Observation - Lesson</th>
+    <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf0ea;"></div></td>
+    <td>&amp;#xf0ea;</td>
+    <td><span aria-hidden="true"> </span>  icon-paste </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row">Observation - Video</th>
+    <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf03d;"></div></td>
+    <td>&amp;#xf03d;</td>
+    <td>icon-facetime-video </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row">PDFs</th>
+    <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xe00c;"></div></td>
+    <td>&amp;#xe00c;</td>
+    <td>icon-file-pdf </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row">Success Plan</th>
+    <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf005;"></div></td>
+    <td>&amp;#xf005;</td>
+    <td>icon-star </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row">Video</th>
+    <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xf03d;"></div></td>
+    <td>&amp;#xf03d;</td>
+    <td>icon-facetime-video </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row">Videos with Attachments</th>
+    <td>TBD</td>
+    <td>TBD</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row">Walkthrough</th>
+    <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xe006;"></div></td>
+    <td>&amp;#xe006;</td>
+    <td>icon-Walkthrough </td>
+    <td>It can only be used in the context of the <em>Reflect</em> Walkthrough app.</td>
+  </tr>
+</table>
+
+  <div class="clear"></div>
+</div>
+
+<!-- Logos
+  ================================================== -->
+<div class="bs-docs-section" id="glyphs">
+  <div class="page-header">
+    <h1 id="Logos">Logos</h1>
+  </div>
+
+<table  class="table table-hover">
+  <tr>
+    <th scope="col" class="column-usage">Usage</th>
+    <th scope="col" class="column-icon">Icon</th>
+    <th scope="col" class="column-dataicon">Data Icon</th>
+    <th scope="col" class="classname">Class Name</th>
+    <th scope="col">Note</th>
+  </tr>
+  <tr>
+    <th scope="row">Focus Icon</th>
+    <td><span class="focus">
+      <div class="icomoon-icon" aria-hidden="true" data-icon="&#xe002;"></div>
+    </span></td>
+    <td>&amp;#xe002;</td>
+    <td>icon-Focus-Logo </td>
+    <td>Must have the Focus color (class=&quot;focus&quot;) or be white behind the Focus colored background</td>
+  </tr>
+  <tr>
+    <th scope="row">Reflect Icon</th>
+    <td><span class="reflect">
+      <div class="icomoon-icon" aria-hidden="true" data-icon="&#xe003;"></div>
+    </span></td>
+    <td>&amp;#xe003;</td>
+    <td>icon-Reflect-Logo </td>
+    <td>Must have the Reflect color (class=&quot;reflect&quot;) or be white behind the Reflect colored background</td>
+  </tr>
+  <tr>
+    <th scope="row">Learn Icon</th>
+    <td><span class="learn">
+      <div class="icomoon-icon" aria-hidden="true" data-icon="&#xe004;"></div>
+    </span></td>
+    <td>&amp;#xe004;</td>
+    <td>icon-Learn-Logo</td>
+    <td>Must have the Learn color (class=&quot;learn&quot;) or be white behind the Learn colored background</td>
+  </tr>
+  <tr>
+    <th scope="row">Advance Icon</th>
+    <td><span class="advance">
+      <div class="icomoon-icon" aria-hidden="true" data-icon="&#xe005;"></div>
+    </span></td>
+    <td>&amp;#xe005;</td>
+    <td>icon-Advance-Logo </td>
+    <td>Must have the Advance color (class=&quot;advance&quot;) or be white behind the Advance colored background</td>
+  </tr>
+  <tr>
+    <th scope="row">Focus text</th>
+    <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xe045;"></div></td>
+    <td>&amp;#xe045;</td>
+    <td>icon-Focus </td>
+    <td>It uses the Akurrat font.</td>
+  </tr>
+  <tr>
+    <th scope="row">Reflect text</th>
+    <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xe047;"></div></td>
+    <td>&amp;#xe047;</td>
+    <td>icon-Reflect </td>
+    <td>It uses the Akurrat font.</td>
+  </tr>
+  <tr>
+    <th scope="row">Learn text</th>
+    <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xe046;"></div></td>
+    <td>&amp;#xe046;</td>
+    <td>icon-Learn </td>
+    <td>It uses the Akurrat font.</td>
+  </tr>
+  <tr>
+    <th scope="row">Advance text</th>
+    <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xe044;"></div></td>
+    <td>&amp;#xe044;</td>
+    <td>icon-Advance </td>
+    <td>It uses the Akurrat font.</td>
+  </tr>
+  <tr>
+    <th scope="row">Teachscape icon logo</th>
+    <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xe001;"></div></td>
+    <td>&amp;#xe001;</td>
+    <td>icon-Teachscape </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row">Teachscape logo</th>
+    <td><div class="icomoon-icon" aria-hidden="true" data-icon="&#xe016;"></div></td>
+    <td>&amp;#xe016;</td>
+    <td><span aria-hidden="true"> </span>  icon-Teachscape-2 </td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+  <div class="clear"></div>
+</div>
+
+
+<!-- Footer
     ================================================== -->
-    <footer class="bs-footer" role="contentinfo">
-      <div class="container">
-        <ul class="footer-links">
-			<li class="current-version">Current Version v3.0.0</li>
-        	<li class="muted">&middot;</li>
-           <li><a href="http://getbootstrap.com/" target="_blank">Bootstrap docs</a></li>
-        </ul>
-      </div>
-    </footer>
+<footer class="bs-footer" role="contentinfo">
+  <div class="container">
+    <ul class="footer-links">
+      <li class="current-version">Current Version v3.0.0</li>
+      <li class="muted">&middot;</li>
+      <li><a href="http://getbootstrap.com/" target="_blank">Bootstrap docs</a></li>
+    </ul>
+  </div>
+</footer>
 
-    <!-- JS and analytics only. -->
-    <!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="assets/js/jquery-1.10.2.js"></script>
-<script src="assets/js/bootstrap.js"></script>
-<script src="assets/js/holder.js"></script>
-<script src="assets/js/application.js"></script>
-
-
+<!-- JS and analytics only. --> 
+<!-- Bootstrap core JavaScript
+================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="assets/js/jquery-1.10.2.js"></script> 
+<script src="assets/js/bootstrap.js"></script> 
+<script src="assets/js/holder.js"></script> 
+<script src="assets/js/application.js"></script> 
 <script>
 document.getElementById("glyphs").addEventListener("click", function(e) {
 	var target = e.target;
@@ -752,6 +870,5 @@ document.getElementById("glyphs").addEventListener("click", function(e) {
 	}
 });
 </script>
-
-  </body>
+</body>
 </html>

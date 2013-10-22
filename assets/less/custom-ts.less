@@ -1,5 +1,4 @@
 /* LESS Document */
-
 /* typography  */
 h1{
 	color: @gray-darker;
@@ -30,7 +29,7 @@ h4, h5{
 .learn			{ color: @learn; }
 .advance		{ color: @advance; }
 
-// Let nav bar custom changes
+// Left nav bar custom changes
 // -------------------------
 
 .bs-sidenav {
@@ -46,4 +45,14 @@ h4, h5{
   // Fade for backdrop
   &.fade { .opacity(0); }
   &.in { .opacity(.7); }
+}
+
+// Breadcrumb
+// -------------------------
+.breadcrumb > li + li:before {
+padding: 0 5px;
+color: #cccccc;
+font-family: 'TS';
+content: "\f0da"; // character code for   icon-caret-right 
+
 }
