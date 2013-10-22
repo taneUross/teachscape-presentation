@@ -1,5 +1,32 @@
-/* LESS Document */
-/* typography  */
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Body
+
+2. Typography
+	2.1 Heading
+		2.1.1 Heading for Message Box & Modals
+	2.2 Icon Fonts
+
+3. Color
+	3.1 Product Specific
+
+4. Header / #header
+
+5. Content / #content
+	5.1 Nav
+		5.1.1 Breadcrumb
+		5.1.2 Left Nav
+	5.2 Modal Dialog
+	5.3 Table
+
+6. Footer / #footer
+-------------------------------------------------------------------*/
+
+/*	1. Body ------------------------------------------------------ */
+
+/*	2. Typography ------------------------------------------------ */
+/*	2.1 Heading -------------------------------------------------- */
 h1{
 	color: @gray-darker;
 }
@@ -10,7 +37,16 @@ h2, h3{
 h4, h5{
 	color: @brand-primary;
 }
-/*  For Icon Fonts  */
+/*	2.1.1 Heading for Message Box & Modals ------------------------ */
+.bs-callout h4{
+color: @gray;
+font-size: @font-size-h3;
+}
+h4.modal-title {
+color: @gray;
+font-size: @font-size-h3;
+}
+/*	2.2 Icon Fonts ----------------------------------------------- */
 .visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
@@ -22,37 +58,46 @@ h4, h5{
     width: 1px;
 }
 
-// Product Specific
-// -------------------------
+/*	3. Color ------------------------------------------------------ */
+/*	3.1 Product Specific ------------------------------------------ */
+
 .reflect		{ color: @reflect; }
 .focus			{ color: @focus; }
 .learn			{ color: @learn; }
 .advance		{ color: @advance; }
 
-// Left nav bar custom changes
-// -------------------------
+/*	4. Header ------------------------------------------------------ */
 
+
+/*	5. Content ----------------------------------------------------- */
+/*	5.1 Nav -------------------------------------------------------- */
+/*	5.1.1 Breadcrumb ----------------------------------------------- */
+.breadcrumb > li + li:before {
+padding: 0 5px;
+color: @gray-light;
+font-family: 'TS';
+content: "\f0da"; // character code for   icon-caret-right 
+
+}
+
+/*	5.1.2 Left Nav ------------------------------------------------- */
 .bs-sidenav {
 	line-height:1em;
 	font-size:14px;
 }
 
-// Modal custom changes
-// -------------------------
-
-// Modal background
+/*	5.2 Modal Dialog ------------------------------------------------ */
 .modal-backdrop {
   // Fade for backdrop
   &.fade { .opacity(0); }
   &.in { .opacity(.7); }
 }
 
-// Breadcrumb
-// -------------------------
-.breadcrumb > li + li:before {
-padding: 0 5px;
-color: #cccccc;
-font-family: 'TS';
-content: "\f0da"; // character code for   icon-caret-right 
 
+/*	5.3 Table ------------------------------------------------------- */
+th {
+	font-weight: normal;	
+	color: @brand-primary;  // If not sortable.
 }
+
+/*	6. Footer ------------------------------------------------------- */
