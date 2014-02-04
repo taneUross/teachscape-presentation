@@ -1,0 +1,81 @@
+// Brand colors
+// ---------------------------------
+@brand-primary:         #732843; /*  Teachscape Burgundy */
+@ts-deep:			    #3B2030;
+
+// Product colors
+// -------------------------
+@focus:						#175473;
+@reflect: 					#006b33;
+@learn: 					#6c2a92;
+@advance: 					#bd4800;
+
+/* Form states and alerts overriding variables.less------------------- */
+@state-success-bg:               #B5DD88;
+@state-info-bg:                  #C3D9E2;
+@state-warning-bg:               #FFFFA0;
+@state-danger-bg:                #FFDDE3;
+
+// Links
+// -------------------------
+
+@link-color:                #2F4FA2;
+
+
+// Typography
+//
+@font-family-sans-serif: Arial, sans-serif;
+@font-size-base: 16px;
+@headings-font-weight:    normal;
+
+
+// Components
+// -------------------------
+// Based on 14px font-size and 1.428 line-height (~20px to start)
+
+@border-radius-base:             0.5em;
+@border-radius-large:            0.5em;
+@border-radius-small:            0.5em;
+
+// Buttons
+// -------------------------
+@btn-default-color:              @link-color;
+@btn-default-border:             fade(@btn-primary-bg, 80%);
+@btn-primary-bg:                 @link-color;
+
+// Forms
+// -------------------------
+@input-border:                   #979CA1;
+@input-border-radius:            0;
+@input-border-focus:             lighten(#155570, 45%);
+
+// Dropdowns
+// -------------------------
+@dropdown-link-hover-color:      @gray-dark;
+@dropdown-link-hover-bg:         lighten(@link-hover-color, 69%);
+@dropdown-link-active-bg:        lighten(@link-hover-color, 69%);
+
+//Small grid
+@media (min-width: @screen-sm-min) {
+  .container {
+    max-width: @container-sm;
+  }
+}
+
+// Medium grid
+@media (min-width: @screen-md-min) {
+  .container {
+    max-width: @container-md;
+  }
+}
+
+// Large grid
+@media (min-width: @screen-lg-min) {
+  .container {
+    max-width: @container-lg;
+  }
+}
+
+// Modals
+// -------------------------
+@modal-backdrop-bg:           #155570;

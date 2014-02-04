@@ -17,20 +17,11 @@
 
  // Brand colors
  // -------------------------
- 
-@brand-primary:         #732843; /*  Teachscape Burgundy */
-@ts-deep:			      #3B2030; 
+
 @brand-success:         #5cb85c;
 @brand-warning:         #f0ad4e;
 @brand-danger:          #d9534f;
 @brand-info:            #5bc0de;
- 
-// Product colors
-// -------------------------
-@focus:						#175473;
-@reflect: 					#006b33;
-@learn: 					#6c2a92;
-@advance: 					#bd4800;
 
 // Scaffolding
 // -------------------------
@@ -41,18 +32,18 @@
 // Links
 // -------------------------
 
-@link-color:            #2F4FA2;
+@link-color:            @brand-primary;
 @link-hover-color:      darken(@link-color, 15%);
 
 // Typography
 // -------------------------
 
-@font-family-sans-serif:  Arial, sans-serif;
+@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 @font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
-@font-size-base:          16px;
+@font-size-base:          14px;
 @font-size-large:         ceil(@font-size-base * 1.25); // ~18px
 @font-size-small:         ceil(@font-size-base * 0.85); // ~12px
 
@@ -67,7 +58,7 @@
 @line-height-computed:    floor(@font-size-base * @line-height-base); // ~20px
 
 @headings-font-family:    @font-family-base;
-@headings-font-weight:    normal;
+@headings-font-weight:    500;
 @headings-line-height:    1.1;
 @headings-color:          inherit;
 
@@ -95,9 +86,9 @@
 @line-height-large:              1.33;
 @line-height-small:              1.5;
 
-@border-radius-base:             0.5em;
-@border-radius-large:            0.5em;
-@border-radius-small:            0.5em;
+@border-radius-base:             4px;
+@border-radius-large:            6px;
+@border-radius-small:            3px;
 
 @component-active-color:         #fff;
 @component-active-bg:            @brand-primary;
@@ -124,12 +115,12 @@
 
 @btn-font-weight:                normal;
 
-@btn-default-color:              @link-color;
+@btn-default-color:              #333;
 @btn-default-bg:                 #fff;
-@btn-default-border:             fade(@btn-primary-bg, 80%);
+@btn-default-border:             #ccc;
 
 @btn-primary-color:              #fff;
-@btn-primary-bg:                 @link-color;
+@btn-primary-bg:                 @brand-primary;
 @btn-primary-border:             darken(@btn-primary-bg, 5%);
 
 @btn-success-color:              #fff;
@@ -158,9 +149,9 @@
 @input-bg-disabled:              @gray-lighter;
 
 @input-color:                    @gray;
-@input-border:                   #979CA1;
-@input-border-radius:            0;
-@input-border-focus:             lighten(#155570, 45%);
+@input-border:                   #ccc;
+@input-border-radius:            @border-radius-base;
+@input-border-focus:             #66afe9;
 @input-color-placeholder:        @gray-light;
 
 @input-height-base:              (@line-height-computed + (@padding-base-vertical * 2) + 2);
@@ -183,11 +174,11 @@
 @dropdown-divider-bg:            #e5e5e5;
 
 @dropdown-link-color:            @gray-dark;
-@dropdown-link-hover-color:      @gray-dark;
-@dropdown-link-hover-bg:         lighten(@link-hover-color, 69%);
+@dropdown-link-hover-color:      darken(@gray-dark, 5%);
+@dropdown-link-hover-bg:         #f5f5f5;
 
 @dropdown-link-active-color:     @component-active-color;
-@dropdown-link-active-bg:        lighten(@link-hover-color, 69%);
+@dropdown-link-active-bg:        @component-active-bg;
 
 @dropdown-link-disabled-color:   @gray-light;
 @dropdown-header-color:          @brand-primary;
@@ -449,7 +440,7 @@
 @modal-content-border-color:                   rgba(0,0,0,.2);
 @modal-content-fallback-border-color:          #999;
 
-@modal-backdrop-bg:           #155570;
+@modal-backdrop-bg:           #000;
 @modal-header-border-color:   #e5e5e5;
 @modal-footer-border-color:   @modal-header-border-color;
 
