@@ -97,9 +97,132 @@ h4.modal-title {
 
 
 /*	5.3 Table ------------------------------------------------------- */
+
 th {
   font-weight: normal;
   color: @brand-primary;  // If not sortable.
+  padding:5px 15px;
+  border-bottom:1px dotted @gray-light;
 }
 
-/*	6. Footer ------------------------------------------------------- */
+td {
+  padding:  10px 15px;
+}
+
+td:first-child,
+td:last-child,
+th:first-child,
+th:last-child {
+  padding: 5px 0;
+}
+
+/*	6.0  Background Elements ---------------------------------------- */
+.panel {
+  border-radius: 0.5em;
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+}
+
+.panel-content {
+  margin:0px 25px;
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0px;
+  }
+}
+
+.content-single {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.content-row-header, .content-row-center, .content-row-footer {
+  margin-left:0;
+  margin-right:0;
+  padding-left:25px;
+  padding-right:25px;
+}
+
+.content-row-header {
+  margin-top:25px;
+}
+.content-row-center {
+  padding-top:25px;
+  padding-bottom:25px;
+}
+
+.row-fixed {
+  padding-top:25px;
+  padding-bottom:25px;
+  height:150px;
+  overflow:hidden;
+}
+
+.content-row-footer {
+  margin-top:25px;
+  margin-bottom:25px;
+}
+
+
+/*	7. Lists & Icon details ------------------------------------------------------- */
+.link-list > li {
+  color: @gray-light; /* bullet color */
+  span {
+    color: @text-color; /* text color */
+  }
+}
+
+
+/*	8. Footer ------------------------------------------------------- */
+/*	9. Utilities ---------------------------------------------------- */
+
+.smaller { /*-- make smaller font size --*/
+  font-size: @font-size-small;
+}
+
+.align-center {
+  text-align:center;
+}
+
+.row-admin {
+  padding: 0px 30px;
+  margin:0;
+}
+
+.pad-top-30 {
+  padding-top:30px;
+}
+
+.pad-bot-30 {
+  padding-bottom:30px;
+}
+.pad-top-20 {
+  padding-top:20px;
+}
+
+.pad-bot-20 {
+  padding-bottom:20px;
+}
+
+.border-bot-dot {
+  border-bottom:1px dotted #737373;
+}
+
+.label {
+  margin-top:-4px;
+}
+
+.label-gray {
+  background: @gray-light;
+}
+
+.label-light {
+  background: @gray-lighter;
+}
+
+.label-dark {
+  background: @gray-darker;
+}
+
+.label-focus {
+  background: @focus;
+}
