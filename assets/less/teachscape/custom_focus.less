@@ -11,3 +11,41 @@ input .text-edit {
 input .text-edit:focus {
 	border: @gray-light;
 }
+
+.borderless {
+  margin: 15px 0;
+  width:100%;
+  thead {
+
+    border-bottom:1px dotted @gray-lighter;
+
+    tr  {
+      th {
+        font-weight: normal;
+        padding:5px 15px;
+        color: @brand-primary;  // If not sortable.
+
+      }
+      th:first-child {
+        padding-left:0;
+      }
+      th:last-child {
+        padding-right:0;
+      }
+
+    }
+  }
+  tbody {
+    tr {
+      td {
+        padding:  10px 15px;
+      }
+      td:first-child,
+      th:first-child {
+        padding: 5px 0;
+      }
+
+    }
+
+  }
+}
