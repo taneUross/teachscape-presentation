@@ -142,18 +142,70 @@
                             </div>
                             <!-- end panel -->
 							
-                            <!-- begin section -->
-                            <div class="panel section-bar">
+                            <!-- begin section bar - first family-->
+                            <div class="panel section-bar bar-0">
                                 <div class="panel-content content-single">
-                                    <div class="col-md-8">
-										<input class="text-edit text-code" placeholder="Code"></input>
-										<input class="text-edit text-title" placeholder="Enter Section Title"></input>
-										<input class="text-edit text-description" placeholder="Enter Section Title"></input>
+									<div class="row">
+	                                    <div class="col-xs-7">
+											<input type="text" class="text-edit text-code" placeholder="Code"></input>
+											<input type="text" class="text-edit text-title" placeholder="Enter Section Title"></input>
+											<textarea class="text-edit text-description" placeholder="Enter Description" rows="2"></textarea>
+										</div>
+										<div class="col-xs-5  pos-relative">
+													<button class="btn-score">Score on this section</button><!-- toggle 'active' state to change icon -->
+													<button class="btn-round round-edit"><span class="icon-pencil"></span></button>
+													<button class="btn-round round-delete"><span class="icon-trash"></span></button>
+										</div>
+										<div class="insert-action">
+										<!-- Insert -->
+											<div class="btn-group">
+											  <button type="button" class="btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown">
+											    <span class="before-add"> Insert Row Below</span> <span class="caret"></span>
+											  </button>
+											  <ul class="dropdown-menu" role="menu">
+											    <li><a href="#">Add Higher-Level Section</a></li>
+											    <li><a href="#">Add Same-Level Section</a></li>
+											    <li><a href="#">Add Lower-Level Section</a></li>
+											  </ul>
+											</div>
+										</div>
 									</div>
-                                    <p>This is a description text block using the paragraph element.  This could be a lot of text, it could be a little bit.  If I could write a poem, I would but unfortunately, I don't possess that type of talent.</P>
                                 </div>
                             </div>
-                            <!-- end section -->
+							<!-- end section bar-->
+							
+                            <!-- begin sub-section bar - NOT first family-->
+                            <div class="panel section-bar bar-1">
+                                <div class="panel-content content-single">
+									<div class="row">
+	                                    <div class="col-xs-8">
+											<input type="text" class="text-edit text-code" placeholder="Code"></input>
+											<input type="text" class="text-edit text-title" placeholder="Enter Section Title"></input>
+											<textarea class="text-edit text-description" placeholder="Enter Description" rows="2"></textarea>
+										</div>
+										<div class="col-xs-4  pos-relative ">
+													<button class="btn-score">Scoring</button><!-- toggle 'active' state to change icon -->
+													<button class="btn-round round-edit no-score-button"><span class="icon-pencil"></span></button>
+													<button class="btn-round round-delete"><span class="icon-trash"></span></button>
+										</div>
+										<div class="insert-action">
+										<!-- Insert -->
+											<div class="btn-group">
+											  <button type="button" class="btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown">
+											    <span class="before-add"> Insert Row Below</span> <span class="caret"></span>
+											  </button>
+											  <ul class="dropdown-menu" role="menu">
+											    <li><a href="#">Add Higher-Level Section</a></li>
+											    <li><a href="#">Add Same-Level Section</a></li>
+											    <li><a href="#">Add Lower-Level Section</a></li>
+											  </ul>
+											</div>
+										</div>
+									</div>
+                                </div>
+                            </div>
+							<!-- end section bar-->
+							
                           
 
                             </div>

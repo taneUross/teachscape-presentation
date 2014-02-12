@@ -178,6 +178,9 @@ th:last-child {
 .smaller { /*-- make smaller font size --*/
   font-size: @font-size-small;
 }
+.larger { /*-- make larger font size --*/
+  font-size: @font-size-large;
+}
 
 .align-center {
   text-align:center;
@@ -226,3 +229,15 @@ th:last-child {
 .label-focus {
   background: @focus;
 }
+
+//gradient use as function
+.gradient (@origin: left, @start: #ffffff, @stop: #999999) {
+    background-color: @start;
+    background-image: -webkit-linear-gradient(@origin, @start, @stop);
+    background-image: -moz-linear-gradient(@origin, @start, @stop);
+    background-image: -o-linear-gradient(@origin, @start, @stop);
+    background-image: -ms-linear-gradient(@origin, @start, @stop);
+    background-image: linear-gradient(@origin, @start, @stop);
+}
+
+
