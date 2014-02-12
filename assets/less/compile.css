@@ -6460,3 +6460,16 @@ th:last-child {
   }
 }
 /* LESS Document */
+<<<<<<< HEAD
+=======
+/* CF-1.0 panels and sections ======================== */
+.section-bar {
+  border-radius: 0;
+}
+input .text-edit {
+  border: white;
+}
+input .text-edit:focus {
+  border: #999999;
+}
+>>>>>>> b772693b9082f968e49e88789cb11790d7026e0b

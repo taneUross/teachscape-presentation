@@ -107,7 +107,7 @@
                 <div class="bs-docs-section">
                     <div class="page-header">
                         <h1><span aria-hidden="true" data-icon="&#xe002;" class="focus"></span> Custom Focus: Admin</h1>
-                        <h3>Panels</h3>
+                        <h3>Panels & Sections</h3>
                         <p>Admin pages have a background color of #f4f4f4.  To group items, panels are used.  The panels sometimes have sections that are defined by horizontal lines, other times they have just one object inside.  The following are examples of both.  Please right click to "inspect element" and copy the markup between the descriptive comments bookended by "begin..." and "end...".</P>
                         <div class="bs-example">
                             <!-- begin single panel -->
@@ -141,30 +141,20 @@
                                 </div>
                             </div>
                             <!-- end panel -->
-
-                            <!-- begin multi joined row panel -->
-                            <div class="panel">
+							
+                            <!-- begin section -->
+                            <div class="panel section-bar">
                                 <div class="panel-content content-single">
-                                    <div class=" border-bot-dot">
-                                        <h3>Getting Started</h3>
-                                    </div>
-                                    <div class="panel-content content-row-center row-fixed border-bot-dot">
-                                        <p>This is a description text block using the paragraph element.  This could be a lot of text, it could be a little bit.  If I could write a poem, I would but unfortunately, I don't possess that type of talent.  If the class "row-fixed" is used, then the row is 150px high and this text block should be truncated and appended with <a href="#" class="smaller">More <span class="icon-chevron-right"></span></a></p>
-                                    </div>
-                                    <div class="panel-content content-row-center border-bot-dot">
-                                        <div class="align-center"><button class="btn btn-primary btn-lg">Link To Page</button></div>
-                                    </div>
-                                    <div class="panel-content content-row-center">
-                                        <h5>Details</h5>
-                                        <p>The different sections have have different kinds of content such as tables, lists or forms.</p>
-                                        <ul class="link-list">
-                                            <li><span><a href="#">First Link</a></span></li>
-                                            <li><span><a href="#">Second Link</a></span></li>
-                                            <li><span><a href="#">Third Link</a></span></li>
-                                        </ul>
-                                    </div>
+                                    <div class="col-md-8">
+										<input class="text-edit text-code" placeholder="Code"></input>
+										<input class="text-edit text-title" placeholder="Enter Section Title"></input>
+										<input class="text-edit text-description" placeholder="Enter Section Title"></input>
+									</div>
+                                    <p>This is a description text block using the paragraph element.  This could be a lot of text, it could be a little bit.  If I could write a poem, I would but unfortunately, I don't possess that type of talent.</P>
                                 </div>
-                                <!-- end panel -->
+                            </div>
+                            <!-- end section -->
+                          
 
                             </div>
 
