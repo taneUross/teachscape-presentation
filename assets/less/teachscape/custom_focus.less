@@ -45,8 +45,9 @@
 }
 
 .text-code {
-	margin-right:20px;
-	width:65px;
+	margin-right:10px;
+	width:auto;
+	min-width:30px;
 	max-width:100px;
 	font-size: @font-size-large;
 }
@@ -111,8 +112,8 @@ span.before-add:before {
 	position:absolute;
 	right:0;
 	top:-10px;
-	background: lighten(@focus, 65%);
 	color:@link-color;
+	.gradient(top, lighten(@focus, 65%), lighten(@focus, 65%));
 }
 .round-delete:hover {
 	color:white;
@@ -127,8 +128,8 @@ span.before-add:before {
 	left:180px;
 }
 .insert-action {
-	bottom:40px;
-	right:40px;
+	bottom:0px;
+	right:0px;
 	position:absolute;
 }
 

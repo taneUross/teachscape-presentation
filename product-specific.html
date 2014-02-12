@@ -141,13 +141,18 @@
                                 </div>
                             </div>
                             <!-- end panel -->
+						
+						</div>
+						<h3>Rubric Sections</h3>
+						<p>The following are used for sections.  Add/edit the class "bar-0" in order to add indentation to indicate Sub-Sections
+						 <div class="bs-example">	
 							
                             <!-- begin section bar - first family-->
                             <div class="panel section-bar bar-0">
                                 <div class="panel-content content-single">
 									<div class="row">
 	                                    <div class="col-xs-7">
-											<input type="text" class="text-edit text-code" placeholder="Code"></input>
+											<input type="text" class="text-edit text-code" placeholder="1" size:"4"></input>
 											<input type="text" class="text-edit text-title" placeholder="Enter Section Title"></input>
 											<textarea class="text-edit text-description" placeholder="Enter Description" rows="2"></textarea>
 										</div>
@@ -156,20 +161,27 @@
 													<button class="btn-round round-edit"><span class="icon-pencil"></span></button>
 													<button class="btn-round round-delete"><span class="icon-trash"></span></button>
 										</div>
+									</div>
+									
+									
+									<!-- Insert dropdown -->
+									<div class="row pos-relative">
 										<div class="insert-action">
-										<!-- Insert -->
+									
 											<div class="btn-group">
 											  <button type="button" class="btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown">
 											    <span class="before-add"> Insert Row Below</span> <span class="caret"></span>
 											  </button>
 											  <ul class="dropdown-menu" role="menu">
-											    <li><a href="#">Add Higher-Level Section</a></li>
+											    <li><span class="disabled">Add Higher-Level Section</span></li>
 											    <li><a href="#">Add Same-Level Section</a></li>
 											    <li><a href="#">Add Lower-Level Section</a></li>
 											  </ul>
 											</div>
 										</div>
-									</div>
+									</div><!-- end Insert dropdown -->
+									
+									
                                 </div>
                             </div>
 							<!-- end section bar-->
@@ -179,29 +191,37 @@
                                 <div class="panel-content content-single">
 									<div class="row">
 	                                    <div class="col-xs-8">
-											<input type="text" class="text-edit text-code" placeholder="Code"></input>
-											<input type="text" class="text-edit text-title" placeholder="Enter Section Title"></input>
+											<input type="text" class="text-edit text-code" placeholder="A"></input>
+											<input type="text" class="text-edit text-title" placeholder="Enter Sub- Section Title"></input>
 											<textarea class="text-edit text-description" placeholder="Enter Description" rows="2"></textarea>
 										</div>
+										
+										<!-- section buttons - not first family -->
 										<div class="col-xs-4  pos-relative ">
 													<button class="btn-score">Scoring</button><!-- toggle 'active' state to change icon -->
 													<button class="btn-round round-edit no-score-button"><span class="icon-pencil"></span></button>
 													<button class="btn-round round-delete"><span class="icon-trash"></span></button>
 										</div>
-										<div class="insert-action">
-										<!-- Insert -->
-											<div class="btn-group">
-											  <button type="button" class="btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown">
-											    <span class="before-add"> Insert Row Below</span> <span class="caret"></span>
-											  </button>
-											  <ul class="dropdown-menu" role="menu">
-											    <li><a href="#">Add Higher-Level Section</a></li>
-											    <li><a href="#">Add Same-Level Section</a></li>
-											    <li><a href="#">Add Lower-Level Section</a></li>
-											  </ul>
-											</div>
-										</div>
+										<!-- end section buttons - not first family -->
+
 									</div>
+										
+										<!-- Insert dropdown -->
+										<div class="row pos-relative">
+											<div class="insert-action">
+										
+												<div class="btn-group">
+												  <button type="button" class="btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown">
+												    <span class="before-add"> Insert Row Below</span> <span class="caret"></span>
+												  </button>
+												  <ul class="dropdown-menu" role="menu">
+												    <li><a href="#">Add Higher-Level Section</a></li>
+												    <li><a href="#">Add Same-Level Section</a></li>
+												    <li><a href="#">Add Lower-Level Section</a></li>
+												  </ul>
+												</div>
+											</div>
+										</div><!-- end Insert dropdown -->
                                 </div>
                             </div>
 							<!-- end section bar-->
