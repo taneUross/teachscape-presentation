@@ -6330,21 +6330,6 @@ h4.modal-title {
   filter: alpha(opacity=70);
 }
 /*	5.3 Table ------------------------------------------------------- */
-th {
-  font-weight: normal;
-  color: #732843;
-  padding: 5px 15px;
-  border-bottom: 1px dotted #999999;
-}
-td {
-  padding: 10px 15px;
-}
-td:first-child,
-td:last-child,
-th:first-child,
-th:last-child {
-  padding: 5px 0;
-}
 /*	6.0  Background Elements ---------------------------------------- */
 .panel {
   border-radius: 0.5em;
@@ -6459,9 +6444,6 @@ th:last-child {
     max-width: 1170px;
   }
 }
-/* LESS Document */
-<<<<<<< HEAD
-=======
 /* CF-1.0 panels and sections ======================== */
 .section-bar {
   border-radius: 0;
@@ -6472,4 +6454,28 @@ input .text-edit {
 input .text-edit:focus {
   border: #999999;
 }
->>>>>>> b772693b9082f968e49e88789cb11790d7026e0b
+.borderless {
+  margin: 15px 0;
+  width: 100%;
+}
+.borderless thead {
+  border-bottom: 1px dotted #eeeeee;
+}
+.borderless thead tr th {
+  font-weight: normal;
+  padding: 5px 15px;
+  color: #732843;
+}
+.borderless thead tr th:first-child {
+  padding-left: 0;
+}
+.borderless thead tr th:last-child {
+  padding-right: 0;
+}
+.borderless tbody tr td {
+  padding: 10px 15px;
+}
+.borderless tbody tr td:first-child,
+.borderless tbody tr th:first-child {
+  padding: 5px 0;
+}
