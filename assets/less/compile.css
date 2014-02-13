@@ -754,71 +754,13 @@ pre code {
   margin-left: -15px;
   margin-right: -15px;
 }
-.col-xs-1,
-.col-sm-1,
-.col-md-1,
-.col-lg-1,
-.col-xs-2,
-.col-sm-2,
-.col-md-2,
-.col-lg-2,
-.col-xs-3,
-.col-sm-3,
-.col-md-3,
-.col-lg-3,
-.col-xs-4,
-.col-sm-4,
-.col-md-4,
-.col-lg-4,
-.col-xs-5,
-.col-sm-5,
-.col-md-5,
-.col-lg-5,
-.col-xs-6,
-.col-sm-6,
-.col-md-6,
-.col-lg-6,
-.col-xs-7,
-.col-sm-7,
-.col-md-7,
-.col-lg-7,
-.col-xs-8,
-.col-sm-8,
-.col-md-8,
-.col-lg-8,
-.col-xs-9,
-.col-sm-9,
-.col-md-9,
-.col-lg-9,
-.col-xs-10,
-.col-sm-10,
-.col-md-10,
-.col-lg-10,
-.col-xs-11,
-.col-sm-11,
-.col-md-11,
-.col-lg-11,
-.col-xs-12,
-.col-sm-12,
-.col-md-12,
-.col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
-.col-xs-1,
-.col-xs-2,
-.col-xs-3,
-.col-xs-4,
-.col-xs-5,
-.col-xs-6,
-.col-xs-7,
-.col-xs-8,
-.col-xs-9,
-.col-xs-10,
-.col-xs-11,
-.col-xs-12 {
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left;
 }
 .col-xs-12 {
@@ -975,18 +917,7 @@ pre code {
   margin-left: 0%;
 }
 @media (min-width: 768px) {
-  .col-sm-1,
-  .col-sm-2,
-  .col-sm-3,
-  .col-sm-4,
-  .col-sm-5,
-  .col-sm-6,
-  .col-sm-7,
-  .col-sm-8,
-  .col-sm-9,
-  .col-sm-10,
-  .col-sm-11,
-  .col-sm-12 {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left;
   }
   .col-sm-12 {
@@ -1144,18 +1075,7 @@ pre code {
   }
 }
 @media (min-width: 992px) {
-  .col-md-1,
-  .col-md-2,
-  .col-md-3,
-  .col-md-4,
-  .col-md-5,
-  .col-md-6,
-  .col-md-7,
-  .col-md-8,
-  .col-md-9,
-  .col-md-10,
-  .col-md-11,
-  .col-md-12 {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
   }
   .col-md-12 {
@@ -1313,18 +1233,7 @@ pre code {
   }
 }
 @media (min-width: 1200px) {
-  .col-lg-1,
-  .col-lg-2,
-  .col-lg-3,
-  .col-lg-4,
-  .col-lg-5,
-  .col-lg-6,
-  .col-lg-7,
-  .col-lg-8,
-  .col-lg-9,
-  .col-lg-10,
-  .col-lg-11,
-  .col-lg-12 {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
   }
   .col-lg-12 {
@@ -1783,14 +1692,14 @@ output {
   border-radius: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 .form-control:focus {
   border-color: #83cae8;
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(131, 202, 232, 0.6);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(131, 202, 232, 0.6);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(131, 202, 232, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(131, 202, 232, 0.6);
 }
 .form-control:-moz-placeholder {
   color: #999999;
@@ -3142,7 +3051,7 @@ input[type="button"].btn-block {
   text-decoration: none;
   background-color: transparent;
   background-image: none;
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   cursor: not-allowed;
 }
 .open > .dropdown-menu {
@@ -6427,8 +6336,8 @@ h4.modal-title {
 /*	6.0  Background Elements ---------------------------------------- */
 .panel {
   border-radius: 0.5em;
-  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.3);
 }
 .panel-content {
   margin: 0px 25px;
@@ -6542,7 +6451,14 @@ h4.modal-title {
     max-width: 1170px;
   }
 }
-/* CF-1.0 panels and sections ======================== */
+/* CF-0.0 navigation ======================== */
+.header-call {
+  width: 100%;
+  -webkit-box-shadow: 0px 5px 8px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 8px 1px rgba(0, 0, 0, 0.3);
+  margin: 0;
+}
+/* CF-1.0 panels, sections ======================== */
 .section-bar {
   border-radius: 0;
   margin: 0;
@@ -6580,8 +6496,9 @@ h4.modal-title {
   -moz-transition: all 0.25s ease-in-out;
 }
 .text-code {
-  margin-right: 20px;
-  width: 65px;
+  margin-right: 10px;
+  width: auto;
+  min-width: 30px;
   max-width: 100px;
   font-size: 20px;
 }
@@ -6647,8 +6564,13 @@ span.before-add:before {
   position: absolute;
   right: 0;
   top: -10px;
-  background: #ddeff8;
   color: #2f4fa2;
+  background-color: #ddeff8;
+  background-image: -webkit-linear-gradient(top, #ddeff8, #ddeff8);
+  background-image: -moz-linear-gradient(top, #ddeff8, #ddeff8);
+  background-image: -o-linear-gradient(top, #ddeff8, #ddeff8);
+  background-image: -ms-linear-gradient(top, #ddeff8, #ddeff8);
+  background-image: linear-gradient(top, #ddeff8, #ddeff8);
 }
 .round-delete:hover {
   color: white;
@@ -6674,6 +6596,16 @@ span.before-add:before {
 }
 .no-score-button {
   left: 110px;
+}
+/* CF-5.0 Labels ======================== */
+.label-saved {
+  background: #999999;
+}
+.label-published {
+  background: #175473;
+}
+.label-locked {
+  background: #333333;
 }
 /* CF-10.0 Utilities ======================== */
 .pos-relative {

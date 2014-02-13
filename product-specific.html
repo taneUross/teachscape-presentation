@@ -14,7 +14,21 @@
 
     <!-- Documentation extras -->
     <link href="assets/css/pygments-manni.css" rel="stylesheet">
-
+	
+	
+	<!-- make the code display all pretty -->
+	<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=html"></script>
+	<style>
+		pre.prettyprint {
+			padding: 2px;
+			border:none;
+		}
+		pre { 
+			border:none;
+			
+		}
+		
+	</style>
     <!--<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>-->
     <!--<script type="text/javascript" src="bower_components/zeroclipboard/ZeroClipboard.js"></script>-->
 
@@ -115,6 +129,7 @@
                         <h3>Panels & Sections</h3>
                         <p>Admin pages have a background color of #f4f4f4.  To group items, panels are used.  The panels sometimes have sections that are defined by horizontal lines, other times they have just one object inside.  The following are examples of both.  Please right click to "inspect element" and copy the markup between the descriptive comments bookended by "begin..." and "end...".</P>
                         <div class="bs-example">
+							<h4>Single Panel</h4>
                             <!-- begin single panel -->
                             <div class="panel">
                                 <div class="panel-content content-single">
@@ -123,17 +138,23 @@
                                 </div>
                             </div>
                             <!-- end panel -->
-
-                            <!--repeat for copy/paste-->
-                            <textarea class="well" name="box-content" id="box-content" rows="5" cols="100">
-                                <div class="panel">
-                                    <div class="panel-content content-single">
-                                        <h3>Headline</h3>
-                                        <p>This is a description text block using the paragraph element.  This could be a lot of text, it could be a little bit.  If I could write a poem, I would but unfortunately, I don't possess that type of talent.</P>
-                                    </div>
-                                </div>
-                            </textarea>
-
+							<div class="well">
+<pre class="prettyprint">
+&lt;!-- begin single panel --&gt;
+&lt;div class="panel"&gt;
+    &lt;div class="panel-content content-single"&gt;
+        &lt;h3&gt;Headline&lt;/h3&gt;
+        &lt;p&gt;This is a description text block using the paragraph element.  This could be a lot of text, it could be a little bit.  If I could write a poem, I would but unfortunately, I don't possess that type of talent.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- end panel --&gt;
+</pre>
+							</div>
+							
+                        </div>    
+						<div class="bs-example">
+							<h4>Multi sectioned panel</h4>
+							
                             <!-- begin multi split row panel -->
                             <div class="panel">
                                 <div class="panel-content content-row-header border-bot-dot">
@@ -156,36 +177,39 @@
                                 </div>
                             </div>
                             <!-- end panel -->
+							<div class="well">
+<pre class="prettyprint">
+&lt;!-- begin multi split row panel --&gt;
+&lt;div class="panel"&gt;
+    &lt;div class="panel-content content-row-header border-bot-dot"&gt;
+        &lt;h3&gt;Headline&lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;div class="panel-content content-row-center row-fixed border-bot-dot"&gt;
+        &lt;p&gt;This is a description text block using the paragraph element.  This could be a lot of text, it could be a little bit.  If I could write a poem, I would but unfortunately, I don't possess that type of talent.  If the class "row-fixed" is used, then the row is 150px high and this text block should be truncated and appended with &lt;a href="#" class="smaller"&gt;More &lt;span class="icon-chevron-right"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="panel-content content-row-center border-bot-dot"&gt;
+        &lt;div class="align-center"&gt;&lt;button class="btn btn-primary btn-lg"&gt;Link To Page&lt;/button&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="panel-content content-row-center"&gt;
+        &lt;h5&gt;Details&lt;/h5&gt;
+        &lt;p&gt;The different sections have have different kinds of content such as tables, lists or forms.&lt;/p&gt;
+        &lt;ul class="link-list"&gt;
+            &lt;li&gt;&lt;span&gt;&lt;a href="#"&gt;First Link&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;span&gt;&lt;a href="#"&gt;Second Link&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;span&gt;&lt;a href="#"&gt;Third Link&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- end panel --&gt;
+</pre>
+							</div><!-- end well -->
 							
-                            <!--repeat for copy/paste-->
-                            <textarea class="well" name="box-content" id="box-content" rows="5" cols="100">
-	                            <div class="panel">
-	                                <div class="panel-content content-row-header border-bot-dot">
-	                                    <h3>Headline</h3>
-	                                </div>
-	                                <div class="panel-content content-row-center row-fixed border-bot-dot">
-	                                    <p>This is a description text block using the paragraph element.  This could be a lot of text, it could be a little bit.  If I could write a poem, I would but unfortunately, I don't possess that type of talent.  If the class "row-fixed" is used, then the row is 150px high and this text block should be truncated and appended with <a href="#" class="smaller">More <span class="icon-chevron-right"></span></a></p>
-	                                </div>
-	                                <div class="panel-content content-row-center border-bot-dot">
-	                                    <div class="align-center"><button class="btn btn-primary btn-lg">Link To Page</button></div>
-	                                </div>
-	                                <div class="panel-content content-row-center">
-	                                    <h5>Details</h5>
-	                                    <p>The different sections have have different kinds of content such as tables, lists or forms.</p>
-	                                    <ul class="link-list">
-	                                        <li><span><a href="#">First Link</a></span></li>
-	                                        <li><span><a href="#">Second Link</a></span></li>
-	                                        <li><span><a href="#">Third Link</a></span></li>
-	                                    </ul>
-	                                </div>
-	                            </div>
-							</textarea>
 						
 						</div>
 						<h3>Rubric Sections</h3>
 						<p>The following are used for sections.  Add/edit the class "bar-0" in order to add indentation to indicate Sub-Sections.  The icons are TBD for a solution, but this solution should only involve css and not additional html elements.
 						 <div class="bs-example">	
-							
+							 <h4>Parent level, first family Rubric Section Bar</h4>
                             <!-- begin section bar - first family-->
                             <div class="panel section-bar bar-0">
                                 <div class="panel-content content-single">
@@ -223,9 +247,52 @@
                                 </div>
                             </div>
 							<!-- end section bar-->
-							
+							<br>
+							<div class="well">
+<pre class="prettyprint">
+&lt;!-- begin section bar - first family--&gt;
+&lt;div class="panel section-bar bar-0"&gt;
+    &lt;div class="panel-content content-single"&gt;
+	&lt;div class="row"&gt;
+		&lt;div class="col-xs-7"&gt;
+			&lt;input type="text" class="text-edit text-code" placeholder="1" size:"4"&gt;&lt;/input&gt;
+			&lt;input type="text" class="text-edit text-title" placeholder="Enter Section Title"&gt;&lt;/input&gt;
+			&lt;textarea class="text-edit text-description" placeholder="Enter Description" rows="2"&gt;&lt;/textarea&gt;
+		&lt;/div&gt;
+		&lt;div class="col-xs-5  pos-relative"&gt;
+			&lt;button class="btn-score"&gt;Score on this section&lt;/button&gt;&lt;!-- toggle 'active' state to change icon --&gt;
+			&lt;button class="btn-round round-edit"&gt;&lt;span class="icon-pencil"&gt;&lt;/span&gt;&lt;/button&gt;
+			&lt;button class="btn-round round-delete"&gt;&lt;span class="icon-trash"&gt;&lt;/span&gt;&lt;/button&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;		
+	&lt;!-- Insert dropdown --&gt;
+	&lt;div class="row pos-relative"&gt;
+		&lt;div class="insert-action"&gt;
+			&lt;div class="btn-group"&gt;
+			  &lt;button type="button" class="btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown"&gt;
+			    &lt;span class="before-add"&gt; Insert Row Below&lt;/span&gt; &lt;span class="caret"&gt;&lt;/span&gt;
+			  &lt;/button&gt;
+			  &lt;ul class="dropdown-menu" role="menu"&gt;
+			    &lt;li&gt;&lt;span class="disabled"&gt;Add Higher-Level Section&lt;/span&gt;&lt;/li&gt;
+			    &lt;li&gt;&lt;a href="#"&gt;Add Same-Level Section&lt;/a&gt;&lt;/li&gt;
+			    &lt;li&gt;&lt;a href="#"&gt;Add Lower-Level Section&lt;/a&gt;&lt;/li&gt;
+			  &lt;/ul&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;&lt;!-- end Insert dropdown --&gt;		
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- end section bar--&gt;
+
+</pre>								
+								
+							</div><!-- end well -->
+						</div>	
+						
+						<div class="bs-example">
+							<h4>Children levels, not first family Rubric Section Bar (bar-3 indent shown here)</h4>
                             <!-- begin sub-section bar - NOT first family-->
-                            <div class="panel section-bar bar-1">
+                            <div class="panel section-bar bar-3">
                                 <div class="panel-content content-single">
 									<div class="row">
 	                                    <div class="col-xs-8">
@@ -263,16 +330,71 @@
                                 </div>
                             </div>
 							<!-- end section bar-->
-							
+							<br>
+							<div class="well">
+<pre class="prettyprint">
+	
+&lt;!-- begin sub-section bar - NOT first family--&gt;
+&lt;div class="panel section-bar bar-1"&gt;
+    &lt;div class="panel-content content-single"&gt;
+		&lt;div class="row"&gt;
+            &lt;div class="col-xs-8"&gt;
+				&lt;input type="text" class="text-edit text-code" placeholder="A"&gt;&lt;/input&gt;
+				&lt;input type="text" class="text-edit text-title" placeholder="Enter Sub- Section Title"&gt;&lt;/input&gt;
+				&lt;textarea class="text-edit text-description" placeholder="Enter Description" rows="2"&gt;&lt;/textarea&gt;
+			&lt;/div&gt;
+			
+			&lt;!-- section buttons - not first family --&gt;
+			&lt;div class="col-xs-4  pos-relative "&gt;
+				&lt;button class="btn-score"&gt;Scoring&lt;/button&gt;&lt;!-- toggle 'active' state to change icon --&gt;
+				&lt;button class="btn-round round-edit no-score-button"&gt;&lt;span class="icon-pencil"&gt;&lt;/span&gt;&lt;/button&gt;
+				&lt;button class="btn-round round-delete"&gt;&lt;span class="icon-trash"&gt;&lt;/span&gt;&lt;/button&gt;
+			&lt;/div&gt;
+			&lt;!-- end section buttons - not first family --&gt;
+
+		&lt;/div&gt;
+			
+		&lt;!-- Insert dropdown --&gt;
+		&lt;div class="row pos-relative"&gt;
+			&lt;div class="insert-action"&gt;
+		
+				&lt;div class="btn-group"&gt;
+				  &lt;button type="button" class="btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown"&gt;
+				    &lt;span class="before-add"&gt; Insert Row Below&lt;/span&gt; &lt;span class="caret"&gt;&lt;/span&gt;
+				  &lt;/button&gt;
+				  &lt;ul class="dropdown-menu" role="menu"&gt;
+				    &lt;li&gt;&lt;a href="#"&gt;Add Higher-Level Section&lt;/a&gt;&lt;/li&gt;
+				    &lt;li&gt;&lt;a href="#"&gt;Add Same-Level Section&lt;/a&gt;&lt;/li&gt;
+				    &lt;li&gt;&lt;a href="#"&gt;Add Lower-Level Section&lt;/a&gt;&lt;/li&gt;
+				  &lt;/ul&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;&lt;!-- end Insert dropdown --&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- end section bar--&gt;	
+	
+</pre>	
+						
+						</div><!-- end well -->
 						</div><!-- end example -->
 						
 					 
-					 <h3>Page Header Bars </h3>
-					 <p>Custom Focus labels and badges</p>
+					 <h3>Labels and Badges</h3>
+					 <p>For use on all modules of custom focus</p>
 					  <div class="bs-example">
-						  <span class="label label-saved">Saved</span>
-						  <span class="label label-published">Saved</span>
-						  <span class="label label-locked">Saved</span>
+						  <p><span class="label label-saved">Saved</span>
+						  <span class="label label-published">Published</span>
+						  <span class="label label-locked">Locked</span>
+					  </p>
+						  <div class="well">
+<pre class="prettyprint">
+  &lt;span class="label label-saved"&gt;Saved&lt;/span&gt;
+  &lt;span class="label label-published"&gt;Published&lt;/span&gt;
+  &lt;span class="label label-locked"&gt;Locked&lt;/span&gt;
+</pre>							  
+							  
+						  </div><!-- end well -->
 					  </div><!-- end example -->
 					  
 					  
@@ -284,11 +406,11 @@
 							 
 							 <!-- header bar call to action -->
 								 <div class="row header-call">
-									 <div class="col-md-4">
+									 <div class="col-md-6">
 										 <h2>Normal Headline</h2>
 									 </div> <!--end col -->
 									 
-									 <div class="col-md-4">
+									 <div class="col-md-3">
 										<div class="btn-group">
 										  <button type="button" class="btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown">
 										    <span>Download Display .pdf</span> <span class="caret"></span>
@@ -302,8 +424,8 @@
 									</div>
 									 </div> <!--end col -->
 									 
-									 <div class="col-md-4">
-										 <h2>Normal Headline</h2>
+									 <div class="col-md-3">
+										 <button class="btn btn-primary btn-md">Call To Action"</button>
 									 </div> <!--end col -->
 								 </div>
 									 
