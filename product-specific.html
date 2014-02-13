@@ -126,7 +126,70 @@
                 <div class="bs-docs-section">
                     <div class="page-header">
                         <h1><span aria-hidden="true" data-icon="&#xe002;" class="focus"></span> Custom Focus: Admin</h1>
-                        <h3>Panels & Sections</h3>
+						
+						<h3>CF-0.0: Page Header Bars </h3>
+						<p>The following are the call to action bars for tertiary pages.  These usually have headline text, sometimes editable inputs.  They usually have a call to action on the right.  They need to span 100% width with no space on left and right window edges.  You can use a nested grid, as included here and vary the number and/or size of the columns to achieve the designed layout for the elements required.</p>
+						 <div class="bs-example">
+							 
+							 
+							 <!-- header bar call to action -->
+							 <div class="row header-call">
+								 <div class="col-xs-5">
+									 <h2>Normal Headline</h2>
+								 </div> <!--end col -->
+								 
+								 <div class="col-xs-3">
+									<div class="btn-group">
+									  <button type="button" class="btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown">
+									    <span>Download Display .pdf</span> <span class="caret"></span>
+									  </button>
+									  <ul class="dropdown-menu" role="menu">
+									    <li><a href="#">Item 1</a></li>
+									    <li><a href="#">Item 2</a></li>
+									    <li><a href="#">Item 3</a></li>
+									  </ul>
+									</div>
+								 </div> <!--end col -->
+								 
+								 <div class="col-xs-4 align-right">
+									 <button class="btn btn-primary btn-sm">Call To Action"</button>
+								 </div> <!--end col -->
+							 </div>
+							 <!-- end header bar -->
+	 							<div class="well mar-top-20">
+ <pre class="prettyprint">
+&lt;!-- header bar call to action --&gt;
+&lt;div class="row header-call"&gt;
+	&lt;div class="col-xs-5"&gt;
+	 &lt;h2&gt;Normal Headline&lt;/h2&gt;
+	&lt;/div&gt; &lt;!--end col --&gt;
+
+	&lt;div class="col-xs-3"&gt;
+	&lt;div class="btn-group"&gt;
+	  &lt;button type="button" class="btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown"&gt;
+	    &lt;span&gt;Download Display .pdf&lt;/span&gt; &lt;span class="caret"&gt;&lt;/span&gt;
+	  &lt;/button&gt;
+	  &lt;ul class="dropdown-menu" role="menu"&gt;
+	    &lt;li&gt;&lt;a href="#"&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+	    &lt;li&gt;&lt;a href="#"&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+	    &lt;li&gt;&lt;a href="#"&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+	  &lt;/ul&gt;
+	&lt;/div&gt;
+	&lt;/div&gt; &lt;!--end col --&gt;
+
+	&lt;div class="col-xs-4 align-right"&gt;
+	 &lt;button class="btn btn-primary btn-sm"&gt;Call To Action"&lt;/button&gt;
+	&lt;/div&gt; &lt;!--end col --&gt;
+&lt;/div&gt;
+
+ </pre>
+ 								</div>			 
+							 
+						 </div><!-- end example -->
+						
+						
+						
+                        <h3>CF-1.0: Panels & Sections</h3>
                         <p>Admin pages have a background color of #f4f4f4.  To group items, panels are used.  The panels sometimes have sections that are defined by horizontal lines, other times they have just one object inside.  The following are examples of both.  Please right click to "inspect element" and copy the markup between the descriptive comments bookended by "begin..." and "end...".</P>
                         <div class="bs-example">
 							<h4>Single Panel</h4>
@@ -138,7 +201,7 @@
                                 </div>
                             </div>
                             <!-- end panel -->
-							<div class="well">
+							<div class="well mar-top-20">
 <pre class="prettyprint">
 &lt;!-- begin single panel --&gt;
 &lt;div class="panel"&gt;
@@ -177,7 +240,7 @@
                                 </div>
                             </div>
                             <!-- end panel -->
-							<div class="well">
+							<div class="well mar-top-20">
 <pre class="prettyprint">
 &lt;!-- begin multi split row panel --&gt;
 &lt;div class="panel"&gt;
@@ -204,10 +267,10 @@
 </pre>
 							</div><!-- end well -->
 							
-						
 						</div>
+						
 						<h3>Rubric Sections</h3>
-						<p>The following are used for sections.  Add/edit the class "bar-0" in order to add indentation to indicate Sub-Sections.  The icons are TBD for a solution, but this solution should only involve css and not additional html elements.
+						<p>The following are used for sections.  Add/edit the class "bar-0" in order to add indentation to indicate Sub-Sections.  The icons are TBD for a solution, but this solution should only involve css and not additional html elements.</p>
 						 <div class="bs-example">	
 							 <h4>Parent level, first family Rubric Section Bar</h4>
                             <!-- begin section bar - first family-->
@@ -247,8 +310,7 @@
                                 </div>
                             </div>
 							<!-- end section bar-->
-							<br>
-							<div class="well">
+							<div class="well mar-top-20">
 <pre class="prettyprint">
 &lt;!-- begin section bar - first family--&gt;
 &lt;div class="panel section-bar bar-0"&gt;
@@ -330,8 +392,7 @@
                                 </div>
                             </div>
 							<!-- end section bar-->
-							<br>
-							<div class="well">
+							<div class="well mar-top-20">
 <pre class="prettyprint">
 	
 &lt;!-- begin sub-section bar - NOT first family--&gt;
@@ -378,7 +439,22 @@
 						
 						</div><!-- end well -->
 						</div><!-- end example -->
-						
+			
+			
+					 <h3>CF-2.0: Form Fields</h3>
+					 <p>The following are the form fields, dynamic text fields and other input related classess</p>
+					 <div class="bs-example">	
+						 <h4>Dynamic text fields.  Responds to hover and focus</h4>
+						 
+						 <!--begin dynamic text input field -->
+						 <input class="text-edit" placeholder="Enter Title" size="50"></input>
+						<div class="well mar-top-20">
+<pre class="prettyprint">
+&lt;!--begin dynamic text input field --&gt;
+&lt;input class="text-edit" placeholder="Enter Title" size="50"&gt;&lt;/input&gt;
+</pre>
+						</div>
+					 </div> <!-- end example -->
 					 
 					 <h3>Labels and Badges</h3>
 					 <p>For use on all modules of custom focus</p>
@@ -386,8 +462,8 @@
 						  <p><span class="label label-saved">Saved</span>
 						  <span class="label label-published">Published</span>
 						  <span class="label label-locked">Locked</span>
-					  </p>
-						  <div class="well">
+					  	</p>
+						<div class="well mar-top-20">
 <pre class="prettyprint">
   &lt;span class="label label-saved"&gt;Saved&lt;/span&gt;
   &lt;span class="label label-published"&gt;Published&lt;/span&gt;
@@ -399,41 +475,9 @@
 					  
 					  
 					  
-						<h3>Page Header Bars </h3>
-						<p>The following are the call to action bars for tertiary pages.  These usually have a headline text, sometimes editable inputs.  They usually have a call to action on the right.  They should span 100% width with no space on left and right.</p>
-						 <div class="bs-example">
-							 
-							 
-							 <!-- header bar call to action -->
-								 <div class="row header-call">
-									 <div class="col-md-6">
-										 <h2>Normal Headline</h2>
-									 </div> <!--end col -->
-									 
-									 <div class="col-md-3">
-										<div class="btn-group">
-										  <button type="button" class="btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown">
-										    <span>Download Display .pdf</span> <span class="caret"></span>
-										  </button>
-										  <ul class="dropdown-menu" role="menu">
-										    <li><a href="#">Item 1</a></li>
-										    <li><a href="#">Item 2</a></li>
-										    <li><a href="#">Item 3</a></li>
-										  </ul>
-										</div>
-									</div>
-									 </div> <!--end col -->
-									 
-									 <div class="col-md-3">
-										 <button class="btn btn-primary btn-md">Call To Action"</button>
-									 </div> <!--end col -->
-								 </div>
-									 
-							 
-						 </div><!-- end example -->
-						
+					
 						 
-                     </div>
+                     </div><!-- END CUSTOM FOCUS -->
 
 
 

@@ -6401,9 +6401,15 @@ h4.modal-title {
 .align-center {
   text-align: center;
 }
+.align-right {
+  text-align: right;
+}
 .row-admin {
   padding: 0px 30px;
   margin: 0;
+}
+.mar-top-20 {
+  margin-top: 20px;
 }
 .pad-top-30 {
   padding-top: 30px;
@@ -6451,14 +6457,26 @@ h4.modal-title {
     max-width: 1170px;
   }
 }
+/* LESS Document */
 /* CF-0.0 navigation ======================== */
 .header-call {
   width: 100%;
   -webkit-box-shadow: 0px 5px 8px 1px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 5px 8px 1px rgba(0, 0, 0, 0.3);
   margin: 0;
+  padding: 23px 20px 20px 20px;
+  z-index: 900;
 }
-/* CF-1.0 panels, sections ======================== */
+.header-call div h1,
+.header-call div h2,
+.header-call div h3,
+.header-call div h4 {
+  margin: 0;
+}
+.header-call div .btn-group {
+  margin-top: 7px;
+}
+/* CF-1.0 panels and sections ======================== */
 .section-bar {
   border-radius: 0;
   margin: 0;
@@ -6613,29 +6631,4 @@ span.before-add:before {
 }
 .pos-absolute {
   position: absolute;
-}
-.borderless {
-  margin: 15px 0;
-  width: 100%;
-}
-.borderless thead {
-  border-bottom: 1px dotted #eeeeee;
-}
-.borderless thead tr th {
-  font-weight: normal;
-  padding: 5px 15px;
-  color: #732843;
-}
-.borderless thead tr th:first-child {
-  padding-left: 0;
-}
-.borderless thead tr th:last-child {
-  padding-right: 0;
-}
-.borderless tbody tr td {
-  padding: 10px 15px;
-}
-.borderless tbody tr td:first-child,
-.borderless tbody tr th:first-child {
-  padding: 5px 0;
 }
