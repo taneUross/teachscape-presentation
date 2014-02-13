@@ -2,56 +2,57 @@
 
 /* CF-0.0 navigation ======================== */
 .navbar-ts {
-	border-radius: 0px;
-	border: 0px;
-	min-height: 40px;
-	margin-bottom: 0;
-	margin:0;
-	.navbar-collapse {
-		padding-left:0px;
-		padding-right:0px;
-	}
+  background-color: white;
+  border-radius: 0px;
+  border: 0px;
+  min-height: 40px;
+  margin-bottom: 0;
+  margin:0;
+  .navbar-collapse {
+    padding-left:0px;
+    padding-right:0px;
+  }
 }
 
 body {
   background-color: @gray-lighter;
 }
 .nav-ts {
-	li.active {
-		background:@gray-lighter;
-		color:@gray-dark;
-		a {
-			color:@gray-dark;
-		}
-		a:hover {
-			background:@gray-lighter;
-			color:@gray-dark;
-			cursor:arrow;
-		}
-	}
-	li {
-		a:hover {
-			color:white;
-			background:@link-color;
-		}
-	}
+  li.active {
+    background:@gray-lighter;
+    color:@gray-dark;
+    a {
+      color:@gray-dark;
+    }
+    a:hover {
+      background:@gray-lighter;
+      color:@gray-dark;
+      cursor:arrow;
+    }
+  }
+  li {
+    a:hover {
+      color:white;
+      background:@link-color;
+    }
+  }
 }
 
 .header-call {
-	width:100%;
-    -webkit-box-shadow: 0px 5px 8px 1px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 5px 8px 1px rgba(0, 0, 0, 0.3);
-	margin:0;
-	padding:23px 20px 20px 20px;
-	z-index:900;
-	div {
-		h1, h2, h3, h4 {
-			margin:0;
-		}
-		.btn-group {
-			margin-top:7px;
-		}
-	}
+  width:100%;
+  -webkit-box-shadow: 0px 5px 8px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 8px 1px rgba(0, 0, 0, 0.3);
+  margin:0;
+  padding:23px 20px 20px 20px;
+  z-index:900;
+  div {
+    h1, h2, h3, h4 {
+      margin:0;
+    }
+    .btn-group {
+      margin-top:7px;
+    }
+  }
 }
 
 
@@ -59,160 +60,160 @@ body {
 /* CF-1.0 panels and sections ======================== */
 
 .section-bar {
-	border-radius: 0;
-	margin:0;
+  border-radius: 0;
+  margin:0;
 }
 
 .bar-0 {
-	margin-left:0;
-	margin-top:20px;
+  margin-left:0;
+  margin-top:20px;
 }
 .bar-1 {
-	margin-left:10px;
-	margin-top:10px;
+  margin-left:10px;
+  margin-top:10px;
 }
 .bar-2 {
-	margin-left:20px;
-	margin-top:10px;
+  margin-left:20px;
+  margin-top:10px;
 }
 .bar-3 {
-	margin-left:30px;
-	margin-top:10px;
+  margin-left:30px;
+  margin-top:10px;
 }
 .bar-4 {
-	margin-left:40px;
-	margin-top:10px;
+  margin-left:40px;
+  margin-top:10px;
 }
 
 
-/* CF-2.0 Form Input Fields ======================== */	
+/* CF-2.0 Form Input Fields ======================== */
 
 .text-edit {
-	border:1px solid white;
-	padding:0px 5px;
-	margin:0;
+  border:1px solid white;
+  padding:0px 5px;
+  margin:0;
 }
 
 .text-edit:hover {
-	border: 1px solid @gray-light;
-	transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
+  border: 1px solid @gray-light;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
 }
 
 .text-code {
-	margin-right:10px;
-	width:auto;
-	min-width:30px;
-	max-width:100px;
-	font-size: @font-size-large;
+  margin-right:10px;
+  width:auto;
+  min-width:30px;
+  max-width:100px;
+  font-size: @font-size-large;
 }
 
 .text-title {
-	width:300px;
-	min-width: 150px;
-	font-size: @font-size-large;
+  width:300px;
+  min-width: 150px;
+  font-size: @font-size-large;
 }
 
 .text-description {
-	font-size: @font-size-base;
-	width:100%;
-	height:auto;
-	margin-top: 10px;
+  font-size: @font-size-base;
+  width:100%;
+  height:auto;
+  margin-top: 10px;
 }
 
-/* CF-3.0 Buttons ======================== */	
+/* CF-3.0 Buttons ======================== */
 
 button.btn-score {
-	background:none;
-	border:none;
-	color: @link-color;
+  background:none;
+  border:none;
+  color: @link-color;
 }
 button.btn-score:hover {
-	text-decoration:underline;
-	border:none;
+  text-decoration:underline;
+  border:none;
 }
 
 button.btn-score:before {
-	content: "*";
+  content: "*";
 }
 button.btn-score.active:before {
-	content: "**";
+  content: "**";
 }
 
 span.before-add:before {
-	content: "+";
+  content: "+";
 }
 
 .btn-round {
-	-moz-border-radius: 20px;
-	-webkit-border-radius: 20px;
-	border-radius: 20px;
-	height:40px;
-	width:40px;
-	text-align:center;
-	border:none;
-	.gradient(top, lighten(@link-color, 10%), @link-color);
-	color:lighten(#fff, 65%);
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  height:40px;
+  width:40px;
+  text-align:center;
+  border:none;
+  .gradient(top, lighten(@link-color, 10%), @link-color);
+  color:lighten(#fff, 65%);
 }
 
 .btn-round:hover {
-	color:white;
-	.gradient(top, @link-color, darken(@link-color, 15%));
-	transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
+  color:white;
+  .gradient(top, @link-color, darken(@link-color, 15%));
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
 }
 
 .round-delete {
-	position:absolute;
-	right:0;
-	top:-10px;
-	color:@link-color;
-	.gradient(top, lighten(@focus, 65%), lighten(@focus, 65%));
+  position:absolute;
+  right:0;
+  top:-10px;
+  color:@link-color;
+  .gradient(top, lighten(@focus, 65%), lighten(@focus, 65%));
 }
 .round-delete:hover {
-	color:white;
-	.gradient(top, @link-color, darken(@link-color, 15%));
-	transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
+  color:white;
+  .gradient(top, @link-color, darken(@link-color, 15%));
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
 }
 .round-edit {
-	position:absolute;
-	top:-10px;
-	left:180px;
+  position:absolute;
+  top:-10px;
+  left:180px;
 }
 .insert-action {
-	bottom:0px;
-	right:0px;
-	position:absolute;
+  bottom:0px;
+  right:0px;
+  position:absolute;
 }
 
 .no-score-button {
-	left:110px;
+  left:110px;
 }
 
 
 /* CF-5.0 Labels ======================== */
 
 .label-saved {
-	background: @gray-light;
+  background: @gray-light;
 }
 .label-published {
-	background: @focus;
+  background: @focus;
 }
 .label-locked {
-	background: @gray-dark;
+  background: @gray-dark;
 }
 
 /* CF-10.0 Utilities ======================== */
 
 
 .pos-relative {
-	position:relative;
+  position:relative;
 }
 
 .pos-absolute {
-	position:absolute;
+  position:absolute;
 }
