@@ -490,10 +490,10 @@ cite {
   color: #999999;
 }
 .text-primary {
-  color: #428bca;
+  color: #732843;
 }
 a.text-primary:hover {
-  color: #3071a9;
+  color: #4d1b2d;
 }
 .text-success {
   color: #333333;
@@ -521,10 +521,10 @@ a.text-danger:hover {
 }
 .bg-primary {
   color: #fff;
-  background-color: #428bca;
+  background-color: #732843;
 }
 a.bg-primary:hover {
-  background-color: #3071a9;
+  background-color: #4d1b2d;
 }
 .bg-success {
   background-color: #b5dd88;
@@ -3661,7 +3661,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   color: #ffffff;
-  background-color: #428bca;
+  background-color: #732843;
 }
 .nav-stacked > li {
   float: none;
@@ -4260,8 +4260,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .pagination > .active > span:focus {
   z-index: 2;
   color: #ffffff;
-  background-color: #428bca;
-  border-color: #428bca;
+  background-color: #732843;
+  border-color: #732843;
   cursor: default;
 }
 .pagination > .disabled > span,
@@ -4376,11 +4376,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: #808080;
 }
 .label-primary {
-  background-color: #428bca;
+  background-color: #732843;
 }
 .label-primary[href]:hover,
 .label-primary[href]:focus {
-  background-color: #3071a9;
+  background-color: #4d1b2d;
 }
 .label-success {
   background-color: #5cb85c;
@@ -4618,7 +4618,7 @@ a.thumbnail.active {
   line-height: 22px;
   color: #ffffff;
   text-align: center;
-  background-color: #428bca;
+  background-color: #732843;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   -webkit-transition: width 0.6s ease;
@@ -4732,8 +4732,8 @@ a.list-group-item.active:hover,
 a.list-group-item.active:focus {
   z-index: 2;
   color: #ffffff;
-  background-color: #428bca;
-  border-color: #428bca;
+  background-color: #732843;
+  border-color: #732843;
 }
 a.list-group-item.active .list-group-item-heading,
 a.list-group-item.active:hover .list-group-item-heading,
@@ -4743,7 +4743,7 @@ a.list-group-item.active:focus .list-group-item-heading {
 a.list-group-item.active .list-group-item-text,
 a.list-group-item.active:hover .list-group-item-text,
 a.list-group-item.active:focus .list-group-item-text {
-  color: #e1edf7;
+  color: #d88fa9;
 }
 .list-group-item-success {
   color: #333333;
@@ -5055,18 +5055,18 @@ a.list-group-item-danger.active:focus {
   border-bottom-color: #dddddd;
 }
 .panel-primary {
-  border-color: #428bca;
+  border-color: #732843;
 }
 .panel-primary > .panel-heading {
   color: #ffffff;
-  background-color: #428bca;
-  border-color: #428bca;
+  background-color: #732843;
+  border-color: #732843;
 }
 .panel-primary > .panel-heading + .panel-collapse .panel-body {
-  border-top-color: #428bca;
+  border-top-color: #732843;
 }
 .panel-primary > .panel-footer + .panel-collapse .panel-body {
-  border-bottom-color: #428bca;
+  border-bottom-color: #732843;
 }
 .panel-success {
   border-color: #b9d774;
@@ -6360,7 +6360,7 @@ h3 {
 }
 h4,
 h5 {
-  color: #428bca;
+  color: #732843;
 }
 /*	2.1.1 Heading for Message Box & Modals ------------------------ */
 .bs-callout h4 {
@@ -6424,21 +6424,6 @@ h4.modal-title {
   filter: alpha(opacity=70);
 }
 /*	5.3 Table ------------------------------------------------------- */
-th {
-  font-weight: normal;
-  color: #428bca;
-  padding: 5px 15px;
-  border-bottom: 1px dotted #999999;
-}
-td {
-  padding: 10px 15px;
-}
-td:first-child,
-td:last-child,
-th:first-child,
-th:last-child {
-  padding: 5px 0;
-}
 /*	6.0  Background Elements ---------------------------------------- */
 .panel {
   border-radius: 0.5em;
@@ -6557,7 +6542,6 @@ th:last-child {
     max-width: 1170px;
   }
 }
-/* LESS Document */
 /* CF-1.0 panels and sections ======================== */
 .section-bar {
   border-radius: 0;
@@ -6697,4 +6681,29 @@ span.before-add:before {
 }
 .pos-absolute {
   position: absolute;
+}
+.borderless {
+  margin: 15px 0;
+  width: 100%;
+}
+.borderless thead {
+  border-bottom: 1px dotted #eeeeee;
+}
+.borderless thead tr th {
+  font-weight: normal;
+  padding: 5px 15px;
+  color: #732843;
+}
+.borderless thead tr th:first-child {
+  padding-left: 0;
+}
+.borderless thead tr th:last-child {
+  padding-right: 0;
+}
+.borderless tbody tr td {
+  padding: 10px 15px;
+}
+.borderless tbody tr td:first-child,
+.borderless tbody tr th:first-child {
+  padding: 5px 0;
 }

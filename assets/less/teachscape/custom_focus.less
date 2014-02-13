@@ -1,4 +1,3 @@
-/* LESS Document */
 
 /* CF-1.0 panels and sections ======================== */
 
@@ -159,4 +158,42 @@ span.before-add:before {
 
 .pos-absolute {
 	position:absolute;
+}
+
+.borderless {
+  margin: 15px 0;
+  width:100%;
+  thead {
+
+    border-bottom:1px dotted @gray-lighter;
+
+    tr  {
+      th {
+        font-weight: normal;
+        padding:5px 15px;
+        color: @brand-primary;  // If not sortable.
+
+      }
+      th:first-child {
+        padding-left:0;
+      }
+      th:last-child {
+        padding-right:0;
+      }
+
+    }
+  }
+  tbody {
+    tr {
+      td {
+        padding:  10px 15px;
+      }
+      td:first-child,
+      th:first-child {
+        padding: 5px 0;
+      }
+
+    }
+
+  }
 }
