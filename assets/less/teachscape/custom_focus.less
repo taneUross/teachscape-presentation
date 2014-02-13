@@ -1,9 +1,40 @@
 /* LESS Document */
 
 /* CF-0.0 navigation ======================== */
+.navbar-ts {
+	border-radius: 0px;
+	border: 0px;
+	min-height: 40px;
+	margin-bottom: 0;
+	margin:0;
+	.navbar-collapse {
+		padding-left:0px;
+		padding-right:0px;
+	}
+}
 
 body {
   background-color: @gray-lighter;
+}
+.nav-ts {
+	li.active {
+		background:@gray-lighter;
+		color:@gray-dark;
+		a {
+			color:@gray-dark;
+		}
+		a:hover {
+			background:@gray-lighter;
+			color:@gray-dark;
+			cursor:arrow;
+		}
+	}
+	li {
+		a:hover {
+			color:white;
+			background:@link-color;
+		}
+	}
 }
 
 .header-call {
