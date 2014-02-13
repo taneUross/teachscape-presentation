@@ -3,13 +3,148 @@
 
 .section-bar {
 	border-radius: 0;
+	margin:0;
 }
 
-input .text-edit {
-	border:white;
+.bar-0 {
+	margin-left:0;
+	margin-top:20px;
 }
-input .text-edit:focus {
-	border: @gray-light;
+.bar-1 {
+	margin-left:10px;
+	margin-top:10px;
+}
+.bar-2 {
+	margin-left:20px;
+	margin-top:10px;
+}
+.bar-3 {
+	margin-left:30px;
+	margin-top:10px;
+}
+.bar-4 {
+	margin-left:40px;
+	margin-top:10px;
+}
+
+
+/* CF-2.0 Form Input Fields ======================== */	
+
+.text-edit {
+	border:1px solid white;
+	padding:0px 5px;
+	margin:0;
+}
+
+.text-edit:hover {
+	border: 1px solid @gray-light;
+	transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+}
+
+.text-code {
+	margin-right:10px;
+	width:auto;
+	min-width:30px;
+	max-width:100px;
+	font-size: @font-size-large;
+}
+
+.text-title {
+	width:300px;
+	min-width: 150px;
+	font-size: @font-size-large;
+}
+
+.text-description {
+	font-size: @font-size-base;
+	width:100%;
+	height:auto;
+	margin-top: 10px;
+}
+
+/* CF-3.0 Buttons ======================== */	
+
+button.btn-score {
+	background:none;
+	border:none;
+	color: @link-color;
+}
+button.btn-score:hover {
+	text-decoration:underline;
+	border:none;
+}
+
+button.btn-score:before {
+	content: "*";
+}
+button.btn-score.active:before {
+	content: "**";
+}
+
+span.before-add:before {
+	content: "+";
+}
+
+.btn-round {
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	height:40px;
+	width:40px;
+	text-align:center;
+	border:none;
+	.gradient(top, lighten(@link-color, 10%), @link-color);
+	color:lighten(#fff, 65%);
+}
+
+.btn-round:hover {
+	color:white;
+	.gradient(top, @link-color, darken(@link-color, 15%));
+	transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+}
+
+.round-delete {
+	position:absolute;
+	right:0;
+	top:-10px;
+	color:@link-color;
+	.gradient(top, lighten(@focus, 65%), lighten(@focus, 65%));
+}
+.round-delete:hover {
+	color:white;
+	.gradient(top, @link-color, darken(@link-color, 15%));
+	transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+}
+.round-edit {
+	position:absolute;
+	top:-10px;
+	left:180px;
+}
+.insert-action {
+	bottom:0px;
+	right:0px;
+	position:absolute;
+}
+
+.no-score-button {
+	left:110px;
+}
+
+/* CF-10.0 Utilities ======================== */
+
+
+.pos-relative {
+	position:relative;
+}
+
+.pos-absolute {
+	position:absolute;
 }
 
 .borderless {

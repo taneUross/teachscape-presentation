@@ -754,13 +754,71 @@ pre code {
   margin-left: -15px;
   margin-right: -15px;
 }
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
-.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12 {
   float: left;
 }
 .col-xs-12 {
@@ -917,7 +975,18 @@ pre code {
   margin-left: 0%;
 }
 @media (min-width: 768px) {
-  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+  .col-sm-1,
+  .col-sm-2,
+  .col-sm-3,
+  .col-sm-4,
+  .col-sm-5,
+  .col-sm-6,
+  .col-sm-7,
+  .col-sm-8,
+  .col-sm-9,
+  .col-sm-10,
+  .col-sm-11,
+  .col-sm-12 {
     float: left;
   }
   .col-sm-12 {
@@ -1075,7 +1144,18 @@ pre code {
   }
 }
 @media (min-width: 992px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  .col-md-1,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-md-8,
+  .col-md-9,
+  .col-md-10,
+  .col-md-11,
+  .col-md-12 {
     float: left;
   }
   .col-md-12 {
@@ -1233,7 +1313,18 @@ pre code {
   }
 }
 @media (min-width: 1200px) {
-  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+  .col-lg-1,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9,
+  .col-lg-10,
+  .col-lg-11,
+  .col-lg-12 {
     float: left;
   }
   .col-lg-12 {
@@ -1692,14 +1783,14 @@ output {
   border-radius: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
 .form-control:focus {
   border-color: #83cae8;
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(131, 202, 232, 0.6);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(131, 202, 232, 0.6);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(131, 202, 232, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(131, 202, 232, 0.6);
 }
 .form-control:-moz-placeholder {
   color: #999999;
@@ -3051,7 +3142,7 @@ input[type="button"].btn-block {
   text-decoration: none;
   background-color: transparent;
   background-image: none;
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
   cursor: not-allowed;
 }
 .open > .dropdown-menu {
@@ -6307,7 +6398,10 @@ h4.modal-title {
 }
 /*	4. Header ------------------------------------------------------ */
 /*	5. Content ----------------------------------------------------- */
-/*	5.1 Nav -------------------------------------------------------- */
+/*	5.1 Nav & Buttons ---------------------------------------------- */
+.dropdown-menu > li > a {
+  color: #2f4fa2;
+}
 /*	5.1.1 Breadcrumb ----------------------------------------------- */
 .breadcrumb > li + li:before {
   padding: 0 5px;
@@ -6391,6 +6485,10 @@ h4.modal-title {
   /*-- make smaller font size --*/
   font-size: 14px;
 }
+.larger {
+  /*-- make larger font size --*/
+  font-size: 20px;
+}
 .align-center {
   text-align: center;
 }
@@ -6447,12 +6545,142 @@ h4.modal-title {
 /* CF-1.0 panels and sections ======================== */
 .section-bar {
   border-radius: 0;
+  margin: 0;
 }
-input .text-edit {
-  border: white;
+.bar-0 {
+  margin-left: 0;
+  margin-top: 20px;
 }
-input .text-edit:focus {
-  border: #999999;
+.bar-1 {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.bar-2 {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.bar-3 {
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.bar-4 {
+  margin-left: 40px;
+  margin-top: 10px;
+}
+/* CF-2.0 Form Input Fields ======================== */
+.text-edit {
+  border: 1px solid white;
+  padding: 0px 5px;
+  margin: 0;
+}
+.text-edit:hover {
+  border: 1px solid #999999;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+}
+.text-code {
+  margin-right: 20px;
+  width: 65px;
+  max-width: 100px;
+  font-size: 20px;
+}
+.text-title {
+  width: 300px;
+  min-width: 150px;
+  font-size: 20px;
+}
+.text-description {
+  font-size: 16px;
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+/* CF-3.0 Buttons ======================== */
+button.btn-score {
+  background: none;
+  border: none;
+  color: #2f4fa2;
+}
+button.btn-score:hover {
+  text-decoration: underline;
+  border: none;
+}
+button.btn-score:before {
+  content: "*";
+}
+button.btn-score.active:before {
+  content: "**";
+}
+span.before-add:before {
+  content: "+";
+}
+.btn-round {
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  border: none;
+  background-color: #3d63c7;
+  background-image: -webkit-linear-gradient(top, #3d63c7, #2f4fa2);
+  background-image: -moz-linear-gradient(top, #3d63c7, #2f4fa2);
+  background-image: -o-linear-gradient(top, #3d63c7, #2f4fa2);
+  background-image: -ms-linear-gradient(top, #3d63c7, #2f4fa2);
+  background-image: linear-gradient(top, #3d63c7, #2f4fa2);
+  color: #ffffff;
+}
+.btn-round:hover {
+  color: white;
+  background-color: #2f4fa2;
+  background-image: -webkit-linear-gradient(top, #2f4fa2, #1e3267);
+  background-image: -moz-linear-gradient(top, #2f4fa2, #1e3267);
+  background-image: -o-linear-gradient(top, #2f4fa2, #1e3267);
+  background-image: -ms-linear-gradient(top, #2f4fa2, #1e3267);
+  background-image: linear-gradient(top, #2f4fa2, #1e3267);
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+}
+.round-delete {
+  position: absolute;
+  right: 0;
+  top: -10px;
+  background: #ddeff8;
+  color: #2f4fa2;
+}
+.round-delete:hover {
+  color: white;
+  background-color: #2f4fa2;
+  background-image: -webkit-linear-gradient(top, #2f4fa2, #1e3267);
+  background-image: -moz-linear-gradient(top, #2f4fa2, #1e3267);
+  background-image: -o-linear-gradient(top, #2f4fa2, #1e3267);
+  background-image: -ms-linear-gradient(top, #2f4fa2, #1e3267);
+  background-image: linear-gradient(top, #2f4fa2, #1e3267);
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+}
+.round-edit {
+  position: absolute;
+  top: -10px;
+  left: 180px;
+}
+.insert-action {
+  bottom: 0px;
+  right: 0px;
+  position: absolute;
+}
+.no-score-button {
+  left: 110px;
+}
+/* CF-10.0 Utilities ======================== */
+.pos-relative {
+  position: relative;
+}
+.pos-absolute {
+  position: absolute;
 }
 .borderless {
   margin: 15px 0;
