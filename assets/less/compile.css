@@ -6336,8 +6336,8 @@ h4.modal-title {
 /*	6.0  Background Elements ---------------------------------------- */
 .panel {
   border-radius: 0.5em;
-  -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
 }
 .panel-content {
   margin: 0px 25px;
@@ -6460,6 +6460,7 @@ h4.modal-title {
 /* LESS Document */
 /* CF-0.0 navigation ======================== */
 .navbar-ts {
+  background-color: white;
   border-radius: 0px;
   border: 0px;
   min-height: 40px;
@@ -6469,6 +6470,9 @@ h4.modal-title {
 .navbar-ts .navbar-collapse {
   padding-left: 0px;
   padding-right: 0px;
+}
+body {
+  background-color: #eeeeee;
 }
 .nav-ts li.active {
   background: #eeeeee;
@@ -6480,7 +6484,7 @@ h4.modal-title {
 .nav-ts li.active a:hover {
   background: #eeeeee;
   color: #333333;
-  cursor: normal;
+  cursor: arrow;
 }
 .nav-ts li a:hover {
   color: white;
@@ -6488,8 +6492,8 @@ h4.modal-title {
 }
 .header-call {
   width: 100%;
-  -webkit-box-shadow: 0px 5px 8px 1px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 5px 8px 1px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
   margin: 0;
   padding: 23px 20px 20px 20px;
   z-index: 900;
