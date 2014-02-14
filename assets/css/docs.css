@@ -1081,3 +1081,13 @@ h1[id] {
   margin-top: 15px;
   margin-bottom: 5px;
 }
+
+/* Prettify style overwrites */
+pre.prettyprint {
+	padding: 2px;
+	border:none;
+}
+pre { 
+	border:none;
+	
+}

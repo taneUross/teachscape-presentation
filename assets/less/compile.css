@@ -6292,6 +6292,18 @@ h4.modal-title {
   width: 1px;
 }
 /*	3. Color ------------------------------------------------------ */
+.btn.disabled {
+  background: none;
+  color: #555555;
+  border: 1px solid #555555;
+}
+.disabled {
+  color: #999999;
+}
+.disabled:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 /*	3.1 Product Specific ------------------------------------------ */
 .reflect {
   color: #006b33;
@@ -6444,6 +6456,12 @@ h4.modal-title {
 }
 .label-focus {
   background: #175473;
+}
+.pos-relative {
+  position: relative;
+}
+.pos-absolute {
+  position: absolute;
 }
 @state-success #2f8d29;
 @media (min-width: 768px) {
