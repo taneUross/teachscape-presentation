@@ -6427,6 +6427,9 @@ h4.modal-title {
 .mar-top-20 {
   margin-top: 20px;
 }
+.mar-bot-20 {
+  margin-bottom: 20px;
+}
 .pad-top-30 {
   padding-top: 30px;
 }
@@ -6457,11 +6460,22 @@ h4.modal-title {
 .label-focus {
   background: #175473;
 }
+<<<<<<< HEAD
 .pos-relative {
   position: relative;
 }
 .pos-absolute {
   position: absolute;
+=======
+.btn.disabled,
+.btn[disabled],
+fieldset[disabled] .btn,
+.btn-default[disabled] {
+  opacity: none;
+  background: none;
+  color: #555555;
+  border-color: #555555;
+>>>>>>> 7bb3e3d320e27ed24557bc327ddeeb8d47fe9816
 }
 @state-success #2f8d29;
 @media (min-width: 768px) {
