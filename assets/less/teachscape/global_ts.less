@@ -185,6 +185,10 @@ h4.modal-title {
 	margin-top:20px;
 }
 
+.mar-bot-20 {
+  margin-bottom:20px;
+}
+
 .pad-top-30 {
   padding-top:30px;
 }
@@ -232,6 +236,13 @@ h4.modal-title {
     background-image: -o-linear-gradient(@origin, @start, @stop);
     background-image: -ms-linear-gradient(@origin, @start, @stop);
     background-image: linear-gradient(@origin, @start, @stop);
+}
+
+.btn.disabled, .btn[disabled], fieldset[disabled] .btn, .btn-default[disabled] {
+    opacity: none;
+    background: none;
+    color: @gray;
+    border-color: @gray;
 }
 
 

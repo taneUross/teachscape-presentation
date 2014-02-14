@@ -6411,6 +6411,9 @@ h4.modal-title {
 .mar-top-20 {
   margin-top: 20px;
 }
+.mar-bot-20 {
+  margin-bottom: 20px;
+}
 .pad-top-30 {
   padding-top: 30px;
 }
@@ -6441,6 +6444,15 @@ h4.modal-title {
 .label-focus {
   background: #175473;
 }
+.btn.disabled,
+.btn[disabled],
+fieldset[disabled] .btn,
+.btn-default[disabled] {
+  opacity: none;
+  background: none;
+  color: #555555;
+  border-color: #555555;
+}
 @state-success #2f8d29;
 @media (min-width: 768px) {
   .container {
@@ -6460,6 +6472,7 @@ h4.modal-title {
 /* LESS Document */
 /* CF-0.0 navigation ======================== */
 .navbar-ts {
+  background-color: white;
   border-radius: 0px;
   border: 0px;
   min-height: 40px;
@@ -6469,6 +6482,9 @@ h4.modal-title {
 .navbar-ts .navbar-collapse {
   padding-left: 0px;
   padding-right: 0px;
+}
+.admin-background {
+  background-color: #eeeeee;
 }
 .nav-ts li.active {
   background: #eeeeee;
@@ -6480,7 +6496,7 @@ h4.modal-title {
 .nav-ts li.active a:hover {
   background: #eeeeee;
   color: #333333;
-  cursor: normal;
+  cursor: arrow;
 }
 .nav-ts li a:hover {
   color: white;
