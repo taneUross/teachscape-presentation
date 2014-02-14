@@ -258,9 +258,34 @@
 						 </div><!-- end example -->
 						
 						
+						 <h3>CF-1.0: Typography</h3>
+						 <p>Custom Focus specific headline spacing variations.  The first example shows a structure (admin-wrap has bg color for page, row-admin provides spacing on a bootstrap row) that should immediately follow a navbar (includes spacing for the top areas of the page below the nav)<p>
+						
+						<div class="bs-example">
+							<h3>Page Headline (primary pages)- top of the page when there is NOT a header-bar required.<h3>
+						  <div class="row row-admin admin-wrap">
+					  		  <div class="cf-page-header">
+					  		  	<h5 class="">Welcome [admin-name]</h5>
+					  			<h2 class="mar-top-20">Custom Focus Overview</h2>
+							</div>
+					  	  </div> <!-- admin-wrap -->
+ 							<div class="well mar-top-20">
+<pre class="prettyprint">
+	
+&lt;div class="row row-admin admin-wrap"&gt;
+	&lt;div class="cf-page-header"&gt;
+		&lt;h5 class=""&gt;Welcome [admin-name]&lt;/h5&gt;
+		&lt;h2 class="mar-top-20"&gt;Custom Focus Overview&lt;/h2&gt;
+	&lt;/div&gt;
+&lt;/div&gt; &lt;!-- admin-wrap --&gt;	
+	
+</pre>
+							</div><!-- end well -->
+						  
+						</div><!-- end example -->
 						
                         <h3>CF-1.0: Panels & Sections</h3>
-                        <p>Admin pages have a background color of #f4f4f4.  To group items, panels are used.  The panels sometimes have sections that are defined by horizontal lines, other times they have just one object inside.  The following are examples of both.  Please right click to "inspect element" and copy the markup between the descriptive comments bookended by "begin..." and "end...".</P>
+                        <p>To group items, panels are used.  The panels sometimes have sections that are defined by horizontal lines, other times they have just one object inside.  The following are examples of both.  Please right click to "inspect element" and copy the markup between the descriptive comments bookended by "begin..." and "end...".</P>
                         <div class="bs-example">
 							<h4>Single Panel</h4>
                             <!-- begin single panel -->
