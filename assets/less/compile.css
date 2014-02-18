@@ -6292,14 +6292,6 @@ h4.modal-title {
   width: 1px;
 }
 /*	3. Color ------------------------------------------------------ */
-.btn.disabled {
-  background: none;
-  color: #555555;
-  border: 1px solid #555555;
-}
-.disabled {
-  color: #999999;
-}
 .disabled:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -6326,6 +6318,15 @@ h4.modal-title {
 /*	5.1 Nav & Buttons ---------------------------------------------- */
 .dropdown-menu > li > a {
   color: #2f4fa2;
+}
+.btn.disabled,
+.btn[disabled],
+fieldset[disabled] .btn,
+.btn-default[disabled] {
+  opacity: none;
+  background: none;
+  color: #555555;
+  border-color: #555555;
 }
 /*	5.1.1 Breadcrumb ----------------------------------------------- */
 .breadcrumb > li + li:before {
@@ -6460,22 +6461,11 @@ h4.modal-title {
 .label-focus {
   background: #175473;
 }
-<<<<<<< HEAD
 .pos-relative {
   position: relative;
 }
 .pos-absolute {
   position: absolute;
-=======
-.btn.disabled,
-.btn[disabled],
-fieldset[disabled] .btn,
-.btn-default[disabled] {
-  opacity: none;
-  background: none;
-  color: #555555;
-  border-color: #555555;
->>>>>>> 7bb3e3d320e27ed24557bc327ddeeb8d47fe9816
 }
 @state-success #2f8d29;
 @media (min-width: 768px) {
@@ -6507,7 +6497,7 @@ fieldset[disabled] .btn,
   padding-left: 0px;
   padding-right: 0px;
 }
-body {
+.admin-background {
   background-color: #eeeeee;
 }
 .nav-ts li.active {

@@ -60,16 +60,6 @@ h4.modal-title {
 
 /*	3. Color ------------------------------------------------------ */
 
-.btn.disabled {
-	background:none;
-	color:@gray;
-	border:1px solid @gray;
-}
-
-.disabled {
-	color:@gray-light;
-}
-
 .disabled:focus {
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -96,6 +86,13 @@ h4.modal-title {
 /*	5.1 Nav & Buttons ---------------------------------------------- */
 .dropdown-menu > li > a {
 	color:@link-color;
+}
+
+.btn.disabled, .btn[disabled], fieldset[disabled] .btn, .btn-default[disabled] {
+  opacity: none;
+  background: none;
+  color: @gray;
+  border-color: @gray;
 }
 
 /*	5.1.1 Breadcrumb ----------------------------------------------- */
@@ -265,13 +262,6 @@ h4.modal-title {
     background-image: -o-linear-gradient(@origin, @start, @stop);
     background-image: -ms-linear-gradient(@origin, @start, @stop);
     background-image: linear-gradient(@origin, @start, @stop);
-}
-
-.btn.disabled, .btn[disabled], fieldset[disabled] .btn, .btn-default[disabled] {
-    opacity: none;
-    background: none;
-    color: @gray;
-    border-color: @gray;
 }
 
 
