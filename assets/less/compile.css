@@ -6527,7 +6527,20 @@ fieldset[disabled] .btn,
 }
 /* LESS Document */
 /* CF-0.0 background ================================== */
-/* CF-1.0 navigation & buttons ======================== */
+/* CF-1.0 typography ================================== */
+.cf-page-header {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.cf-page-header h5,
+.cf-page-header h6 {
+  font-size: 16px;
+  margin: 0 0 4px 0;
+}
+.cf-page-header h1,
+.cf-page-header h2 {
+  margin: 0;
+}
 /* CF-2.0 navigation & buttons ======================== */
 .navbar-ts {
   background-color: white;
@@ -6577,76 +6590,6 @@ fieldset[disabled] .btn,
 .header-call div .btn-group {
   margin-top: 7px;
 }
-/* CF-1.0  typography   */
-.cf-page-header {
-  margin-top: 30px;
-  margin-bottom: 40px;
-}
-.cf-page-header h5,
-.cf-page-header h6 {
-  font-size: 16px;
-  margin: 0 0 4px 0;
-}
-.cf-page-header h1,
-.cf-page-header h2 {
-  margin: 0;
-}
-/* CF-1.0 panels and sections ======================== */
-.section-bar {
-  border-radius: 0;
-  margin: 0;
-}
-.bar-0 {
-  margin-left: 0;
-  margin-top: 20px;
-}
-.bar-1 {
-  margin-left: 10px;
-  margin-top: 10px;
-}
-.bar-2 {
-  margin-left: 20px;
-  margin-top: 10px;
-}
-.bar-3 {
-  margin-left: 30px;
-  margin-top: 10px;
-}
-.bar-4 {
-  margin-left: 40px;
-  margin-top: 10px;
-}
-/* CF-2.0 Form Input Fields ======================== */
-.text-edit {
-  border: 1px solid white;
-  padding: 0px 5px;
-  margin: 0;
-}
-.text-edit:hover {
-  border: 1px solid #999999;
-  transition: all 0.25s ease-in-out;
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-}
-.text-code {
-  margin-right: 10px;
-  width: auto;
-  min-width: 30px;
-  max-width: 100px;
-  font-size: 20px;
-}
-.text-title {
-  width: 300px;
-  min-width: 150px;
-  font-size: 20px;
-}
-.text-description {
-  font-size: 16px;
-  width: 100%;
-  height: auto;
-  margin-top: 10px;
-}
-/* CF-3.0 Buttons ======================== */
 button.btn-score {
   background: none;
   border: none;
@@ -6730,7 +6673,76 @@ span.before-add:before {
 .no-score-button {
   left: 110px;
 }
-/* CF-5.0 Labels ======================== */
+/* CF-3.0 panels and sections ======================== */
+.section-bar {
+  border-radius: 0;
+  margin: 0;
+}
+.bar-0 {
+  margin-left: 0;
+  margin-top: 20px;
+}
+.bar-1 {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.bar-2 {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.bar-3 {
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.bar-4 {
+  margin-left: 40px;
+  margin-top: 10px;
+}
+/* CF-4.0 Forms ======================== */
+.text-edit {
+  border: 1px solid white;
+  padding: 0px 5px;
+  margin: 0;
+}
+.text-edit:hover {
+  border: 1px solid #999999;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+}
+.text-code {
+  margin-right: 10px;
+  width: auto;
+  min-width: 30px;
+  max-width: 100px;
+  font-size: 20px;
+}
+.text-title {
+  width: 300px;
+  min-width: 150px;
+  font-size: 20px;
+}
+.text-description {
+  font-size: 16px;
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+/* CF-5.0 tables ============================ */
+table.borderless {
+  width: 100%;
+}
+table.borderless thead td {
+  color: #222222;
+  padding: 0px 0px 5px 0px;
+  border-bottom: 1px solid #333333;
+}
+table.borderless tbody td {
+  color: #333333;
+  padding: 15px 0;
+  border: none;
+}
+/* CF-6.0 components ======================== */
 .label-saved {
   background: #999999;
 }
