@@ -88,6 +88,25 @@ h4.modal-title {
 	color:@link-color;
 }
 
+.btn-primary {
+	.gradient(top, @link-color, darken(@link-color, 10%));
+}
+
+.btn-primary:hover {
+	.gradient(top, darken(@link-color, 10%), darken(@link-color, 10%));
+}
+
+.btn-default {
+	.gradient(top, white, darken(white, 5%));
+}
+
+.btn-default:hover {
+	.gradient(top, darken(white, 1%), darken(white, 1%));
+    -webkit-box-shadow: 0px 0px 5px 0px @brand-info;
+    box-shadow: 0px 0px 5px 0px @brand-info;
+	border:1px solid @gray;
+}
+
 .btn.disabled, .btn[disabled], fieldset[disabled] .btn, .btn-default[disabled] {
   opacity: none;
   background: none;
