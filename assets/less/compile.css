@@ -6350,6 +6350,13 @@ fieldset[disabled] .btn,
   filter: alpha(opacity=70);
 }
 /*	5.3 Table ------------------------------------------------------- */
+/*	5.4 Input Groups ------------------------------------------------------- */
+.glyphicon.glyphicon-search {
+  top: 0px;
+}
+.input-group-addon.glyphicon-search {
+  background-color: white;
+}
 /*	6.0  Background Elements ---------------------------------------- */
 .panel {
   border-radius: 0.5em;
@@ -6484,7 +6491,9 @@ fieldset[disabled] .btn,
   }
 }
 /* LESS Document */
-/* CF-0.0 navigation ======================== */
+/* CF-0.0 background ================================== */
+/* CF-1.0 navigation & buttons ======================== */
+/* CF-2.0 navigation & buttons ======================== */
 .navbar-ts {
   background-color: white;
   border-radius: 0px;
