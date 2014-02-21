@@ -124,23 +124,72 @@
 						 <h3>CF-1.0: Typography</h3>
 						 <p>Custom Focus specific headline spacing variations.  The first example shows a structure (admin-wrap has bg color for page, row-admin provides spacing on a bootstrap row) that should immediately follow a navbar (includes spacing for the top areas of the page below the nav)<p>
 						
+						<h4>Landing and splash page headline without call to action</h4>
+						<p>This should not have a background bar, it should be on the page background</p>
 						<div class="bs-example">
-							<h3>Page Headline (primary pages)- top of the page when there is NOT a header-bar required.<h3>
-						  <div class="row row-admin admin-wrap">
-					  		  <div class="cf-page-header">
-					  		  	<h5 class="">Welcome [admin-name]</h5>
-					  			<h2 class="mar-top-20">Custom Focus Overview</h2>
+
+						 <!-- start cf-headline without call -->
+						  <div class="row">
+							  <div class="col-xs-12">
+						  		  <div class="cf-page-header">
+						  		  	<h5 class="">Welcome [admin-name]</h5>
+						  			<h2 class="mar-top-20">Custom Focus Overview</h2>
+								</div>
 							</div>
 					  	  </div> <!-- admin-wrap -->
+						 <!-- end cf-headline without call --> 
+						 
  							<div class="well mar-top-20">
 <pre class="prettyprint">
-	
-&lt;div class="row row-admin admin-wrap"&gt;
-	&lt;div class="cf-page-header"&gt;
-		&lt;h5 class=""&gt;Welcome [admin-name]&lt;/h5&gt;
-		&lt;h2 class="mar-top-20"&gt;Custom Focus Overview&lt;/h2&gt;
+&lt;!-- start cf-headline without call --&gt;	
+&lt;div class="row"&gt;
+	&lt;div class="col-xs-12"&gt;
+		&lt;div class="cf-page-header"&gt;
+			&lt;h5 class=""&gt;Welcome [admin-name]&lt;/h5&gt;
+			&lt;h2 class="mar-top-20"&gt;Custom Focus Overview&lt;/h2&gt;
+		&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt; &lt;!-- admin-wrap --&gt;	
+&lt;!-- end cf-headline without call --&gt;
+</pre>
+							</div><!-- end well -->
+						  
+						</div><!-- end example -->
+
+						<h4>Landing and splash page headline with call to action</h4>
+						<p>This should not be on a background bar, it should be on the page background.  This one has a call to action</p>
+						<div class="bs-example">
+						  
+						<!-- start cf-headline with call -->
+						  <div class="row">
+							  <div class="col-xs-8">
+						  		  <div class="cf-page-header">
+						  		  	<h5 class="">Welcome [admin-name]</h5>
+						  			<h2 class="mar-top-20">Custom Focus Overview</h2>
+								</div>
+							 </div>
+							 <div class="col-xs-4 align-right mar-top-20 pad-top-20">
+									<button class="btn btn-primary btn-md">Call To Action</button>
+							</div>
+					  	  </div> <!-- end row -->
+						<!-- end cf-headline with call -->
+						 
+ 							<div class="well mar-top-20">
+<pre class="prettyprint">
+
+&lt;!-- start cf-headline with call --&gt;
+  &lt;div class="row"&gt;
+	  &lt;div class="col-xs-8"&gt;
+  		  &lt;div class="cf-page-header"&gt;
+  		  	&lt;h5 class=""&gt;Welcome [admin-name]&lt;/h5&gt;
+  			&lt;h2 class="mar-top-20"&gt;Custom Focus Overview&lt;/h2&gt;
+		&lt;/div&gt;
+	 &lt;/div&gt;
+	 &lt;div class="col-xs-4 align-right mar-top-20 pad-top-20"&gt;
+			&lt;button class="btn btn-primary btn-md"&gt;Call To Action&lt;/button&gt;
+	&lt;/div&gt;
+  &lt;/div&gt; &lt;!-- end row --&gt;
+&lt;!-- end cf-headline with call --&gt;
 	
 </pre>
 							</div><!-- end well -->
@@ -168,9 +217,13 @@
 						
 						<h4>Primary Product Navbar</h4>
 						<p>This contains the links to the pages within the product and for help.</p>
+						<div class="bs-example">
+							
+							
+							
+							
 						
-						
-						
+						</div><!-- end example -->
 						
 						
 						<h4>Title Bars</h4>
