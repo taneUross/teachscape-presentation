@@ -119,11 +119,86 @@
                         <h1><span aria-hidden="true" data-icon="&#xe002;" class="focus"></span> Custom Focus: Admin</h1>
 						
 						
-						<h3>CF-0.0: Backgrounds</h3>
+						<h3>CF-0.0: Backgrounds & Grid</h3>
+						<h4>Grid columns without gutters</h4>
+						<p>For when you don't want columns to have gutters</p>
 						
-						 <h3>CF-1.0: Typography</h3>
-						 <p>Custom Focus specific headline spacing variations.  The first example shows a structure (admin-wrap has bg color for page, row-admin provides spacing on a bootstrap row) that should immediately follow a navbar (includes spacing for the top areas of the page below the nav)<p>
+ 						<div class="bs-example">
+
+ 						 <!-- begin gutterless columns -->
+ 						  <div class="row">
+ 							  <div class="col-xs-4 col-no-gutter">
+ 						  		  <div class="admin-wrap">
+ 						  			<h3 class="mar-top-20">Notice How the Text Hugs The Edges of col-xs-4</h3>
+ 								  </div>
+								</div>
+								<div class="col-xs-4 col-no-gutter">
+									<h3 class="mar-top-20">Notice How the Text Hugs The Edges of col-xs-4</h3>
+								</div>
+ 							</div>
+ 					  	  </div> <!-- row -->
+ 						 <!-- end gutterless columns --> 
+					 
+  							<div class="well mar-top-20">
+ <pre class="prettyprint">
+&lt;!-- gutterless columns --&gt;	
+&lt;div class="row"&gt;
+  &lt;div class="col-xs-4 col-no-gutter"&gt;
+   &lt;h2 class="mar-top-20"&gt;Notice How the Text Hugs The Edges of col-xs-4&lt;/h2&gt;
+  &lt;/div&gt;
+&lt;/div&gt; &lt;!-- row --&gt;	 
+&lt;!-- gutterless columns --&gt;
+ </pre>
+ 							</div><!-- end well -->
+					  
+ 						</div><!-- end example -->
 						
+						<h4>Sidebar Background</h4>
+						<p>Sidebars should use the grid with no-gutter so that it hugs the left side of the window.  These columns should use the following background elements:</p>
+						<p>Using the "tree-#" class will add indentation.  The # should be the level in the hierarchy starting with 0.  Adding class "active" will show it as selected and with a black bar and the arrow.  A HREF tags may or may not be used</p>
+ 						<div class="bs-example">
+
+ 						 <!-- begin sidebar columns -->
+ 						  <div class="row">
+ 							  <div class="col-xs-4 col-no-gutter sidebar-wrap ">
+ 						  			<ul>
+										<li class="tree-0">2  Classroom Environment</li>
+										<li class="tree-0"><a href="#">2  Classroom Environment</a></li>
+										<li class="tree-1"><a href="#">2a  Creating an Environment of Respect and Rapport</a></li>
+										<li class="tree-2 active"><a href="#">2b  Establishing a Culture for Learning this one is really really long for three lines</a><span class="arrow-left"></span></li>
+										<li class="tree-1"><a href="#">2c  Managing Classroom Procedures</a></li>
+										<li class="tree-2"><a href="#">2d  Managing Student Behavior</a><span class="arrow-left"></span></li>
+									</ul>
+ 							</div>
+ 					  	  </div> <!-- end row -->
+ 						 <!-- end sidebar columns --> 
+					 
+  							<div class="well mar-top-20">
+<pre class="prettyprint">
+&lt;!-- begin sidebar columns --&gt;
+&lt;div class="row"&gt;
+ &lt;div class="col-xs-3 col-no-gutter sidebar-wrap "&gt;
+  &lt;ul&gt;
+   &lt;li class="tree-0"&gt; &lt;a href="#"&gt;2  Classroom Environment &lt;/a&gt; &lt;/li&gt;
+   &lt;li class="tree-1"&gt; &lt;a href="#"&gt;2a  Creating an Environment of Respect and Rapport &lt;/a&gt; &lt;/li&gt;
+   &lt;li class="tree-2 active"&gt; &lt;a href="#"&gt;2b  Establishing a Culture for Learning this one is really really long for three lines &lt;/a&gt; &lt;span class="arrow-left"&gt; &lt;/span&gt; &lt;/li&gt;
+   &lt;li class="tree-1"&gt; &lt;a href="#"&gt;2c  Managing Classroom Procedures &lt;/a&gt; &lt;/li&gt;
+   &lt;li class="tree-2"&gt; &lt;a href="#"&gt;2d  Managing Student Behavior &lt;/a&gt; &lt;span class="arrow-left"&gt; &lt;/span&gt; &lt;/li&gt;
+  &lt;/ul&gt;
+ &lt;/div&gt;
+&lt;/div&gt;  &lt;!-- end row --&gt;
+&lt;!-- end sidebar columns --&gt; 
+</pre>
+ 							</div><!-- end well -->
+					  
+ 						</div><!-- end example -->					
+						
+						
+						
+						<h3>CF-1.0: Typography</h3>
+						<p>Custom Focus specific headline spacing variations.  The first example shows a structure (admin-wrap has bg color for page, row-admin provides spacing on a bootstrap row) that should immediately follow a navbar (includes spacing for the top areas of the page below the nav)<p>
+ 						
+					
 						<h4>Landing and splash page headline without call to action</h4>
 						<p>This should not have a background bar, it should be on the page background</p>
 						<div class="bs-example">
@@ -143,12 +218,12 @@
 <pre class="prettyprint">
 &lt;!-- start cf-headline without call --&gt;	
 &lt;div class="row"&gt;
-	&lt;div class="col-xs-12"&gt;
-		&lt;div class="cf-page-header"&gt;
-			&lt;h5 class=""&gt;Welcome [admin-name]&lt;/h5&gt;
-			&lt;h2 class="mar-top-20"&gt;Custom Focus Overview&lt;/h2&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
+ &lt;div class="col-xs-12"&gt;
+  &lt;div class="cf-page-header"&gt;
+   &lt;h5 class=""&gt;Welcome [admin-name]&lt;/h5&gt;
+   &lt;h2 class="mar-top-20"&gt;Custom Focus Overview&lt;/h2&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
 &lt;/div&gt; &lt;!-- admin-wrap --&gt;	
 &lt;!-- end cf-headline without call --&gt;
 </pre>
@@ -160,7 +235,7 @@
 						<p>This should not be on a background bar, it should be on the page background.  This one has a call to action</p>
 						<div class="bs-example">
 						  
-						<!-- start cf-headline with call -->
+						<!-- begin cf-headline with call -->
 						  <div class="row">
 							  <div class="col-xs-8">
 						  		  <div class="cf-page-header">
@@ -177,18 +252,18 @@
  							<div class="well mar-top-20">
 <pre class="prettyprint">
 
-&lt;!-- start cf-headline with call --&gt;
-  &lt;div class="row"&gt;
-	  &lt;div class="col-xs-8"&gt;
-  		  &lt;div class="cf-page-header"&gt;
-  		  	&lt;h5 class=""&gt;Welcome [admin-name]&lt;/h5&gt;
-  			&lt;h2 class="mar-top-20"&gt;Custom Focus Overview&lt;/h2&gt;
-		&lt;/div&gt;
-	 &lt;/div&gt;
-	 &lt;div class="col-xs-4 align-right mar-top-20 pad-top-20"&gt;
-			&lt;button class="btn btn-primary btn-md"&gt;Call To Action&lt;/button&gt;
-	&lt;/div&gt;
-  &lt;/div&gt; &lt;!-- end row --&gt;
+&lt;!-- begin cf-headline with call --&gt;
+ &lt;div class="row"&gt;
+  &lt;div class="col-xs-8"&gt;
+   &lt;div class="cf-page-header"&gt;
+   &lt;h5 class=""&gt;Welcome [admin-name]&lt;/h5&gt;
+   &lt;h2 class="mar-top-20"&gt;Custom Focus Overview&lt;/h2&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="col-xs-4 align-right mar-top-20 pad-top-20"&gt;
+  &lt;button class="btn btn-primary btn-md"&gt;Call To Action&lt;/button&gt;
+ &lt;/div&gt;
+&lt;/div&gt; &lt;!-- end row --&gt;
 &lt;!-- end cf-headline with call --&gt;
 	
 </pre>
@@ -209,21 +284,81 @@
 &lt;button class="btn btn-primary btn-md disabled"&gt;Disabled State&lt;/button&gt;
 
 </pre>						
-							</div>		
+							</div><!-- end well -->	
 						</div><!-- end example -->
 						
 						
 						<h3>CF-2.0 Navigation Bars & Buttons</h3>
 						
 						<h4>Primary Product Navbar</h4>
-						<p>This contains the links to the pages within the product and for help.</p>
-						<div class="bs-example">
+							<p>The following is the admin navigation for primary and secondary pages</p>
+													
+				         <div class="bs-example">
 							
+							 <!-- begin admin sub nav -->
+							 <nav class="navbar navbar-ts" role="navigation">
+							   <div class="navbar-header">
+							     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+							       <span class="sr-only">Toggle navigation</span>
+							       <span class="icon-bar"></span>
+							       <span class="icon-bar"></span>
+							       <span class="icon-bar"></span>
+							     </button>
+							   </div>
+
+							   <!-- Collect the nav links, forms, and other content for toggling -->
+							   <div class="collapse navbar-collapse navbar-ex1-collapse">
+							     <ul class="nav navbar-nav nav-ts">
+							       <li class="active"><a href="#">Overview</a></li>
+							       <li><a href="#">Link</a></li>
+							       <li><a href="#">Link</a></li>
+								   <li><a href="#">Link</a></li>
+								   <li><a href="#">Link</a></li>
+							     </ul>
+						     
+							     <ul class="nav navbar-nav nav-ts navbar-right">
+							       <li><a href="#">Help</a></li>
+							     </ul>
+							   </div>
+							 </nav>
+							 <!-- end admin sub nav --> 
+						 
+							 <div class="well mar-top-20">
+<pre class="prettyprint">	 
+
+&lt;!-- begin admin sub nav --&gt;
+&lt;nav class="navbar navbar-ts" role="navigation"&gt;
+&lt;div class="navbar-header"&gt;
+ &lt;button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"&gt;
+   &lt;span class="sr-only"&gt;Toggle navigation&lt;/span&gt;
+   &lt;span class="icon-bar"&gt;&lt;/span&gt;
+   &lt;span class="icon-bar"&gt;&lt;/span&gt;
+   &lt;span class="icon-bar"&gt;&lt;/span&gt;
+ &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;!-- Collect the nav links, forms, and other content for toggling --&gt;
+&lt;div class="collapse navbar-collapse navbar-ex1-collapse"&gt;
+&lt;ul class="nav navbar-nav nav-ts"&gt;
+	&lt;li class="active"&gt;&lt;a href="#"&gt;Overview&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class="nav navbar-nav nav-ts navbar-right"&gt;
+&lt;li&gt;&lt;a href="#"&gt;Help&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/nav&gt;
+&lt;!-- end admin sub nav --&gt;
+</pre>								 
+					</div><!-- end well -->  
+						   
+						   
+					</div><!-- end example -->	
 							
-							
-							
-						
-						</div><!-- end example -->
 						
 						
 						<h4>Title Bars</h4>
@@ -344,24 +479,24 @@
 <pre class="prettyprint">
 &lt;!-- begin multi split row panel --&gt;
 &lt;div class="panel"&gt;
-    &lt;div class="panel-content content-row-header border-bot-dot"&gt;
-        &lt;h3&gt;Headline&lt;/h3&gt;
-    &lt;/div&gt;
-    &lt;div class="panel-content content-row-center row-fixed border-bot-dot"&gt;
-        &lt;p&gt;This is a description text block using the paragraph element.  This could be a lot of text, it could be a little bit.  If I could write a poem, I would but unfortunately, I don't possess that type of talent.  If the class "row-fixed" is used, then the row is 150px high and this text block should be truncated and appended with &lt;a href="#" class="smaller"&gt;More &lt;span class="icon-chevron-right"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class="panel-content content-row-center border-bot-dot"&gt;
-        &lt;div class="align-center"&gt;&lt;button class="btn btn-primary btn-lg"&gt;Link To Page&lt;/button&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="panel-content content-row-center"&gt;
-        &lt;h5&gt;Details&lt;/h5&gt;
-        &lt;p&gt;The different sections have have different kinds of content such as tables, lists or forms.&lt;/p&gt;
-        &lt;ul class="link-list"&gt;
-            &lt;li&gt;&lt;span&gt;&lt;a href="#"&gt;First Link&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;span&gt;&lt;a href="#"&gt;Second Link&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;span&gt;&lt;a href="#"&gt;Third Link&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/div&gt;
+ &lt;div class="panel-content content-row-header border-bot-dot"&gt;
+  &lt;h3&gt;Headline&lt;/h3&gt;
+ &lt;/div&gt;
+ &lt;div class="panel-content content-row-center row-fixed border-bot-dot"&gt;
+  &lt;p&gt;This is a description text block using the paragraph element.  This could be a lot of text, it could be a little bit.  If I could write a poem, I would but unfortunately, I don't possess that type of talent.  If the class "row-fixed" is used, then the row is 150px high and this text block should be truncated and appended with &lt;a href="#" class="smaller"&gt;More &lt;span class="icon-chevron-right"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+ &lt;/div&gt;
+ &lt;div class="panel-content content-row-center border-bot-dot"&gt;
+  &lt;div class="align-center"&gt;&lt;button class="btn btn-primary btn-lg"&gt;Link To Page&lt;/button&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="panel-content content-row-center"&gt;
+   &lt;h5&gt;Details&lt;/h5&gt;
+   &lt;p&gt;The different sections have have different kinds of content such as tables, lists or forms.&lt;/p&gt;
+   &lt;ul class="link-list"&gt;
+    &lt;li&gt;&lt;span&gt;&lt;a href="#"&gt;First Link&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;span&gt;&lt;a href="#"&gt;Second Link&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;span&gt;&lt;a href="#"&gt;Third Link&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+   &lt;/ul&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 &lt;!-- end panel --&gt;
 </pre>
