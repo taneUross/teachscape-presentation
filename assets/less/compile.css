@@ -6239,27 +6239,27 @@ you can use the generic selector below, but it's slower:
 1. Body
 
 2. Typography
-	2.1 Heading
-		2.1.1 Heading for Message Box & Modals
-	2.2 Icon Fonts
+  2.1 Heading
+    2.1.1 Heading for Message Box & Modals
+  2.2 Icon Fonts
 
 3. Color
-	3.1 Product Specific
+  3.1 Product Specific
 
 4. Header / #header
 
 5. Content / #content
-	5.1 Nav
-		5.1.1 Breadcrumb
-		5.1.2 Left Nav
-	5.2 Modal Dialog
-	5.3 Table
+  5.1 Nav
+    5.1.1 Breadcrumb
+    5.1.2 Left Nav
+  5.2 Modal Dialog
+  5.3 Table
 
 6. Footer / #footer
 -------------------------------------------------------------------*/
-/*	1. Body ------------------------------------------------------ */
-/*	2. Typography ------------------------------------------------ */
-/*	2.1 Heading -------------------------------------------------- */
+/*  1. Body ------------------------------------------------------ */
+/*  2. Typography ------------------------------------------------ */
+/*  2.1 Heading -------------------------------------------------- */
 h1 {
   color: #222222;
 }
@@ -6271,7 +6271,7 @@ h4,
 h5 {
   color: #732843;
 }
-/*	2.1.1 Heading for Message Box & Modals ------------------------ */
+/*  2.1.1 Heading for Message Box & Modals ------------------------ */
 .bs-callout h4 {
   color: #555555;
   font-size: 28px;
@@ -6280,7 +6280,7 @@ h4.modal-title {
   color: #555555;
   font-size: 28px;
 }
-/*	2.2 Icon Fonts ----------------------------------------------- */
+/*  2.2 Icon Fonts ----------------------------------------------- */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -6291,12 +6291,12 @@ h4.modal-title {
   position: absolute;
   width: 1px;
 }
-/*	3. Color ------------------------------------------------------ */
+/*  3. Color ------------------------------------------------------ */
 .disabled:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/*	3.1 Product Specific ------------------------------------------ */
+/*  3.1 Product Specific ------------------------------------------ */
 .reflect {
   color: #006b33;
 }
@@ -6309,13 +6309,13 @@ h4.modal-title {
 .advance {
   color: #bd4800;
 }
-/*	4. Header ------------------------------------------------------ */
-/*	5. Content ----------------------------------------------------- */
+/*  4. Header ------------------------------------------------------ */
+/*  5. Content ----------------------------------------------------- */
 .admin-wrap {
   width: 100%;
   background: #eeeeee;
 }
-/*	5.1 Nav & Buttons ---------------------------------------------- */
+/*  5.1 Nav & Buttons ---------------------------------------------- */
 .dropdown-menu > li > a {
   color: #2f4fa2;
 }
@@ -6363,19 +6363,19 @@ fieldset[disabled] .btn,
   color: #555555;
   border-color: #555555;
 }
-/*	5.1.1 Breadcrumb ----------------------------------------------- */
+/*  5.1.1 Breadcrumb ----------------------------------------------- */
 .breadcrumb > li + li:before {
   padding: 0 5px;
   color: #999999;
   font-family: 'TS';
   content: "\f0da";
 }
-/*	5.1.2 Left Nav ------------------------------------------------- */
+/*  5.1.2 Left Nav ------------------------------------------------- */
 .bs-sidenav {
   line-height: 1em;
   font-size: 14px;
 }
-/*	5.2 Modal Dialog ------------------------------------------------ */
+/*  5.2 Modal Dialog ------------------------------------------------ */
 .modal-backdrop.fade {
   opacity: 0;
   filter: alpha(opacity=0);
@@ -6384,15 +6384,15 @@ fieldset[disabled] .btn,
   opacity: 0.7;
   filter: alpha(opacity=70);
 }
-/*	5.3 Table ------------------------------------------------------- */
-/*	5.4 Input Groups ------------------------------------------------------- */
+/*  5.3 Table ------------------------------------------------------- */
+/*  5.4 Input Groups ------------------------------------------------------- */
 .glyphicon.glyphicon-search {
   top: 0px;
 }
 .input-group-addon.glyphicon-search {
   background-color: white;
 }
-/*	6.0  Background Elements ---------------------------------------- */
+/*  6.0  Background Elements ---------------------------------------- */
 .panel {
   border-radius: 0.5em;
   -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
@@ -6438,7 +6438,7 @@ fieldset[disabled] .btn,
   margin-top: 25px;
   margin-bottom: 25px;
 }
-/*	7. Lists & Icon details ------------------------------------------------------- */
+/*  7. Lists & Icon details ------------------------------------------------------- */
 .link-list > li {
   color: #999999;
   /* bullet color */
@@ -6447,8 +6447,8 @@ fieldset[disabled] .btn,
   color: #333333;
   /* text color */
 }
-/*	8. Footer ------------------------------------------------------- */
-/*	9. Utilities ---------------------------------------------------- */
+/*  8. Footer ------------------------------------------------------- */
+/*  9. Utilities ---------------------------------------------------- */
 .smaller {
   /*-- make smaller font size --*/
   font-size: 14px;
@@ -6487,9 +6487,6 @@ fieldset[disabled] .btn,
 }
 .border-bot-dot {
   border-bottom: 1px dotted #737373;
-}
-.label {
-  margin-top: -4px;
 }
 .label-gray {
   background: #999999;
@@ -6575,8 +6572,6 @@ fieldset[disabled] .btn,
 }
 .header-call {
   width: 100%;
-  -webkit-box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
   margin: 0;
   padding: 23px 20px 20px 20px;
   z-index: 900;
@@ -6743,6 +6738,11 @@ table.borderless tbody td {
   border: none;
 }
 /* CF-6.0 components ======================== */
+.label {
+  width: 100%;
+  display: block;
+  line-height: inherit;
+}
 .label-saved {
   background: #999999;
 }

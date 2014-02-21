@@ -490,15 +490,22 @@
 					 <h3>Labels and Badges</h3>
 					 <p>For use on all modules of custom focus</p>
 					  <div class="bs-example">
-						  <p><span class="label label-saved">Saved</span>
-						  <span class="label label-published">Published</span>
-						  <span class="label label-locked">Locked</span>
-					  	</p>
+                          <div class="row">
+                              <div class="col-xs-2">
+                                  <p class="label label-saved">Saved</p>
+                                  <p class="label label-published">Published</p>
+                                  <p class="label label-locked">Locked</p>
+                              </div>
+                          </div>
 						<div class="well mar-top-20">
 <pre class="prettyprint">
-  &lt;span class="label label-saved"&gt;Saved&lt;/span&gt;
-  &lt;span class="label label-published"&gt;Published&lt;/span&gt;
-  &lt;span class="label label-locked"&gt;Locked&lt;/span&gt;
+&lt;div class="row"&gt;
+  &lt;div class="col-xs-1"&gt;
+      &lt;p class="label label-saved"&gt;Saved&lt;/p&gt;
+      &lt;p class="label label-published"&gt;Published&lt;/p&gt;
+      &lt;p class="label label-locked"&gt;Locked&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 </pre>							  
 							  
 						  </div><!-- end well -->
@@ -506,67 +513,80 @@
 					  
  					 <h3>CF-5.0: Tables</h3>
  					 <p>The class names should be added to the table element</p>
- 					 <div class="bs-example">	
-					  
-						 <table class="borderless">
-							 <thead>
-								 <td>Rubric Name</td>
-								 <td>Default</td>
-								 <td>Status</td>
-								 <td>Modified</td>
-								 <td>Action</td>
-							 </thead>
-							 <tbody>
-								 <tr>
-									 <td><a href="#">[ Rubric Name ]</a></td> 
-									 <td></td>
-									 <td><span class="label label-saved">Saved</span></td>
-									 <td>M/D/YY</td>
-									 <td><a href="#">Edit</a></td>
-								 </tr>
-								 <tr>
-									 <td><a href="#">[ Rubric Name ]</a></td> 
-									 <td><span class="label label-success">Default</span></td>
-									 <td><span class="label label-locked">Locked</span></td>
-									 <td>M/D/YY</td>
-									 <td><a href="#"></a></td>
-								 </tr>
-								 <tr>
-									 <td><a href="#">[ Rubric Name ]</a></td> 
-									 <td></td>
-									 <td><span class="label label-published">Published</span></td>
-									 <td>M/D/YY</td>
-									 <td><a href="#">Edit</a></td>
-								 </tr>
-							 </tbody>
-						 </table>
- 						<div class="well mar-top-20">
+ 					 <div class="bs-example">
+
+                         <div class="panel">
+                             <div class="panel-content content-single">
+
+                                 <table class="borderless">
+                                     <thead>
+                                        <tr>
+                                            <td>Rubric Name</td>
+                                            <td>Default</td>
+                                            <td>Status</td>
+                                            <td>Modified</td>
+                                            <td>Action</td>
+                                        </tr>
+                                     </thead>
+                                     <tbody>
+                                         <tr>
+                                             <td><a href="#">[ Rubric Name ]</a></td>
+                                             <td></td>
+                                             <td><span class="label label-saved">Saved</span></td>
+                                             <td>M/D/YY</td>
+                                             <td><a href="#">Edit</a></td>
+                                         </tr>
+                                         <tr>
+                                             <td><a href="#">[ Rubric Name ]</a></td>
+                                             <td><span class="label label-success">Default</span></td>
+                                             <td><span class="label label-locked">Locked</span></td>
+                                             <td>M/D/YY</td>
+                                             <td><a href="#"></a></td>
+                                         </tr>
+                                         <tr>
+                                             <td><a href="#">[ Rubric Name ]</a></td>
+                                             <td></td>
+                                             <td><span class="label label-published">Published</span></td>
+                                             <td>M/D/YY</td>
+                                             <td><a href="#">Edit</a></td>
+                                         </tr>
+                                     </tbody>
+                                 </table>
+                             </div>
+                         </div>
+                     <div class="well mar-top-20">
  <pre class="prettyprint">
-&lt;table class="borderless"&gt;
- &lt;thead&gt;
-	 &lt;td&gt;Rubric Name&lt;/td&gt;
-	 &lt;td&gt;Default&lt;/td&gt;
-	 &lt;td&gt;Status&lt;/td&gt;
-	 &lt;td&gt;Modified&lt;/td&gt;
-	 &lt;td&gt;Action&lt;/td&gt;
- &lt;/thead&gt;
- &lt;tbody&gt;
-	 &lt;tr&gt;
-		 &lt;td&gt;&lt;a href="#"&gt;[ Rubric Name ]&lt;/a&gt;&lt;/td&gt; 
-		 &lt;td&gt;&lt;/td&gt;
-		 &lt;td&gt;&lt;span class="label label-saved"&gt;Saved&lt;/span&gt;&lt;/td&gt;
-		 &lt;td&gt;M/D/YY&lt;/td&gt;
-		 &lt;td&gt;&lt;a href="#"&gt;Edit&lt;/a&gt;&lt;/td&gt;
-	 &lt;/tr&gt;
-	 &lt;tr&gt;
-		 &lt;td&gt;&lt;a href="#"&gt;[ Rubric Name ]&lt;/a&gt;&lt;/td&gt; 
-		 &lt;td&gt;&lt;span class="label label-success"&gt;Default&lt;/span&gt;&lt;/td&gt;
-		 &lt;td&gt;&lt;span class="label label-locked"&gt;Locked&lt;/span&gt;&lt;/td&gt;
-		 &lt;td&gt;M/D/YY&lt;/td&gt;
-		 &lt;td&gt;&lt;a href="#"&gt;&lt;/a&gt;&lt;/td&gt;
-	 &lt;/tr&gt;
- &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;div class="panel"&gt;
+     &lt;div class="panel-content content-single"&gt;
+        &lt;table class="borderless"&gt;
+            &lt;thead&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Rubric Name&lt;/td&gt;
+                    &lt;td&gt;Default&lt;/td&gt;
+                    &lt;td&gt;Status&lt;/td&gt;
+                    &lt;td&gt;Modified&lt;/td&gt;
+                    &lt;td&gt;Action&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;&lt;a href="#"&gt;[ Rubric Name ]&lt;/a&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;span class="label label-saved"&gt;Saved&lt;/span&gt;&lt;/td&gt;
+                    &lt;td&gt;M/D/YY&lt;/td&gt;
+                    &lt;td&gt;&lt;a href="#"&gt;Edit&lt;/a&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;&lt;a href="#"&gt;[ Rubric Name ]&lt;/a&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;span class="label label-success"&gt;Default&lt;/span&gt;&lt;/td&gt;
+                    &lt;td&gt;&lt;span class="label label-locked"&gt;Locked&lt;/span&gt;&lt;/td&gt;
+                    &lt;td&gt;M/D/YY&lt;/td&gt;
+                    &lt;td&gt;&lt;a href="#"&gt;&lt;/a&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+     &lt;/div&gt;
+&lt;/div&gt;
  </pre>										 
 					</div>	 
 						 
