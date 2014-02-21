@@ -6743,14 +6743,21 @@ table.borderless tbody td {
   border: none;
 }
 /* CF-6.0 components ======================== */
-.label-saved {
+.label-saved,
+.badge-saved {
   background: #999999;
 }
-.label-published {
+.label-published,
+.badge-published {
   background: #175473;
 }
-.label-locked {
+.label-locked,
+.badge-locked {
   background: #333333;
+}
+.label-success,
+.badge-success {
+  background: #5cb85c;
 }
 /* CF-10.0 Utilities ======================== */
 .pos-relative {

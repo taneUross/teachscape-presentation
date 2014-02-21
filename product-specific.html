@@ -117,7 +117,63 @@
                 <div class="bs-docs-section">
                     <div class="page-header">
                         <h1><span aria-hidden="true" data-icon="&#xe002;" class="focus"></span> Custom Focus: Admin</h1>
+						
+						
+						<h3>CF-0.0: Backgrounds</h3>
+						
+						 <h3>CF-1.0: Typography</h3>
+						 <p>Custom Focus specific headline spacing variations.  The first example shows a structure (admin-wrap has bg color for page, row-admin provides spacing on a bootstrap row) that should immediately follow a navbar (includes spacing for the top areas of the page below the nav)<p>
+						
+						<div class="bs-example">
+							<h3>Page Headline (primary pages)- top of the page when there is NOT a header-bar required.<h3>
+						  <div class="row row-admin admin-wrap">
+					  		  <div class="cf-page-header">
+					  		  	<h5 class="">Welcome [admin-name]</h5>
+					  			<h2 class="mar-top-20">Custom Focus Overview</h2>
+							</div>
+					  	  </div> <!-- admin-wrap -->
+ 							<div class="well mar-top-20">
+<pre class="prettyprint">
+	
+&lt;div class="row row-admin admin-wrap"&gt;
+	&lt;div class="cf-page-header"&gt;
+		&lt;h5 class=""&gt;Welcome [admin-name]&lt;/h5&gt;
+		&lt;h2 class="mar-top-20"&gt;Custom Focus Overview&lt;/h2&gt;
+	&lt;/div&gt;
+&lt;/div&gt; &lt;!-- admin-wrap --&gt;	
+	
+</pre>
+							</div><!-- end well -->
+						  
+						</div><!-- end example -->
+						
+						<div class="bs-example">
+							<h3>Disabled states </h3>
+							<p>Add class="disabled" to the element</p>
+							<div class="mar-top-20">
+								<p><button class="btn btn-primary btn-md disabled">Disabled State</button>	</p>
+								<label for="exampleInputEmail1" class="disabled">Email address</label>
+								    <input type="email" class="form-control disabled" id="exampleInputEmail1" placeholder="Enter email">
+							</div>	
+							<div class="well mar-top-20">
+<pre class="prettyprint">
+&lt;button class="btn btn-primary btn-md disabled"&gt;Disabled State&lt;/button&gt;
 
+</pre>						
+							</div>		
+						</div><!-- end example -->
+						
+						
+						<h3>CF-2.0 Navigation Bars & Buttons</h3>
+						
+						<h4>Primary Product Navbar</h4>
+						<p>This contains the links to the pages within the product and for help.</p>
+						
+						
+						
+						
+						
+						<h4>Title Bars</h4>
 						<p>The following are the call to action bars for tertiary pages.  These usually have headline text, sometimes editable inputs.  They usually have a call to action on the right.  They need to span 100% width with no space on left and right window edges.  You can use a nested grid, as included here and vary the number and/or size of the columns to achieve the designed layout for the elements required.</p>
 						 <div class="bs-example">
 							 
@@ -178,49 +234,9 @@
 						 </div><!-- end example -->
 						
 						
-						 <h3>CF-1.0: Typography</h3>
-						 <p>Custom Focus specific headline spacing variations.  The first example shows a structure (admin-wrap has bg color for page, row-admin provides spacing on a bootstrap row) that should immediately follow a navbar (includes spacing for the top areas of the page below the nav)<p>
+						 
 						
-						<div class="bs-example">
-							<h3>Page Headline (primary pages)- top of the page when there is NOT a header-bar required.<h3>
-						  <div class="row row-admin admin-wrap">
-					  		  <div class="cf-page-header">
-					  		  	<h5 class="">Welcome [admin-name]</h5>
-					  			<h2 class="mar-top-20">Custom Focus Overview</h2>
-							</div>
-					  	  </div> <!-- admin-wrap -->
- 							<div class="well mar-top-20">
-<pre class="prettyprint">
-	
-&lt;div class="row row-admin admin-wrap"&gt;
-	&lt;div class="cf-page-header"&gt;
-		&lt;h5 class=""&gt;Welcome [admin-name]&lt;/h5&gt;
-		&lt;h2 class="mar-top-20"&gt;Custom Focus Overview&lt;/h2&gt;
-	&lt;/div&gt;
-&lt;/div&gt; &lt;!-- admin-wrap --&gt;	
-	
-</pre>
-							</div><!-- end well -->
-						  
-						</div><!-- end example -->
-						
-						<div class="bs-example">
-							<h3>Disabled states </h3>
-							<p>Add class="disabled" to the element</p>
-							<div class="mar-top-20">
-								<p><button class="btn btn-primary btn-md disabled">Disabled State</button>	</p>
-								<label for="exampleInputEmail1" class="disabled">Email address</label>
-								    <input type="email" class="form-control disabled" id="exampleInputEmail1" placeholder="Enter email">
-							</div>	
-							<div class="well mar-top-20">
-<pre class="prettyprint">
-&lt;button class="btn btn-primary btn-md disabled"&gt;Disabled State&lt;/button&gt;
-
-</pre>						
-							</div>		
-						</div><!-- end example -->
-						
-                        <h3>CF-2.0: Panels & Sections</h3>
+                        <h3>CF-3.0: Panels & Sections</h3>
                         <p>To group items, panels are used.  The panels sometimes have sections that are defined by horizontal lines, other times they have just one object inside.  The following are examples of both.  Please right click to "inspect element" and copy the markup between the descriptive comments bookended by "begin..." and "end...".</P>
                         <div class="bs-example">
 							<h4>Single Panel</h4>
@@ -472,7 +488,7 @@
 						</div><!-- end example -->
 			
 			
-					 <h3>CF-3.0: Form Fields</h3>
+					 <h3>CF-4.0: Form Fields</h3>
 					 <p>The following are the form fields, dynamic text fields and other input related classess</p>
 					 <div class="bs-example">	
 						 <h4>Dynamic text fields.  Responds to hover and focus</h4>
@@ -488,17 +504,17 @@
 					 </div> <!-- end example -->
 					 
 					 <h3>Labels and Badges</h3>
-					 <p>For use on all modules of custom focus</p>
+					 <p>For use on all modules of custom focus.  The "label-saved" etc classes add color, not shape so they can be used for labels and badges</p>
 					  <div class="bs-example">
-						  <p><span class="label label-saved">Saved</span>
-						  <span class="label label-published">Published</span>
-						  <span class="label label-locked">Locked</span>
+						  <p><span class="badge badge-saved">Saved</span>
+						  <span class="badge badge-published">Published</span>
+						  <span class="badge badge-locked">Locked</span>
 					  	</p>
 						<div class="well mar-top-20">
 <pre class="prettyprint">
-  &lt;span class="label label-saved"&gt;Saved&lt;/span&gt;
-  &lt;span class="label label-published"&gt;Published&lt;/span&gt;
-  &lt;span class="label label-locked"&gt;Locked&lt;/span&gt;
+  &lt;span class="badge badge-saved"&gt;Saved&lt;/span&gt;
+  &lt;span class="badge badge-published"&gt;Published&lt;/span&gt;
+  &lt;span class="badge badge-locked"&gt;Locked&lt;/span&gt;
 </pre>							  
 							  
 						  </div><!-- end well -->
@@ -520,21 +536,21 @@
 								 <tr>
 									 <td><a href="#">[ Rubric Name ]</a></td> 
 									 <td></td>
-									 <td><span class="label label-saved">Saved</span></td>
+									 <td><span class="badge badge-saved">Saved</span></td>
 									 <td>M/D/YY</td>
 									 <td><a href="#">Edit</a></td>
 								 </tr>
 								 <tr>
 									 <td><a href="#">[ Rubric Name ]</a></td> 
-									 <td><span class="label label-success">Default</span></td>
-									 <td><span class="label label-locked">Locked</span></td>
+									 <td><span class="badge badge-success">Default</span></td>
+									 <td><span class="badge badge-locked">Locked</span></td>
 									 <td>M/D/YY</td>
 									 <td><a href="#"></a></td>
 								 </tr>
 								 <tr>
 									 <td><a href="#">[ Rubric Name ]</a></td> 
 									 <td></td>
-									 <td><span class="label label-published">Published</span></td>
+									 <td><span class="badge badge-published">Published</span></td>
 									 <td>M/D/YY</td>
 									 <td><a href="#">Edit</a></td>
 								 </tr>
@@ -554,14 +570,14 @@
 	 &lt;tr&gt;
 		 &lt;td&gt;&lt;a href="#"&gt;[ Rubric Name ]&lt;/a&gt;&lt;/td&gt; 
 		 &lt;td&gt;&lt;/td&gt;
-		 &lt;td&gt;&lt;span class="label label-saved"&gt;Saved&lt;/span&gt;&lt;/td&gt;
+		 &lt;td&gt;&lt;span class="badge badge-saved"&gt;Saved&lt;/span&gt;&lt;/td&gt;
 		 &lt;td&gt;M/D/YY&lt;/td&gt;
 		 &lt;td&gt;&lt;a href="#"&gt;Edit&lt;/a&gt;&lt;/td&gt;
 	 &lt;/tr&gt;
 	 &lt;tr&gt;
 		 &lt;td&gt;&lt;a href="#"&gt;[ Rubric Name ]&lt;/a&gt;&lt;/td&gt; 
-		 &lt;td&gt;&lt;span class="label label-success"&gt;Default&lt;/span&gt;&lt;/td&gt;
-		 &lt;td&gt;&lt;span class="label label-locked"&gt;Locked&lt;/span&gt;&lt;/td&gt;
+		 &lt;td&gt;&lt;span class="badge badge-success"&gt;Default&lt;/span&gt;&lt;/td&gt;
+		 &lt;td&gt;&lt;span class="badge badge-locked"&gt;Locked&lt;/span&gt;&lt;/td&gt;
 		 &lt;td&gt;M/D/YY&lt;/td&gt;
 		 &lt;td&gt;&lt;a href="#"&gt;&lt;/a&gt;&lt;/td&gt;
 	 &lt;/tr&gt;
