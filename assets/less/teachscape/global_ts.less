@@ -4,29 +4,29 @@
 1. Body
 
 2. Typography
-	2.1 Heading
-		2.1.1 Heading for Message Box & Modals
-	2.2 Icon Fonts
+  2.1 Heading
+    2.1.1 Heading for Message Box & Modals
+  2.2 Icon Fonts
 
 3. Color
-	3.1 Product Specific
+  3.1 Product Specific
 
 4. Header / #header
 
 5. Content / #content
-	5.1 Nav
-		5.1.1 Breadcrumb
-		5.1.2 Left Nav
-	5.2 Modal Dialog
-	5.3 Table
+  5.1 Nav
+    5.1.1 Breadcrumb
+    5.1.2 Left Nav
+  5.2 Modal Dialog
+  5.3 Table
 
 6. Footer / #footer
 -------------------------------------------------------------------*/
 
-/*	1. Body ------------------------------------------------------ */
+/*  1. Body ------------------------------------------------------ */
 
-/*	2. Typography ------------------------------------------------ */
-/*	2.1 Heading -------------------------------------------------- */
+/*  2. Typography ------------------------------------------------ */
+/*  2.1 Heading -------------------------------------------------- */
 h1{
   color: @gray-darker;
 }
@@ -37,7 +37,7 @@ h2, h3{
 h4, h5{
   color: @brand-primary;
 }
-/*	2.1.1 Heading for Message Box & Modals ------------------------ */
+/*  2.1.1 Heading for Message Box & Modals ------------------------ */
 .bs-callout h4{
   color: @gray;
   font-size: @font-size-h3;
@@ -46,7 +46,7 @@ h4.modal-title {
   color: @gray;
   font-size: @font-size-h3;
 }
-/*	2.2 Icon Fonts ----------------------------------------------- */
+/*  2.2 Icon Fonts ----------------------------------------------- */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -58,53 +58,53 @@ h4.modal-title {
   width: 1px;
 }
 
-/*	3. Color ------------------------------------------------------ */
+/*  3. Color ------------------------------------------------------ */
 
 .disabled:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
-/*	3.1 Product Specific ------------------------------------------ */
+/*  3.1 Product Specific ------------------------------------------ */
 
-.reflect		{ color: @reflect; }
-.focus			{ color: @focus; }
-.learn			{ color: @learn; }
-.advance		{ color: @advance; }
-
-
-
-/*	4. Header ------------------------------------------------------ */
+.reflect    { color: @reflect; }
+.focus      { color: @focus; }
+.learn      { color: @learn; }
+.advance    { color: @advance; }
 
 
-/*	5. Content ----------------------------------------------------- */
+
+/*  4. Header ------------------------------------------------------ */
+
+
+/*  5. Content ----------------------------------------------------- */
 .admin-wrap {
-	width:100%;
-	background:@gray-lighter;
+  width:100%;
+  background:@gray-lighter;
 }
 
-/*	5.1 Nav & Buttons ---------------------------------------------- */
+/*  5.1 Nav & Buttons ---------------------------------------------- */
 .dropdown-menu > li > a {
-	color:@link-color;
+  color:@link-color;
 }
 
 .btn-primary {
-	.gradient(top, @link-color, darken(@link-color, 10%));
+  .gradient(top, @link-color, darken(@link-color, 10%));
 }
 
 .btn-primary:hover {
-	.gradient(top, darken(@link-color, 10%), darken(@link-color, 10%));
+  .gradient(top, darken(@link-color, 10%), darken(@link-color, 10%));
 }
 
 .btn-default {
-	.gradient(top, white, darken(white, 5%));
+  .gradient(top, white, darken(white, 5%));
 }
 
 .btn-default:hover {
-	.gradient(top, darken(white, 1%), darken(white, 1%));
-    -webkit-box-shadow: 0px 0px 5px 0px @brand-info;
-    box-shadow: 0px 0px 5px 0px @brand-info;
-	border:1px solid @gray;
+  .gradient(top, darken(white, 1%), darken(white, 1%));
+  -webkit-box-shadow: 0px 0px 5px 0px @brand-info;
+  box-shadow: 0px 0px 5px 0px @brand-info;
+  border:1px solid @gray;
 }
 
 .btn.disabled, .btn[disabled], fieldset[disabled] .btn, .btn-default[disabled] {
@@ -114,7 +114,7 @@ h4.modal-title {
   border-color: @gray;
 }
 
-/*	5.1.1 Breadcrumb ----------------------------------------------- */
+/*  5.1.1 Breadcrumb ----------------------------------------------- */
 .breadcrumb > li + li:before {
   padding: 0 5px;
   color: @gray-light;
@@ -123,13 +123,13 @@ h4.modal-title {
 
 }
 
-/*	5.1.2 Left Nav ------------------------------------------------- */
+/*  5.1.2 Left Nav ------------------------------------------------- */
 .bs-sidenav {
   line-height:1em;
   font-size:14px;
 }
 
-/*	5.2 Modal Dialog ------------------------------------------------ */
+/*  5.2 Modal Dialog ------------------------------------------------ */
 .modal-backdrop {
   // Fade for backdrop
   &.fade { .opacity(0); }
@@ -137,9 +137,9 @@ h4.modal-title {
 }
 
 
-/*	5.3 Table ------------------------------------------------------- */
+/*  5.3 Table ------------------------------------------------------- */
 
-/*	5.4 Input Groups ------------------------------------------------------- */
+/*  5.4 Input Groups ------------------------------------------------------- */
 
 //Search Bar
 .glyphicon.glyphicon-search {
@@ -151,7 +151,7 @@ h4.modal-title {
 }
 
 
-/*	6.0  Background Elements ---------------------------------------- */
+/*  6.0  Background Elements ---------------------------------------- */
 .panel {
   border-radius: 0.5em;
   -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
@@ -198,7 +198,7 @@ h4.modal-title {
 }
 
 
-/*	7. Lists & Icon details ------------------------------------------------------- */
+/*  7. Lists & Icon details ------------------------------------------------------- */
 .link-list > li {
   color: @gray-light; /* bullet color */
   span {
@@ -207,8 +207,8 @@ h4.modal-title {
 }
 
 
-/*	8. Footer ------------------------------------------------------- */
-/*	9. Utilities ---------------------------------------------------- */
+/*  8. Footer ------------------------------------------------------- */
+/*  9. Utilities ---------------------------------------------------- */
 
 .smaller { /*-- make smaller font size --*/
   font-size: @font-size-small;
@@ -230,7 +230,7 @@ h4.modal-title {
 }
 
 .mar-top-20 {
-	margin-top:20px;
+  margin-top:20px;
 }
 
 .mar-bot-20 {
@@ -256,9 +256,9 @@ h4.modal-title {
   border-bottom:1px dotted #737373;
 }
 
-.label {
-  margin-top:-4px;
-}
+// .label {
+//   margin-top:-4px;
+// }
 
 .label-gray {
   background: @gray-light;
@@ -286,12 +286,12 @@ h4.modal-title {
 
 //gradient use as function
 .gradient (@origin: left, @start: #ffffff, @stop: #999999) {
-    background-color: @start;
-    background-image: -webkit-linear-gradient(@origin, @start, @stop);
-    background-image: -moz-linear-gradient(@origin, @start, @stop);
-    background-image: -o-linear-gradient(@origin, @start, @stop);
-    background-image: -ms-linear-gradient(@origin, @start, @stop);
-    background-image: linear-gradient(@origin, @start, @stop);
+  background-color: @start;
+  background-image: -webkit-linear-gradient(@origin, @start, @stop);
+  background-image: -moz-linear-gradient(@origin, @start, @stop);
+  background-image: -o-linear-gradient(@origin, @start, @stop);
+  background-image: -ms-linear-gradient(@origin, @start, @stop);
+  background-image: linear-gradient(@origin, @start, @stop);
 }
 
 
