@@ -154,7 +154,7 @@
  						</div><!-- end example -->
 						
 						<h4>Sidebar Background</h4>
-						<p>Sidebars should use the grid with no-gutter so that it hugs the left side of the window.  These columns should use the following background elements:</p>
+						<p>Sidebars should use the grid with "col-no-gutter" so that it hugs the left side of the window.  To make the sidebar "sidebar-wrap" is used and the menu uses ul and li tags.  adding "active" to the li tag will make it dark but a span with "left-arrow" must be inserted after the text.</p>
 						<p>Using the "tree-#" class will add indentation.  The # should be the level in the hierarchy starting with 0.  Adding class "active" will show it as selected and with a black bar and the arrow.  A HREF tags may or may not be used</p>
  						<div class="bs-example">
 
@@ -167,7 +167,7 @@
 										<li class="tree-1"><a href="#">2a  Creating an Environment of Respect and Rapport</a></li>
 										<li class="tree-2 active"><a href="#">2b  Establishing a Culture for Learning this one is really really long for three lines</a><span class="arrow-left"></span></li>
 										<li class="tree-1"><a href="#">2c  Managing Classroom Procedures</a></li>
-										<li class="tree-2"><a href="#">2d  Managing Student Behavior</a><span class="arrow-left"></span></li>
+										<li class="tree-2"><a href="#">2d  Managing Student Behavior</a></li>
 									</ul>
  							</div>
  					  	  </div> <!-- end row -->
@@ -183,7 +183,7 @@
    &lt;li class="tree-1"&gt; &lt;a href="#"&gt;2a  Creating an Environment of Respect and Rapport &lt;/a&gt; &lt;/li&gt;
    &lt;li class="tree-2 active"&gt; &lt;a href="#"&gt;2b  Establishing a Culture for Learning this one is really really long for three lines &lt;/a&gt; &lt;span class="arrow-left"&gt; &lt;/span&gt; &lt;/li&gt;
    &lt;li class="tree-1"&gt; &lt;a href="#"&gt;2c  Managing Classroom Procedures &lt;/a&gt; &lt;/li&gt;
-   &lt;li class="tree-2"&gt; &lt;a href="#"&gt;2d  Managing Student Behavior &lt;/a&gt; &lt;span class="arrow-left"&gt; &lt;/span&gt; &lt;/li&gt;
+   &lt;li class="tree-2"&gt; &lt;a href="#"&gt;2d  Managing Student Behavior &lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
  &lt;/div&gt;
 &lt;/div&gt;  &lt;!-- end row --&gt;
@@ -368,25 +368,26 @@
 							 
 							 <!-- header bar call to action -->
 							 <div class="row header-call">
-								 <div class="col-xs-5">
-									 <h2>Normal Headline</h2>
+								 <div class="col-xs-5 col-no-gutter">
+									 <input type="text" class="text-edit text-headline" placeholder="Enter The Title"></input>
 								 </div> <!--end col -->
 								 
 								 <div class="col-xs-3">
 									<div class="btn-group">
 									  <button type="button" class="btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown">
-									    <span>Download Display .pdf</span> <span class="caret"></span>
+									    <span>Upload Display Version</span> <span class="caret"></span>
 									  </button>
 									  <ul class="dropdown-menu" role="menu">
-									    <li><a href="#">Item 1</a></li>
-									    <li><a href="#">Item 2</a></li>
-									    <li><a href="#">Item 3</a></li>
+									    <li><a href="#">Download Display Version</a></li>
+									    <li><a href="#">Add/Edit Rubric Description</a></li>
+									    <li><a href="#">Delete Rubric</a></li>
 									  </ul>
 									</div>
 								 </div> <!--end col -->
 								 
 								 <div class="col-xs-4 align-right">
-									 <button class="btn btn-primary btn-sm">Call To Action"</button>
+									  <button class="btn btn-default btn-xs mar-right-20">Save</button>
+									 <button class="btn btn-primary btn-sm">Done</button>
 								 </div> <!--end col -->
 							 </div>
 							 <!-- end header bar -->
@@ -513,12 +514,12 @@
                                 <div class="panel-content content-single">
 									<div class="row">
 	                                    <div class="col-xs-7">
-											<input type="text" class="text-edit text-code" placeholder="1" size:"4"></input>
+											<input type="text" class="text-edit text-code" placeholder="1" size:"3"></input>
 											<input type="text" class="text-edit text-title" placeholder="Enter Section Title"></input>
 											<textarea class="text-edit text-description" placeholder="Enter Description" rows="2"></textarea>
 										</div>
 										<div class="col-xs-5  pos-relative">
-													<button class="btn-score">Score on this section</button><!-- toggle 'active' state to change icon -->
+													<button class="btn-score">Score Functions</button><!-- toggle 'active' state to change icon -->
 													<button class="btn-round round-edit"><span class="icon-pencil"></span></button>
 													<button class="btn-round round-delete"><span class="icon-trash"></span></button>
 										</div>
@@ -552,8 +553,8 @@
     &lt;div class="panel-content content-single"&gt;
 	&lt;div class="row"&gt;
 		&lt;div class="col-xs-7"&gt;
-			&lt;input type="text" class="text-edit text-code" placeholder="1" size:"4"&gt;&lt;/input&gt;
-			&lt;input type="text" class="text-edit text-title" placeholder="Enter Section Title"&gt;&lt;/input&gt;
+			&lt;input type="text" class="text-edit text-code" placeholder="1" size:"3"&gt;&lt;/input&gt;
+			&lt;input type="text" class="text-edit text-title" placeholder="Score Functions"&gt;&lt;/input&gt;
 			&lt;textarea class="text-edit text-description" placeholder="Enter Description" rows="2"&gt;&lt;/textarea&gt;
 		&lt;/div&gt;
 		&lt;div class="col-xs-5  pos-relative"&gt;
@@ -632,41 +633,40 @@
 	
 &lt;!-- begin sub-section bar - NOT first family--&gt;
 &lt;div class="panel section-bar bar-1"&gt;
-    &lt;div class="panel-content content-single"&gt;
-		&lt;div class="row"&gt;
-            &lt;div class="col-xs-8"&gt;
-				&lt;input type="text" class="text-edit text-code" placeholder="A"&gt;&lt;/input&gt;
-				&lt;input type="text" class="text-edit text-title" placeholder="Enter Sub- Section Title"&gt;&lt;/input&gt;
-				&lt;textarea class="text-edit text-description" placeholder="Enter Description" rows="2"&gt;&lt;/textarea&gt;
-			&lt;/div&gt;
-			
-			&lt;!-- section buttons - not first family --&gt;
-			&lt;div class="col-xs-4  pos-relative "&gt;
-				&lt;button class="btn-score"&gt;Scoring&lt;/button&gt;&lt;!-- toggle 'active' state to change icon --&gt;
-				&lt;button class="btn-round round-edit no-score-button"&gt;&lt;span class="icon-pencil"&gt;&lt;/span&gt;&lt;/button&gt;
-				&lt;button class="btn-round round-delete"&gt;&lt;span class="icon-trash"&gt;&lt;/span&gt;&lt;/button&gt;
-			&lt;/div&gt;
-			&lt;!-- end section buttons - not first family --&gt;
-
-		&lt;/div&gt;
-			
-		&lt;!-- Insert dropdown --&gt;
-		&lt;div class="row pos-relative"&gt;
-			&lt;div class="insert-action"&gt;
+  &lt;div class="panel-content content-single"&gt;
+   &lt;div class="row"&gt;
+      &lt;div class="col-xs-8"&gt;
+        &lt;input type="text" class="text-edit text-code" placeholder="A"&gt;&lt;/input&gt;
+        &lt;input type="text" class="text-edit text-title" placeholder="Enter Sub- Section Title"&gt;&lt;/input&gt;
+        &lt;textarea class="text-edit text-description" placeholder="Enter Description" rows="2"&gt;&lt;/textarea&gt;
+	  &lt;/div&gt;
 		
-				&lt;div class="btn-group"&gt;
-				  &lt;button type="button" class="btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown"&gt;
-				    &lt;span class="before-add"&gt; Insert Row Below&lt;/span&gt; &lt;span class="caret"&gt;&lt;/span&gt;
-				  &lt;/button&gt;
-				  &lt;ul class="dropdown-menu" role="menu"&gt;
-				    &lt;li&gt;&lt;a href="#"&gt;Add Higher-Level Section&lt;/a&gt;&lt;/li&gt;
-				    &lt;li&gt;&lt;a href="#"&gt;Add Same-Level Section&lt;/a&gt;&lt;/li&gt;
-				    &lt;li&gt;&lt;a href="#"&gt;Add Lower-Level Section&lt;/a&gt;&lt;/li&gt;
-				  &lt;/ul&gt;
-				&lt;/div&gt;
+      &lt;!-- section buttons - not first family --&gt;
+      &lt;div class="col-xs-4  pos-relative "&gt;
+        &lt;button class="btn-score"&gt;Scoring&lt;/button&gt;&lt;!-- toggle 'active' state to change icon --&gt;
+        &lt;button class="btn-round round-edit no-score-button"&gt;&lt;span class="icon-pencil"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button class="btn-round round-delete"&gt;&lt;span class="icon-trash"&gt;&lt;/span&gt;&lt;/button&gt;
+     &lt;/div&gt;
+     &lt;!-- end section buttons - not first family --&gt;
+  &lt;/div&gt;
+		
+	&lt;!-- Insert dropdown --&gt;
+	&lt;div class="row pos-relative"&gt;
+		&lt;div class="insert-action"&gt;
+	
+			&lt;div class="btn-group"&gt;
+			  &lt;button type="button" class="btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown"&gt;
+			    &lt;span class="before-add"&gt; Insert Row Below&lt;/span&gt; &lt;span class="caret"&gt;&lt;/span&gt;
+			  &lt;/button&gt;
+			  &lt;ul class="dropdown-menu" role="menu"&gt;
+			    &lt;li&gt;&lt;a href="#"&gt;Add Higher-Level Section&lt;/a&gt;&lt;/li&gt;
+			    &lt;li&gt;&lt;a href="#"&gt;Add Same-Level Section&lt;/a&gt;&lt;/li&gt;
+			    &lt;li&gt;&lt;a href="#"&gt;Add Lower-Level Section&lt;/a&gt;&lt;/li&gt;
+			  &lt;/ul&gt;
 			&lt;/div&gt;
-		&lt;/div&gt;&lt;!-- end Insert dropdown --&gt;
-    &lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;&lt;!-- end Insert dropdown --&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 &lt;!-- end section bar--&gt;	
 	
@@ -694,34 +694,17 @@
 					 <h3>Labels and Badges</h3>
 					 <p>For use on all modules of custom focus.  The "label-saved" etc classes add color, not shape so they can be used for labels and badges</p>
 					  <div class="bs-example">
-<<<<<<< HEAD
-						  <p><span class="badge badge-saved">Saved</span>
-						  <span class="badge badge-published">Published</span>
-						  <span class="badge badge-locked">Locked</span>
-					  	</p>
+
+						  <p><span class="badge badge-saved">Saved</span></p>
+						  <p><span class="badge badge-published">Published</span></p>
+						  <p><span class="badge badge-locked">Locked</span></p>
+					  	
 						<div class="well mar-top-20">
 <pre class="prettyprint">
-  &lt;span class="badge badge-saved"&gt;Saved&lt;/span&gt;
-  &lt;span class="badge badge-published"&gt;Published&lt;/span&gt;
-  &lt;span class="badge badge-locked"&gt;Locked&lt;/span&gt;
-=======
-                          <div class="row">
-                              <div class="col-xs-2">
-                                  <p class="label label-saved">Saved</p>
-                                  <p class="label label-published">Published</p>
-                                  <p class="label label-locked">Locked</p>
-                              </div>
-                          </div>
-						<div class="well mar-top-20">
-<pre class="prettyprint">
-&lt;div class="row"&gt;
-  &lt;div class="col-xs-1"&gt;
-      &lt;p class="label label-saved"&gt;Saved&lt;/p&gt;
-      &lt;p class="label label-published"&gt;Published&lt;/p&gt;
-      &lt;p class="label label-locked"&gt;Locked&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
->>>>>>> 16811ba3925e1dc71c13181b97b834866b88e5d5
+&lt;span class="badge badge-saved"&gt;Saved&lt;/span&gt;
+&lt;span class="badge badge-published"&gt;Published&lt;/span&gt;
+&lt;span class="badge badge-locked"&gt;Locked&lt;/span&gt;
+
 </pre>							  
 							  
 						  </div><!-- end well -->
@@ -729,7 +712,7 @@
 					  
  					 <h3>CF-5.0: Tables</h3>
  					 <p>The class names should be added to the table element</p>
-<<<<<<< HEAD
+
  					 <div class="bs-example">	
 					  
 						 <table class="borderless">
@@ -768,105 +751,31 @@
  <pre class="prettyprint">
 &lt;table class="borderless"&gt;
  &lt;thead&gt;
-	 &lt;td&gt;Rubric Name&lt;/td&gt;
-	 &lt;td&gt;Default&lt;/td&gt;
-	 &lt;td&gt;Status&lt;/td&gt;
-	 &lt;td&gt;Modified&lt;/td&gt;
-	 &lt;td&gt;Action&lt;/td&gt;
- &lt;/thead&gt;
+    &lt;td&gt;Rubric Name&lt;/td&gt;
+    &lt;td&gt;Default&lt;/td&gt;
+    &lt;td&gt;Status&lt;/td&gt;
+    &lt;td&gt;Modified&lt;/td&gt;
+    &lt;td&gt;Action&lt;/td&gt;
+    &lt;/thead&gt;
  &lt;tbody&gt;
-	 &lt;tr&gt;
-		 &lt;td&gt;&lt;a href="#"&gt;[ Rubric Name ]&lt;/a&gt;&lt;/td&gt; 
-		 &lt;td&gt;&lt;/td&gt;
-		 &lt;td&gt;&lt;span class="badge badge-saved"&gt;Saved&lt;/span&gt;&lt;/td&gt;
-		 &lt;td&gt;M/D/YY&lt;/td&gt;
-		 &lt;td&gt;&lt;a href="#"&gt;Edit&lt;/a&gt;&lt;/td&gt;
-	 &lt;/tr&gt;
-	 &lt;tr&gt;
-		 &lt;td&gt;&lt;a href="#"&gt;[ Rubric Name ]&lt;/a&gt;&lt;/td&gt; 
-		 &lt;td&gt;&lt;span class="badge badge-success"&gt;Default&lt;/span&gt;&lt;/td&gt;
-		 &lt;td&gt;&lt;span class="badge badge-locked"&gt;Locked&lt;/span&gt;&lt;/td&gt;
-		 &lt;td&gt;M/D/YY&lt;/td&gt;
-		 &lt;td&gt;&lt;a href="#"&gt;&lt;/a&gt;&lt;/td&gt;
-	 &lt;/tr&gt;
+  &lt;tr&gt;
+     &lt;td&gt;&lt;a href="#"&gt;[ Rubric Name ]&lt;/a&gt;&lt;/td&gt; 
+     &lt;td&gt;&lt;/td&gt;
+     &lt;td&gt;&lt;span class="badge badge-saved"&gt;Saved&lt;/span&gt;&lt;/td&gt;
+     &lt;td&gt;M/D/YY&lt;/td&gt;
+     &lt;td&gt;&lt;a href="#"&gt;Edit&lt;/a&gt;&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+     &lt;td&gt;&lt;a href="#"&gt;[ Rubric Name ]&lt;/a&gt;&lt;/td&gt; 
+     &lt;td&gt;&lt;span class="badge badge-success"&gt;Default&lt;/span&gt;&lt;/td&gt;
+     &lt;td&gt;&lt;span class="badge badge-locked"&gt;Locked&lt;/span&gt;&lt;/td&gt;
+     &lt;td&gt;M/D/YY&lt;/td&gt;
+     &lt;td&gt;&lt;a href="#"&gt;&lt;/a&gt;&lt;/td&gt;
+   &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-=======
- 					 <div class="bs-example">
 
-                         <div class="panel">
-                             <div class="panel-content content-single">
 
-                                 <table class="borderless">
-                                     <thead>
-                                        <tr>
-                                            <td>Rubric Name</td>
-                                            <td>Default</td>
-                                            <td>Status</td>
-                                            <td>Modified</td>
-                                            <td>Action</td>
-                                        </tr>
-                                     </thead>
-                                     <tbody>
-                                         <tr>
-                                             <td><a href="#">[ Rubric Name ]</a></td>
-                                             <td></td>
-                                             <td><span class="label label-saved">Saved</span></td>
-                                             <td>M/D/YY</td>
-                                             <td><a href="#">Edit</a></td>
-                                         </tr>
-                                         <tr>
-                                             <td><a href="#">[ Rubric Name ]</a></td>
-                                             <td><span class="label label-success">Default</span></td>
-                                             <td><span class="label label-locked">Locked</span></td>
-                                             <td>M/D/YY</td>
-                                             <td><a href="#"></a></td>
-                                         </tr>
-                                         <tr>
-                                             <td><a href="#">[ Rubric Name ]</a></td>
-                                             <td></td>
-                                             <td><span class="label label-published">Published</span></td>
-                                             <td>M/D/YY</td>
-                                             <td><a href="#">Edit</a></td>
-                                         </tr>
-                                     </tbody>
-                                 </table>
-                             </div>
-                         </div>
-                     <div class="well mar-top-20">
- <pre class="prettyprint">
-&lt;div class="panel"&gt;
-     &lt;div class="panel-content content-single"&gt;
-        &lt;table class="borderless"&gt;
-            &lt;thead&gt;
-                &lt;tr&gt;
-                    &lt;td&gt;Rubric Name&lt;/td&gt;
-                    &lt;td&gt;Default&lt;/td&gt;
-                    &lt;td&gt;Status&lt;/td&gt;
-                    &lt;td&gt;Modified&lt;/td&gt;
-                    &lt;td&gt;Action&lt;/td&gt;
-                &lt;/tr&gt;
-            &lt;/thead&gt;
-            &lt;tbody&gt;
-                &lt;tr&gt;
-                    &lt;td&gt;&lt;a href="#"&gt;[ Rubric Name ]&lt;/a&gt;&lt;/td&gt;
-                    &lt;td&gt;&lt;/td&gt;
-                    &lt;td&gt;&lt;span class="label label-saved"&gt;Saved&lt;/span&gt;&lt;/td&gt;
-                    &lt;td&gt;M/D/YY&lt;/td&gt;
-                    &lt;td&gt;&lt;a href="#"&gt;Edit&lt;/a&gt;&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                    &lt;td&gt;&lt;a href="#"&gt;[ Rubric Name ]&lt;/a&gt;&lt;/td&gt;
-                    &lt;td&gt;&lt;span class="label label-success"&gt;Default&lt;/span&gt;&lt;/td&gt;
-                    &lt;td&gt;&lt;span class="label label-locked"&gt;Locked&lt;/span&gt;&lt;/td&gt;
-                    &lt;td&gt;M/D/YY&lt;/td&gt;
-                    &lt;td&gt;&lt;a href="#"&gt;&lt;/a&gt;&lt;/td&gt;
-                &lt;/tr&gt;
-            &lt;/tbody&gt;
-        &lt;/table&gt;
-     &lt;/div&gt;
-&lt;/div&gt;
->>>>>>> 16811ba3925e1dc71c13181b97b834866b88e5d5
  </pre>										 
 					</div>	 
 						 

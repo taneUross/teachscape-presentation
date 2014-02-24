@@ -28,9 +28,9 @@
 		margin:0;
 		font-size:14px;
 		li {
-			padding-top:12px;
-			padding-right:20px;
-			padding-bottom:12px;
+			padding-top:15px;
+			padding-right:23px;
+			padding-bottom:15px;
 			width:100%;
 			border-bottom:1px solid @gray-light;
 			color:@gray-lighter;
@@ -39,7 +39,6 @@
 			line-height:1.2;
 			a {
 				color:@gray-lighter;
-				padding-right: 30px;
 			}
 			a:hover {
 				color:white;
@@ -51,7 +50,6 @@
 			color:white;
 			a {
 				color:white;
-				padding-right: 30px;
 			}
 			a:hover {
 				color:white;
@@ -133,8 +131,8 @@
 
 .header-call {
   width:100%;
-  //  -webkit-box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
-  //  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
   margin:0;
   padding:23px 20px 20px 20px;
   z-index:900;
@@ -194,7 +192,7 @@ span.before-add:before {
 
 .round-delete {
   position:absolute;
-  right:0;
+  right:15px;
   top:-10px;
   color:@link-color;
   .gradient(top, lighten(@focus, 65%), lighten(@focus, 65%));
@@ -213,7 +211,7 @@ span.before-add:before {
 }
 .insert-action {
   bottom:0px;
-  right:0px;
+  right:15px;
   position:absolute;
 }
 
@@ -284,10 +282,10 @@ span.before-add:before {
 }
 
 .text-code {
-  margin-right:10px;
-  width:auto;
-  min-width:30px;
-  max-width:100px;
+	margin-right: 5px;
+	width: auto;
+	min-width: 30px;
+	max-width: 60px;
   font-size: @font-size-large;
 }
 
@@ -302,6 +300,10 @@ span.before-add:before {
   width:100%;
   height:auto;
   margin-top: 10px;
+}
+
+.text-headline {
+	font-size: @font-size-xlarge;
 }
 
 
@@ -363,10 +365,13 @@ table.borderless {
 
 // CF-6.1 labels and badges
 
-.label-saved, .badge-saved {
-.badge {
-  max-width: 100px;
+.badge-saved, .badge-published, .badge-success, .badge-locked {
+  max-width: 90px;
   display: block;
+  font-weight:normal;
+}
+
+.label-saved, .badge-saved {
   background: @gray-light;
 }
 
