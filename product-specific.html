@@ -104,21 +104,21 @@
 
 
 
-            <!-- Focus
-              ================================================== -->
+<!-- Focus
+  ================================================== -->
             <div class="bs-docs-section">
                 <div class="page-header">
                     <h1><span aria-hidden="true" data-icon="&#xe002;" class="focus"></span> Focus</h1>
                 </div>
 
 
-                <!-- Custom Focus
-                  ================================================== -->
+<!-- Custom Focus
+  ================================================== -->
                 <div class="bs-docs-section">
                     <div class="page-header">
                         <h1><span aria-hidden="true" data-icon="&#xe002;" class="focus"></span> Custom Focus: Admin</h1>
 						
-						
+<!-- CF-0.0: Backgrounds & Grid ================================================== -->		
 						<h3>CF-0.0: Backgrounds & Grid</h3>
 						<h4>Grid columns without gutters</h4>
 						<p>For when you don't want columns to have gutters</p>
@@ -194,7 +194,7 @@
  						</div><!-- end example -->					
 						
 						
-						
+<!-- CF-1.0: Typography ================================================== -->							
 						<h3>CF-1.0: Typography</h3>
 						<p>Custom Focus specific headline spacing variations.  The first example shows a structure (admin-wrap has bg color for page, row-admin provides spacing on a bootstrap row) that should immediately follow a navbar (includes spacing for the top areas of the page below the nav)<p>
  						
@@ -239,11 +239,10 @@
 						  <div class="row">
 							  <div class="col-xs-8">
 						  		  <div class="cf-page-header">
-						  		  	<h5 class="">Welcome [admin-name]</h5>
 						  			<h2 class="mar-top-20">Custom Focus Overview</h2>
 								</div>
 							 </div>
-							 <div class="col-xs-4 align-right mar-top-20 pad-top-20">
+							 <div class="col-xs-4 align-right mar-top-30">
 									<button class="btn btn-primary btn-md">Call To Action</button>
 							</div>
 					  	  </div> <!-- end row -->
@@ -256,11 +255,10 @@
  &lt;div class="row"&gt;
   &lt;div class="col-xs-8"&gt;
    &lt;div class="cf-page-header"&gt;
-   &lt;h5 class=""&gt;Welcome [admin-name]&lt;/h5&gt;
    &lt;h2 class="mar-top-20"&gt;Custom Focus Overview&lt;/h2&gt;
   &lt;/div&gt;
  &lt;/div&gt;
- &lt;div class="col-xs-4 align-right mar-top-20 pad-top-20"&gt;
+ &lt;div class="col-xs-4 align-right mar-top-30"&gt;
   &lt;button class="btn btn-primary btn-md"&gt;Call To Action&lt;/button&gt;
  &lt;/div&gt;
 &lt;/div&gt; &lt;!-- end row --&gt;
@@ -287,7 +285,8 @@
 							</div><!-- end well -->	
 						</div><!-- end example -->
 						
-						
+
+<!-- CF-2.0 Navigation Bars & Buttons ================================================== -->							
 						<h3>CF-2.0 Navigation Bars & Buttons</h3>
 						
 						<h4>Primary Product Navbar</h4>
@@ -426,7 +425,7 @@
 						
 						
 						 
-						
+<!-- CF-3.0: Panels & Sections ================================================== -->						
                         <h3>CF-3.0: Panels & Sections</h3>
                         <p>To group items, panels are used.  The panels sometimes have sections that are defined by horizontal lines, other times they have just one object inside.  The following are examples of both.  Please right click to "inspect element" and copy the markup between the descriptive comments bookended by "begin..." and "end...".</P>
                         <div class="bs-example">
@@ -677,9 +676,12 @@
 						</div><!-- end well -->
 						</div><!-- end example -->
 			
-			
+
+<!-- CF-4.0: Form Fields ================================================== -->				
 					 <h3>CF-4.0: Form Fields</h3>
 					 <p>The following are the form fields, dynamic text fields and other input related classess</p>
+					 
+					 <h4>Dynamic Text Field Input</h4>
 					 <div class="bs-example">	
 						 <h4>Dynamic text fields.  Responds to hover and focus</h4>
 						 
@@ -692,29 +694,13 @@
 </pre>
 						</div>
 					 </div> <!-- end example -->
+
+<!-- CF-5.0 tables ================================================== -->	
 					 
-					 <h3>Labels and Badges</h3>
-					 <p>For use on all modules of custom focus.  The "label-saved" etc classes add color, not shape so they can be used for labels and badges</p>
-					  <div class="bs-example">
-
-						  <p><span class="badge badge-saved">Saved</span></p>
-						  <p><span class="badge badge-published">Published</span></p>
-						  <p><span class="badge badge-locked">Locked</span></p>
-					  	
-						<div class="well mar-top-20">
-<pre class="prettyprint">
-&lt;span class="badge badge-saved"&gt;Saved&lt;/span&gt;
-&lt;span class="badge badge-published"&gt;Published&lt;/span&gt;
-&lt;span class="badge badge-locked"&gt;Locked&lt;/span&gt;
-
-</pre>							  
-							  
-						  </div><!-- end well -->
-					  </div><!-- end example -->
-					  
  					 <h3>CF-5.0: Tables</h3>
  					 <p>The class names should be added to the table element</p>
-
+					 
+					 <h4>Borderless Table</h4>
  					 <div class="bs-example">	
 					  
 						 <table class="borderless">
@@ -783,6 +769,31 @@
 						 
 					 </div> <!-- end example -->
 					
+
+<!-- CF-6.0 components ================================================== -->						 
+					 <h3>CF-6.0 components</h3>
+					 <p>Various bootstrap component overwrites</p>
+					 
+					 <h4>Badges</h4>
+					 <p>For use on all modules of custom focus.  The "badge-saved" etc classes add color, not shape so they can be used for labels and badges</p>
+					  <div class="bs-example">
+
+						  <p><span class="badge badge-saved">Saved</span></p>
+						  <p><span class="badge badge-published">Published</span></p>
+						  <p><span class="badge badge-locked">Locked</span></p>
+					  	
+						<div class="well mar-top-20">
+<pre class="prettyprint">
+&lt;span class="badge badge-saved"&gt;Saved&lt;/span&gt;
+&lt;span class="badge badge-published"&gt;Published&lt;/span&gt;
+&lt;span class="badge badge-locked"&gt;Locked&lt;/span&gt;
+
+</pre>							  
+							  
+						  </div><!-- end well -->
+					  </div><!-- end example -->
+					  
+ 					
 						 
                      </div><!-- END CUSTOM FOCUS -->
 

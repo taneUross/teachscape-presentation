@@ -6473,6 +6473,9 @@ fieldset[disabled] .btn,
 .mar-right-20 {
   margin-right: 20px;
 }
+.mar-top-30 {
+  margin-top: 30px;
+}
 .mar-bot-20 {
   margin-bottom: 20px;
 }
@@ -6617,6 +6620,9 @@ fieldset[disabled] .btn,
 .cf-page-header h1,
 .cf-page-header h2 {
   margin: 0;
+}
+h3.smaller {
+  font-size: 24px;
 }
 /* CF-2.0 navigation & buttons ======================== */
 .navbar-ts {
