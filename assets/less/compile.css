@@ -6447,6 +6447,28 @@ fieldset[disabled] .btn,
   color: #333333;
   /* text color */
 }
+.panel-heading .collapsed .caret {
+  display: none;
+}
+.panel-heading .caret {
+  display: inline-block;
+}
+.panel-heading .right-caret {
+  display: none;
+}
+.panel-heading .collapsed .right-caret {
+  display: inline-block;
+}
+.right-caret {
+  border-bottom: 4px solid transparent;
+  border-top: 4px solid transparent;
+  border-left: 4px solid;
+  display: inline-block;
+  height: 0;
+  vertical-align: middle;
+  width: 0;
+  margin-left: 2px;
+}
 /*	8. Footer ------------------------------------------------------- */
 /*	9. Utilities ---------------------------------------------------- */
 .smaller {
@@ -6478,6 +6500,9 @@ fieldset[disabled] .btn,
 }
 .mar-bot-20 {
   margin-bottom: 20px;
+}
+.mar-top-15 {
+  margin-top: 15px;
 }
 .pad-top-30 {
   padding-top: 30px;
@@ -6607,6 +6632,13 @@ fieldset[disabled] .btn,
   top: 0;
   right: 0;
 }
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #999999;
+}
 /* CF-1.0 typography ================================== */
 .cf-page-header {
   margin-top: 30px;
@@ -6663,6 +6695,7 @@ h3.smaller {
   margin: 0;
   padding: 23px 20px 20px 20px;
   z-index: 900;
+  background-color: white;
 }
 .header-call div h1,
 .header-call div h2,
@@ -6756,6 +6789,20 @@ span.before-add:before {
 .no-score-button {
   left: 110px;
 }
+.ts-breadcrumb {
+  background: none;
+  border-radius: 0;
+}
+.ts-breadcrumb li + li.active:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #999999;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
 /* CF-3.0 panels and sections ======================== */
 .section-bar {
   border-radius: 0;
@@ -6801,6 +6848,7 @@ span.before-add:before {
   border: 1px solid white;
   padding: 0px 5px;
   margin: 0;
+  width: 100%;
 }
 .text-edit:hover {
   border: 1px solid #999999;
