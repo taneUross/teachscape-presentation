@@ -6596,6 +6596,9 @@ fieldset[disabled] .btn,
   color: white;
   text-decoration: none;
 }
+.sidebar-wrap ul li .arrow-left {
+  display: none;
+}
 .sidebar-wrap ul li.active {
   background-color: #404040;
   background-image: -webkit-linear-gradient(top, #404040, #272727);
@@ -6610,6 +6613,9 @@ fieldset[disabled] .btn,
 }
 .sidebar-wrap ul li.active a:hover {
   color: white;
+}
+.sidebar-wrap ul li.active .arrow-left {
+  display: inline-block;
 }
 .sidebar-wrap ul li:hover {
   background-color: #404040;
