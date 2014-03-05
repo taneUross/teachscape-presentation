@@ -6249,9 +6249,11 @@ you can use the generic selector below, but it's slower:
 4. Header / #header
 
 5. Content / #content
-	5.1 Nav
-		5.1.1 Breadcrumb
-		5.1.2 Left Nav
+	5.1 Nav & Buttons
+		5.1.1 Buttons
+		5.1.2 Breadcrumb
+		5.1.3 Left Nav
+		5.1.4 Dropdown Menu
 	5.2 Modal Dialog
 	5.3 Table
 
@@ -6316,9 +6318,7 @@ h4.modal-title {
   background: #eeeeee;
 }
 /*	5.1 Nav & Buttons ---------------------------------------------- */
-.dropdown-menu > li > a {
-  color: #2f4fa2;
-}
+/*	5.1.1 Buttons ----------------------------------------------- */
 .btn-primary {
   background-color: #2f4fa2;
   background-image: -webkit-linear-gradient(top, #2f4fa2, #243c7a);
@@ -6326,6 +6326,7 @@ h4.modal-title {
   background-image: -o-linear-gradient(top, #2f4fa2, #243c7a);
   background-image: -ms-linear-gradient(top, #2f4fa2, #243c7a);
   background-image: linear-gradient(top, #2f4fa2, #243c7a);
+  border: 1px solid #999999;
 }
 .btn-primary:hover {
   background-color: #243c7a;
@@ -6342,17 +6343,19 @@ h4.modal-title {
   background-image: -o-linear-gradient(top, #ffffff, #f2f2f2);
   background-image: -ms-linear-gradient(top, #ffffff, #f2f2f2);
   background-image: linear-gradient(top, #ffffff, #f2f2f2);
+  border: 1px solid #999999;
 }
 .btn-default:hover {
-  background-color: #fcfcfc;
-  background-image: -webkit-linear-gradient(top, #fcfcfc, #fcfcfc);
-  background-image: -moz-linear-gradient(top, #fcfcfc, #fcfcfc);
-  background-image: -o-linear-gradient(top, #fcfcfc, #fcfcfc);
-  background-image: -ms-linear-gradient(top, #fcfcfc, #fcfcfc);
-  background-image: linear-gradient(top, #fcfcfc, #fcfcfc);
-  -webkit-box-shadow: 0px 0px 5px 0px #5bc0de;
-  box-shadow: 0px 0px 5px 0px #5bc0de;
-  border: 1px solid #555555;
+  background-color: #f2f2f2;
+  background-image: -webkit-linear-gradient(top, #f2f2f2, #ffffff);
+  background-image: -moz-linear-gradient(top, #f2f2f2, #ffffff);
+  background-image: -o-linear-gradient(top, #f2f2f2, #ffffff);
+  background-image: -ms-linear-gradient(top, #f2f2f2, #ffffff);
+  background-image: linear-gradient(top, #f2f2f2, #ffffff);
+  color: #243c7a;
+}
+.btn-default:hover {
+  border: 1px solid #999999;
 }
 .btn.disabled,
 .btn[disabled],
@@ -6363,17 +6366,21 @@ fieldset[disabled] .btn,
   color: #555555;
   border-color: #555555;
 }
-/*	5.1.1 Breadcrumb ----------------------------------------------- */
+/*	5.1.2 Breadcrumb ----------------------------------------------- */
 .breadcrumb > li + li:before {
   padding: 0 5px;
   color: #999999;
   font-family: 'TS';
   content: "\f0da";
 }
-/*	5.1.2 Left Nav ------------------------------------------------- */
+/*	5.1.3 Left Nav ------------------------------------------------- */
 .bs-sidenav {
   line-height: 1em;
   font-size: 14px;
+}
+/*	5.1.4 Dropdown Menu ------------------------------------------------- */
+.dropdown-menu > li > a {
+  color: #2f4fa2;
 }
 /*	5.2 Modal Dialog ------------------------------------------------ */
 .modal-backdrop.fade {
@@ -6540,7 +6547,6 @@ fieldset[disabled] .btn,
 .pos-absolute {
   position: absolute;
 }
-@state-success #2f8d29;
 @media (min-width: 768px) {
   .container {
     max-width: 750px;
