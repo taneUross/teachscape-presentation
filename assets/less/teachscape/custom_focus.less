@@ -182,14 +182,30 @@ button.btn-score:hover {
 }
 
 button.btn-score:before {
-  content: "*";
+  content: "";
+  background: url("../../images/icon_rubric.png") no-repeat -24px 1px;
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin: 0 6px 0 0;
 }
+
 button.btn-score.active:before {
-  content: "**";
+    content: "";
+    background: url("../../images/icon_rubric.png") no-repeat 0px 1px;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 6px 0 0;
 }
 
 span.before-add:before {
-  content: "+";
+    content: "";
+    background: url("../../images/icon_rubric.png") no-repeat -45px 3px;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 6px 0 0;
 }
 
 .btn-round {
