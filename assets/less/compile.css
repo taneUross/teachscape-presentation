@@ -6261,6 +6261,9 @@ you can use the generic selector below, but it's slower:
 -------------------------------------------------------------------*/
 /*	1. Body ------------------------------------------------------ */
 /*	2. Typography ------------------------------------------------ */
+.gray {
+  color: #999999;
+}
 /*	2.1 Heading -------------------------------------------------- */
 h1 {
   color: #222222;
@@ -6673,6 +6676,9 @@ fieldset[disabled] .btn,
 h3.smaller {
   font-size: 24px;
 }
+a:hover {
+  text-decoration: none;
+}
 /* CF-2.0 navigation & buttons ======================== */
 .navbar-ts {
   background-color: white;
@@ -6827,37 +6833,28 @@ span.before-add:before {
   margin-bottom: 0px;
   padding-bottom: 0px;
 }
-.ts-breadcrumb li.active:after {
-  color: #eeeeee;
-  font-family: 'TS';
-  content: "\f0d8";
-  font-size: 30px;
-  position: relative;
-  bottom: -16px;
-  right: 0px;
-}
 /* CF-3.0 panels and sections ======================== */
 .section-bar {
   border-radius: 0;
   margin: 0;
 }
-.bar-0 {
+.bar-1 {
   margin-left: 0;
   margin-top: 20px;
 }
-.bar-1 {
+.bar-2 {
   margin-left: 10px;
   margin-top: 10px;
 }
-.bar-2 {
+.bar-3 {
   margin-left: 20px;
   margin-top: 10px;
 }
-.bar-3 {
+.bar-4 {
   margin-left: 30px;
   margin-top: 10px;
 }
-.bar-4 {
+.bar-5 {
   margin-left: 40px;
   margin-top: 10px;
 }
@@ -6935,6 +6932,30 @@ table.borderless tbody td {
   border: none;
 }
 /* CF-6.0 components ======================== */
+ul.scoring {
+  overflow: auto;
+  list-style: none;
+  font-size: 14px;
+  width: auto;
+  height: 300px;
+  white-space: nowrap;
+  padding: 0;
+  display: block;
+}
+ul.scoring li {
+  border-left: 1px dotted #999999;
+  padding: 10px 5px;
+  display: inline-block;
+  width: 24%;
+}
+ul.scoring li:first-child {
+  border-left: 0px;
+}
+ul.scoring li label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
 .badge-saved,
 .badge-published,
 .badge-success,

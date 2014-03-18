@@ -117,6 +117,10 @@ h3.smaller {
 	font-size: 24px;
 }
 
+a:hover {
+	text-decoration:none;
+}
+
 
 /* CF-2.0 navigation & buttons ======================== */
 .navbar-ts {
@@ -270,15 +274,6 @@ span.before-add:before {
 	border-radius: 0;
 	margin-bottom:0px;
 	padding-bottom:0px;
-	li.active:after {
-		color: #eeeeee;
-		font-family: 'TS';
-		content: "\f0d8";
-		font-size: 30px;
-		position: relative;
-		bottom: -16px;
-		right: 0px;
-	}
 }
 
 
@@ -289,27 +284,26 @@ span.before-add:before {
   margin:0;
 }
 
-.bar-0 {
+.bar-1 {
   margin-left:0;
   margin-top:20px;
 }
-.bar-1 {
+.bar-2 {
   margin-left:10px;
   margin-top:10px;
 }
-.bar-2 {
+.bar-3 {
   margin-left:20px;
   margin-top:10px;
 }
-.bar-3 {
+.bar-4 {
   margin-left:30px;
   margin-top:10px;
 }
-.bar-4 {
+.bar-5 {
   margin-left:40px;
   margin-top:10px;
 }
-
 
 .tree-0 {
 	padding-left:10px;
@@ -425,6 +419,31 @@ table.borderless {
 
 /* CF-6.0 components ======================== */
 
+
+ul.scoring {
+	overflow: auto;
+	list-style:none;
+	font-size:14px;
+	width:auto;
+	height:300px;
+	white-space: nowrap;
+	padding:0;
+	display:block;
+	li {
+		border-left:1px dotted @gray-light;
+		padding: 10px 5px;
+		display:inline-block;
+		width: 24%;
+		&:first-child {
+			border-left: 0px;
+		}
+		label {
+			display:block;
+			margin-top:10px;
+			margin-bottom:0px;
+		}
+	}
+}
 
 // CF-6.1 labels and badges
 
