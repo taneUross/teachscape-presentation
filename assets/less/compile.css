@@ -6932,30 +6932,6 @@ table.borderless tbody td {
   border: none;
 }
 /* CF-6.0 components ======================== */
-ul.scoring {
-  overflow: auto;
-  list-style: none;
-  font-size: 14px;
-  width: auto;
-  height: 300px;
-  white-space: nowrap;
-  padding: 0;
-  display: block;
-}
-ul.scoring li {
-  border-left: 1px dotted #999999;
-  padding: 10px 5px;
-  display: inline-block;
-  width: 24%;
-}
-ul.scoring li:first-child {
-  border-left: 0px;
-}
-ul.scoring li label {
-  display: block;
-  margin-top: 10px;
-  margin-bottom: 0px;
-}
 .badge-saved,
 .badge-published,
 .badge-success,
@@ -6979,6 +6955,30 @@ ul.scoring li label {
 .label-success,
 .badge-success {
   background: #5cb85c;
+}
+ul.scoring {
+  overflow: auto;
+  list-style: none;
+  font-size: 14px;
+  width: auto;
+  height: 300px;
+  white-space: nowrap;
+  padding: 0;
+  display: block;
+}
+ul.scoring li {
+  border-left: 1px dotted #999999;
+  padding: 0px 15px;
+  display: inline-block;
+  width: 24%;
+}
+ul.scoring li:first-child {
+  border-left: 0px;
+}
+ul.scoring li label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
 /* CF-10.0 Utilities ======================== */
 .pos-relative {
