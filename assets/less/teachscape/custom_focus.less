@@ -111,6 +111,10 @@ h3.smaller {
 	font-size: 24px;
 }
 
+a:hover {
+	text-decoration:none;
+}
+
 
 /* CF-2.0 navigation & buttons ======================== */
 .navbar-ts {
@@ -182,14 +186,30 @@ button.btn-score:hover {
 }
 
 button.btn-score:before {
-  content: "*";
+  content: "";
+  background: url("../../images/icon_rubric.png") no-repeat -24px 1px;
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin: 0 6px 0 0;
 }
+
 button.btn-score.active:before {
-  content: "**";
+    content: "";
+    background: url("../../images/icon_rubric.png") no-repeat 0px 1px;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 6px 0 0;
 }
 
 span.before-add:before {
-  content: "+";
+    content: "";
+    background: url("../../images/icon_rubric.png") no-repeat -45px 3px;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 6px 0 0;
 }
 
 .btn-round {
@@ -244,19 +264,10 @@ span.before-add:before {
 //CF-2.3 breadcrumb
 
 .ts-breadcrumb {
-  background: none;
-  border-radius: 0;
-  margin-bottom: 0;
-  li.active {
-    // width: 0; 
-    // height: 0; 
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 5px solid @gray-light;
-    // position:absolute;
-    // bottom:0;
-    // left:0;
-  }
+	background: none;
+	border-radius: 0;
+	margin-bottom:0px;
+	padding-bottom:0px;
 }
 
 
@@ -267,27 +278,21 @@ span.before-add:before {
   margin:0;
 }
 
-.bar-0 {
-  margin-left:0;
-  margin-top:20px;
-}
 .bar-1 {
   margin-left:10px;
-  margin-top:10px;
 }
 .bar-2 {
   margin-left:20px;
-  margin-top:10px;
 }
 .bar-3 {
   margin-left:30px;
-  margin-top:10px;
 }
 .bar-4 {
   margin-left:40px;
-  margin-top:10px;
 }
-
+.bar-5 {
+  margin-left:50px;
+}
 
 .tree-0 {
 	padding-left:10px;
@@ -403,7 +408,6 @@ table.borderless {
 
 /* CF-6.0 components ======================== */
 
-
 // CF-6.1 labels and badges
 
 .badge-saved, .badge-published, .badge-success, .badge-locked {
@@ -430,6 +434,32 @@ table.borderless {
 
 // CF-6.2 accordions collapse
 
+
+// CF6.3 custom lists
+ul.scoring {
+	overflow: auto;
+	list-style:none;
+	font-size:14px;
+	width:auto;
+	height:300px;
+	white-space: nowrap;
+	padding:0;
+	display:block;
+	li {
+		border-left:1px dotted @gray-light;
+		padding: 0px 15px;
+		display:inline-block;
+		width: 24%;
+		&:first-child {
+			border-left: 0px;
+		}
+		label {
+			display:block;
+			margin-top:10px;
+			margin-bottom:0px;
+		}
+	}
+}
 
 
 /* CF-10.0 Utilities ======================== */

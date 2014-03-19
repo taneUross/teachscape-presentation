@@ -538,8 +538,43 @@
 											<textarea class="text-edit text-description" placeholder="Enter Description" rows="2"></textarea>
 										</div>
 										<div class="col-xs-5  pos-relative">
-													<button class="btn-score">Score Functions</button><!-- toggle 'active' state to change icon -->
-													<button class="btn-round round-edit"><span class="icon-pencil"></span></button>
+													<button class="btn-score">Rate On This Tier</button><!-- toggle 'active' state to change icon -->
+													
+													<button class="btn-round round-delete"><span class="icon-trash"></span></button>
+										</div>
+									</div>
+									
+									
+									<!-- Insert dropdown -->
+									<div class="row pos-relative">
+										<div class="insert-action">
+											<div class="btn-group">
+											  <button type="button" class="btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown">
+											    <span class="before-add"> Insert Row Below</span> <span class="caret"></span>
+											  </button>
+											  <ul class="dropdown-menu" role="menu">
+											    <li><span class="disabled">Add Higher-Level Section</span></li>
+											    <li><a href="#">Add Same-Level Section</a></li>
+											    <li><a href="#">Add Lower-Level Section</a></li>
+											  </ul>
+											</div>
+										</div>
+									</div><!-- end Insert dropdown -->
+									
+									
+                                </div>
+                            </div>
+                            <div class="panel section-bar bar-1">
+                                <div class="panel-content content-single">
+									<div class="row">
+	                                    <div class="col-xs-7">
+											<input type="text" class="text-edit text-code" placeholder="1" size:"3"></input>
+											<input type="text" class="text-edit text-title" placeholder="Enter Section Title"></input>
+											<textarea class="text-edit text-description" placeholder="Enter Description" rows="2"></textarea>
+										</div>
+										<div class="col-xs-5  pos-relative">
+													<button class="btn-score active">Remove Rating</button><!-- toggle 'active' state to change icon -->
+													
 													<button class="btn-round round-delete"><span class="icon-trash"></span></button>
 										</div>
 									</div>
@@ -620,8 +655,8 @@
 										
 										<!-- section buttons - not first family -->
 										<div class="col-xs-4  pos-relative ">
-											<button class="btn-score">Scoring</button><!-- toggle 'active' state to change icon -->
-											<button class="btn-round round-edit no-score-button"><span class="icon-pencil"></span></button>
+											<button class="btn-score">Rate On This Tier</button><!-- toggle 'active' state to change icon -->
+											
 											<button class="btn-round round-delete"><span class="icon-trash"></span></button>
 										</div>
 										<!-- end section buttons - not first family -->
@@ -811,6 +846,101 @@
 						  </div><!-- end well -->
 					  </div><!-- end example -->
 					  
+					  <h4>CF-6.3 Custom Lists: Scoring Forms</h4>
+					  <p>This is for the rubic and appears inside the section where scoring functions are added</p>
+					   	<div class="bs-example">
+						
+						<div class="row">
+							<div class="col-xs-12">
+								<h5>Rating Levels</h5>
+								<p class="smaller gray">Default values are carried over from the most recent inputs</p>
+								<ul class="scoring">
+									<li>
+										<label>Title</label>
+										<input></input>
+										<label>Label</label>
+										<input></input>
+										<label>Description</label>
+										<textarea cols="23"></textarea>
+										<a href="#" style="display:block"><span class="icon-trash"></span></a>
+									</li>
+									<li>
+										<label>Title</label>
+										<input></input>
+										<label>Label</label>
+										<input></input>
+										<label>Description</label>
+										<textarea cols="23"></textarea>
+										<a href="#" style="display:block"><span class="icon-trash"></span></a>
+									</li>
+									<li>
+										<label>Title</label>
+										<input></input>
+										<label>Label</label>
+										<input></input>
+										<label>Description</label>
+										<textarea cols="23"></textarea>
+										<a href="#" style="display:block"><span class="icon-trash"></span></a>
+									</li>
+									<li>
+										<label>Title</label>
+										<input></input>
+										<label>Label</label>
+										<input></input>
+										<label>Description</label>
+										<textarea cols="23"></textarea>
+										<a href="#" style="display:block"><span class="icon-trash"></span></a>
+									</li>
+									<li>
+										<label>Title</label>
+										<input></input>
+										<label>Label</label>
+										<input></input>
+										<label>Description</label>
+										<textarea cols="23"></textarea>
+										<a href="#" style="display:block"><span class="icon-trash"></span></a>
+									</li>
+								</ul>
+								<button class="btn-default btn-xs"><span class="icon-plus"></span> Add Rating Column</button>
+								<p class="smaller gray mar-top-20">Please do not include a rating level of "Non-Evident".  This rating will automatically be included for users.</p>
+							</div>
+						</div>
+						
+						</div><!-- end example -->
+ <div class="well mar-top-20">
+ <pre class="prettyprint">
+ &lt;div class="row"&gt;
+  &lt;div class="col-xs-12"&gt;
+   &lt;h5&gt;Rating Levels &lt;/h5&gt;
+   &lt;p class="smaller gray"&gt;Default values are carried over from the most recent inputs &lt;/p&gt;
+   &lt;ul class="scoring"&gt;
+    &lt;li&gt;
+     &lt;label&gt;Title &lt;/label&gt;
+     &lt;input&gt; &lt;/input&gt;
+     &lt;label&gt;Label &lt;/label&gt;
+     &lt;input&gt; &lt;/input&gt;
+     &lt;label&gt;Description &lt;/label&gt;
+     &lt;textarea cols="23"&gt; &lt;/textarea&gt;
+     &lt;a href="#" style="display:block"&gt; &lt;span class="icon-trash"&gt; &lt;/span&gt; &lt;/a&gt;
+    &lt;/li&gt;
+			
+    &lt;li&gt;
+	 &lt;label&gt;Title &lt;/label&gt;
+	 &lt;input&gt; &lt;/input&gt;
+	 &lt;label&gt;Label &lt;/label&gt;
+	 &lt;input&gt; &lt;/input&gt;
+	 &lt;label&gt;Description &lt;/label&gt;
+	 &lt;textarea cols="23"&gt; &lt;/textarea&gt;
+	 &lt;a href="#" style="display:block"&gt; &lt;span class="icon-trash"&gt; &lt;/span&gt; &lt;/a&gt;
+    &lt;/li&gt;
+   &lt;/ul&gt;
+   &lt;button class="btn-default btn-xs"&gt; &lt;span class="icon-plus"&gt; &lt;/span&gt; Add Rating Column &lt;/button&gt;
+   &lt;p class="smaller gray mar-top-20"&gt;Please do not include a rating level of "Non-Evident".  This rating will automatically be included for users. &lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+
+ </pre>							  
+ </div>
  					
 						 
                      </div><!-- END CUSTOM FOCUS -->

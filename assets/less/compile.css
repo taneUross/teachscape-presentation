@@ -6249,9 +6249,11 @@ you can use the generic selector below, but it's slower:
 4. Header / #header
 
 5. Content / #content
-	5.1 Nav
-		5.1.1 Breadcrumb
-		5.1.2 Left Nav
+	5.1 Nav & Buttons
+		5.1.1 Buttons
+		5.1.2 Breadcrumb
+		5.1.3 Left Nav
+		5.1.4 Dropdown Menu
 	5.2 Modal Dialog
 	5.3 Table
 
@@ -6259,6 +6261,9 @@ you can use the generic selector below, but it's slower:
 -------------------------------------------------------------------*/
 /*	1. Body ------------------------------------------------------ */
 /*	2. Typography ------------------------------------------------ */
+.gray {
+  color: #999999;
+}
 /*	2.1 Heading -------------------------------------------------- */
 h1 {
   color: #222222;
@@ -6316,9 +6321,7 @@ h4.modal-title {
   background: #eeeeee;
 }
 /*	5.1 Nav & Buttons ---------------------------------------------- */
-.dropdown-menu > li > a {
-  color: #2f4fa2;
-}
+/*	5.1.1 Buttons ----------------------------------------------- */
 .btn-primary {
   background-color: #2f4fa2;
   background-image: -webkit-linear-gradient(top, #2f4fa2, #243c7a);
@@ -6326,6 +6329,7 @@ h4.modal-title {
   background-image: -o-linear-gradient(top, #2f4fa2, #243c7a);
   background-image: -ms-linear-gradient(top, #2f4fa2, #243c7a);
   background-image: linear-gradient(top, #2f4fa2, #243c7a);
+  border: 1px solid #999999;
 }
 .btn-primary:hover {
   background-color: #243c7a;
@@ -6342,17 +6346,19 @@ h4.modal-title {
   background-image: -o-linear-gradient(top, #ffffff, #f2f2f2);
   background-image: -ms-linear-gradient(top, #ffffff, #f2f2f2);
   background-image: linear-gradient(top, #ffffff, #f2f2f2);
+  border: 1px solid #999999;
 }
 .btn-default:hover {
-  background-color: #fcfcfc;
-  background-image: -webkit-linear-gradient(top, #fcfcfc, #fcfcfc);
-  background-image: -moz-linear-gradient(top, #fcfcfc, #fcfcfc);
-  background-image: -o-linear-gradient(top, #fcfcfc, #fcfcfc);
-  background-image: -ms-linear-gradient(top, #fcfcfc, #fcfcfc);
-  background-image: linear-gradient(top, #fcfcfc, #fcfcfc);
-  -webkit-box-shadow: 0px 0px 5px 0px #5bc0de;
-  box-shadow: 0px 0px 5px 0px #5bc0de;
-  border: 1px solid #555555;
+  background-color: #f2f2f2;
+  background-image: -webkit-linear-gradient(top, #f2f2f2, #ffffff);
+  background-image: -moz-linear-gradient(top, #f2f2f2, #ffffff);
+  background-image: -o-linear-gradient(top, #f2f2f2, #ffffff);
+  background-image: -ms-linear-gradient(top, #f2f2f2, #ffffff);
+  background-image: linear-gradient(top, #f2f2f2, #ffffff);
+  color: #243c7a;
+}
+.btn-default:hover {
+  border: 1px solid #999999;
 }
 .btn.disabled,
 .btn[disabled],
@@ -6363,17 +6369,21 @@ fieldset[disabled] .btn,
   color: #555555;
   border-color: #555555;
 }
-/*	5.1.1 Breadcrumb ----------------------------------------------- */
+/*	5.1.2 Breadcrumb ----------------------------------------------- */
 .breadcrumb > li + li:before {
   padding: 0 5px;
   color: #999999;
   font-family: 'TS';
   content: "\f0da";
 }
-/*	5.1.2 Left Nav ------------------------------------------------- */
+/*	5.1.3 Left Nav ------------------------------------------------- */
 .bs-sidenav {
   line-height: 1em;
   font-size: 14px;
+}
+/*	5.1.4 Dropdown Menu ------------------------------------------------- */
+.dropdown-menu > li > a {
+  color: #2f4fa2;
 }
 /*	5.2 Modal Dialog ------------------------------------------------ */
 .modal-backdrop.fade {
@@ -6540,7 +6550,6 @@ fieldset[disabled] .btn,
 .pos-absolute {
   position: absolute;
 }
-@state-success #2f8d29;
 @media (min-width: 768px) {
   .container {
     max-width: 750px;
@@ -6563,7 +6572,6 @@ fieldset[disabled] .btn,
   margin: 0;
 }
 .sidebar-wrap {
-  padding-top: 30px;
   z-index: 10;
   background: #737373;
 }
@@ -6572,22 +6580,28 @@ fieldset[disabled] .btn,
   padding: 0;
   margin: 0;
   font-size: 14px;
+  bottom: 0px;
+  height: 100%;
 }
 .sidebar-wrap ul li {
-  padding-top: 15px;
+  padding-top: 20px;
   padding-right: 23px;
   padding-bottom: 15px;
   width: 100%;
   border-bottom: 1px solid #999999;
   color: #eeeeee;
-  background-color: #737373;
-  background-image: -webkit-linear-gradient(top, #737373, #5a5a5a);
-  background-image: -moz-linear-gradient(top, #737373, #5a5a5a);
-  background-image: -o-linear-gradient(top, #737373, #5a5a5a);
-  background-image: -ms-linear-gradient(top, #737373, #5a5a5a);
-  background-image: linear-gradient(top, #737373, #5a5a5a);
+  background-color: #666666;
+  background-image: -webkit-linear-gradient(top, #666666, #5a5a5a);
+  background-image: -moz-linear-gradient(top, #666666, #5a5a5a);
+  background-image: -o-linear-gradient(top, #666666, #5a5a5a);
+  background-image: -ms-linear-gradient(top, #666666, #5a5a5a);
+  background-image: linear-gradient(top, #666666, #5a5a5a);
   position: relative;
   line-height: 1.2;
+}
+.sidebar-wrap ul li:first-child {
+  margin-top: 30px;
+  border-top: 2px solid #999999;
 }
 .sidebar-wrap ul li a {
   color: #eeeeee;
@@ -6662,6 +6676,9 @@ fieldset[disabled] .btn,
 h3.smaller {
   font-size: 24px;
 }
+a:hover {
+  text-decoration: none;
+}
 /* CF-2.0 navigation & buttons ======================== */
 .navbar-ts {
   background-color: white;
@@ -6722,13 +6739,28 @@ button.btn-score:hover {
   border: none;
 }
 button.btn-score:before {
-  content: "*";
+  content: "";
+  background: url("../../images/icon_rubric.png") no-repeat -24px 1px;
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin: 0 6px 0 0;
 }
 button.btn-score.active:before {
-  content: "**";
+  content: "";
+  background: url("../../images/icon_rubric.png") no-repeat 0px 1px;
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin: 0 6px 0 0;
 }
 span.before-add:before {
-  content: "+";
+  content: "";
+  background: url("../../images/icon_rubric.png") no-repeat -45px 3px;
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin: 0 6px 0 0;
 }
 .btn-round {
   -moz-border-radius: 20px;
@@ -6798,39 +6830,31 @@ span.before-add:before {
 .ts-breadcrumb {
   background: none;
   border-radius: 0;
-}
-.ts-breadcrumb li + li.active:after {
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid #999999;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 /* CF-3.0 panels and sections ======================== */
 .section-bar {
   border-radius: 0;
   margin: 0;
 }
-.bar-0 {
+.bar-1 {
   margin-left: 0;
   margin-top: 20px;
 }
-.bar-1 {
+.bar-2 {
   margin-left: 10px;
   margin-top: 10px;
 }
-.bar-2 {
+.bar-3 {
   margin-left: 20px;
   margin-top: 10px;
 }
-.bar-3 {
+.bar-4 {
   margin-left: 30px;
   margin-top: 10px;
 }
-.bar-4 {
+.bar-5 {
   margin-left: 40px;
   margin-top: 10px;
 }
@@ -6931,6 +6955,30 @@ table.borderless tbody td {
 .label-success,
 .badge-success {
   background: #5cb85c;
+}
+ul.scoring {
+  overflow: auto;
+  list-style: none;
+  font-size: 14px;
+  width: auto;
+  height: 300px;
+  white-space: nowrap;
+  padding: 0;
+  display: block;
+}
+ul.scoring li {
+  border-left: 1px dotted #999999;
+  padding: 0px 15px;
+  display: inline-block;
+  width: 24%;
+}
+ul.scoring li:first-child {
+  border-left: 0px;
+}
+ul.scoring li label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
 /* CF-10.0 Utilities ======================== */
 .pos-relative {
