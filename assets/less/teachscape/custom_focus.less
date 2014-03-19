@@ -244,18 +244,19 @@ span.before-add:before {
 //CF-2.3 breadcrumb
 
 .ts-breadcrumb {
-	background: none;
-	border-radius: 0;
-	li + li.active:after {
-		width: 0; 
-		height: 0; 
-		border-left: 5px solid transparent;
-		border-right: 5px solid transparent;
-		border-bottom: 5px solid @gray-light;
-		position:absolute;
-		bottom:0;
-		left:0;
-	}
+  background: none;
+  border-radius: 0;
+  margin-bottom: 0;
+  li.active {
+    // width: 0; 
+    // height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid @gray-light;
+    // position:absolute;
+    // bottom:0;
+    // left:0;
+  }
 }
 
 
