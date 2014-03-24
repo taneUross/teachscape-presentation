@@ -6276,6 +6276,10 @@ h4,
 h5 {
   color: #732843;
 }
+.divider-circle {
+  color: #999999;
+  margin: 0 5px 5px 5px;
+}
 /*	2.1.1 Heading for Message Box & Modals ------------------------ */
 .bs-callout h4 {
   color: #555555;
@@ -6319,6 +6323,10 @@ h4.modal-title {
 .admin-wrap {
   width: 100%;
   background: #eeeeee;
+}
+.row.admin-content,
+.admin-content {
+  padding: 0 30px;
 }
 /*	5.1 Nav & Buttons ---------------------------------------------- */
 /*	5.1.1 Buttons ----------------------------------------------- */
@@ -6395,6 +6403,14 @@ fieldset[disabled] .btn,
   filter: alpha(opacity=70);
 }
 /*	5.3 Table ------------------------------------------------------- */
+.table-striped > tbody > tr:nth-child(even) > td,
+.table-striped > tbody > tr:nth-child(even) > th {
+  background-color: #f9f9f9;
+}
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: #ffffff;
+}
 /*	5.4 Input Groups ------------------------------------------------------- */
 .glyphicon.glyphicon-search {
   top: 0px;
@@ -6485,6 +6501,9 @@ fieldset[disabled] .btn,
   /*-- make smaller font size --*/
   font-size: 14px;
 }
+.tiny {
+  font-size: 10px;
+}
 .larger {
   /*-- make larger font size --*/
   font-size: 20px;
@@ -6495,9 +6514,20 @@ fieldset[disabled] .btn,
 .align-right {
   text-align: right;
 }
+.align-left {
+  text-align: left;
+}
 .row-admin {
   padding: 0px 30px;
   margin: 0;
+}
+.mar-none,
+.mar-0 {
+  margin: 0px;
+}
+.pad-none,
+.pad-0 {
+  padding: 0px;
 }
 .mar-top-20 {
   margin-top: 20px;
@@ -6525,6 +6555,18 @@ fieldset[disabled] .btn,
 }
 .pad-bot-20 {
   padding-bottom: 20px;
+}
+.pad-right-20 {
+  padding-right: 20px;
+}
+.pad-left-20 {
+  padding-left: 20px;
+}
+.pad-right-30 {
+  padding-right: 30px;
+}
+.pad-20 {
+  padding: 20px;
 }
 .border-bot-dot {
   border-bottom: 1px dotted #737373;
@@ -6571,93 +6613,13 @@ fieldset[disabled] .btn,
   padding: 0;
   margin: 0;
 }
-.sidebar-wrap {
-  z-index: 10;
-  background: #737373;
-}
-.sidebar-wrap ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 14px;
-  bottom: 0px;
-  height: 100%;
-}
-.sidebar-wrap ul li {
-  padding-top: 20px;
-  padding-right: 23px;
-  padding-bottom: 20px;
+.row-player-dark {
+  background: #222222;
+  margin: 0px;
+  padding: 20px;
   width: 100%;
-  border-bottom: 1px solid #999999;
-  color: #eeeeee;
-  background-color: #666666;
-  background-image: -webkit-linear-gradient(top, #666666, #5a5a5a);
-  background-image: -moz-linear-gradient(top, #666666, #5a5a5a);
-  background-image: -o-linear-gradient(top, #666666, #5a5a5a);
-  background-image: -ms-linear-gradient(top, #666666, #5a5a5a);
-  background-image: linear-gradient(top, #666666, #5a5a5a);
-  position: relative;
-  line-height: 1.2;
-}
-.sidebar-wrap ul li:first-child {
-  margin-top: 30px;
-  border-top: 2px solid #999999;
-}
-.sidebar-wrap ul li a {
-  color: #eeeeee;
-}
-.sidebar-wrap ul li a:hover {
-  color: white;
-  text-decoration: none;
-}
-.sidebar-wrap ul li .arrow-left {
-  display: none;
-}
-.sidebar-wrap ul li.active {
-  background-color: #404040;
-  background-image: -webkit-linear-gradient(top, #404040, #272727);
-  background-image: -moz-linear-gradient(top, #404040, #272727);
-  background-image: -o-linear-gradient(top, #404040, #272727);
-  background-image: -ms-linear-gradient(top, #404040, #272727);
-  background-image: linear-gradient(top, #404040, #272727);
-  color: white;
-}
-.sidebar-wrap ul li.active a {
-  color: white;
-}
-.sidebar-wrap ul li.active a:hover {
-  color: white;
-}
-.sidebar-wrap ul li.active .arrow-left {
-  display: inline-block;
-}
-.sidebar-wrap ul li:hover {
-  background-color: #404040;
-  background-image: -webkit-linear-gradient(top, #404040, #272727);
-  background-image: -moz-linear-gradient(top, #404040, #272727);
-  background-image: -o-linear-gradient(top, #404040, #272727);
-  background-image: -ms-linear-gradient(top, #404040, #272727);
-  background-image: linear-gradient(top, #404040, #272727);
-  cursor: pointer;
-}
-.sidebar-wrap ul li:hover a {
-  color: white;
-}
-.arrow-left {
-  width: 20px;
-  height: 100%;
-  background: url('../../images/arrow.svg') right center no-repeat;
-  background-size: 20px 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-.arrow-up {
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid #999999;
+  text-align: center;
+  z-index: 0;
 }
 /* CF-1.0 typography ================================== */
 .cf-page-header {
@@ -6719,6 +6681,7 @@ a:hover {
   padding: 23px 20px 20px 20px;
   z-index: 900;
   background-color: white;
+  margin-top: 20px;
 }
 .header-call div h1,
 .header-call div h2,
@@ -6761,6 +6724,14 @@ span.before-add:before {
   height: 20px;
   float: left;
   margin: 0 6px 0 0;
+}
+.insert-action {
+  bottom: 0px;
+  right: 15px;
+  position: absolute;
+}
+.no-score-button {
+  left: 110px;
 }
 .btn-round {
   -moz-border-radius: 20px;
@@ -6818,14 +6789,6 @@ span.before-add:before {
   position: absolute;
   top: -10px;
   left: 180px;
-}
-.insert-action {
-  bottom: 0px;
-  right: 15px;
-  position: absolute;
-}
-.no-score-button {
-  left: 110px;
 }
 .ts-breadcrumb {
   background: none;
@@ -6921,6 +6884,14 @@ table.borderless tbody td {
   padding: 15px 0;
   border: none;
 }
+table.borderless tbody td h1,
+table.borderless tbody td h2,
+table.borderless tbody td h3,
+table.borderless tbody td h4,
+table.borderless tbody td h5,
+table.borderless tbody td p {
+  margin: 0;
+}
 table.borderless thead td {
   color: #222222;
   padding: 0px 0px 5px 0px;
@@ -6937,7 +6908,7 @@ table.borderless tbody td {
 .badge-success,
 .badge-locked {
   max-width: 90px;
-  display: inline-block;
+  display: block;
   font-weight: normal;
 }
 .label-saved,
@@ -6958,6 +6929,9 @@ table.borderless tbody td {
 .badge-success {
   background: #5cb85c;
 }
+.panel-default .panel-heading {
+  background: white;
+}
 ul.scoring {
   overflow: auto;
   list-style: none;
@@ -6974,13 +6948,131 @@ ul.scoring li {
   display: inline-block;
   width: 24%;
 }
-ul.scoring li:first-child {
-  border-left: 0px;
-}
 ul.scoring li label {
   display: block;
   margin-top: 10px;
   margin-bottom: 0px;
+}
+.filter-sidebar {
+  list-style: none;
+  font-size: 14px;
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-right: 20px;
+}
+.filter-sidebar li.search {
+  margin: 0 0 30px 0;
+  border-bottom: 0px;
+}
+.filter-sidebar li.header {
+  padding-bottom: 5px;
+}
+.filter-sidebar li.header h4 {
+  display: inline-block;
+  margin: 0;
+}
+.filter-sidebar li.header a {
+  display: inline-block;
+  font-size: 12px;
+  margin: 0;
+  margin-left: 25px;
+}
+.filter-sidebar li {
+  margin-top: 30px;
+  border-bottom: 1px dotted #999999;
+  padding-bottom: 10px;
+}
+.filter-sidebar li:last-child {
+  border-bottom: 0px;
+}
+.sidebar-wrap {
+  z-index: 10;
+  background: #737373;
+}
+.sidebar-wrap ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  bottom: 0px;
+  height: 100%;
+}
+.sidebar-wrap ul li {
+  padding-top: 20px;
+  padding-right: 23px;
+  padding-bottom: 15px;
+  width: 100%;
+  border-bottom: 1px solid #999999;
+  color: #eeeeee;
+  background-color: #666666;
+  background-image: -webkit-linear-gradient(top, #666666, #5a5a5a);
+  background-image: -moz-linear-gradient(top, #666666, #5a5a5a);
+  background-image: -o-linear-gradient(top, #666666, #5a5a5a);
+  background-image: -ms-linear-gradient(top, #666666, #5a5a5a);
+  background-image: linear-gradient(top, #666666, #5a5a5a);
+  position: relative;
+  line-height: 1.2;
+}
+.sidebar-wrap ul li:first-child {
+  margin-top: 30px;
+  border-top: 2px solid #999999;
+}
+.sidebar-wrap ul li a {
+  color: #eeeeee;
+}
+.sidebar-wrap ul li a:hover {
+  color: white;
+  text-decoration: none;
+}
+.sidebar-wrap ul li .arrow-left {
+  display: none;
+}
+.sidebar-wrap ul li.active {
+  background-color: #404040;
+  background-image: -webkit-linear-gradient(top, #404040, #272727);
+  background-image: -moz-linear-gradient(top, #404040, #272727);
+  background-image: -o-linear-gradient(top, #404040, #272727);
+  background-image: -ms-linear-gradient(top, #404040, #272727);
+  background-image: linear-gradient(top, #404040, #272727);
+  color: white;
+}
+.sidebar-wrap ul li.active a {
+  color: white;
+}
+.sidebar-wrap ul li.active a:hover {
+  color: white;
+}
+.sidebar-wrap ul li.active .arrow-left {
+  display: inline-block;
+}
+.sidebar-wrap ul li:hover {
+  background-color: #404040;
+  background-image: -webkit-linear-gradient(top, #404040, #272727);
+  background-image: -moz-linear-gradient(top, #404040, #272727);
+  background-image: -o-linear-gradient(top, #404040, #272727);
+  background-image: -ms-linear-gradient(top, #404040, #272727);
+  background-image: linear-gradient(top, #404040, #272727);
+  cursor: pointer;
+}
+.sidebar-wrap ul li:hover a {
+  color: white;
+}
+.arrow-left {
+  width: 20px;
+  height: 100%;
+  background: url('../../images/arrow.svg') right center no-repeat;
+  background-size: 20px 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #999999;
 }
 /* CF-10.0 Utilities ======================== */
 .pos-relative {

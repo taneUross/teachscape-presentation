@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+
+    <title>Custom Focus Prototype 1</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+      
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="../assets/less/compile.css" rel="stylesheet">
+	
+	<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=html"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+      <!-- Static navbar -->
+     
+    
+        <div class="admin-wrap">
+			  
+			  
+			   <!-- begin admin sub nav -->
+			   <nav class="navbar navbar-ts" role="navigation">
+				   <div class="navbar-header">
+				    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+				      <span class="sr-only">Toggle navigation</span>
+				      <span class="icon-bar"></span>
+				      <span class="icon-bar"></span>
+				      <span class="icon-bar"></span>
+				    </button>
+				   </div>
+
+				   <!-- Collect the nav links, forms, and other content for toggling -->
+				   <div class="collapse navbar-collapse navbar-ex1-collapse">
+				  	 <ul class="nav navbar-nav nav-ts">
+					   	<li class="active"><a href="#">Overview</a></li>
+					   	<li><a href="#">Link</a></li>
+					   	<li><a href="#">Link</a></li>
+					   	<li><a href="#">Link</a></li>
+					   	<li><a href="#">Link</a></li>
+					 </ul>
+
+				  	 <ul class="nav navbar-nav nav-ts pull-right">
+				   		<li><a href="#">Help</a></li>
+				   	</ul>
+				   </div>
+			   </nav>
+			   <!-- end admin sub nav -->
+			   <div class="admin-content">
+		   			<div class="cf-page-header">
+						<h1>Manage Media Library</h1>
+					</div>
+					
+					<div class="row">
+						<div class="col-xs-4 col-md-3"><!-- start filter sidebar -->
+							<ul class="filter-sidebar">
+								<li class="search">
+									<div class="input-group">
+									    <span class="input-group-addon glyphicon glyphicon-search"></span>
+									    <input type="text" class="form-control" placeholder="Find Something">
+									</div>
+								</li>
+								<li class="header">
+									<h4>Filter Results</h4><a href="#">Clear All Filters</a>
+								</li>
+								<li>
+									<h5>Status</h5>
+									<input style="width:100%;" placeholder="Filter By Status"></input>
+								</li>
+								<li>
+									<h5>Grade or Grade Span</h5>
+									<input style="width:100%;" placeholder="Filter By Grade"></input>
+								</li>
+								<li>
+									<h5>Subject Type</h5>
+									<input style="width:100%;" placeholder="Filter By Subject"></input>
+								</li>
+								<li>
+									<h5>Custom Tags</h5>
+									<input style="width:100%;" placeholder="Filter By Tag"></input>
+								</li>
+								<li>
+									<h5>Rubric Section Code</h5>
+									<input style="width:100%;" placeholder="Filter By Rubic Code"></input>
+								</li>
+								<li>
+									<h5>Master Coded Level</h5>
+									<input style="width:100%;" placeholder="Filter By Master Coded Level"></input>
+								</li>
+								<li>
+									<p>[ Pref: All search and filtering will apply to the video's meta data and master coded data related to the default rubric: [Rubric Name].]</p>
+									<button class="btn btn-default btn-xs"><span class="icon-download"></span> Download Rubric</button>
+								</li>
+							</ul>
+							
+							
+							
+							<div class="mar-bot-30">
+								
+							</div>
+						</div><!-- end sidebar -->
+						<div class="col-xs-8 col-md-9"> <!-- start table -->
+							<div class="panel">
+								<div class="row panel-content content-row-header">
+									<div class="col-sm-9 mar-top-20">
+										<h5>Showing Results for: "All"  <span class="icon-circle divider-circle tiny"></span> 20 of 40 videos</h5>
+									</div>
+									
+									
+									<div class="col-sm-3 align-right ">
+											<ul class="pagination mar-none">
+											  <li><a href="#">&laquo;</a></li>
+											  <li class="active"><a href="#">1</a></li>
+											  <li><a href="#">2</a></li>
+											  <li><a href="#">&raquo;</a></li>
+											</ul>
+									</div>
+								</div>
+								<div class="row panel-content content-row-center">
+									<div class="col-sm-12 "><!-- table -->
+										<table class="table table-striped">
+											<thead>
+												<tr>
+													<th>Video ID</th>
+													<th>Title</th>
+													<th>Length</th>
+													<th>Usage</th>
+													<th>Grade Span</th>
+													<th>Tags</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>[VidID#]</td>
+													<td>[ Title of the Video ]</td>
+													<td>[mm:ss]</td>
+													<td>[# Calib]</td>
+													<td>[grade_span]</td>
+													<td>[Tag1, Tag2]</td>
+												</tr>
+												<tr>
+													<td>002</td>
+													<td><a href="#">A Great Training Video</a></td>
+													<td>3:24</td>
+													<td>3</td>
+													<td>K-6, K-12</td>
+													<td>T-white, S-mix</td>
+												</tr>
+											
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						
+						</div>
+						
+					</div>
+					<!-- end filter sidebar -->
+				</div>
+		</div> <!-- admin-wrap -->
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

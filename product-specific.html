@@ -86,9 +86,17 @@
         <div class="col-md-3">
             <div class="bs-sidebar hidden-print" role="complementary">
                 <ul class="nav bs-sidenav">
-                    <li> <a href="#focus">Focus</a>
+                    <li id="focusLI"> <a href="#focus">Focus</a>
                         <ul class="nav">
                             <li><a href="#focus-custom">Custom Focus</a></li>
+							<li><a href="#CF-0" >CF-0: Backgrounds & Grid</a></li>
+							<li><a href="#CF-1" >CF-1.0: Typography</a></li>
+							<li><a href="#CF-2" >CF-2.0: Navigation Bars & Buttons</a></li>
+							<li><a href="#CF-3" >CF-3.0: Panels & Sections</a></li>
+							<li><a href="#CF-4" >CF-4.0: Form Fields & Inputs</a></li>
+							<li><a href="#CF-5" >CF-5.0: Tables</a></li>
+							<li><a href="#CF-6" >CF-6.0: Components (badges, lists)</a></li>
+							
                         </ul>
                     </li>
                     <li id="reflectLI" ><a href="#reflect">Reflect</a> </li>
@@ -108,7 +116,7 @@
   ================================================== -->
             <div class="bs-docs-section">
                 <div class="page-header">
-                    <h1><span aria-hidden="true" data-icon="&#xe002;" class="focus"></span> Focus</h1>
+                    <h1><span id="focus" aria-hidden="true" data-icon="&#xe002;" class="focus"></span> Focus</h1>
                 </div>
 
 
@@ -116,10 +124,10 @@
   ================================================== -->
                 <div class="bs-docs-section">
                     <div class="page-header">
-                        <h1><span aria-hidden="true" data-icon="&#xe002;" class="focus"></span> Custom Focus: Admin</h1>
+                        <h1><span id="focus-custom" aria-hidden="true" data-icon="&#xe002;" class="focus"></span> Custom Focus: Admin</h1>
 						
 <!-- CF-0.0: Backgrounds & Grid ================================================== -->		
-						<h3>CF-0.0: Backgrounds & Grid</h3>
+						<h3 id="CF-0">CF-0.0: Backgrounds & Grid</h3>
 						<h4>Grid columns without gutters</h4>
 						<p>For when you don't want columns to have gutters</p>
 						
@@ -153,53 +161,11 @@
 					  
  						</div><!-- end example -->
 						
-						<h4>Sidebar Background</h4>
-						<p>Sidebars should use the grid with "col-no-gutter" so that it hugs the left side of the window.  To make the sidebar "sidebar-wrap" is used and the menu uses ul and li tags.  adding "active" to the li tag will make it dark but a span with "left-arrow" must be inserted after the text.</p>
-						<p>Using the "tree-#" class will add indentation.  The # should be the level in the hierarchy starting with 0.  Adding class "active" will show it as selected and with a black bar and the arrow.  A HREF tags may or may not be used</p>
- 						<div class="bs-example">
-
- 						 <!-- begin sidebar columns -->
- 						 <div class="container-fluid">
- 						  <div class="row">
- 							  <div class="col-xs-4 col-no-gutter sidebar-wrap ">
- 						  			<ul>
-										<li class="tree-0">2  Classroom Environment</li>
-										<li class="tree-0"><a href="#">2  Classroom Environment</a></li>
-										<li class="tree-1"><a href="#">2a  Creating an Environment of Respect and Rapport</a></li>
-										<li class="tree-2 active"><a href="#">2b  Establishing a Culture for Learning this one is really really long for three lines</a><span class="arrow-left"></span></li>
-										<li class="tree-1"><a href="#">2c  Managing Classroom Procedures</a></li>
-										<li class="tree-2"><a href="#">2d  Managing Student Behavior</a></li>
-									</ul>
- 							</div>
- 					  	  </div> <!-- end row -->
- 						 <!-- end sidebar columns --> 
- 						</div>
-					 
-  							<div class="well mar-top-20">
-<pre class="prettyprint">
-&lt;!-- begin sidebar columns --&gt;
-&lt;div class="container-fluid"&gt;
-  &lt;div class="row"&gt;
-	&lt;div class="col-xs-3 col-no-gutter sidebar-wrap "&gt;
-	  &lt;ul&gt;
-	   	&lt;li class="tree-0"&gt; &lt;a href="#"&gt;2  Classroom Environment &lt;/a&gt; &lt;/li&gt;
-	   	&lt;li class="tree-1"&gt; &lt;a href="#"&gt;2a  Creating an Environment of Respect and Rapport &lt;/a&gt; &lt;/li&gt;
-	   	&lt;li class="tree-2 active"&gt; &lt;a href="#"&gt;2b  Establishing a Culture for Learning this one is really really long for three lines &lt;/a&gt; &lt;span class="arrow-left"&gt; &lt;/span&gt; &lt;/li&gt;
-	   	&lt;li class="tree-1"&gt; &lt;a href="#"&gt;2c  Managing Classroom Procedures &lt;/a&gt; &lt;/li&gt;
-	   	&lt;li class="tree-2"&gt; &lt;a href="#"&gt;2d  Managing Student Behavior &lt;/a&gt;&lt;/li&gt;
-	  &lt;/ul&gt;
-	&lt;/div&gt;
-  &lt;/div&gt;  &lt;!-- end row --&gt;
-&lt;/div&gt;
-&lt;!-- end sidebar columns --&gt; 
-</pre>
- 							</div><!-- end well -->
-					  
- 						</div><!-- end example -->					
+									
 						
 						
 <!-- CF-1.0: Typography ================================================== -->							
-						<h3>CF-1.0: Typography</h3>
+						<h3 id="CF-1">CF-1.0: Typography</h3>
 						<p>Custom Focus specific headline spacing variations.  The first example shows a structure (admin-wrap has bg color for page, row-admin provides spacing on a bootstrap row) that should immediately follow a navbar (includes spacing for the top areas of the page below the nav)<p>
  						
 					
@@ -291,7 +257,7 @@
 						
 
 <!-- CF-2.0 Navigation Bars & Buttons ================================================== -->							
-						<h3>CF-2.0 Navigation Bars & Buttons</h3>
+						<h3 id="CF-2">CF-2.0 Navigation Bars & Buttons</h3>
 						
 						<h4>Primary Product Navbar</h4>
 							<p>The following is the admin navigation for primary and secondary pages</p>
@@ -444,7 +410,7 @@
 						
 						 
 <!-- CF-3.0: Panels & Sections ================================================== -->						
-                        <h3>CF-3.0: Panels & Sections</h3>
+                        <h3 id="CF-3">CF-3.0: Panels & Sections</h3>
                         <p>To group items, panels are used.  The panels sometimes have sections that are defined by horizontal lines, other times they have just one object inside.  The following are examples of both.  Please right click to "inspect element" and copy the markup between the descriptive comments bookended by "begin..." and "end...".</P>
                         <div class="bs-example">
 							<h4>Single Panel</h4>
@@ -731,7 +697,7 @@
 			
 
 <!-- CF-4.0: Form Fields ================================================== -->				
-					 <h3>CF-4.0: Form Fields</h3>
+					 <h3 id="CF-4">CF-4.0: Form Fields</h3>
 					 <p>The following are the form fields, dynamic text fields and other input related classess</p>
 					 
 					 <h4>Dynamic Text Field Input</h4>
@@ -750,7 +716,7 @@
 
 <!-- CF-5.0 tables ================================================== -->	
 					 
- 					 <h3>CF-5.0: Tables</h3>
+ 					 <h3 id="CF-5">CF-5.0: Tables</h3>
  					 <p>The class names should be added to the table element</p>
 					 
 					 <h4>Borderless Table</h4>
@@ -824,8 +790,8 @@
 					
 
 <!-- CF-6.0 components ================================================== -->						 
-					 <h3>CF-6.0 components</h3>
-					 <p>Various bootstrap component overwrites</p>
+					 <h3 id="CF-6">CF-6.0: Components</h3>
+					 <p>Various bootstrap component overwrites.  Badges, </p>
 					 
 					 <h4>Badges</h4>
 					 <p>For use on all modules of custom focus.  The "badge-saved" etc classes add color, not shape so they can be used for labels and badges</p>
@@ -941,9 +907,52 @@
 
  </pre>							  
  </div>
- 					
+											<h4>CF-6.4 Sidebar Background</h4>
+											<p>Sidebars should use the grid with "col-no-gutter" so that it hugs the left side of the window.  To make the sidebar "sidebar-wrap" is used and the menu uses ul and li tags.  adding "active" to the li tag will make it dark but a span with "left-arrow" must be inserted after the text.</p>
+											<p>Using the "tree-#" class will add indentation.  The # should be the level in the hierarchy starting with 0.  Adding class "active" will show it as selected and with a black bar and the arrow.  A HREF tags may or may not be used</p>
+					 						<div class="bs-example">
+
+					 						 <!-- begin sidebar columns -->
+					 						 <div class="container-fluid">
+					 						  <div class="row">
+					 							  <div class="col-xs-4 col-no-gutter sidebar-wrap ">
+					 						  			<ul>
+															<li class="tree-0">2  Classroom Environment</li>
+															<li class="tree-0"><a href="#">2  Classroom Environment</a></li>
+															<li class="tree-1"><a href="#">2a  Creating an Environment of Respect and Rapport</a></li>
+															<li class="tree-2 active"><a href="#">2b  Establishing a Culture for Learning this one is really really long for three lines</a><span class="arrow-left"></span></li>
+															<li class="tree-1"><a href="#">2c  Managing Classroom Procedures</a></li>
+															<li class="tree-2"><a href="#">2d  Managing Student Behavior</a></li>
+														</ul>
+					 							</div>
+					 					  	  </div> <!-- end row -->
+					 						 <!-- end sidebar columns --> 
+					 						</div>
+					 
+					  							<div class="well mar-top-20">
+<pre class="prettyprint">
+&lt;!-- begin sidebar columns --&gt;
+&lt;div class="container-fluid"&gt;
+  &lt;div class="row"&gt;
+	&lt;div class="col-xs-3 col-no-gutter sidebar-wrap "&gt;
+	  &lt;ul&gt;
+	   	&lt;li class="tree-0"&gt; &lt;a href="#"&gt;2  Classroom Environment &lt;/a&gt; &lt;/li&gt;
+	   	&lt;li class="tree-1"&gt; &lt;a href="#"&gt;2a  Creating an Environment of Respect and Rapport &lt;/a&gt; &lt;/li&gt;
+	   	&lt;li class="tree-2 active"&gt; &lt;a href="#"&gt;2b  Establishing a Culture for Learning this one is really really long for three lines &lt;/a&gt; &lt;span class="arrow-left"&gt; &lt;/span&gt; &lt;/li&gt;
+	   	&lt;li class="tree-1"&gt; &lt;a href="#"&gt;2c  Managing Classroom Procedures &lt;/a&gt; &lt;/li&gt;
+	   	&lt;li class="tree-2"&gt; &lt;a href="#"&gt;2d  Managing Student Behavior &lt;/a&gt;&lt;/li&gt;
+	  &lt;/ul&gt;
+	&lt;/div&gt;
+  &lt;/div&gt;  &lt;!-- end row --&gt;
+&lt;/div&gt;
+&lt;!-- end sidebar columns --&gt; 
+</pre>
+					 							</div><!-- end well -->
+					  
+					 						</div><!-- end example -->
 						 
-                     </div><!-- END CUSTOM FOCUS -->
+                     </div><!-- END CUSTOM FOCUS  
+================================================== -->
 
 
 
