@@ -6586,7 +6586,7 @@ fieldset[disabled] .btn,
 .sidebar-wrap ul li {
   padding-top: 20px;
   padding-right: 23px;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
   width: 100%;
   border-bottom: 1px solid #999999;
   color: #eeeeee;
@@ -6937,11 +6937,12 @@ table.borderless tbody td {
 .badge-success,
 .badge-locked {
   max-width: 90px;
-  display: block;
+  display: inline-block;
   font-weight: normal;
 }
 .label-saved,
-.badge-saved {
+.badge-saved,
+.badge-draft {
   background: #999999;
 }
 .label-published,
@@ -6949,7 +6950,8 @@ table.borderless tbody td {
   background: #175473;
 }
 .label-locked,
-.badge-locked {
+.badge-locked,
+.badge-expired {
   background: #333333;
 }
 .label-success,

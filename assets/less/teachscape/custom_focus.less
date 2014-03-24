@@ -32,7 +32,7 @@
     li {
       padding-top:20px;
       padding-right:23px;
-      padding-bottom:15px;
+      padding-bottom:20px;
       width:100%;
       border-bottom:1px solid @gray-light;
       color:@gray-lighter;
@@ -423,18 +423,18 @@ table.borderless {
 
 .badge-saved, .badge-published, .badge-success, .badge-locked {
   max-width: 90px;
-  display: block;
+  display: inline-block;
   font-weight:normal;
 }
 
-.label-saved, .badge-saved {
+.label-saved, .badge-saved, .badge-draft {
   background: @gray-light;
 }
 
 .label-published, .badge-published {
   background: @focus;
 }
-.label-locked, .badge-locked {
+.label-locked, .badge-locked, .badge-expired {
   background: @gray-dark;
 }
 
