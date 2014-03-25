@@ -125,10 +125,11 @@
                 <div class="bs-docs-section">
                     <div class="page-header">
                         <h1><span id="focus-custom" aria-hidden="true" data-icon="&#xe002;" class="focus"></span> Custom Focus: Admin</h1>
-						
+
+ <div class="divider-horz"></div>						
 <!-- CF-0.0: Backgrounds & Grid ================================================== -->		
 						<h3 id="CF-0">CF-0.0: Backgrounds & Grid</h3>
-						<h4>Grid columns without gutters</h4>
+						<h4>CF-0.1 Grid without gutters</h4>
 						<p>For when you don't want columns to have gutters</p>
 						
  						<div class="bs-example">
@@ -163,14 +164,14 @@
 						
 									
 						
-						
+ <div class="divider-horz"></div>						
 <!-- CF-1.0: Typography ================================================== -->							
 						<h3 id="CF-1">CF-1.0: Typography</h3>
 						<p>Custom Focus specific headline spacing variations.  The first example shows a structure (admin-wrap has bg color for page, row-admin provides spacing on a bootstrap row) that should immediately follow a navbar (includes spacing for the top areas of the page below the nav)<p>
  						
 					
-						<h4>Landing and splash page headline without call to action</h4>
-						<p>This should not have a background bar, it should be on the page background</p>
+						<h4>CF-1.1 Headline without call to action</h4>
+						<p>Landing and Splash pages, this should not have a background bar, it should be on the page background.</p>
 						<div class="bs-example">
 
 						 <!-- start cf-headline without call -->
@@ -201,7 +202,7 @@
 						  
 						</div><!-- end example -->
 
-						<h4>Landing and splash page headline with call to action</h4>
+						<h4>CF-1.2 Headline with call to action</h4>
 						<p>This should not be on a background bar, it should be on the page background.  This one has a call to action</p>
 						<div class="bs-example">
 						  
@@ -239,9 +240,59 @@
 						  
 						</div><!-- end example -->
 						
+						
+						<h4>CF1-3 View Only Header</h4>
+						<p>This is for View Only pages that have a gray background</p>
 						<div class="bs-example">
-							<h3>Disabled states </h3>
+						  
+						<!-- begin cf-headline view only -->
+						<div class="admin-wrap pad-20">
+						  <div class="row ">
+							  <div class="col-xs-8">
+						  		  <div class="cf-page-header">
+						  			<h2 class="mar-top-20">View Only Title</h2>
+								</div>
+							 </div>
+							 <div class="col-xs-4 align-right mar-top-30">
+									<button class="btn btn-primary btn-md">Call To Action</button>
+							</div>
+					  	  </div> <!-- end row -->
+						  <div class="row divider-view-only mar-bot-20">
+						  </div>
+						</div>
+						<!-- end cf-headline view only -->
+						 
+ 							<div class="well mar-top-20">
+<pre class="prettyprint">
+
+&lt;!-- begin cf-headline view only --&gt;
+&lt;div class="admin-wrap pad-20"&gt;
+ &lt;div class="row "&gt;
+   &lt;div class="col-xs-8"&gt;
+    &lt;div class="cf-page-header"&gt;
+    &lt;h2 class="mar-top-20"&gt;View Only Title&lt;/h2&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="col-xs-4 align-right mar-top-30"&gt;
+   &lt;button class="btn btn-primary btn-md"&gt;Call To Action&lt;/button&gt;
+  &lt;/div&gt;
+ &lt;/div&gt; &lt;!-- end row --&gt;
+ &lt;div class="row divider-view-only mar-bot-20"&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- end cf-headline view only --&gt;
+	
+</pre>
+							</div><!-- end well -->
+						  
+						</div><!-- end example -->
+						
+												
+						
+							<h4>CF-4 Disabled states </h4>
 							<p>Add class="disabled" to the element</p>
+						
+							<div class="bs-example">
 							<div class="mar-top-20">
 								<p><button class="btn btn-primary btn-md disabled">Disabled State</button>	</p>
 								<label for="exampleInputEmail1" class="disabled">Email address</label>
@@ -254,12 +305,64 @@
 </pre>						
 							</div><!-- end well -->	
 						</div><!-- end example -->
-						
 
+							<h4>CF-5 Circles for Step Through </h4>
+
+							<div class="bs-example">
+							<h3 class="dark-gray header-round disp-inline mar-right-20">1</h3><h3 class=" disp-inline dark-gray">Step One</h3>
+							
+							
+<pre class="prettyprint">
+&lt;h3 class="dark-gray header-round disp-inline mar-right-20"&gt;1&lt;/h3&gt;&lt;h3 class=" disp-inline dark-gray"&gt;Step One&lt;/h3&gt;
+</pre>						
+							</div><!-- end well -->	
+						</div><!-- end example -->
+						
+						
+						
+							<h4>CF-5 Colored Text </h4>
+							<p>Add class names to any element</p>
+						
+							<div class="bs-example">
+								
+							<p class="txt-exact">This is a p element in green for exact</p>
+							<div class="txt-adjacent">This is a div element in yellow for adjacent</div>
+							<h5 class="txt-discrepant">This is an h5 element in red for discrepant</h5>
+							<p class="gray">This is a p element in gray</p>
+							<p class="txt-focus">This is a p element in focus green</p>
+							<p class="txt-focus-light">This is a p element in focus green light</p>
+							
+							<div class="well mar-top-20">
+<pre class="prettyprint">
+&lt;p class="txt-exact"&gt;This is a p element in green for exact&lt;/p&gt;
+&lt;div class="txt-adjacent"&gt;This is a div element in yellow for adjacent&lt;/div&gt;
+&lt;h5 class="txt-discrepant"&gt;This is an h5 element in red for discrepant&lt;/h5&gt;
+&lt;p class="gray"&gt;This is a p element in gray&lt;/p&gt;
+&lt;p class="txt-focus"&gt;This is a p element in focus green&lt;/p&gt;
+&lt;p class="txt-focus-light"&gt;This is a p element in focus green light&lt;/p&gt;
+</pre>						
+							</div><!-- end well -->	
+						</div><!-- end example -->
+
+							<h4>CF-5 Circles for Step Through </h4>
+
+							<div class="bs-example">
+							<h3 class="dark-gray header-round disp-inline mar-right-20">1</h3><h3 class=" disp-inline dark-gray">Step One</h3>
+							
+							
+<pre class="prettyprint">
+&lt;h3 class="dark-gray header-round disp-inline mar-right-20"&gt;1&lt;/h3&gt;&lt;h3 class=" disp-inline dark-gray"&gt;Step One&lt;/h3&gt;
+</pre>						
+							</div><!-- end well -->	
+						</div><!-- end example -->
+						
+												
+						
+ <div class="divider-horz"></div>
 <!-- CF-2.0 Navigation Bars & Buttons ================================================== -->							
 						<h3 id="CF-2">CF-2.0 Navigation Bars & Buttons</h3>
 						
-						<h4>Primary Product Navbar</h4>
+						<h4>CF-2.1 Primary Product Navbar</h4>
 							<p>The following is the admin navigation for primary and secondary pages</p>
 													
 				         <div class="bs-example">
@@ -329,7 +432,7 @@
 					</div><!-- end example -->	
 							
 						
-					<h4>Breadcrumb based navigation</h4>
+					<h4>CF-2.2 Breadcrumb based navigation</h4>
 					<p>For tertiary pages</p>
 				 		<div class="bs-example">
 							<!-- begin breadcrumb -->
@@ -338,14 +441,28 @@
 							  <li><a href="#">Library</a></li>
 							  <li class="active">Data</li>
 							</ol>
-					 
 					 	   <!-- end breadcrumb -->
+ 							<div class="well mar-top-20">
+<pre class="prettyprint">
+
+&lt;!-- begin breadcrumb --&gt;
+&lt;ol class="breadcrumb ts-breadcrumb"&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Library&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="active"&gt;Data&lt;/li&gt;
+&lt;/ol&gt;
+&lt;!-- end breadcrumb --&gt;
+	
+</pre>
+							</div><!-- end well -->
+						  						   
+						   
 						   
 					 	</div><!-- end example -->
 						
 						
-						<h4>Title Bars</h4>
-						<p>The following are the call to action bars for tertiary pages.  These usually have headline text, sometimes editable inputs.  They usually have a call to action on the right.  They need to span 100% width with no space on left and right window edges.  You can use a nested grid, as included here and vary the number and/or size of the columns to achieve the designed layout for the elements required.</p>
+						<h4>CF-2.3 Title Bars</h4>
+						<p>The following are the call to action bars for tertiary pages.  These usually have headline text, sometimes editable If we have a prototype and some user datas.  They usually have a call to action on the right.  They need to span 100% width with no space on left and right window edges.  You can use a nested grid, as included here and vary the number and/or size of the columns to achieve the designed layout for the elements required.</p>
 						 <div class="bs-example">
 							 
 							 
@@ -408,12 +525,14 @@
 						 </div><!-- end example -->
 						
 						
-						 
+ <div class="divider-horz"></div>						 
 <!-- CF-3.0: Panels & Sections ================================================== -->						
-                        <h3 id="CF-3">CF-3.0: Panels & Sections</h3>
+                       
+						<h3 id="CF-3">CF-3.0: Panels & Sections</h3>
                         <p>To group items, panels are used.  The panels sometimes have sections that are defined by horizontal lines, other times they have just one object inside.  The following are examples of both.  Please right click to "inspect element" and copy the markup between the descriptive comments bookended by "begin..." and "end...".</P>
-                        <div class="bs-example">
-							<h4>Single Panel</h4>
+                        
+							<h4>CF-3.1 Single Panel</h4>
+							<div class="bs-example">
                             <!-- begin single panel -->
                             <div class="panel">
                                 <div class="panel-content content-single">
@@ -435,9 +554,10 @@
 </pre>
 							</div>
 							
-                        </div>    
+                        </div> 
+
+						<h4>CF-3.2 Multi sectioned panel</h4>   
 						<div class="bs-example">
-							<h4>Multi sectioned panel</h4>
 							
                             <!-- begin multi split row panel -->
                             <div class="panel">
@@ -490,10 +610,11 @@
 							
 						</div>
 						
-						<h3>Rubric Sections</h3>
+						<h3>CF-3.3.1 Rubric Sections</h3>
 						<p>The following are used for sections.  Add/edit the class "bar-0" in order to add indentation to indicate Sub-Sections.  The icons are TBD for a solution, but this solution should only involve css and not additional html elements.</p>
+						  <h4>Parent level, first family Rubric Section Bar</h4>
 						 <div class="bs-example">	
-							 <h4>Parent level, first family Rubric Section Bar</h4>
+							
                             <!-- begin section bar - first family-->
                             <div class="panel section-bar bar-0">
                                 <div class="panel-content content-single">
@@ -606,9 +727,10 @@
 								
 							</div><!-- end well -->
 						</div>	
-						
+
+						<h4>CF-3.3.2 Nested Sub-Sections</h4>
+						<p>Children levels, not first family Rubric Section Bar (bar-3 indent shown here)</p>
 						<div class="bs-example">
-							<h4>Children levels, not first family Rubric Section Bar (bar-3 indent shown here)</h4>
                             <!-- begin sub-section bar - NOT first family-->
                             <div class="panel section-bar bar-3">
                                 <div class="panel-content content-single">
@@ -695,31 +817,34 @@
 						</div><!-- end well -->
 						</div><!-- end example -->
 			
-
+			
+ <div class="divider-horz"></div>
 <!-- CF-4.0: Form Fields ================================================== -->				
 					 <h3 id="CF-4">CF-4.0: Form Fields</h3>
 					 <p>The following are the form fields, dynamic text fields and other input related classess</p>
 					 
-					 <h4>Dynamic Text Field Input</h4>
+					 <h4>CF-4 Dynamic Text Field Input</h4>
+						 <p>Dynamic text fields.  Responds to hover and focus</p>
 					 <div class="bs-example">	
-						 <h4>Dynamic text fields.  Responds to hover and focus</h4>
 						 
 						 <!--begin dynamic text input field -->
-						 <input class="text-edit" placeholder="Enter Title" size="50"></input>
+						 <input class="text-edit" placeholder="Enter Title" style="width:100%"></input>
 						<div class="well mar-top-20">
 <pre class="prettyprint">
 &lt;!--begin dynamic text input field --&gt;
-&lt;input class="text-edit" placeholder="Enter Title" size="50"&gt;&lt;/input&gt;
+&lt;input class="text-edit" placeholder="Enter Title" style="width:100%"&gt;&lt;/input&gt;
 </pre>
 						</div>
 					 </div> <!-- end example -->
 
+
+ <div class="divider-horz"></div>
 <!-- CF-5.0 tables ================================================== -->	
 					 
  					 <h3 id="CF-5">CF-5.0: Tables</h3>
  					 <p>The class names should be added to the table element</p>
 					 
-					 <h4>Borderless Table</h4>
+					 <h4>CF-5.1 Borderless Table</h4>
  					 <div class="bs-example">	
 					  
 						 <table class="borderless">
@@ -788,12 +913,56 @@
 						 
 					 </div> <!-- end example -->
 					
+					
+					 <h4>CF-5.2 Dotted rows</h4>
+					 <p>Most of the time this table is used without a headline row and within blocks of text or informative content</p>
+ 					 <div class="bs-example">	
+					 
+						 <table class="table table-dotted">
+							<tr>
+								<td class="txt-exact">Calibrated</td>
+								<td>Description of Calibrated</td>
+							</tr>
+							<tr>
+								<td class="txt-adjacent">Adjacent</td>
+								<td>Description of Adjacent</td>
+							</tr>
+							<tr>
+								<td class="txt-discrepant">Discrepant</td>
+								<td>Description of Discrepant</td>
+							</tr>
+						</table> 
+						 
+ 					 <div class="well mar-top-20">
+ <pre class="prettyprint">
+	 
+&lt;table class="table table-dotted"&gt;
+ &lt;tr&gt;
+  &lt;td class="txt-exact"&gt;Calibrated&lt;/td&gt;
+  &lt;td&gt;Description of Calibrated&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td class="txt-adjacent"&gt;Adjacent&lt;/td&gt;
+  &lt;td&gt;Description of Adjacent&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td class="txt-discrepant"&gt;Discrepant&lt;/td&gt;
+  &lt;td&gt;Description of Discrepant&lt;/td&gt;
+ &lt;/tr&gt;
+&lt;/table&gt;
 
+ </pre>										 
+					</div>	 
+						 
+					 </div> <!-- end example -->					
+
+
+ <div class="divider-horz"></div>
 <!-- CF-6.0 components ================================================== -->						 
 					 <h3 id="CF-6">CF-6.0: Components</h3>
 					 <p>Various bootstrap component overwrites.  Badges, </p>
 					 
-					 <h4>Badges</h4>
+					 <h4>CF-6.1 Badges</h4>
 					 <p>For use on all modules of custom focus.  The "badge-saved" etc classes add color, not shape so they can be used for labels and badges</p>
 					  <div class="bs-example">
 
@@ -907,6 +1076,80 @@
 
  </pre>							  
  </div>
+ 
+
+								<h4>CF-6.3.2 Filter List Sidebar</h4>
+								<p>For filter sidebars where filters change a table next to the sidebar</p>
+								
+								<div class="bs-example">
+
+			 					<!-- start filter sidebar -->
+								<div class="row">
+			 						<div class="col-xs-6 col-md-5">
+			 							<ul class="filter-sidebar">
+			 								<li class="search">
+			 									<div class="input-group">
+			 									    <span class="input-group-addon glyphicon glyphicon-search"></span>
+			 									    <input type="text" class="form-control" placeholder="Find Something">
+			 									</div>
+			 								</li>
+			 								<li class="header">
+			 									<h4>Filter Results</h4><a href="#">Clear All Filters</a>
+			 								</li>
+			 								<li>
+			 									<h5>Status</h5>
+			 									<input style="width:100%;" placeholder="Filter By Status"></input>
+			 								</li>
+			 								<li>
+			 									<h5>Next Filter</h5>
+			 									<input style="width:100%;" placeholder="Filter By "></input>
+			 								</li>
+			 								<li>
+			 									<p>[ Pref: All search and filtering will apply to the video's meta data and master coded data related to the default rubric: [Rubric Name].]</p>
+			 									<button class="btn btn-default btn-xs"><span class="icon-download"></span> Download Rubric</button>
+			 								</li>
+			 							</ul>
+									</div>
+								</div>	
+		 
+		  							<div class="well mar-top-20">
+ <pre class="prettyprint">
+
+&lt;div class="row"&gt;
+ &lt;div class="col-xs-4 col-md-3"&gt; &lt;!-- begin filter sidebar --&gt;
+  &lt;ul class="filter-sidebar"&gt;
+    &lt;li class="search"&gt;
+    &lt;div class="input-group"&gt;
+     &lt;span class="input-group-addon glyphicon glyphicon-search"&gt;&lt;/span&gt;
+     &lt;input type="text" class="form-control" placeholder="Find Something"&gt;
+   &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class="header"&gt;
+    &lt;h4&gt;Filter Results&lt;/h4&gt;&lt;a href="#"&gt;Clear All Filters&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h5&gt;Status&lt;/h5&gt;
+    &lt;input style="width:100%;" placeholder="Filter By Status"&gt;&lt;/input&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h5&gt;Next Filter&lt;/h5&gt;
+    &lt;input style="width:100%;" placeholder="Filter By "&gt;&lt;/input&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;[ Pref: All search and filtering will apply to the video's meta data and master coded data related to the default rubric: [Rubric Name].]&lt;/p&gt;
+    &lt;button class="btn btn-default btn-xs"&gt;&lt;span class="icon-download"&gt;&lt;/span&gt; Download Rubric&lt;/button&gt;
+  &lt;/li&gt;
+  &lt;/ul&gt;
+ &lt;/div&gt; &lt;!-- begin filter sidebar --&gt;
+&lt;/div&gt;	
+
+ </pre>
+ 					 							</div><!-- end well -->
+					  
+ 					 						</div><!-- end example -->
+ 
+ 
+ 
 											<h4>CF-6.4 Sidebar Background</h4>
 											<p>Sidebars should use the grid with "col-no-gutter" so that it hugs the left side of the window.  To make the sidebar "sidebar-wrap" is used and the menu uses ul and li tags.  adding "active" to the li tag will make it dark but a span with "left-arrow" must be inserted after the text.</p>
 											<p>Using the "tree-#" class will add indentation.  The # should be the level in the hierarchy starting with 0.  Adding class "active" will show it as selected and with a black bar and the arrow.  A HREF tags may or may not be used</p>
@@ -929,7 +1172,7 @@
 					 						 <!-- end sidebar columns --> 
 					 						</div>
 					 
-					  							<div class="well mar-top-20">
+					  						<div class="well mar-top-20">
 <pre class="prettyprint">
 &lt;!-- begin sidebar columns --&gt;
 &lt;div class="container-fluid"&gt;
@@ -947,9 +1190,9 @@
 &lt;/div&gt;
 &lt;!-- end sidebar columns --&gt; 
 </pre>
-					 							</div><!-- end well -->
-					  
-					 						</div><!-- end example -->
+				 							</div><!-- end well -->
+				  
+				 						</div><!-- end example -->
 						 
                      </div><!-- END CUSTOM FOCUS  
 ================================================== -->

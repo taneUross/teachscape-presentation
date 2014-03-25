@@ -1,5 +1,16 @@
 /* LESS Document */
+/*
 
+@focus_background_light:    lighten(@focus, 90%);
+@color-exact:				#2F8D29;
+@color-adjacent:			#EDC119;
+@color-discrepant:			#A42732;
+
+@exact-bg:				lighten(@color-exact, 90%);
+@exact-bg-txt:			darken(@color-exact, 30%);
+
+
+*/
 // CF-0.0 background & grid
 // CF-1.0 typography
 // CF-2.0 navigation & buttons
@@ -50,6 +61,41 @@ a:hover {
 	text-decoration:none;
 }
 
+//CF-1.1 colored text
+.txt-exact {
+	color: @color-exact;
+}
+.txt-adjacent {
+	color: @color-adjacent;
+}
+.txt-discrepant{
+	color: @color-discrepant;
+}
+
+.txt-focus-light {
+	color: lighten(@focus, 55%);
+}
+
+.txt-focus {
+	color: @focus;
+}
+
+.header-round {
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    height:40px;
+    width:40px;
+	text-align:center;
+	padding-top:6px;
+	font-size:28px;
+	background: @focus_background_light;
+}
+
+//CF-1.3 header divider
+.divider-view-only {
+	border-bottom: 5px solid #fff;
+}
 
 /* CF-2.0 navigation & buttons ======================== */
 .navbar-ts {
@@ -265,6 +311,8 @@ span.before-add:before {
   padding:0px 5px;
   margin:0;
   width: 100%;
+  -webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.0);
+  box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.0);
 }
 
 .text-edit:hover {
@@ -304,7 +352,7 @@ span.before-add:before {
 
 // CF-5.1.1 borderless for small tables
 
-table.borderless {
+table.borderless, .table-borderless {
 	width:100%;
 	thead {
 		td {
@@ -355,6 +403,25 @@ table.borderless {
   //         width: 20%;
   //       }
   }
+}
+
+// CF-5.2 small with dotted border
+table.dotted, .table-dotted {
+	tbody tr > td, tr >td {
+		border-top:none;
+		border-bottom:none;
+	}
+	tbody tr, tr {
+
+		border-top:1px dotted @gray-light;
+		border-bottom:1px dotted @gray-light;
+		&:first-child {
+			border-top:0;
+		}
+		&:last-child {
+			border-bottom:0;
+		}
+	}
 }
 
 

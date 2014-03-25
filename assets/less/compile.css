@@ -6421,8 +6421,8 @@ fieldset[disabled] .btn,
 /*	6.0  Background Elements ---------------------------------------- */
 .panel {
   border-radius: 0.5em;
-  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
-  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
 }
 .panel-content {
   margin: 0px 15px;
@@ -6592,6 +6592,13 @@ fieldset[disabled] .btn,
 .pos-absolute {
   position: absolute;
 }
+.disp-inline {
+  display: inline-block;
+}
+.divider-horz {
+  margin: 50px 0;
+  border-bottom: 2px solid #eeeeee;
+}
 @media (min-width: 768px) {
   .container {
     max-width: 750px;
@@ -6608,6 +6615,18 @@ fieldset[disabled] .btn,
   }
 }
 /* LESS Document */
+/*
+
+@focus_background_light:    lighten(@focus, 90%);
+@color-exact:				#2F8D29;
+@color-adjacent:			#EDC119;
+@color-discrepant:			#A42732;
+
+@exact-bg:				lighten(@color-exact, 90%);
+@exact-bg-txt:			darken(@color-exact, 30%);
+
+
+*/
 /* CF-0.0 background & grid ================================== */
 .col-no-gutter {
   padding: 0;
@@ -6640,6 +6659,35 @@ h3.smaller {
 }
 a:hover {
   text-decoration: none;
+}
+.txt-exact {
+  color: #2f8d29;
+}
+.txt-adjacent {
+  color: #edc119;
+}
+.txt-discrepant {
+  color: #a42732;
+}
+.txt-focus-light {
+  color: #b3dbf0;
+}
+.txt-focus {
+  color: #175473;
+}
+.header-round {
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  padding-top: 6px;
+  font-size: 28px;
+  background: #ddeff8;
+}
+.divider-view-only {
+  border-bottom: 5px solid #fff;
 }
 /* CF-2.0 navigation & buttons ======================== */
 .navbar-ts {
@@ -6842,6 +6890,8 @@ span.before-add:before {
   padding: 0px 5px;
   margin: 0;
   width: 100%;
+  -webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0);
 }
 .text-edit:hover {
   border: 1px solid #999999;
@@ -6871,36 +6921,73 @@ span.before-add:before {
   font-size: 28px;
 }
 /* CF-5.0 tables ============================ */
-table.borderless {
+table.borderless,
+.table-borderless {
   width: 100%;
 }
-table.borderless thead td {
+table.borderless thead td,
+.table-borderless thead td {
   color: #222222;
   padding: 0px 0px 5px 0px;
   border-bottom: 1px solid #333333;
 }
-table.borderless tbody td {
+table.borderless tbody td,
+.table-borderless tbody td {
   color: #333333;
   padding: 15px 0;
   border: none;
 }
 table.borderless tbody td h1,
+.table-borderless tbody td h1,
 table.borderless tbody td h2,
+.table-borderless tbody td h2,
 table.borderless tbody td h3,
+.table-borderless tbody td h3,
 table.borderless tbody td h4,
+.table-borderless tbody td h4,
 table.borderless tbody td h5,
-table.borderless tbody td p {
+.table-borderless tbody td h5,
+table.borderless tbody td p,
+.table-borderless tbody td p {
   margin: 0;
 }
-table.borderless thead td {
+table.borderless thead td,
+.table-borderless thead td {
   color: #222222;
   padding: 0px 0px 5px 0px;
   border-bottom: 1px solid #333333;
 }
-table.borderless tbody td {
+table.borderless tbody td,
+.table-borderless tbody td {
   color: #333333;
   padding: 15px 15px 5px 0px;
   border: none;
+}
+table.dotted tbody tr > td,
+.table-dotted tbody tr > td,
+table.dotted tr > td,
+.table-dotted tr > td {
+  border-top: none;
+  border-bottom: none;
+}
+table.dotted tbody tr,
+.table-dotted tbody tr,
+table.dotted tr,
+.table-dotted tr {
+  border-top: 1px dotted #999999;
+  border-bottom: 1px dotted #999999;
+}
+table.dotted tbody tr:first-child,
+.table-dotted tbody tr:first-child,
+table.dotted tr:first-child,
+.table-dotted tr:first-child {
+  border-top: 0;
+}
+table.dotted tbody tr:last-child,
+.table-dotted tbody tr:last-child,
+table.dotted tr:last-child,
+.table-dotted tr:last-child {
+  border-bottom: 0;
 }
 /* CF-6.0 components ======================== */
 .badge-saved,
