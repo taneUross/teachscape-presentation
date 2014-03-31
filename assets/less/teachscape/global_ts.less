@@ -23,6 +23,8 @@
 	5.3 Table
 
 6. Footer / #footer
+
+7. Bootstrap overrights & additions 
 -------------------------------------------------------------------*/
 
 /*	1. Body ------------------------------------------------------ */
@@ -173,6 +175,26 @@ border: 1px solid @gray-light;
 	background-color: #ffffff;
 }
 
+table.table {
+	thead {
+		font-weight: normal;
+		color:@gray-darker;
+		tr {
+			th {
+				color:@gray-darker;
+				font-weight: normal;
+			}
+		}
+	}
+	tbody {
+		tr {
+			td {
+				color:@gray;
+			}
+		}
+	}
+}
+
 /*	5.4 Input Groups ------------------------------------------------------- */
 
 //Search Bar
@@ -184,6 +206,16 @@ border: 1px solid @gray-light;
   background-color: white;
 }
 
+.input-sm {
+	border-radius: 0px;
+	padding:3px;
+	font-size:90%;
+}
+
+label {
+	font-weight: normal;
+	color:@gray-darker;
+}
 
 /*	6.0  Background Elements ---------------------------------------- */
 .panel {
@@ -402,5 +434,15 @@ border: 1px solid @gray-light;
     background-image: linear-gradient(@origin, @start, @stop);
 }
 
+// 7.0  Bootstrap overrides and addons
 
+.label {
+	padding-bottom:3px;
+	padding-top:3px;
+	font-size:90%;
+}
+
+.badge {
+	font-size:90%;
+}
 

@@ -3338,6 +3338,9 @@ select[multiple].input-group-lg > .input-group-btn > .btn {
   font-size: 14px;
   line-height: 1.5;
   border-radius: 0.5em;
+  border-radius: 0px;
+  padding: 3px;
+  font-size: 90%;
 }
 select.input-group-sm > .form-control,
 select.input-group-sm > .input-group-addon,
@@ -6258,6 +6261,8 @@ you can use the generic selector below, but it's slower:
 	5.3 Table
 
 6. Footer / #footer
+
+7. Bootstrap overrights & additions 
 -------------------------------------------------------------------*/
 /*	1. Body ------------------------------------------------------ */
 /*	2. Typography ------------------------------------------------ */
@@ -6411,12 +6416,32 @@ fieldset[disabled] .btn,
 .table-striped > tbody > tr:nth-child(odd) > th {
   background-color: #ffffff;
 }
+table.table thead {
+  font-weight: normal;
+  color: #222222;
+}
+table.table thead tr th {
+  color: #222222;
+  font-weight: normal;
+}
+table.table tbody tr td {
+  color: #555555;
+}
 /*	5.4 Input Groups ------------------------------------------------------- */
 .glyphicon.glyphicon-search {
   top: 0px;
 }
 .input-group-addon.glyphicon-search {
   background-color: white;
+}
+.input-sm {
+  border-radius: 0px;
+  padding: 3px;
+  font-size: 90%;
+}
+label {
+  font-weight: normal;
+  color: #222222;
 }
 /*	6.0  Background Elements ---------------------------------------- */
 .panel {
@@ -6598,6 +6623,14 @@ fieldset[disabled] .btn,
 .divider-horz {
   margin: 50px 0;
   border-bottom: 2px solid #eeeeee;
+}
+.label {
+  padding-bottom: 3px;
+  padding-top: 3px;
+  font-size: 90%;
+}
+.badge {
+  font-size: 90%;
 }
 @media (min-width: 768px) {
   .container {
@@ -6929,12 +6962,12 @@ table.borderless thead td,
 .table-borderless thead td {
   color: #222222;
   padding: 0px 0px 5px 0px;
-  border-bottom: 1px solid #333333;
+  border-bottom: 2px solid #eeeeee;
 }
 table.borderless tbody td,
 .table-borderless tbody td {
-  color: #333333;
-  padding: 15px 0;
+  color: #555555;
+  padding: 10px 0;
   border: none;
 }
 table.borderless tbody td h1,
@@ -6950,18 +6983,6 @@ table.borderless tbody td h5,
 table.borderless tbody td p,
 .table-borderless tbody td p {
   margin: 0;
-}
-table.borderless thead td,
-.table-borderless thead td {
-  color: #222222;
-  padding: 0px 0px 5px 0px;
-  border-bottom: 1px solid #333333;
-}
-table.borderless tbody td,
-.table-borderless tbody td {
-  color: #333333;
-  padding: 15px 15px 5px 0px;
-  border: none;
 }
 table.dotted tbody tr > td,
 .table-dotted tbody tr > td,
@@ -7016,6 +7037,21 @@ table.dotted tr:last-child,
 .badge-success {
   background: #5cb85c;
 }
+.label-exact,
+.badge-exact {
+  color: #222222;
+  background: #c9efc6;
+}
+.label-adjacent,
+.badge-adjacent {
+  color: #222222;
+  background: #f8e7a7;
+}
+.label-discrepant,
+.badge-discrepant {
+  color: #222222;
+  background: #f5d5d8;
+}
 .panel-default .panel-heading {
   background: white;
 }
@@ -7032,7 +7068,7 @@ ul.scoring {
 ul.scoring li {
   border-left: 1px dotted #999999;
   padding: 0px 15px;
-  display: inline-block;
+  display: inline-table;
   width: 24%;
 }
 ul.scoring li label {
@@ -7160,6 +7196,9 @@ ul.scoring li label {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-bottom: 5px solid #999999;
+}
+.well-focus {
+  background: #ffffff;
 }
 /* CF-10.0 Utilities ======================== */
 .pos-relative {

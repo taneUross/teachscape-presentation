@@ -358,13 +358,13 @@ table.borderless, .table-borderless {
 		td {
 			color:@gray-darker;
 			padding:0px 0px 5px 0px;
-			border-bottom:1px solid @gray-dark;
+			border-bottom:2px solid @gray-lighter;
 		}
 	}
 	tbody {
 		td {
-			color:@gray-dark;
-			padding:15px 0;
+			color:@gray;
+			padding:10px 0;
 			border:none;
 			h1,h2,h3,h4,h5, p {
 				margin:0;
@@ -373,19 +373,7 @@ table.borderless, .table-borderless {
 	}
 
   width:100%;
-  thead {
-    td {
-      color:@gray-darker;
-      padding:0px 0px 5px 0px;
-      border-bottom:1px solid @gray-dark;
-    }
-  }
-  tbody {
-    td {
-      color:@gray-dark;
-      padding:15px 15px 5px 0px;
-      border:none;
-    }
+  
 
   //   td:first-child {
   //         width: 20%;
@@ -402,7 +390,7 @@ table.borderless, .table-borderless {
   //       td:first-child + td + td + td{
   //         width: 20%;
   //       }
-  }
+
 }
 
 // CF-5.2 small with dotted border
@@ -451,6 +439,20 @@ table.dotted, .table-dotted {
 	background: @brand-success;
 }
 
+.label-exact, .badge-exact {
+	color:@gray-darker;
+	background: @exact-bg;	
+}
+
+.label-adjacent, .badge-adjacent {
+	color:@gray-darker;
+	background: @adjacent-bg;	
+}
+
+.label-discrepant, .badge-discrepant {
+	color:@gray-darker;
+	background: @discrepant-bg;	
+}
 
 // CF-6.2 accordions collapse
 .panel-default {
@@ -472,7 +474,7 @@ ul.scoring {
 	li {
 		border-left:1px dotted @gray-light;
 		padding: 0px 15px;
-		display:inline-block;
+		display:inline-table;
 		width: 24%;
 		// &:first-child {
 		// 	border-left: 0px;
@@ -601,6 +603,13 @@ ul.scoring {
 	border-bottom: 5px solid @gray-light;
 }
 
+
+//6.5.1  wells
+
+
+.well-focus {
+	background: @focus_background;
+}
 
 /* CF-10.0 Utilities ======================== */
 
