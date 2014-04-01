@@ -6334,6 +6334,25 @@ h4.modal-title {
   padding: 0 30px;
 }
 /*	5.1 Nav & Buttons ---------------------------------------------- */
+.navbar {
+  border-radius: 0px;
+  border: 0px;
+  min-height: 40px;
+  margin: 0;
+}
+.navbar .navbar-collapse {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.navbar-default .navbar-brand {
+  color: #2f4fa2;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #2f4fa2;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  color: #1e3267;
+}
 /*	5.1.1 Buttons ----------------------------------------------- */
 .btn-primary {
   background-color: #2f4fa2;
