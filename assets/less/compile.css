@@ -6291,6 +6291,12 @@ h5 {
   margin: 0 10px 3px 10px;
   text-align: center;
 }
+.icon-divider-gray {
+  color: #999999;
+  font-size: 12px;
+  margin: 0 10px 3px 10px;
+  text-align: center;
+}
 /*	2.1.1 Heading for Message Box & Modals ------------------------ */
 .bs-callout h4 {
   color: #555555;
@@ -7303,6 +7309,12 @@ div.open-card-table {
   padding: ;
 }
 /* CF-10.0 Utilities ======================== */
+.icon-divider-blue {
+  color: #ddeff8;
+  font-size: 12px;
+  margin: 0 10px 3px 10px;
+  text-align: center;
+}
 .pos-relative {
   position: relative;
 }
