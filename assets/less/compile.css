@@ -6354,6 +6354,11 @@ h4.modal-title {
   color: #1e3267;
   background-color: #ebeff9;
 }
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #222222;
+}
 /*	5.1.1 Buttons ----------------------------------------------- */
 .btn-primary {
   background-color: #2f4fa2;
