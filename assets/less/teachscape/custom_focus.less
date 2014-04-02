@@ -43,6 +43,7 @@
   padding: 0 30px;
 }
 
+
 /* CF-1.0 typography ================================== */
 
 .cf-page-header {
@@ -107,7 +108,7 @@ a:hover {
 
 /* CF-2.0 navigation & buttons ======================== */
 .navbar-ts {
-  background-color: white;
+/*  background-color: white;
   border-radius: 0px;
   border: 0px;
   min-height: 40px;
@@ -117,6 +118,7 @@ a:hover {
     padding-left:0px;
     padding-right:0px;
   }
+  */
 }
 
 .admin-background {
@@ -434,9 +436,7 @@ table.dotted, .table-dotted {
 
 // CF-6.1 labels and badges
 
-.label, .badge {
-  font-weight:normal;
-}
+
 
 .badge-saved, .badge-published, .badge-success, .badge-locked {
   max-width: 90px;
@@ -649,7 +649,7 @@ ul.open-calibrations {
       position:relative;
       list-style: none;
       width:25%;
-      height:250px;
+      min-height:200px;
       display: inline-table;
   }
   h4 {
@@ -657,43 +657,31 @@ ul.open-calibrations {
   }
 }
 
-.open-card {
+div.open-card {
       padding:20px 30px;
       text-align:center;
       min-width:150px;
-      height:250px;
+      min-height:200px;
       background:@focus_background_light;
       position: relative;
 }
-.title-card {
+div.title-card {
   padding:30px 35px;
   text-align:left;
   background:@focus;
   color:white;
   margin-top:-3px;
   display:inherit;
-}
-
-table.open-calibration-table {
-  width:100%;
-  tr {
-
-      margin-bottom:15px;
-    td {
-      vertical-align: top;
-      border:1px solid @focus_background_light;
-      &:first-child {
-        width:300px;
-      }
-      p {
-        margin: 0 0 11px;
-      }
-    }
-  }
+  min-height:220px;
 }
 
 div.open-card-table {
-  padding:25px;
+  padding:25px 15px;
+}
+
+.row-open-table {
+  border:2px solid @focus_background_light;
+  margin:20px 0 0 0;
   table.dotted {
     tbody {
       tr {
