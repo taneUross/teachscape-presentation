@@ -412,6 +412,8 @@ table.dotted, .table-dotted {
 	tbody tr > td, tr >td {
 		border-top:none;
 		border-bottom:none;
+    border-left: none;
+    border-right: none;
 	}
 	tbody tr, tr {
 
@@ -432,10 +434,19 @@ table.dotted, .table-dotted {
 
 // CF-6.1 labels and badges
 
+.label, .badge {
+  font-weight:normal;
+}
+
 .badge-saved, .badge-published, .badge-success, .badge-locked {
   max-width: 90px;
   display: block;
   font-weight:normal;
+}
+
+.label-blue-light {
+  background: @focus_background_light;
+  color:@gray-dark;
 }
 
 .label-saved, .badge-saved, .badge-draft {
@@ -626,31 +637,71 @@ ul.scoring {
 }
 
 //6.6.1 list - observer open calibrations
-.open-calibrations {
+ul.open-calibrations {
   height:auto;
   width:100%;
   padding:0;
+  display: block;
   margin: 0;
   li {
-    text-align:center;
-    width:25%;
-    min-width:150px;
-    padding:20px 30px;
-    list-style: none;
-    height:250px;
-    overflow: hidden;
-    position:relative;
-    display:inline-block;
-    background:@focus_background_light;
-  }
-  li.title-card {
-    text-align:left;
-    background: @focus;
-    padding:20px 30px;
-    color:white;
+      margin:0 1px 0 0;
+      padding:0;
+      position:relative;
+      list-style: none;
+      width:25%;
+      height:250px;
+      display: inline-table;
   }
   h4 {
     margin-bottom: 25px;
+  }
+}
+
+.open-card {
+      padding:20px 30px;
+      text-align:center;
+      min-width:150px;
+      height:250px;
+      background:@focus_background_light;
+      position: relative;
+}
+.title-card {
+  padding:30px 35px;
+  text-align:left;
+  background:@focus;
+  color:white;
+  margin-top:-3px;
+  display:inherit;
+}
+
+table.open-calibration-table {
+  width:100%;
+  tr {
+
+      margin-bottom:15px;
+    td {
+      vertical-align: top;
+      border:1px solid @focus_background_light;
+      &:first-child {
+        width:300px;
+      }
+      p {
+        margin: 0 0 11px;
+      }
+    }
+  }
+}
+
+div.open-card-table {
+  padding:25px;
+  table.dotted {
+    tbody {
+      tr {
+        td {
+          padding: ;
+        }
+      }
+    }
   }
 }
 

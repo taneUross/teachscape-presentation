@@ -6455,9 +6455,6 @@ table.table thead tr th {
   color: #222222;
   font-weight: normal;
 }
-table.table tbody tr td {
-  color: #555555;
-}
 /*	5.4 Input Groups ------------------------------------------------------- */
 .glyphicon.glyphicon-search {
   top: 0px;
@@ -7031,6 +7028,8 @@ table.dotted tr > td,
 .table-dotted tr > td {
   border-top: none;
   border-bottom: none;
+  border-left: none;
+  border-right: none;
 }
 table.dotted tbody tr,
 .table-dotted tbody tr,
@@ -7052,6 +7051,10 @@ table.dotted tr:last-child,
   border-bottom: 0;
 }
 /* CF-6.0 components ======================== */
+.label,
+.badge {
+  font-weight: normal;
+}
 .badge-saved,
 .badge-published,
 .badge-success,
@@ -7059,6 +7062,10 @@ table.dotted tr:last-child,
   max-width: 90px;
   display: block;
   font-weight: normal;
+}
+.label-blue-light {
+  background: #ddeff8;
+  color: #333333;
 }
 .label-saved,
 .badge-saved,
@@ -7241,32 +7248,62 @@ ul.scoring li label {
 .well-focus {
   background: #ffffff;
 }
-.open-calibrations {
+ul.open-calibrations {
   height: auto;
   width: 100%;
   padding: 0;
+  display: block;
   margin: 0;
 }
-.open-calibrations li {
-  text-align: center;
-  width: 25%;
-  min-width: 150px;
-  padding: 20px 30px;
-  list-style: none;
-  height: 250px;
-  overflow: hidden;
+ul.open-calibrations li {
+  margin: 0 1px 0 0;
+  padding: 0;
   position: relative;
-  display: inline-block;
-  background: #ddeff8;
+  list-style: none;
+  width: 25%;
+  height: 250px;
+  display: inline-table;
 }
-.open-calibrations li.title-card {
+ul.open-calibrations h4 {
+  margin-bottom: 25px;
+}
+.open-card {
+  padding: 20px 30px;
+  text-align: center;
+  min-width: 150px;
+  height: 250px;
+  background: #ddeff8;
+  position: relative;
+}
+.title-card {
+  padding: 30px 35px;
   text-align: left;
   background: #175473;
-  padding: 20px 30px;
   color: white;
+  margin-top: -3px;
+  display: inherit;
 }
-.open-calibrations h4 {
-  margin-bottom: 25px;
+table.open-calibration-table {
+  width: 100%;
+}
+table.open-calibration-table tr {
+  margin-bottom: 15px;
+}
+table.open-calibration-table tr td {
+  vertical-align: top;
+  border: 1px solid #ddeff8;
+}
+table.open-calibration-table tr td:first-child {
+  width: 300px;
+}
+table.open-calibration-table tr td p {
+  margin: 0 0 11px;
+}
+div.open-card-table {
+  padding: 25px;
+}
+div.open-card-table table.dotted tbody tr td {
+  padding: ;
 }
 /* CF-10.0 Utilities ======================== */
 .pos-relative {
