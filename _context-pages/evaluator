@@ -63,21 +63,19 @@
 				   </div>
 			   </nav>
 			   <!-- end admin sub nav -->
-				<div class="admin-content">
-		   		
-					 <!-- header bar call to action -->
-			   		<div class="row header-call mar-top-20">
-			    		<div class="col-xs-7 col-no-gutter">
-			   	 	   	<h2></h2>
-			    		</div> <!--end col -->
-						<div class="col-xs-5 col-no-gutter align-right">
-							<button class="btn btn-default btn-md"><span class="icon-download"></span> Download Rubric</button>
-						</div>
-					</div>
-					
-			   <!-- end header bar -->
 
-				</div>
+			   <!-- begin shadwow headline with call -->
+					<div class="row header-call">
+					  <div class="col-xs-8 col-no-gutter">
+					   <h2>Calibration Home</h2>
+					  </div>
+					  <div class="col-xs-4 a col-no-gutter align-right mar-top-20">
+					   <button class="btn btn-default btn-md"><span class="icon-download"></span> Download Rubric Materials</button>
+					  </div>
+					 </div> <!-- end row -->
+					<!-- end shadwow headline with call -->
+
+				
 		</div> <!-- admin-wrap -->
 
 
