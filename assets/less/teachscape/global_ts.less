@@ -59,6 +59,13 @@ h4, h5{
   text-align: center;
 }
 
+.icon-divider-gray {
+  color: @gray-light;
+  font-size: 12px;
+  margin: 0 10px 3px 10px;
+  text-align: center;
+}
+
 /*	2.1.1 Heading for Message Box & Modals ------------------------ */
 .bs-callout h4{
   color: @gray;
@@ -122,20 +129,26 @@ h4.modal-title {
 
 }
 
-.navbar-default .navbar-brand {
+.navbar-default .navbar-brand,
+.navbar-ts .navbar-brand {
   color: @link-color;
 }
-.navbar-default .navbar-nav > li > a {
+.navbar-default .navbar-nav > li > a ,
+.navbar-ts .navbar-nav > li > a {
   color: @link-color;
 }
-.navbar-default .navbar-nav > li > a:hover {
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-ts .navbar-nav > li > a:hover {
   color: @link-hover-color;
   background-color: #ebeff9;
 }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-ts .navbar-nav > .active > a,
+.navbar-ts .navbar-nav > .active > a:hover,
+.navbar-ts .navbar-nav > .active > a:focus {
   color: @gray-darker;
 }
 
@@ -290,6 +303,10 @@ label {
   h1, h2, h3, h4, h5, h6 {
     margin-top: 0px;
   }
+}
+
+.panel-title > a {
+  color: @link-color;
 }
 
 .content-single {
@@ -499,9 +516,11 @@ label {
 	padding-bottom:3px;
 	padding-top:3px;
 	font-size:90%;
+  font-weight:normal;
 }
 
 .badge {
 	font-size:90%;
+  font-weight: normal;
 }
 

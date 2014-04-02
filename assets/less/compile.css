@@ -6291,6 +6291,12 @@ h5 {
   margin: 0 10px 3px 10px;
   text-align: center;
 }
+.icon-divider-gray {
+  color: #999999;
+  font-size: 12px;
+  margin: 0 10px 3px 10px;
+  text-align: center;
+}
 /*	2.1.1 Heading for Message Box & Modals ------------------------ */
 .bs-callout h4 {
   color: #555555;
@@ -6350,19 +6356,25 @@ h4.modal-title {
   padding-left: 0px;
   padding-right: 0px;
 }
-.navbar-default .navbar-brand {
+.navbar-default .navbar-brand,
+.navbar-ts .navbar-brand {
   color: #2f4fa2;
 }
-.navbar-default .navbar-nav > li > a {
+.navbar-default .navbar-nav > li > a,
+.navbar-ts .navbar-nav > li > a {
   color: #2f4fa2;
 }
-.navbar-default .navbar-nav > li > a:hover {
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-ts .navbar-nav > li > a:hover {
   color: #1e3267;
   background-color: #ebeff9;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-ts .navbar-nav > .active > a,
+.navbar-ts .navbar-nav > .active > a:hover,
+.navbar-ts .navbar-nav > .active > a:focus {
   color: #222222;
 }
 /*	5.1.1 Buttons ----------------------------------------------- */
@@ -6487,6 +6499,9 @@ label {
 .panel-content h5,
 .panel-content h6 {
   margin-top: 0px;
+}
+.panel-title > a {
+  color: #2f4fa2;
 }
 .content-single {
   margin-top: 15px;
@@ -6656,9 +6671,11 @@ label {
   padding-bottom: 3px;
   padding-top: 3px;
   font-size: 90%;
+  font-weight: normal;
 }
 .badge {
   font-size: 90%;
+  font-weight: normal;
 }
 @media (min-width: 768px) {
   .container {
@@ -6757,16 +6774,17 @@ a:hover {
 }
 /* CF-2.0 navigation & buttons ======================== */
 .navbar-ts {
-  background-color: white;
+  /*  background-color: white;
   border-radius: 0px;
   border: 0px;
   min-height: 40px;
   margin-bottom: 0;
-  margin: 0;
-}
-.navbar-ts .navbar-collapse {
-  padding-left: 0px;
-  padding-right: 0px;
+  margin:0;
+  .navbar-collapse {
+    padding-left:0px;
+    padding-right:0px;
+  }
+  */
 }
 .admin-background {
   background-color: #eeeeee;
@@ -7051,10 +7069,6 @@ table.dotted tr:last-child,
   border-bottom: 0;
 }
 /* CF-6.0 components ======================== */
-.label,
-.badge {
-  font-weight: normal;
-}
 .badge-saved,
 .badge-published,
 .badge-success,
@@ -7261,51 +7275,46 @@ ul.open-calibrations li {
   position: relative;
   list-style: none;
   width: 25%;
-  height: 250px;
+  min-height: 200px;
   display: inline-table;
 }
 ul.open-calibrations h4 {
   margin-bottom: 25px;
 }
-.open-card {
+div.open-card {
   padding: 20px 30px;
   text-align: center;
   min-width: 150px;
-  height: 250px;
+  min-height: 200px;
   background: #ddeff8;
   position: relative;
 }
-.title-card {
+div.title-card {
   padding: 30px 35px;
   text-align: left;
   background: #175473;
   color: white;
   margin-top: -3px;
   display: inherit;
-}
-table.open-calibration-table {
-  width: 100%;
-}
-table.open-calibration-table tr {
-  margin-bottom: 15px;
-}
-table.open-calibration-table tr td {
-  vertical-align: top;
-  border: 1px solid #ddeff8;
-}
-table.open-calibration-table tr td:first-child {
-  width: 300px;
-}
-table.open-calibration-table tr td p {
-  margin: 0 0 11px;
+  min-height: 220px;
 }
 div.open-card-table {
-  padding: 25px;
+  padding: 25px 15px;
 }
-div.open-card-table table.dotted tbody tr td {
+.row-open-table {
+  border: 2px solid #ddeff8;
+  margin: 20px 0 0 0;
+}
+.row-open-table table.dotted tbody tr td {
   padding: ;
 }
 /* CF-10.0 Utilities ======================== */
+.icon-divider-blue {
+  color: #ddeff8;
+  font-size: 12px;
+  margin: 0 10px 3px 10px;
+  text-align: center;
+}
 .pos-relative {
   position: relative;
 }
