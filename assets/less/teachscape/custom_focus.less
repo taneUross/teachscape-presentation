@@ -29,7 +29,6 @@
 	margin:0;
 }
 
-<<<<<<< HEAD
 //CF-0.2 video player 
 .row-player-dark {
 	background:@gray-darker;
@@ -38,77 +37,6 @@
 	width:100%;
 	text-align:center;
 	z-index:0;
-=======
-.sidebar-wrap{
-  z-index:10;
-  background:#737373;
-  // height: 999px;
-  ul {
-    list-style:none;
-    padding:0;
-    margin:0;
-    font-size:14px;
-	bottom:0px;
-	height:100%;
-    li {
-      padding-top:20px;
-      padding-right:23px;
-      padding-bottom:15px;
-      width:100%;
-      border-bottom:1px solid @gray-light;
-      color:@gray-lighter;
-	  .gradient(top, darken(#737373,05%), darken(#737373, 10%));
-      position:relative;
-      line-height:1.2;
-
-	  &:first-child {
-	  	margin-top:30px;
-	  	border-top:2px solid  @gray-light;
-	  }
-      a {
-        color:@gray-lighter;
-      }
-      a:hover {
-        color:white;
-        text-decoration:none;
-      }
-      .arrow-left {
-        display: none;
-      }
-    }
-    li.active {
-      .gradient(top, darken(#737373,20%), darken(#737373, 30%));
-      color:white;
-      a {
-        color:white;
-      }
-      a:hover {
-        color:white;
-      }
-      .arrow-left {
-        display: inline-block;
-      }
-    }
-    li:hover {
-      .gradient(top, darken(#737373, 20%), darken(#737373, 30%));
-      cursor: pointer;
-      a {
-        color:white;
-      }
-	}
-  }
-
-}
-
-.arrow-left {
-	width:20px;
-	height:100%;
-	background: url('../../images/arrow.svg') right center no-repeat;
-	background-size: 20px 100%;
-	position:absolute;
-	top:0;
-	right:0;
->>>>>>> parent of d020cf1... misc tweaks
 }
 
 .admin-content {
@@ -516,23 +444,19 @@ table.dotted, .table-dotted {
   font-weight:normal;
 }
 
-<<<<<<< HEAD
 .label-blue-light {
   background: @focus_background_light;
   color:@gray-dark;
 }
 
 .label-saved, .badge-saved, .badge-draft {
-=======
-.label-saved, .badge-saved {
->>>>>>> parent of d020cf1... misc tweaks
   background: @gray-light;
 }
 
 .label-published, .badge-published {
   background: @focus;
 }
-.label-locked, .badge-locked {
+.label-locked, .badge-locked, .badge-expired {
   background: @gray-dark;
 }
 

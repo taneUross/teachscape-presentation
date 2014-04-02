@@ -6710,29 +6710,10 @@ label {
   padding: 0;
   margin: 0;
 }
-<<<<<<< HEAD
 .row-player-dark {
   background: #222222;
   margin: 0px;
   padding: 20px;
-=======
-.sidebar-wrap {
-  z-index: 10;
-  background: #737373;
-}
-.sidebar-wrap ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 14px;
-  bottom: 0px;
-  height: 100%;
-}
-.sidebar-wrap ul li {
-  padding-top: 20px;
-  padding-right: 23px;
-  padding-bottom: 15px;
->>>>>>> parent of d020cf1... misc tweaks
   width: 100%;
   text-align: center;
   z-index: 0;
@@ -7101,7 +7082,8 @@ table.dotted tr:last-child,
   color: #333333;
 }
 .label-saved,
-.badge-saved {
+.badge-saved,
+.badge-draft {
   background: #999999;
 }
 .label-published,
@@ -7109,7 +7091,8 @@ table.dotted tr:last-child,
   background: #175473;
 }
 .label-locked,
-.badge-locked {
+.badge-locked,
+.badge-expired {
   background: #333333;
 }
 .label-success,
