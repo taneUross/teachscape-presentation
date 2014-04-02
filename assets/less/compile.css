@@ -6352,6 +6352,7 @@ h4.modal-title {
 }
 .navbar-default .navbar-nav > li > a:hover {
   color: #1e3267;
+  background-color: #ebeff9;
 }
 /*	5.1.1 Buttons ----------------------------------------------- */
 .btn-primary {
