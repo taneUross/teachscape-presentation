@@ -43,7 +43,6 @@
   padding: 0 30px;
 }
 
-
 /* CF-1.0 typography ================================== */
 
 .cf-page-header {
@@ -108,7 +107,7 @@ a:hover {
 
 /* CF-2.0 navigation & buttons ======================== */
 .navbar-ts {
-/*  background-color: white;
+  background-color: white;
   border-radius: 0px;
   border: 0px;
   min-height: 40px;
@@ -118,7 +117,6 @@ a:hover {
     padding-left:0px;
     padding-right:0px;
   }
-  */
 }
 
 .admin-background {
@@ -436,7 +434,9 @@ table.dotted, .table-dotted {
 
 // CF-6.1 labels and badges
 
-
+.label, .badge {
+  font-weight:normal;
+}
 
 .badge-saved, .badge-published, .badge-success, .badge-locked {
   max-width: 90px;
@@ -649,7 +649,7 @@ ul.open-calibrations {
       position:relative;
       list-style: none;
       width:25%;
-      min-height:200px;
+      height:250px;
       display: inline-table;
   }
   h4 {
@@ -657,31 +657,43 @@ ul.open-calibrations {
   }
 }
 
-div.open-card {
+.open-card {
       padding:20px 30px;
       text-align:center;
       min-width:150px;
-      min-height:200px;
+      height:250px;
       background:@focus_background_light;
       position: relative;
 }
-div.title-card {
+.title-card {
   padding:30px 35px;
   text-align:left;
   background:@focus;
   color:white;
   margin-top:-3px;
   display:inherit;
-  min-height:220px;
+}
+
+table.open-calibration-table {
+  width:100%;
+  tr {
+
+      margin-bottom:15px;
+    td {
+      vertical-align: top;
+      border:1px solid @focus_background_light;
+      &:first-child {
+        width:300px;
+      }
+      p {
+        margin: 0 0 11px;
+      }
+    }
+  }
 }
 
 div.open-card-table {
-  padding:25px 15px;
-}
-
-.row-open-table {
-  border:2px solid @focus_background_light;
-  margin:20px 0 0 0;
+  padding:25px;
   table.dotted {
     tbody {
       tr {
@@ -695,12 +707,6 @@ div.open-card-table {
 
 /* CF-10.0 Utilities ======================== */
 
-.icon-divider-blue {
-  color: @focus_background_light;
-  font-size: 12px;
-  margin: 0 10px 3px 10px;
-  text-align: center;
-}
 
 .pos-relative {
   position:relative;
