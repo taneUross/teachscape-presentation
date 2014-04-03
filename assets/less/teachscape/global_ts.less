@@ -460,6 +460,10 @@ label {
 	padding:20px;
 }
 
+.pad-10 {
+  padding:10px;
+}
+
 .border-bot-dot {
   border-bottom:1px dotted #737373;
 }
@@ -496,9 +500,19 @@ label {
 	display:inline-block;
 }
 
+.disp-block {
+  display:block;
+}
+
 .divider-horz {
 	margin: 50px 0;
 	border-bottom:2px solid @gray-lighter;
+}
+
+.divider-horz-dotted {
+  margin: 25px 0;
+  border-bottom:1px dotted @gray-light;
+  width:100%;
 }
 //gradient use as function
 .gradient (@origin: left, @start: #ffffff, @stop: #999999) {
@@ -523,4 +537,33 @@ label {
 	font-size:90%;
   font-weight: normal;
 }
+
+
+/*======== media query overwrites ==========*/
+//BS xs override...media query for > xs
+
+p, table, input, label, .form-control {
+  font-size: 15px;
+}
+
+.small, .smaller {
+  font-size: 13px;
+}
+
+
+@media (min-width: @screen-md) { 
+  p, table, input, label, .form-control  {
+  font-size: @font-size-base
+  }
+
+  .small, .smaller {
+  font-size: 14px;
+  }
+
+}
+
+
+
+
+
 

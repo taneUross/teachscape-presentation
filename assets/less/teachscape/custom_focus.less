@@ -11,18 +11,18 @@
 
 
 */
-// CF-0.0 background & grid
+// CF-0.0 background & grid & containers
 // CF-1.0 typography
 // CF-2.0 navigation & buttons
 // CF-3.0 panels
 // CF-4.0 forms
 // CF-5.0 tables
 // CF-6.0 components
-
+// CF-7.0 features
 
 // CF-10.0 utilities
 
-/* CF-0.0 background & grid ================================== */
+/* CF-0.0 background & grid & containers ================================== */
 
 .col-no-gutter {
 	padding:0;
@@ -39,8 +39,21 @@
 	z-index:0;
 }
 
-.admin-content {
+.admin-content, .evaluator-content {
   padding: 0 30px;
+}
+
+.background-blue {
+  background: @focus_background_light;
+}
+
+// CF-0.3 windows
+
+.container-350scroll {
+  height: 350px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border-bottom: 1px solid @gray-lighter;
 }
 
 
@@ -85,7 +98,11 @@ a:hover {
 	color: @focus;
 }
 
-.header-round-blue {
+.txt-gray-light {
+  color:@gray-light;
+}
+
+h3.header-round-blue {
     -moz-border-radius: 20px;
     -webkit-border-radius: 20px;
     border-radius: 20px;
@@ -95,11 +112,42 @@ a:hover {
 	  padding-top:6px;
 	  font-size:28px;
 	  background: @focus_background_light;
-    display: inline;
+    display: inline-block;
     margin-right:20px;
+    margin-top: 0;
+}
+h4.header-round-blue {
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    height:30px;
+    width:30px;
+    text-align:center;
+    padding-top:4px;
+    font-size:20px;
+    background: @focus_background_light;
+    display: inline-block;
+    margin-right:20px;
+    margin-top: 0;
+}
+p.header-round-blue {
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    height:25px;
+    width:25px;
+    text-align:center;
+    padding-top:3px;
+    font-size:16px;
+    background: @focus_background_light;
+    display: inline-block;
+    margin-right:20px;
+    margin-top: 0;
 }
 
-
+.dark-gray {
+  color:@gray-darker;
+}
 
 //CF-1.3 header divider
 .divider-view-only {
@@ -238,7 +286,7 @@ span.before-add:before {
   -moz-transition: all 0.25s ease-in-out;
 }
 
-.round-delete {
+.round-delete-invisible,  {
   position:absolute;
   right:15px;
   top:-10px;
@@ -258,6 +306,45 @@ span.before-add:before {
   left:180px;
 }
 
+.round-default {
+  position:relative;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  height:40px;
+  width:40px;
+  text-align:center;
+  color:@link-color;
+  .gradient(top, darken(white, 1%), darken(white, 5%));
+  border:1px solid @gray-light;
+}
+
+.round-default:hover {
+  .gradient(top, darken(white, 5%), darken(white, 1%));
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+}
+
+.round-transparent {
+  position:relative;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  height:40px;
+  width:40px;
+  text-align:center;
+  color:@link-color;
+  background:white;
+  border:none;
+}
+
+.round-transparent:hover {
+  .gradient(top, darken(white, 5%), darken(white, 1%));
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+}
 
 //CF-2.3 breadcrumb
 
@@ -266,6 +353,8 @@ span.before-add:before {
 	border-radius: 0;
 	margin-bottom:0px;
 	padding-bottom:0px;
+  background: #ffffff;
+  padding-bottom: 10px;
 }
 
 
@@ -315,7 +404,8 @@ span.before-add:before {
 
 
 .section-dotted {
-  margin: 30px 0;
+  margin-top: 25px ;
+  margin-bottom: 25px;
   border-bottom:1px dotted @gray-light;
 }
 
@@ -409,7 +499,7 @@ table.borderless, .table-borderless {
 
 }
 
-// CF-5.2 small with dotted border
+// CF-5.2 dotted border
 table.dotted, .table-dotted {
 	tbody tr > td, tr >td {
 		border-top:none;
@@ -430,7 +520,27 @@ table.dotted, .table-dotted {
 	}
 }
 
+// CF-5.3 gradient selectable rows 
+.table-selection-rows {
+    tr {
 
+    .gradient(top, darken(#ffffff,2%), darken(#ffffff, 10%));
+      td {
+        padding:10px 10px 5px 10px;
+        border-bottom:1px solid @gray-light;
+        label {
+          cursor: pointer;
+        }
+      }
+      td.col-info-btn {
+          text-align: center;
+          border-left: 1px solid @gray-light;
+      }
+      td:hover, td.active {
+        background:@focus_background_light;
+      }
+    }
+}
 
 /* CF-6.0 components ======================== */
 
@@ -438,11 +548,7 @@ table.dotted, .table-dotted {
 
 
 
-.badge-saved, .badge-published, .badge-success, .badge-locked {
-  max-width: 90px;
-  display: block;
-  font-weight:normal;
-}
+
 
 .label-blue-light {
   background: @focus_background_light;
@@ -460,7 +566,7 @@ table.dotted, .table-dotted {
   background: @gray-dark;
 }
 
-.label-success, .badge-success {
+.label-success, .badge-success, .badge-open{
 	background: @brand-success;
 }
 
@@ -691,6 +797,29 @@ div.open-card-table {
       }
     }
   }
+}
+
+
+//6.7.1 list - dotted rows
+
+ul.dotted {
+  list-style: none;
+  padding: 10px 0;
+  li {
+    padding:5px 0;
+    border-bottom:1px dotted @gray-light;
+  }
+
+}
+
+/* CF-7.0  features ======================== */
+
+.evidence-entry {
+  padding:10px ;
+} 
+
+.evidence-entry:hover {
+  background: #eef4f7;
 }
 
 /* CF-10.0 Utilities ======================== */
