@@ -152,6 +152,10 @@ h4.modal-title {
   color: @gray-darker;
 }
 
+.navbar-inverse {
+  background:#444444;
+}
+
 //.navbar {
 //li.active {
 //  background:@gray-lighter;
@@ -341,6 +345,9 @@ label {
   margin-bottom:15px;
 }
 
+.footer-spacing {
+  margin-bottom:50px;
+}
 
 /*	7. Lists & Icon details ------------------------------------------------------- */
 .link-list > li {
@@ -465,7 +472,10 @@ label {
 }
 
 .border-bot-dot {
-  border-bottom:1px dotted #737373;
+  border-bottom:1px dotted @gray-dark;
+}
+.border-bot-solid {
+  border-bottom:1px solid @gray-light;
 }
 
 .label {
@@ -541,6 +551,11 @@ label {
 
 /*======== media query overwrites ==========*/
 //BS xs override...media query for > xs
+.navbar-btn.btn-xs, .navbar-btn.btn-sm {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
 
 p, table, input, label, .form-control {
   font-size: 15px;
@@ -562,6 +577,12 @@ p, table, input, label, .form-control {
 
 }
 
+@media (min-width: 768px) {
+  .navbar-nav.navbar-right:last-child {
+    margin-right:0;
+    padding-right:20px;
+  }
+}
 
 
 

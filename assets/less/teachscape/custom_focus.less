@@ -29,6 +29,7 @@
 	margin:0;
 }
 
+
 //CF-0.2 video player 
 .row-player-dark {
 	background:@gray-darker;
@@ -61,7 +62,7 @@
 
 .cf-page-header {
 	margin-top:30px;
-	margin-bottom:40px;
+	margin-bottom:15px;
 	h5, h6 {
 		font-size: 16px;
 		margin: 0 0 4px 0;
@@ -149,6 +150,10 @@ p.header-round-blue {
   color:@gray-darker;
 }
 
+.white {
+  color:white;
+}
+
 //CF-1.3 header divider
 .divider-view-only {
 	border-bottom: 5px solid #fff;
@@ -167,6 +172,35 @@ p.header-round-blue {
     padding-right:0px;
   }
   */
+}
+
+.navbar-focus {
+  background:@gray-darker;
+  .navbar-nav {
+    li {
+      a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+
+li.nav-focus {
+  background: @focus;
+  color:white;
+  padding:8px;
+  padding-left:20px;
+  font-size: 18px;
+}
+li.nav-arrow-focus {
+  width: 0; 
+  height: 0; 
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  
+  border-left: 20px solid @focus;
+
 }
 
 .admin-background {
@@ -458,8 +492,8 @@ span.before-add:before {
 
 // CF-5.1.1 borderless for small tables
 
-table.borderless, .table-borderless {
-	width:100%;
+table.borderless, .table.table-borderless, .table-borderless {
+  width:100%;
 	thead {
 		td {
 			color:@gray-darker;
@@ -540,6 +574,30 @@ table.dotted, .table-dotted {
         background:@focus_background_light;
       }
     }
+}
+
+.selection-row {
+  .gradient(top, darken(#ffffff,2%), darken(#ffffff, 10%));
+  padding:15px 15px 15px 15px;
+  border-bottom:1px solid @gray-light;
+  margin-top: -5px;
+  &:first-child {
+    margin-top:0;
+  }
+}
+
+.selection-row.row-icon {
+  .gradient(top, darken(#ffffff,2%), darken(#ffffff, 10%));
+  padding:15px 17px 17px 17px;
+  margin-left: -4px;
+  border-bottom:1px solid @gray-light;
+  text-align: center;
+  border-left: 1px solid @gray-light;
+  font-size:17px;
+}
+
+.selection-row:hover, .selection-row.active {
+        background:@focus_background_light;
 }
 
 /* CF-6.0 components ======================== */

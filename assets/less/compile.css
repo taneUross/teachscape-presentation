@@ -6377,6 +6377,9 @@ h4.modal-title {
 .navbar-ts .navbar-nav > .active > a:focus {
   color: #222222;
 }
+.navbar-inverse {
+  background: #444444;
+}
 /*	5.1.1 Buttons ----------------------------------------------- */
 .btn-primary {
   background-color: #2f4fa2;
@@ -6532,6 +6535,9 @@ label {
   margin-top: 20px;
   margin-bottom: 15px;
 }
+.footer-spacing {
+  margin-bottom: 50px;
+}
 /*	7. Lists & Icon details ------------------------------------------------------- */
 .link-list > li {
   color: #999999;
@@ -6640,7 +6646,10 @@ label {
   padding: 10px;
 }
 .border-bot-dot {
-  border-bottom: 1px dotted #737373;
+  border-bottom: 1px dotted #333333;
+}
+.border-bot-solid {
+  border-bottom: 1px solid #999999;
 }
 .label {
   margin-top: -4px;
@@ -6689,6 +6698,11 @@ label {
   font-weight: normal;
 }
 /*======== media query overwrites ==========*/
+.navbar-btn.btn-xs,
+.navbar-btn.btn-sm {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
 p,
 table,
 input,
@@ -6711,6 +6725,12 @@ label,
   .small,
   .smaller {
     font-size: 14px;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-nav.navbar-right:last-child {
+    margin-right: 0;
+    padding-right: 20px;
   }
 }
 @media (min-width: 768px) {
@@ -6770,7 +6790,7 @@ label,
 /* CF-1.0 typography ================================== */
 .cf-page-header {
   margin-top: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
 }
 .cf-page-header h5,
 .cf-page-header h6 {
@@ -6850,6 +6870,9 @@ p.header-round-blue {
 .dark-gray {
   color: #222222;
 }
+.white {
+  color: white;
+}
 .divider-view-only {
   border-bottom: 5px solid #fff;
 }
@@ -6866,6 +6889,27 @@ p.header-round-blue {
     padding-right:0px;
   }
   */
+}
+.navbar-focus {
+  background: #222222;
+}
+.navbar-focus .navbar-nav li a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+li.nav-focus {
+  background: #175473;
+  color: white;
+  padding: 8px;
+  padding-left: 20px;
+  font-size: 18px;
+}
+li.nav-arrow-focus {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #175473;
 }
 .admin-background {
   background-color: #eeeeee;
@@ -7146,32 +7190,41 @@ span.before-add:before {
 }
 /* CF-5.0 tables ============================ */
 table.borderless,
+.table.table-borderless,
 .table-borderless {
   width: 100%;
 }
 table.borderless thead td,
+.table.table-borderless thead td,
 .table-borderless thead td {
   color: #222222;
   padding: 0px 0px 5px 0px;
   border-bottom: 2px solid #eeeeee;
 }
 table.borderless tbody td,
+.table.table-borderless tbody td,
 .table-borderless tbody td {
   color: #555555;
   padding: 10px 0;
   border: none;
 }
 table.borderless tbody td h1,
+.table.table-borderless tbody td h1,
 .table-borderless tbody td h1,
 table.borderless tbody td h2,
+.table.table-borderless tbody td h2,
 .table-borderless tbody td h2,
 table.borderless tbody td h3,
+.table.table-borderless tbody td h3,
 .table-borderless tbody td h3,
 table.borderless tbody td h4,
+.table.table-borderless tbody td h4,
 .table-borderless tbody td h4,
 table.borderless tbody td h5,
+.table.table-borderless tbody td h5,
 .table-borderless tbody td h5,
 table.borderless tbody td p,
+.table.table-borderless tbody td p,
 .table-borderless tbody td p {
   margin: 0;
 }
@@ -7224,6 +7277,38 @@ table.dotted tr:last-child,
 }
 .table-selection-rows tr td:hover,
 .table-selection-rows tr td.active {
+  background: #ddeff8;
+}
+.selection-row {
+  background-color: #fafafa;
+  background-image: -webkit-linear-gradient(top, #fafafa, #e6e6e6);
+  background-image: -moz-linear-gradient(top, #fafafa, #e6e6e6);
+  background-image: -o-linear-gradient(top, #fafafa, #e6e6e6);
+  background-image: -ms-linear-gradient(top, #fafafa, #e6e6e6);
+  background-image: linear-gradient(top, #fafafa, #e6e6e6);
+  padding: 15px 15px 15px 15px;
+  border-bottom: 1px solid #999999;
+  margin-top: -5px;
+}
+.selection-row:first-child {
+  margin-top: 0;
+}
+.selection-row.row-icon {
+  background-color: #fafafa;
+  background-image: -webkit-linear-gradient(top, #fafafa, #e6e6e6);
+  background-image: -moz-linear-gradient(top, #fafafa, #e6e6e6);
+  background-image: -o-linear-gradient(top, #fafafa, #e6e6e6);
+  background-image: -ms-linear-gradient(top, #fafafa, #e6e6e6);
+  background-image: linear-gradient(top, #fafafa, #e6e6e6);
+  padding: 15px 17px 17px 17px;
+  margin-left: -4px;
+  border-bottom: 1px solid #999999;
+  text-align: center;
+  border-left: 1px solid #999999;
+  font-size: 17px;
+}
+.selection-row:hover,
+.selection-row.active {
   background: #ddeff8;
 }
 /* CF-6.0 components ======================== */
