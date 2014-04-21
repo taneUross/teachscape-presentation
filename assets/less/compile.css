@@ -6391,6 +6391,11 @@ h4.modal-title {
   background-image: linear-gradient(top, #2f4fa2, #243c7a);
   border: 1px solid #999999;
 }
+.btn-primary-ok {
+  /* OK button, if it's primary, should be bigger than the secondary button */
+  padding-left: 30px;
+  padding-right: 30px;
+}
 .btn-primary:hover {
   background-color: #243c7a;
   background-image: -webkit-linear-gradient(top, #243c7a, #243c7a);
