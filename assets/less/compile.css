@@ -6259,6 +6259,7 @@ you can use the generic selector below, but it's slower:
 		5.1.4 Dropdown Menu
 	5.2 Modal Dialog
 	5.3 Table
+    5.4 Form
 
 6. Footer / #footer
 
@@ -6490,6 +6491,10 @@ table.table thead tr th {
   font-weight: normal;
 }
 /*	5.4 Input Groups ------------------------------------------------------- */
+.asterisk {
+  color: #732843;
+  display: inline-block;
+}
 .glyphicon.glyphicon-search {
   top: 0px;
 }
