@@ -6286,7 +6286,7 @@ you can use the generic selector below, but it's slower:
   color: #999999;
 }
 .white,
-.txt-gray-light {
+.txt-white {
   color: white;
 }
 /*	2.1 Heading -------------------------------------------------- */
@@ -6915,7 +6915,7 @@ p.header-round-blue {
   position: relative;
   z-index: 900;
   background-color: white;
-  margin-top: 20px;
+  margin-top: 3px;
 }
 .header-call div h1,
 .header-call div h2,
@@ -8007,19 +8007,34 @@ ul.scoring li label {
 .well-focus {
   background: #ffffff;
 }
+ul.dotted,
+.list-dotted {
+  list-style: none;
+  padding: 10px 0;
+}
+ul.dotted li,
+.list-dotted li {
+  padding: 5px 0;
+  border-bottom: 1px dotted #999999;
+}
+/* LESS Document */
+/* CF-7.0  features ======================== */
 ul.open-calibrations {
   height: auto;
   width: 100%;
   padding: 0;
   display: block;
   margin: 0;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 ul.open-calibrations li {
   margin: 0 1px 0 0;
   padding: 0;
   position: relative;
   list-style: none;
-  width: 25%;
+  width: 24%;
   min-height: 200px;
   display: inline-table;
 }
@@ -8027,6 +8042,7 @@ ul.open-calibrations h4 {
   margin-bottom: 25px;
 }
 div.open-card {
+  white-space: normal;
   padding: 20px 30px;
   text-align: center;
   min-width: 150px;
@@ -8041,7 +8057,7 @@ div.title-card {
   color: white;
   margin-top: -3px;
   display: inherit;
-  min-height: 220px;
+  min-height: 207px;
 }
 div.open-card-table {
   padding: 25px 15px;
@@ -8053,34 +8069,11 @@ div.open-card-table {
 .row-open-table table.dotted tbody tr td {
   padding: ;
 }
-ul.dotted {
-  list-style: none;
-  padding: 10px 0;
-}
-ul.dotted li {
-  padding: 5px 0;
-  border-bottom: 1px dotted #999999;
-}
-/* LESS Document */
-/* CF-7.0  features ======================== */
 .evidence-entry {
   padding: 10px ;
 }
 .evidence-entry:hover {
   background: #eef4f7;
-}
-/* CF-10.0 Utilities ======================== */
-.icon-divider-blue {
-  color: #ddeff8;
-  font-size: 12px;
-  margin: 0 10px 3px 10px;
-  text-align: center;
-}
-.pos-relative {
-  position: relative;
-}
-.pos-absolute {
-  position: absolute;
 }
 /* Extra small devices (phones, up to 480px) */
 /* No media query since this is the default in Bootstrap */
