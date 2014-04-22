@@ -6239,7 +6239,7 @@ you can use the generic selector below, but it's slower:
 /*------------------------------------------------------------------
 [Table of contents]
 
-1. Body
+1. Body & grid
 
 2. Typography
 	2.1 Heading
@@ -6265,10 +6265,29 @@ you can use the generic selector below, but it's slower:
 
 7. Bootstrap overrights & additions 
 -------------------------------------------------------------------*/
-/*	1. Body ------------------------------------------------------ */
+/*	1. Body & grid ------------------------------------------------------ */
+.admin-background {
+  background-color: #eeeeee;
+}
+.col-no-gutter {
+  padding: 0;
+  margin: 0;
+}
 /*	2. Typography ------------------------------------------------ */
-.gray {
+.gray,
+.txt-gray {
   color: #999999;
+}
+.dark-gray,
+.txt-gray-dark {
+  color: #333333;
+}
+.txt-gray-light {
+  color: #999999;
+}
+.white,
+.txt-gray-light {
+  color: white;
 }
 /*	2.1 Heading -------------------------------------------------- */
 h1 {
@@ -6513,8 +6532,8 @@ label {
 /*	6.0  Background Elements ---------------------------------------- */
 .panel {
   border-radius: 0.5em;
-  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.3);
 }
 .panel-content {
   margin: 0px 15px;
@@ -6773,23 +6792,8 @@ label,
   }
 }
 /* LESS Document */
-/*
-
-@focus_background_light:    lighten(@focus, 90%);
-@color-exact:				#2F8D29;
-@color-adjacent:			#EDC119;
-@color-discrepant:			#A42732;
-
-@exact-bg:				lighten(@color-exact, 90%);
-@exact-bg-txt:			darken(@color-exact, 30%);
-
-
-*/
+/* LESS Document */
 /* CF-0.0 background & grid & containers ================================== */
-.col-no-gutter {
-  padding: 0;
-  margin: 0;
-}
 .row-player-dark {
   background: #222222;
   margin: 0px;
@@ -6811,6 +6815,7 @@ label,
   overflow-x: hidden;
   border-bottom: 1px solid #eeeeee;
 }
+/* LESS Document */
 /* CF-1.0 typography ================================== */
 .cf-page-header {
   margin-top: 30px;
@@ -6849,9 +6854,6 @@ a:hover {
 }
 .txt-focus {
   color: #175473;
-}
-.txt-gray-light {
-  color: #999999;
 }
 h3.header-round-blue {
   -moz-border-radius: 20px;
@@ -6904,6 +6906,27 @@ p.header-round-blue {
 .divider-view-only {
   border-bottom: 5px solid #fff;
 }
+.header-call {
+  width: 100%;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  margin: 0;
+  padding: 23px 20px 20px 20px;
+  position: relative;
+  z-index: 900;
+  background-color: white;
+  margin-top: 20px;
+}
+.header-call div h1,
+.header-call div h2,
+.header-call div h3,
+.header-call div h4 {
+  margin: 0;
+}
+.header-call div .btn-group {
+  margin-top: 7px;
+}
+/* LESS Document */
 /* CF-2.0 navigation & buttons ======================== */
 .navbar-ts {
   /*  background-color: white;
@@ -6939,9 +6962,6 @@ li.nav-arrow-focus {
   border-bottom: 20px solid transparent;
   border-left: 20px solid #175473;
 }
-.admin-background {
-  background-color: #eeeeee;
-}
 .nav-ts li.active {
   background: #eeeeee;
   color: #333333;
@@ -6960,8 +6980,8 @@ li.nav-arrow-focus {
 }
 .header-call {
   width: 100%;
-  -webkit-box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
   margin: 0;
   padding: 23px 20px 20px 20px;
   position: relative;
@@ -7591,4 +7611,487 @@ ul.dotted li {
 }
 .pos-absolute {
   position: absolute;
+}
+/* LESS Document */
+/* CF-3.0 panels and sections ======================== */
+.section-bar {
+  border-radius: 0;
+  margin: 0;
+}
+.bar-1 {
+  margin-left: 0;
+  margin-top: 20px;
+}
+.bar-2 {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.bar-3 {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.bar-4 {
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.bar-5 {
+  margin-left: 40px;
+  margin-top: 10px;
+}
+.tree-0 {
+  padding-left: 10px;
+}
+.tree-1 {
+  padding-left: 20px;
+}
+.tree-2 {
+  padding-left: 30px;
+}
+.tree-3 {
+  padding-left: 40px;
+}
+.tree-4 {
+  padding-left: 50px;
+}
+.section-dotted {
+  margin-top: 25px ;
+  margin-bottom: 25px;
+  border-bottom: 1px dotted #999999;
+}
+/* LESS Document */
+/* CF-4.0 Forms ======================== */
+.text-edit {
+  border: 1px solid white;
+  padding: 0px 5px;
+  margin: 0;
+  width: 100%;
+  -webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0);
+}
+.text-edit:hover {
+  border: 1px solid #999999;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+}
+.text-code {
+  margin-right: 5px;
+  width: auto;
+  min-width: 30px;
+  max-width: 60px;
+  font-size: 18px;
+}
+.text-title {
+  width: 300px;
+  min-width: 150px;
+  font-size: 18px;
+}
+.text-description {
+  font-size: 14px;
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+.text-headline {
+  font-size: 24px;
+}
+/* LESS Document */
+/* CF-5.0 tables ============================ */
+table.borderless,
+.table.table-borderless,
+.table-borderless {
+  width: 100%;
+}
+table.borderless thead td,
+.table.table-borderless thead td,
+.table-borderless thead td {
+  color: #222222;
+  padding: 0px 0px 5px 0px;
+  border-bottom: 2px solid #eeeeee;
+}
+table.borderless tbody td,
+.table.table-borderless tbody td,
+.table-borderless tbody td {
+  color: #555555;
+  padding: 10px 0;
+  border: none;
+}
+table.borderless tbody td h1,
+.table.table-borderless tbody td h1,
+.table-borderless tbody td h1,
+table.borderless tbody td h2,
+.table.table-borderless tbody td h2,
+.table-borderless tbody td h2,
+table.borderless tbody td h3,
+.table.table-borderless tbody td h3,
+.table-borderless tbody td h3,
+table.borderless tbody td h4,
+.table.table-borderless tbody td h4,
+.table-borderless tbody td h4,
+table.borderless tbody td h5,
+.table.table-borderless tbody td h5,
+.table-borderless tbody td h5,
+table.borderless tbody td p,
+.table.table-borderless tbody td p,
+.table-borderless tbody td p {
+  margin: 0;
+}
+table.dotted tbody tr > td,
+.table-dotted tbody tr > td,
+table.dotted tr > td,
+.table-dotted tr > td {
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+table.dotted tbody tr,
+.table-dotted tbody tr,
+table.dotted tr,
+.table-dotted tr {
+  border-top: 1px dotted #999999;
+  border-bottom: 1px dotted #999999;
+}
+table.dotted tbody tr:first-child,
+.table-dotted tbody tr:first-child,
+table.dotted tr:first-child,
+.table-dotted tr:first-child {
+  border-top: 0;
+}
+table.dotted tbody tr:last-child,
+.table-dotted tbody tr:last-child,
+table.dotted tr:last-child,
+.table-dotted tr:last-child {
+  border-bottom: 0;
+}
+.table-selection-rows tr {
+  background-color: #fafafa;
+  background-image: -webkit-linear-gradient(top, #fafafa, #e6e6e6);
+  background-image: -moz-linear-gradient(top, #fafafa, #e6e6e6);
+  background-image: -o-linear-gradient(top, #fafafa, #e6e6e6);
+  background-image: -ms-linear-gradient(top, #fafafa, #e6e6e6);
+  background-image: linear-gradient(top, #fafafa, #e6e6e6);
+}
+.table-selection-rows tr td {
+  padding: 10px 10px 5px 10px;
+  border-bottom: 1px solid #999999;
+}
+.table-selection-rows tr td label {
+  cursor: pointer;
+}
+.table-selection-rows tr td.col-info-btn {
+  text-align: center;
+  border-left: 1px solid #999999;
+}
+.table-selection-rows tr td:hover,
+.table-selection-rows tr td.active {
+  background: #ddeff8;
+}
+.selection-row {
+  background-color: #fafafa;
+  background-image: -webkit-linear-gradient(top, #fafafa, #e6e6e6);
+  background-image: -moz-linear-gradient(top, #fafafa, #e6e6e6);
+  background-image: -o-linear-gradient(top, #fafafa, #e6e6e6);
+  background-image: -ms-linear-gradient(top, #fafafa, #e6e6e6);
+  background-image: linear-gradient(top, #fafafa, #e6e6e6);
+  padding: 15px 15px 15px 15px;
+  border-bottom: 1px solid #999999;
+  margin-top: -5px;
+}
+.selection-row:first-child {
+  margin-top: 0;
+}
+.selection-row.row-icon {
+  background-color: #fafafa;
+  background-image: -webkit-linear-gradient(top, #fafafa, #e6e6e6);
+  background-image: -moz-linear-gradient(top, #fafafa, #e6e6e6);
+  background-image: -o-linear-gradient(top, #fafafa, #e6e6e6);
+  background-image: -ms-linear-gradient(top, #fafafa, #e6e6e6);
+  background-image: linear-gradient(top, #fafafa, #e6e6e6);
+  padding: 15px 17px 17px 17px;
+  margin-left: -4px;
+  border-bottom: 1px solid #999999;
+  text-align: center;
+  border-left: 1px solid #999999;
+  font-size: 17px;
+}
+.selection-row:hover,
+.selection-row.active {
+  background: #ddeff8;
+}
+/* LESS Document */
+/* CF-6.0 components ======================== */
+.label-blue-light {
+  background: #ddeff8;
+  color: #333333;
+}
+.label-saved,
+.badge-saved,
+.badge-draft {
+  background: #999999;
+}
+.label-published,
+.badge-published {
+  background: #175473;
+}
+.label-locked,
+.badge-locked,
+.badge-expired {
+  background: #333333;
+}
+.label-success,
+.badge-success,
+.badge-open {
+  background: #5cb85c;
+}
+.label-exact,
+.badge-exact {
+  color: #222222;
+  background: #c9efc6;
+}
+.label-adjacent,
+.badge-adjacent {
+  color: #222222;
+  background: #f8e7a7;
+}
+.label-discrepant,
+.badge-discrepant {
+  color: #222222;
+  background: #f5d5d8;
+}
+.panel-default .panel-heading {
+  background: white;
+}
+ul.scoring {
+  overflow: auto;
+  list-style: none;
+  font-size: 14px;
+  width: auto;
+  height: 300px;
+  white-space: nowrap;
+  padding: 0;
+  display: block;
+}
+ul.scoring li {
+  border-left: 1px dotted #999999;
+  padding: 0px 15px;
+  display: inline-table;
+  width: 24%;
+}
+ul.scoring li label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.filter-sidebar {
+  list-style: none;
+  font-size: 14px;
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-right: 20px;
+}
+.filter-sidebar li.search {
+  margin: 0 0 30px 0;
+  border-bottom: 0px;
+}
+.filter-sidebar li.header {
+  padding-bottom: 5px;
+}
+.filter-sidebar li.header h4 {
+  display: inline-block;
+  margin: 0;
+}
+.filter-sidebar li.header a {
+  display: inline-block;
+  font-size: 12px;
+  margin: 0;
+  margin-left: 25px;
+}
+.filter-sidebar li {
+  margin-top: 30px;
+  border-bottom: 1px dotted #999999;
+  padding-bottom: 10px;
+}
+.filter-sidebar li:last-child {
+  border-bottom: 0px;
+}
+.sidebar-wrap {
+  z-index: 10;
+  background: #737373;
+}
+.sidebar-wrap ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  bottom: 0px;
+  height: 100%;
+}
+.sidebar-wrap ul li {
+  padding-top: 20px;
+  padding-right: 23px;
+  padding-bottom: 15px;
+  width: 100%;
+  border-bottom: 1px solid #999999;
+  color: #eeeeee;
+  background-color: #666666;
+  background-image: -webkit-linear-gradient(top, #666666, #5a5a5a);
+  background-image: -moz-linear-gradient(top, #666666, #5a5a5a);
+  background-image: -o-linear-gradient(top, #666666, #5a5a5a);
+  background-image: -ms-linear-gradient(top, #666666, #5a5a5a);
+  background-image: linear-gradient(top, #666666, #5a5a5a);
+  position: relative;
+  line-height: 1.2;
+}
+.sidebar-wrap ul li:first-child {
+  margin-top: 30px;
+  border-top: 2px solid #999999;
+}
+.sidebar-wrap ul li a {
+  color: #eeeeee;
+}
+.sidebar-wrap ul li a:hover {
+  color: white;
+  text-decoration: none;
+}
+.sidebar-wrap ul li .arrow-left {
+  display: none;
+}
+.sidebar-wrap ul li.active {
+  background-color: #404040;
+  background-image: -webkit-linear-gradient(top, #404040, #272727);
+  background-image: -moz-linear-gradient(top, #404040, #272727);
+  background-image: -o-linear-gradient(top, #404040, #272727);
+  background-image: -ms-linear-gradient(top, #404040, #272727);
+  background-image: linear-gradient(top, #404040, #272727);
+  color: white;
+}
+.sidebar-wrap ul li.active a {
+  color: white;
+}
+.sidebar-wrap ul li.active a:hover {
+  color: white;
+}
+.sidebar-wrap ul li.active .arrow-left {
+  display: inline-block;
+}
+.sidebar-wrap ul li:hover {
+  background-color: #404040;
+  background-image: -webkit-linear-gradient(top, #404040, #272727);
+  background-image: -moz-linear-gradient(top, #404040, #272727);
+  background-image: -o-linear-gradient(top, #404040, #272727);
+  background-image: -ms-linear-gradient(top, #404040, #272727);
+  background-image: linear-gradient(top, #404040, #272727);
+  cursor: pointer;
+}
+.sidebar-wrap ul li:hover a {
+  color: white;
+}
+.arrow-left {
+  width: 20px;
+  height: 100%;
+  background: url('../../images/arrow.svg') right center no-repeat;
+  background-size: 20px 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #999999;
+}
+.well-focus {
+  background: #ffffff;
+}
+ul.open-calibrations {
+  height: auto;
+  width: 100%;
+  padding: 0;
+  display: block;
+  margin: 0;
+}
+ul.open-calibrations li {
+  margin: 0 1px 0 0;
+  padding: 0;
+  position: relative;
+  list-style: none;
+  width: 25%;
+  min-height: 200px;
+  display: inline-table;
+}
+ul.open-calibrations h4 {
+  margin-bottom: 25px;
+}
+div.open-card {
+  padding: 20px 30px;
+  text-align: center;
+  min-width: 150px;
+  min-height: 200px;
+  background: #ddeff8;
+  position: relative;
+}
+div.title-card {
+  padding: 30px 35px;
+  text-align: left;
+  background: #175473;
+  color: white;
+  margin-top: -3px;
+  display: inherit;
+  min-height: 220px;
+}
+div.open-card-table {
+  padding: 25px 15px;
+}
+.row-open-table {
+  border: 2px solid #ddeff8;
+  margin: 20px 0 0 0;
+}
+.row-open-table table.dotted tbody tr td {
+  padding: ;
+}
+ul.dotted {
+  list-style: none;
+  padding: 10px 0;
+}
+ul.dotted li {
+  padding: 5px 0;
+  border-bottom: 1px dotted #999999;
+}
+/* LESS Document */
+/* CF-7.0  features ======================== */
+.evidence-entry {
+  padding: 10px ;
+}
+.evidence-entry:hover {
+  background: #eef4f7;
+}
+/* CF-10.0 Utilities ======================== */
+.icon-divider-blue {
+  color: #ddeff8;
+  font-size: 12px;
+  margin: 0 10px 3px 10px;
+  text-align: center;
+}
+.pos-relative {
+  position: relative;
+}
+.pos-absolute {
+  position: absolute;
+}
+/* Extra small devices (phones, up to 480px) */
+/* No media query since this is the default in Bootstrap */
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
+/* LESS Document */
+/* CF-10.0 Utilities ======================== */
+.icon-divider-blue {
+  color: #ddeff8;
+  font-size: 12px;
+  margin: 0 10px 3px 10px;
+  text-align: center;
 }

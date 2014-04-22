@@ -1,0 +1,112 @@
+/* LESS Document */
+
+// CF-0.0 background & grid & containers
+// CF-1.0 typography
+// CF-2.0 navigation & buttons
+// CF-3.0 panels & sections
+// CF-4.0 forms & inputs
+// CF-5.0 tables
+// CF-6.0 components (labels, badges) & lists & sidebar
+// CF-7.0 feature specific (ie evidence collection)
+// CF-8.0
+// CF-9.0 responsiveness media queries (cf specific)  
+// CF-10.0 utilities 
+
+
+
+/* CF-5.0 tables ============================ */
+
+// CF-5.1.1 borderless for small tables
+
+table.borderless, .table.table-borderless, .table-borderless {
+  width:100%;
+	thead {
+		td {
+			color:@gray-darker;
+			padding:0px 0px 5px 0px;
+			border-bottom:2px solid @gray-lighter;
+		}
+	}
+	tbody {
+		td {
+			color:@gray;
+			padding:10px 0;
+			border:none;
+			h1,h2,h3,h4,h5, p {
+				margin:0;
+			}
+		}
+	}
+
+  width:100%;
+  
+}
+
+// CF-5.2 dotted border
+table.dotted, .table-dotted {
+	tbody tr > td, tr >td {
+		border-top:none;
+		border-bottom:none;
+    border-left: none;
+    border-right: none;
+	}
+	tbody tr, tr {
+
+		border-top:1px dotted @gray-light;
+		border-bottom:1px dotted @gray-light;
+		&:first-child {
+			border-top:0;
+		}
+		&:last-child {
+			border-bottom:0;
+		}
+	}
+}
+
+// CF-5.3 gradient selectable rows 
+.table-selection-rows {
+    tr {
+
+    .gradient(top, darken(#ffffff,2%), darken(#ffffff, 10%));
+      td {
+        padding:10px 10px 5px 10px;
+        border-bottom:1px solid @gray-light;
+        label {
+          cursor: pointer;
+        }
+      }
+      td.col-info-btn {
+          text-align: center;
+          border-left: 1px solid @gray-light;
+      }
+      td:hover, td.active {
+        background:@focus_background_light;
+      }
+    }
+}
+
+.selection-row {
+  .gradient(top, darken(#ffffff,2%), darken(#ffffff, 10%));
+  padding:15px 15px 15px 15px;
+  border-bottom:1px solid @gray-light;
+  margin-top: -5px;
+  &:first-child {
+    margin-top:0;
+  }
+}
+
+.selection-row.row-icon {
+  .gradient(top, darken(#ffffff,2%), darken(#ffffff, 10%));
+  padding:15px 17px 17px 17px;
+  margin-left: -4px;
+  border-bottom:1px solid @gray-light;
+  text-align: center;
+  border-left: 1px solid @gray-light;
+  font-size:17px;
+}
+
+.selection-row:hover, .selection-row.active {
+        background:@focus_background_light;
+}
+
+

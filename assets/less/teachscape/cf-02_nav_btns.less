@@ -1,168 +1,20 @@
 /* LESS Document */
-/*
-
-@focus_background_light:    lighten(@focus, 90%);
-@color-exact:				#2F8D29;
-@color-adjacent:			#EDC119;
-@color-discrepant:			#A42732;
-
-@exact-bg:				lighten(@color-exact, 90%);
-@exact-bg-txt:			darken(@color-exact, 30%);
 
 
-*/
 // CF-0.0 background & grid & containers
 // CF-1.0 typography
 // CF-2.0 navigation & buttons
 // CF-3.0 panels & sections
-// CF-4.0 forms
+// CF-4.0 forms & inputs
 // CF-5.0 tables
-// CF-6.0 components
-// CF-7.0 features
-
-// CF-10.0 utilities
-
-/* CF-0.0 background & grid & containers ================================== */
-
-.col-no-gutter {
-	padding:0;
-	margin:0;
-}
+// CF-6.0 components (labels, badges) & lists & sidebar
+// CF-7.0 feature specific (ie evidence collection)
+// CF-8.0
+// CF-9.0 responsiveness media queries (cf specific)  
+// CF-10.0 utilities 
 
 
-//CF-0.2 video player 
-.row-player-dark {
-	background:@gray-darker;
-	margin:0px;
-	padding:20px;
-	width:100%;
-	text-align:center;
-	z-index:0;
-}
 
-.admin-content, .evaluator-content {
-  padding: 0 30px;
-}
-
-.background-blue {
-  background: @focus_background_light;
-}
-
-// CF-0.3 windows
-
-.container-350scroll {
-  height: 350px;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  border-bottom: 1px solid @gray-lighter;
-}
-
-
-/* CF-1.0 typography ================================== */
-
-.cf-page-header {
-	margin-top:30px;
-	margin-bottom:15px;
-	h5, h6 {
-		font-size: 16px;
-		margin: 0 0 4px 0;
-	}
-	h1, h2 {
-		margin:0;
-	}
-}
-
-.cf-header-btn {
-  text-align: right;
-  margin-top: 30px;
-}
-
-h3.smaller {
-	font-size: 24px;
-}
-
-a:hover {
-	text-decoration:none;
-}
-
-//CF-1.1 colored text
-.txt-exact {
-	color: @color-exact;
-}
-.txt-adjacent {
-	color: @color-adjacent;
-}
-.txt-discrepant{
-	color: @color-discrepant;
-}
-
-.txt-focus-light {
-	color: lighten(@focus, 55%);
-}
-
-.txt-focus {
-	color: @focus;
-}
-
-.txt-gray-light {
-  color:@gray-light;
-}
-
-h3.header-round-blue {
-    -moz-border-radius: 20px;
-    -webkit-border-radius: 20px;
-    border-radius: 20px;
-    height:40px;
-    width:40px;
-	  text-align:center;
-	  padding-top:6px;
-	  font-size:28px;
-	  background: @focus_background_light;
-    display: inline-block;
-    margin-right:20px;
-    margin-top: 0;
-}
-h4.header-round-blue {
-    -moz-border-radius: 15px;
-    -webkit-border-radius: 15px;
-    border-radius: 15px;
-    height:30px;
-    width:30px;
-    text-align:center;
-    padding-top:4px;
-    font-size:20px;
-    background: @focus_background_light;
-    display: inline-block;
-    margin-right:20px;
-    margin-top: 0;
-}
-p.header-round-blue {
-    -moz-border-radius: 12px;
-    -webkit-border-radius: 12px;
-    border-radius: 12px;
-    height:25px;
-    width:25px;
-    text-align:center;
-    padding-top:3px;
-    font-size:16px;
-    background: @focus_background_light;
-    display: inline-block;
-    margin-right:20px;
-    margin-top: 0;
-}
-
-.dark-gray {
-  color:@gray-darker;
-}
-
-.white {
-  color:white;
-}
-
-//CF-1.3 header divider
-.divider-view-only {
-	border-bottom: 5px solid #fff;
-}
 
 /* CF-2.0 navigation & buttons ======================== */
 .navbar-ts {
@@ -208,9 +60,6 @@ li.nav-arrow-focus {
 
 }
 
-.admin-background {
-  background-color: @gray-lighter;
-}
 .nav-ts {
   li.active {
     background:@gray-lighter;
@@ -234,8 +83,8 @@ li.nav-arrow-focus {
 
 .header-call {
   width:100%;
-  -webkit-box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
   margin:0;
   padding:23px 20px 20px 20px;
   position:relative;
