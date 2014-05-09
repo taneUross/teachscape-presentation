@@ -6646,6 +6646,9 @@ label {
 .pad-0 {
   padding: 0px;
 }
+.mar-top-10 {
+  margin-top: 10px;
+}
 .mar-top-20 {
   margin-top: 20px;
 }
@@ -6751,11 +6754,11 @@ table,
 input,
 label,
 .form-control {
-  font-size: 15px;
+  font-size: 13px;
 }
 .small,
 .smaller {
-  font-size: 13px;
+  font-size: 11px;
 }
 @media (min-width: 992px) {
   p,
@@ -6767,7 +6770,7 @@ label,
   }
   .small,
   .smaller {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 @media (min-width: 768px) {
@@ -6804,16 +6807,26 @@ label,
 }
 .admin-content,
 .evaluator-content {
-  padding: 0 30px;
+  padding: 0 50px;
 }
 .background-blue {
-  background: #ddeff8;
+  background: #d5ebf7;
 }
 .container-350scroll {
   height: 350px;
   overflow-y: scroll;
   overflow-x: hidden;
   border-bottom: 1px solid #eeeeee;
+}
+.container-view-evidence {
+  height: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 10px 15px;
+  margin-top: 20px;
+  -moz-box-shadow: inset 0 0 5px #333333;
+  -webkit-box-shadow: inset 0 0 5px #333333;
+  box-shadow: inset 0 0 5px #333333;
 }
 /* LESS Document */
 /* CF-1.0 typography ================================== */
@@ -6864,7 +6877,7 @@ h3.header-round-blue {
   text-align: center;
   padding-top: 6px;
   font-size: 28px;
-  background: #ddeff8;
+  background: #d5ebf7;
   display: inline-block;
   margin-right: 20px;
   margin-top: 0;
@@ -6878,7 +6891,7 @@ h4.header-round-blue {
   text-align: center;
   padding-top: 4px;
   font-size: 20px;
-  background: #ddeff8;
+  background: #d5ebf7;
   display: inline-block;
   margin-right: 20px;
   margin-top: 0;
@@ -6892,7 +6905,7 @@ p.header-round-blue {
   text-align: center;
   padding-top: 3px;
   font-size: 16px;
-  background: #ddeff8;
+  background: #d5ebf7;
   display: inline-block;
   margin-right: 20px;
   margin-top: 0;
@@ -6905,6 +6918,9 @@ p.header-round-blue {
 }
 .divider-view-only {
   border-bottom: 5px solid #fff;
+}
+.divider-view-blue {
+  border-bottom: 3px solid #f2f9fc;
 }
 .header-call {
   width: 100%;
@@ -7054,6 +7070,7 @@ span.before-add:before {
   background-image: -ms-linear-gradient(top, #3d63c7, #2f4fa2);
   background-image: linear-gradient(top, #3d63c7, #2f4fa2);
   color: #ffffff;
+  font-size: 16px;
 }
 .btn-round:hover {
   color: white;
@@ -7112,6 +7129,7 @@ span.before-add:before {
   background-image: -ms-linear-gradient(top, #fcfcfc, #f2f2f2);
   background-image: linear-gradient(top, #fcfcfc, #f2f2f2);
   border: 1px solid #999999;
+  font-size: 16px;
 }
 .round-default:hover {
   background-color: #f2f2f2;
@@ -7317,7 +7335,7 @@ table.dotted tr:last-child,
 }
 .table-selection-rows tr td:hover,
 .table-selection-rows tr td.active {
-  background: #ddeff8;
+  background: #d5ebf7;
 }
 .selection-row {
   background-color: #fafafa;
@@ -7349,11 +7367,11 @@ table.dotted tr:last-child,
 }
 .selection-row:hover,
 .selection-row.active {
-  background: #ddeff8;
+  background: #d5ebf7;
 }
 /* CF-6.0 components ======================== */
 .label-blue-light {
-  background: #ddeff8;
+  background: #d5ebf7;
   color: #333333;
 }
 .label-saved,
@@ -7562,7 +7580,7 @@ div.open-card {
   text-align: center;
   min-width: 150px;
   min-height: 200px;
-  background: #ddeff8;
+  background: #d5ebf7;
   position: relative;
 }
 div.title-card {
@@ -7578,7 +7596,7 @@ div.open-card-table {
   padding: 25px 15px;
 }
 .row-open-table {
-  border: 2px solid #ddeff8;
+  border: 2px solid #d5ebf7;
   margin: 20px 0 0 0;
 }
 .row-open-table table.dotted tbody tr td {
@@ -7601,7 +7619,7 @@ ul.dotted li {
 }
 /* CF-10.0 Utilities ======================== */
 .icon-divider-blue {
-  color: #ddeff8;
+  color: #d5ebf7;
   font-size: 12px;
   margin: 0 10px 3px 10px;
   text-align: center;
@@ -7745,6 +7763,10 @@ table.dotted tr > td,
   border-left: none;
   border-right: none;
 }
+table.dotted thead,
+.table-dotted thead {
+  border-bottom: 1px solid #999999;
+}
 table.dotted tbody tr,
 .table-dotted tbody tr,
 table.dotted tr,
@@ -7773,8 +7795,9 @@ table.dotted tr:last-child,
   background-image: linear-gradient(top, #fafafa, #e6e6e6);
 }
 .table-selection-rows tr td {
-  padding: 10px 10px 5px 10px;
+  padding: 15px 15px 10px 15px;
   border-bottom: 1px solid #999999;
+  width: 100%;
 }
 .table-selection-rows tr td label {
   cursor: pointer;
@@ -7783,25 +7806,10 @@ table.dotted tr:last-child,
   text-align: center;
   border-left: 1px solid #999999;
 }
-.table-selection-rows tr td:hover,
 .table-selection-rows tr td.active {
-  background: #ddeff8;
+  background: #f2f9fc;
 }
-.selection-row {
-  background-color: #fafafa;
-  background-image: -webkit-linear-gradient(top, #fafafa, #e6e6e6);
-  background-image: -moz-linear-gradient(top, #fafafa, #e6e6e6);
-  background-image: -o-linear-gradient(top, #fafafa, #e6e6e6);
-  background-image: -ms-linear-gradient(top, #fafafa, #e6e6e6);
-  background-image: linear-gradient(top, #fafafa, #e6e6e6);
-  padding: 15px 15px 15px 15px;
-  border-bottom: 1px solid #999999;
-  margin-top: -5px;
-}
-.selection-row:first-child {
-  margin-top: 0;
-}
-.selection-row.row-icon {
+.row-icon {
   background-color: #fafafa;
   background-image: -webkit-linear-gradient(top, #fafafa, #e6e6e6);
   background-image: -moz-linear-gradient(top, #fafafa, #e6e6e6);
@@ -7815,14 +7823,10 @@ table.dotted tr:last-child,
   border-left: 1px solid #999999;
   font-size: 17px;
 }
-.selection-row:hover,
-.selection-row.active {
-  background: #ddeff8;
-}
 /* LESS Document */
 /* CF-6.0 components ======================== */
 .label-blue-light {
-  background: #ddeff8;
+  background: #d5ebf7;
   color: #333333;
 }
 .label-saved,
@@ -7882,6 +7886,50 @@ ul.scoring li label {
   display: block;
   margin-top: 10px;
   margin-bottom: 0px;
+}
+ul.scoring-blue {
+  overflow: auto;
+  list-style: none;
+  font-size: 14px;
+  width: auto;
+  height: auto;
+  white-space: nowrap;
+  padding: 0px;
+  display: block;
+  border-radius: 15px;
+  background: #d5ebf7;
+  text-align: center;
+}
+ul.scoring-blue li {
+  white-space: normal;
+  margin: 0;
+  margin-left: -3px;
+  border-right: 4px solid #d5ebf7;
+  display: inline-table;
+  max-width: 24.5%;
+}
+ul.scoring-blue li:last-child {
+  border-right: 0px;
+}
+ul.scoring-blue li label {
+  padding: 15px 10px;
+  border-bottom: 3px solid white;
+  width: 100%;
+  margin: 0;
+  cursor: pointer;
+}
+ul.scoring-blue li label:hover {
+  background: #f2f9fc;
+}
+ul.scoring-blue li label.active {
+  background: white;
+  border-top: 1px solid #f2f9fc;
+}
+ul.scoring-blue li p.description {
+  text-align: left;
+  padding: 10px;
+  font-size: 13px;
+  margin: 0;
 }
 .filter-sidebar {
   list-style: none;
@@ -8017,6 +8065,65 @@ ul.dotted li,
   padding: 5px 0;
   border-bottom: 1px dotted #999999;
 }
+.ribbon {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 24px;
+  color: #222222;
+  margin-top: 30px;
+  position: relative;
+}
+.ribbon:after {
+  content: "";
+  top: 0;
+  height: 0;
+  border-top: 27px solid transparent;
+  border-bottom: 27px solid transparent;
+  border-right: 20px solid white;
+  position: absolute;
+  right: 0;
+}
+.bar-overall {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 30px;
+}
+.bar-exact {
+  margin: 0;
+  background: #2f8d29;
+  height: 30px;
+  position: relative;
+  display: inline-block;
+  margin: -4px;
+}
+.bar-adjacent {
+  margin: 0;
+  background: #edc119;
+  height: 30px;
+  position: relative;
+  display: inline-block;
+  margin: -4px;
+}
+.bar-discrepant {
+  margin: 0;
+  background: #a42732;
+  height: 30px;
+  position: relative;
+  display: inline-block;
+  margin: -4px;
+}
+.bar-white {
+  margin: 0;
+  background: white;
+  height: 30px;
+  position: relative;
+  display: inline-block;
+  margin: -4px;
+}
+.bar-short {
+  height: 10px;
+}
 /* LESS Document */
 /* CF-7.0  features ======================== */
 ul.open-calibrations {
@@ -8047,7 +8154,7 @@ div.open-card {
   text-align: center;
   min-width: 150px;
   min-height: 200px;
-  background: #ddeff8;
+  background: #d5ebf7;
   position: relative;
 }
 div.title-card {
@@ -8063,7 +8170,7 @@ div.open-card-table {
   padding: 25px 15px;
 }
 .row-open-table {
-  border: 2px solid #ddeff8;
+  border: 2px solid #d5ebf7;
   margin: 20px 0 0 0;
 }
 .row-open-table table.dotted tbody tr td {
@@ -8075,6 +8182,10 @@ div.open-card-table {
 .evidence-entry:hover {
   background: #eef4f7;
 }
+.evidence-meta {
+  font-size: 13px;
+  text-align: right;
+}
 /* Extra small devices (phones, up to 480px) */
 /* No media query since this is the default in Bootstrap */
 /* Small devices (tablets, 768px and up) */
@@ -8083,8 +8194,17 @@ div.open-card-table {
 /* LESS Document */
 /* CF-10.0 Utilities ======================== */
 .icon-divider-blue {
-  color: #ddeff8;
-  font-size: 12px;
-  margin: 0 10px 3px 10px;
+  position: relative;
+  color: #d5ebf7;
+  top: -4px;
   text-align: center;
+}
+.bg-exact {
+  background: #c9efc6;
+}
+.bg-adjacent {
+  background: #f8e7a7;
+}
+.bg-discrepant {
+  background: #f5d5d8;
 }

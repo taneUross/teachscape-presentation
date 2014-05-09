@@ -50,6 +50,9 @@ table.dotted, .table-dotted {
     border-left: none;
     border-right: none;
 	}
+	thead {
+		border-bottom: 1px solid @gray-light;
+	}
 	tbody tr, tr {
 
 		border-top:1px dotted @gray-light;
@@ -69,8 +72,9 @@ table.dotted, .table-dotted {
 
     .gradient(top, darken(#ffffff,2%), darken(#ffffff, 10%));
       td {
-        padding:10px 10px 5px 10px;
+        padding:15px 15px 10px 15px;
         border-bottom:1px solid @gray-light;
+        width:100%;
         label {
           cursor: pointer;
         }
@@ -79,23 +83,14 @@ table.dotted, .table-dotted {
           text-align: center;
           border-left: 1px solid @gray-light;
       }
-      td:hover, td.active {
-        background:@focus_background_light;
+      td.active {
+        background: @focus_background_lighter;
       }
     }
 }
 
-.selection-row {
-  .gradient(top, darken(#ffffff,2%), darken(#ffffff, 10%));
-  padding:15px 15px 15px 15px;
-  border-bottom:1px solid @gray-light;
-  margin-top: -5px;
-  &:first-child {
-    margin-top:0;
-  }
-}
 
-.selection-row.row-icon {
+.row-icon {
   .gradient(top, darken(#ffffff,2%), darken(#ffffff, 10%));
   padding:15px 17px 17px 17px;
   margin-left: -4px;
@@ -105,8 +100,5 @@ table.dotted, .table-dotted {
   font-size:17px;
 }
 
-.selection-row:hover, .selection-row.active {
-        background:@focus_background_light;
-}
-
+	
 

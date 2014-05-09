@@ -87,6 +87,54 @@ ul.scoring {
 	}
 }
 
+ul.scoring-blue {
+	overflow: auto;
+	list-style:none;
+	font-size:14px;
+	width:auto;
+	height:auto;
+	white-space: nowrap;
+	padding:0px;
+	display:block;
+	border-radius:15px;
+	background:@focus_background_light;
+	text-align: center;
+
+	li {
+		white-space: normal;
+		margin:0;
+		margin-left:-3px;
+		border-right:4px solid @focus_background_light;
+		display:inline-table;
+		max-width: 24.5%;
+		&:last-child {
+			border-right: 0px;
+		}
+		label {
+			padding:15px 10px;
+			border-bottom: 3px solid white;
+			width:100%;
+			margin:0;
+			cursor: pointer;
+		}
+		label:hover {
+			background:@focus_background_lighter;
+		}
+		label.active {
+			background: white;
+			border-top:1px solid @focus_background_lighter;
+		}
+		p.description {
+			text-align: left;
+			padding:10px;
+			font-size: 13px;
+			margin:0;
+			
+		}
+	}
+	
+}
+
 // CF-6.3.2 custom lists: sidebar with filter inputs
 .filter-sidebar {
 	list-style:none;
@@ -222,5 +270,71 @@ ul.dotted, .list-dotted {
     border-bottom:1px dotted @gray-light;
   }
 
+}
+
+
+.ribbon {
+	width:100%;
+	padding:10px 20px;
+	font-size: 24px;
+	color:@gray-darker;
+	margin-top: 30px;
+	position: relative;
+}
+.ribbon:after {
+	content: "";
+	top: 0;
+	height: 0;
+	border-top: 27px solid transparent;
+	border-bottom: 27px solid transparent;
+	border-right: 20px solid white;
+	position: absolute;
+	right: 0;
+}
+
+.bar-overall {
+	margin:0;
+	padding:0;
+	width:100%;
+	height:30px;
+}
+
+.bar-exact {
+	margin:0;
+	background:@color-exact;
+	height:30px;
+	position: relative;
+	display: inline-block;
+	margin:-4px;
+}
+.bar-adjacent {
+	margin:0;
+	background:@color-adjacent;
+	height:30px;
+	position: relative;
+	display: inline-block;
+	margin:-4px;
+}
+
+.bar-discrepant {
+	margin:0;
+	background:@color-discrepant;
+	height:30px;
+	position: relative;
+	display: inline-block;
+	margin:-4px;
+}
+
+.bar-white {
+	margin:0;
+	background:white;
+	height:30px;
+	position: relative;
+	display: inline-block;
+	margin:-4px;
+}
+
+.bar-short {
+	height:10px;
 }
 
