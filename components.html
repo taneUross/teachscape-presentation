@@ -21,7 +21,8 @@
 
 <!-- Documentation extras -->
 <link href="assets/css/pygments-manni.css" rel="stylesheet">
-
+<link href="assets/css/ts-prettify.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/interface_font/interface.css">
 
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -715,7 +716,19 @@
     </div>
 
     <h2 id="input-groups-basic">Basic example</h2>
-    <form class="bs-example bs-example-form" role="form">
+    <div class="bs-callout bs-callout-warning">
+        <h4>Make text input accessible</h4>
+        <p><b>In the first example below:</b> Text boxes must have a preceding label with a "for" attribute that corresponds to the field id, for example <code>for="FirstName"</code> corresponds to the attribute <code>id="FirstName"</code></p>
+      </div>
+
+      <form class="bs-example bs-example-form" role="form">
+      <h4>Standard Form-Based Example</h4>
+      <div class="form-group">
+        <label for="FirstName">First Name</label>
+        <input id="FirstName" type="text" class="form-control">
+      </div>
+      <hr>
+      <h4>Variations</h4>
       <div class="input-group">
         <span class="input-group-addon">@</span>
         <input type="text" class="form-control" placeholder="Username">
@@ -1534,8 +1547,60 @@
   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;active&quot;</span><span class="nt">&gt;</span>Data<span class="nt">&lt;/li&gt;</span>
 <span class="nt">&lt;/ol&gt;</span>
 </code></pre></div>
-  </div>
-
+    <p class="lead"><strong>The Accessible Solution: </strong>Indicate the current page's location within a navigational hierarchy.</p>
+    <p>This approach uses a div with spans to create the array. Separators are <strong>not </strong>automatically added in via CSS. Instead, seperators have to be added directly in the HTML utilizing the glyph font icons with spans using the <code>class="glyphfont </code> and <code>content</code>.</p>
+    <div class="bs-example">
+      <div class="breadcrumb-508" role="navigation" aria-label="breadcrumbs">
+        <span class="active">Home</span>
+      </div>
+      <div class="breadcrumb-508" role="navigation" aria-label="breadcrumbs">
+        <span class="crumb"><a href="#">Home</a></span>
+        <span class="icon-caret-right" aria-hidden="true"></span>
+        <span class="active">Library</span>
+      </div>
+      <div class="breadcrumb-508" role="navigation" aria-label="breadcrumbs">
+       <span class="crumb"><a href="#">Home</a></span>
+        <span class="icon-caret-right" aria-hidden="true"></span>
+        <span class="crumb"><a href="#">Library</a></span>
+        <span class="icon-caret-right" aria-hidden="true"></span>
+        <span class="active">Data</span>
+      </div>
+    </div>
+  <div class="highlight"><pre class="prettyprint"><code class="html">&lt;div class=&quot;breadcrumb-508&quot; role=&quot;navigation&quot; aria-label=&quot;breadcrumbs&quot;&gt;
+  &lt;span class=&quot;crumb&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/span&gt;
+  &lt;span class=&quot;icon-caret-right&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;crumb&quot;&gt;&lt;a href=&quot;#&quot;&gt;Library&lt;/a&gt;&lt;/span&gt;
+  &lt;span class=&quot;icon-caret-right&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;active&quot;&gt;Data&lt;/span&gt;
+&lt;/div&gt;</code></pre></div>
+    <p class="lead"><strong>The Reverse Breadcrumb: </strong>Indicate the current page's location within a navigational hierarchy.</p>
+    <p>This is the same as the accessible approach above, but with changes in styling to alter spacing and create the reverse color scheme.</p>
+    <div class="bs-example">
+      <div class="breadcrumb-reverse" role="navigation" aria-label="breadcrumbs">
+        <span class="active">Home</span>
+      </div>
+      <div class="breadcrumb-reverse" role="navigation" aria-label="breadcrumbs">
+        <span class="crumb"><a href="#">Home</a></span>
+        <span class="icon-caret-right" aria-hidden="true"></span>
+        <span class="active">Library</span>
+      </div>
+      <div class="breadcrumb-reverse" role="navigation" aria-label="breadcrumbs">
+       <span class="crumb"><a href="#">Home</a></span>
+        <span class="icon-caret-right" aria-hidden="true"></span>
+        <span class="crumb"><a href="#">Library</a></span>
+        <span class="icon-caret-right" aria-hidden="true"></span>
+        <span class="active">Data</span>
+      </div>
+    </div>
+  <div class="highlight"><pre class="prettyprint"><code class="html">&lt;div class=&quot;breadcrumb-reverse&quot; role=&quot;navigation&quot; aria-label=&quot;breadcrumbs&quot;&gt;
+  &lt;span class=&quot;crumb&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/span&gt;
+  &lt;span class=&quot;icon-caret-right&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;crumb&quot;&gt;&lt;a href=&quot;#&quot;&gt;Library&lt;/a&gt;&lt;/span&gt;
+  &lt;span class=&quot;icon-caret-right&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;active&quot;&gt;Data&lt;/span&gt;
+&lt;/div&gt;</code></pre></div>
+</div>
+  
 
 
   <!-- Pagination

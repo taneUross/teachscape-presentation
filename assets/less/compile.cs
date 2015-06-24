@@ -6903,51 +6903,29 @@ td.visible-print {
 }
 /* This solution should replace the current breadcrumbs  */
 .breadcrumb-508 {
+  float: left;
   padding: 8px 15px;
   margin-bottom: 21px;
   background-color: #f5f5f5;
   border-radius: 4px;
 }
 .breadcrumb-508 > .icon-caret-right {
+  float: left;
   color: #888888;
   font-size: 14px;
   vertical-align: top;
   margin-top: 3px;
   margin-left: 0px;
   margin-right: 0px;
+  border: 1px blue solid;
 }
 .breadcrumb-508 > .crumb {
+  float: left;
   margin-left: 0px;
   margin-right: 0px;
+  border: 1px red solid;
 }
 .breadcrumb-508 > .active {
+  float: left;
   color: #888888;
-}
-.breadcrumb-reverse {
-  padding-top: 12px;
-  padding-left: 15px;
-  padding-bottom: 8px;
-  padding-right: 15px;
-  margin-bottom: 21px;
-  background-color: #434d60;
-  border-radius: 0px;
-}
-.breadcrumb-reverse > .icon-caret-right {
-  color: #888888;
-  font-size: 14px;
-  vertical-align: top;
-  margin-top: 3px;
-  margin-left: 0px;
-  margin-right: 0px;
-}
-.breadcrumb-reverse > .crumb {
-  margin-left: 0px;
-  margin-right: 0px;
-}
-.breadcrumb-reverse > .crumb a {
-  color: #d4ebf8;
-  text-decoration: none;
-}
-.breadcrumb-reverse > .active {
-  color: #ffffe6;
 }

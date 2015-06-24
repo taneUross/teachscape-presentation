@@ -1,0 +1,46 @@
+//for UX styleguide, add bootstrap and teachscape les
+/* process
+
+1. copy all less file imports from teachscape.less
+2. paste into ux-compile.less after the bootstrap import so classes override
+3. indicate which files have been edited or revised by putting a //EDITED on the line
+4. add import commands for any UX generated less files
+
+
+Maintained by:
+Tane Ross, UX, tane.ross@teachscape.com
+
+*/
+
+
+//bootstrap for UX usage
+
+@import "../assets/less/bootstrap/bootstrap.less";
+
+
+//from teachscape.less
+
+//variables
+@import "variables/global_ts_variables";  //EDITED tr:june 9
+
+//overrides
+@import "overrides/well";
+
+//utilities
+@import "utilities/alignment";
+@import "utilities/backgrounds";
+@import "utilities/borders";
+@import "utilities/colors";
+@import "utilities/dimensions";
+@import "utilities/font";
+@import "utilities/hover";
+@import "utilities/margins";
+@import "utilities/misc";
+@import "utilities/padding";
+@import "utilities/shadows";
+@import "utilities/shapes";
+
+
+//NEW - unmerged - UX less files
+@import "ux-components/nav-interstitial";
+@import "ux-components/breadcrumbs-508";
