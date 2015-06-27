@@ -6970,9 +6970,9 @@ select {
   color: #0e419b;
   border-radius: 5px;
   padding-left: 8px;
-  padding-top: 9px;
+  padding-top: 4px;
   padding-right: 38px;
-  padding-bottom: 9px;
+  padding-bottom: 4px;
 }
 /* unvisited link */
 select a:link {
@@ -6993,6 +6993,7 @@ select a:active {
 .label {
   font-family: Arial, sans-serif;
   font-size: 15px;
+  color: #333333 !important;
   margin-top: 20px;
   margin-left: 3px;
   margin-bottom: 7px;
