@@ -6903,29 +6903,130 @@ td.visible-print {
 }
 /* This solution should replace the current breadcrumbs  */
 .breadcrumb-508 {
-  float: left;
   padding: 8px 15px;
   margin-bottom: 21px;
   background-color: #f5f5f5;
   border-radius: 4px;
 }
 .breadcrumb-508 > .icon-caret-right {
-  float: left;
   color: #888888;
   font-size: 14px;
   vertical-align: top;
   margin-top: 3px;
   margin-left: 0px;
   margin-right: 0px;
-  border: 1px blue solid;
 }
 .breadcrumb-508 > .crumb {
-  float: left;
   margin-left: 0px;
   margin-right: 0px;
-  border: 1px red solid;
 }
 .breadcrumb-508 > .active {
-  float: left;
   color: #888888;
+}
+.breadcrumb-reverse {
+  padding: 8px 15px;
+  margin-bottom: 0;
+  background-color: #434d60;
+  border-radius: 0px;
+  font-size: 13px;
+}
+.breadcrumb-reverse > .icon-caret-right {
+  color: #888888;
+  font-size: 14px;
+  vertical-align: top;
+  margin-top: 3px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.breadcrumb-reverse > .crumb {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.breadcrumb-reverse > .crumb a {
+  color: #d4ebf8;
+  text-decoration: none;
+}
+.breadcrumb-reverse > .active {
+  color: #ffffe6;
+}
+/* This solution should be used to override system controls     */
+select {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  border: 1px solid #ccc !important;
+  /*Removes border*/
+  -webkit-appearance: none;
+  /*Removes default chrome and safari style*/
+  -moz-appearance: none;
+  /* Removes Default Firefox style*/
+  background: #ffffff url(http://www.jrgdesignworks.com/images/Drop-Down-Arrow-BG.png) no-repeat right;
+  width: auto;
+  /*Width of select dropdown to give space for arrow image*/
+  text-indent: 0.01px;
+  /* Removes default arrow from firefox*/
+  text-overflow: "";
+  /*Removes default arrow from firefox*/
+  /*My custom style for fonts*/
+  color: #0e419b;
+  border-radius: 5px;
+  padding-left: 8px;
+  padding-top: 9px;
+  padding-right: 38px;
+  padding-bottom: 9px;
+}
+/* unvisited link */
+select a:link {
+  color: #0e419b;
+}
+/* visited link */
+select a:visited {
+  color: #0e419b;
+}
+/* mouse over link */
+select a:hover {
+  color: #0e419b;
+}
+/* selected link */
+select a:active {
+  color: #0e419b;
+}
+.label {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  margin-top: 20px;
+  margin-left: 3px;
+  margin-bottom: 7px;
+  margin-right: 15px;
+}
+.form-control select::-ms-expand {
+  display: none;
+}
+.btnPrimary-right {
+  display: inline-block;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #ffffff;
+  background-color: #0e419b;
+  border-color: #0c3784;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.ActionButton {
+  margin-left: 10px;
 }

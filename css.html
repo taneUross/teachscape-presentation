@@ -22,6 +22,8 @@
 
 <!-- Documentation extras -->
 <link href="assets/css/pygments-manni.css" rel="stylesheet">
+<link href="assets/css/ts-prettify.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/interface_font/interface.css">
 
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -1751,40 +1753,53 @@
 <span class="nt">&lt;/label&gt;</span>
 </code></pre></div>
 
-    <h3>Selects</h3>
-    <p>Use the default option, or add <code>multiple</code> to show multiple options at once.</p>
+    <h3>Select Drop-Down Lists</h3>
+    <p>This standard form component is needed for presenting a mutually exclusive selection from a list of options in a drop-down list that then displays as the chosen selection. To meet accessibility requirements, <strong>the component must always be preceded by a label</strong> as the label includes the <code>for="[id value]"</code> that corresponds to <code>id="[id value]"</code>attribute in the select tag. To make standard "select" drop-down lists meet branding guidelines, the "web-kit" treatment needs to be surpressed in CSS and a background image added to create the 'signifier' of a drop-down list. </p>
     <form class="bs-example">
-      <select class="form-control">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
+      <span class="control-label">
+        <label for="scores">Scores</label>
+      </span>
+      <select id="scores" name="select">
+        <option value="1b">1b. Demonstrating Knowledge of Students</option>
+        <option value="1c">1c. Setting Instructional Outcomes</option>
+        <option value="1d">1d. Demonstrating Knowledge of Resources</option>
+        <option value="1e">1e. Designing Coherent Instruction</option>
+        <option value="1f">1f. Designing Student Assessments</option>
+        <option value="2a">2a. Creating an Environment of Respect and Rapport</option>
+        <option value="2b">2b. Establishing a Culture for Learning</option>
+        <option value="2c">2c. Managing Classroom Procedures</option>
+        <option value="2d">2d. Managing Student Behavior</option>
+        <option value="2e">2e. Organizing Physical Space</option>
+        <option value="3a">3a. Communicating with Students</option>
+        <option value="3b">3b. Using Questioning and Discussion Techniques</option>
+        <option value="3c">3c. Engaging Students in Learning</option>
+        <option value="3d">3d. Using Assessment in Instruction</option>
       </select>
-      <br>
-      <select multiple class="form-control">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-      </select>
+      <button type="button" class="btn btn-primary btn-sm">View</button>
+      <br><br>
     </form>
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">&quot;form-control&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;option&gt;</span>1<span class="nt">&lt;/option&gt;</span>
-  <span class="nt">&lt;option&gt;</span>2<span class="nt">&lt;/option&gt;</span>
-  <span class="nt">&lt;option&gt;</span>3<span class="nt">&lt;/option&gt;</span>
-  <span class="nt">&lt;option&gt;</span>4<span class="nt">&lt;/option&gt;</span>
-  <span class="nt">&lt;option&gt;</span>5<span class="nt">&lt;/option&gt;</span>
-<span class="nt">&lt;/select&gt;</span>
-
-<span class="nt">&lt;select</span> <span class="na">multiple</span> <span class="na">class=</span><span class="s">&quot;form-control&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;option&gt;</span>1<span class="nt">&lt;/option&gt;</span>
-  <span class="nt">&lt;option&gt;</span>2<span class="nt">&lt;/option&gt;</span>
-  <span class="nt">&lt;option&gt;</span>3<span class="nt">&lt;/option&gt;</span>
-  <span class="nt">&lt;option&gt;</span>4<span class="nt">&lt;/option&gt;</span>
-  <span class="nt">&lt;option&gt;</span>5<span class="nt">&lt;/option&gt;</span>
-<span class="nt">&lt;/select&gt;</span>
+<div class="highlight"><pre class="prettyprint"><code class="html">&lt;form class=&quot;bs-example&quot;&gt;
+  &lt;span class=&quot;control-label&quot;&gt;
+    &lt;label for=&quot;scores&quot;&gt;Scores&lt;/label&gt;
+  &lt;/span&gt;
+  &lt;select id=&quot;scores&quot; name=&quot;select&quot;&gt;
+    &lt;option value=&quot;1b&quot;&gt;1b. Demonstrating Knowledge of Students&lt;/option&gt;
+    &lt;option value=&quot;1c&quot;&gt;1c. Setting Instructional Outcomes&lt;/option&gt;
+    &lt;option value=&quot;1d&quot;&gt;1d. Demonstrating Knowledge of Resources&lt;/option&gt;
+    &lt;option value=&quot;1e&quot;&gt;1e. Designing Coherent Instruction&lt;/option&gt;
+    &lt;option value=&quot;1f&quot;&gt;1f. Designing Student Assessments&lt;/option&gt;
+    &lt;option value=&quot;2a&quot;&gt;2a. Creating an Environment of Respect and Rapport&lt;/option&gt;
+    &lt;option value=&quot;2b&quot;&gt;2b. Establishing a Culture for Learning&lt;/option&gt;
+    &lt;option value=&quot;2c&quot;&gt;2c. Managing Classroom Procedures&lt;/option&gt;
+    &lt;option value=&quot;2d&quot;&gt;2d. Managing Student Behavior&lt;/option&gt;
+    &lt;option value=&quot;2e&quot;&gt;2e. Organizing Physical Space&lt;/option&gt;
+    &lt;option value=&quot;3a&quot;&gt;3a. Communicating with Students&lt;/option&gt;
+    &lt;option value=&quot;3b&quot;&gt;3b. Using Questioning and Discussion Techniques&lt;/option&gt;
+    &lt;option value=&quot;3c&quot;&gt;3c. Engaging Students in Learning&lt;/option&gt;
+    &lt;option value=&quot;3d&quot;&gt;3d. Using Assessment in Instruction&lt;/option&gt;
+  &lt;/select&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot;&gt;View&lt;/button&gt;
+&lt;/form&gt;
 </code></pre></div>
 
 
