@@ -11,12 +11,6 @@
 
 }
 
-.avatar-id {
-	padding: 4px 15px;
-	min-width: 275px;
-	font-size: 14px;
-	color:#fff;
-}
 
 #subnav-interstitial {
 	border:0;
@@ -30,6 +24,7 @@
 
 #subnav-interstitial > .nav > .nav-dark.active > a:hover {
 	color: @ts-bluedark;
+	background: white;
 }
 
 #subnav-interstitial > .nav > .nav-dark > a {
@@ -39,7 +34,7 @@
 #subnav-interstitial > .nav > .nav-dark > a:hover {
 	color: #fff;
 	opacity: 1;
-	background:#000; /*should just darken, not make black*/
+	background: darken(@ts-bluedark, 30%);
 }
 
 #subnav-interstitial > .nav > .nav-dark > .a-i20 {
@@ -49,4 +44,9 @@
 .nav-dark  {
 	border-right: 1px solid @link-color-light;
 	border-left: 1px solid @link-color-light;
+}
+
+.nav-dark .nav-icons {
+	border-right: 0 solid;
+	border-left: 0 solid;
 }
