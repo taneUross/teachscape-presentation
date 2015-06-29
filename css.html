@@ -1132,15 +1132,15 @@
     </div>
 
     <h2 id="tables-example">Basic example</h2>
-    <p>For basic styling&mdash;light padding and only horizontal dividers&mdash;add the base class <code>.table</code> to any <code>&lt;table&gt;</code>. It may seem super redundant, but given the widespread use of tables for other plugins like calendars and date pickers, we've opted to isolate our custom table styles.</p>
+    <p>For basic styling&mdash;light padding and only horizontal dividers&mdash;add the base class <code>.table</code> to any <code>&lt;table&gt;</code>. It may seem super redundant, but given the widespread use of tables for other plugins like calendars and date pickers, we've opted to isolate our custom table styles. <strong>Acessibility note:</strong> the <code>scope="col"</code> attribe is required for all column header "th" cells. If the table includes row headers, the <code>scope="row"</code> attribute is required on the row "th" cells, as well.</p>
     <div class="bs-example">
       <table class="table">
         <thead>
           <tr>
-            <th>#</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Username</th>
+            <th scope="col">#</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Username</th>
           </tr>
         </thead>
         <tbody>
@@ -1165,14 +1165,42 @@
         </tbody>
       </table>
     </div><!-- /example -->
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">&quot;table&quot;</span><span class="nt">&gt;</span>
-  ...
-<span class="nt">&lt;/table&gt;</span>
-</code></pre></div>
+<div class="highlight"><pre class="prettyprint"><code class="html">&lt;table class=&quot;table&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;col&quot;&gt;#&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;First Name&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Last Name&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Username&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;Mark&lt;/td&gt;
+      &lt;td&gt;Otto&lt;/td&gt;
+      &lt;td&gt;@mdo&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;Jacob&lt;/td&gt;
+      &lt;td&gt;Thornton&lt;/td&gt;
+      &lt;td&gt;@fat&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;Larry&lt;/td&gt;
+      &lt;td&gt;the Bird&lt;/td&gt;
+      &lt;td&gt;@twitter&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre></div> 
 
 
     <h2 id="tables-striped">Striped rows</h2>
-    <p>Use <code>.table-striped</code> to add zebra-striping to any table row within the <code>&lt;tbody&gt;</code>.</p>
+    <p>Use <code>.table-striped</code> to add zebra-striping to any table row within the <code>&lt;tbody&gt;</code>. <strong>Acessibility note:</strong> the <code>scope="col"</code> attribe is required for all column header "th" cells. If the table includes row headers, the <code>scope="row"</code> attribute is required on the row "th" cells, as well.</p>
+    <h5> <a href="https://intranet.teachscape.com/display/UXDPL/ts-table-default" target="_blank">Open to the Design Pattern in a New Browser Tab <span class="icon-link-ext-alt"></span></a></h5>
+
     <div class="bs-callout bs-callout-danger">
       <h4>Cross-browser compatibility</h4>
       <p>Striped tables are styled via the <code>:nth-child</code> CSS selector, which is not available in Internet Explorer 8.</p>
@@ -1181,10 +1209,10 @@
       <table class="table table-striped">
         <thead>
           <tr>
-            <th>#</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Username</th>
+            <th scope="col">#</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Username</th>
           </tr>
         </thead>
         <tbody>
@@ -1209,22 +1237,48 @@
         </tbody>
       </table>
     </div><!-- /example -->
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">&quot;table table-striped&quot;</span><span class="nt">&gt;</span>
-  ...
-<span class="nt">&lt;/table&gt;</span>
-</code></pre></div>
+<div class="highlight"><pre class="prettyprint"><code class="html">&lt;table class=&quot;table table-striped&quot;&gt;
+  &lt;thead&gt;
+   &lt;tr&gt;
+     &lt;th scope=&quot;col&quot;&gt;#&lt;/th&gt;
+     &lt;th scope=&quot;col&quot;&gt;First Name&lt;/th&gt;
+     &lt;th scope=&quot;col&quot;&gt;Last Name&lt;/th&gt;
+     &lt;th scope=&quot;col&quot;&gt;Username&lt;/th&gt;
+   &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;Mark&lt;/td&gt;
+      &lt;td&gt;Otto&lt;/td&gt;
+      &lt;td&gt;@mdo&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;Jacob&lt;/td&gt;
+      &lt;td&gt;Thornton&lt;/td&gt;
+      &lt;td&gt;@fat&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;Larry&lt;/td&gt;
+      &lt;td&gt;the Bird&lt;/td&gt;
+      &lt;td&gt;@twitter&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre></div>
 
 
     <h2 id="tables-bordered">Bordered table</h2>
-    <p>Add <code>.table-bordered</code> for borders on all sides of the table and cells.</p>
+    <p>Add <code>.table-bordered</code> for borders on all sides of the table and cells. <strong>Acessibility note:</strong> the <code>scope="col"</code> attribe is required for all column header "th" cells. If the table includes row headers, the <code>scope="row"</code> attribute is required on the row "th" cells, as well.</p>
     <div class="bs-example">
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th>#</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Username</th>
+            <th scope="col">#</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Username</th>
           </tr>
         </thead>
         <tbody>
@@ -1260,15 +1314,15 @@
 
 
     <h2 id="tables-hover-rows">Hover rows</h2>
-    <p>Add <code>.table-hover</code> to enable a hover state on table rows within a <code>&lt;tbody&gt;</code>.</p>
+    <p>Add <code>.table-hover</code> to enable a hover state on table rows within a <code>&lt;tbody&gt;</code>. <strong>Acessibility note:</strong> the <code>scope="col"</code> attribe is required for all column header "th" cells. If the table includes row headers, the <code>scope="row"</code> attribute is required on the row "th" cells, as well.</p>
     <div class="bs-example">
       <table class="table table-hover">
         <thead>
           <tr>
-            <th>#</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Username</th>
+            <th scope="col">#</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Username</th>
           </tr>
         </thead>
         <tbody>
@@ -1299,15 +1353,15 @@
 
 
     <h2 id="tables-condensed">Condensed table</h2>
-    <p>Add <code>.table-condensed</code> to make tables more compact by cutting cell padding in half.</p>
+    <p>Add <code>.table-condensed</code> to make tables more compact by cutting cell padding in half. <strong>Acessibility note:</strong> the <code>scope="col"</code> attribe is required for all column header "th" cells. If the table includes row headers, the <code>scope="row"</code> attribute is required on the row "th" cells, as well.</p>
     <div class="bs-example">
       <table class="table table-condensed">
         <thead>
           <tr>
-            <th>#</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Username</th>
+            <th scope="col">#</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Username</th>
           </tr>
         </thead>
         <tbody>
@@ -1338,7 +1392,7 @@
 
 
     <h2 id="tables-contextual-classes">Contextual classes</h2>
-    <p>Use contextual classes to color table rows or individual cells.</p>
+    <p>Use contextual classes to color table rows or individual cells. <strong>Acessibility note:</strong> the <code>scope="col"</code> attribe is required for all column header "th" cells. If the table includes row headers, the <code>scope="row"</code> attribute is required on the row "th" cells, as well.</p>
     <div class="table-responsive">
       <table class="table table-bordered table-striped">
         <colgroup>
@@ -1347,8 +1401,8 @@
         </colgroup>
         <thead>
           <tr>
-            <th>Class</th>
-            <th>Description</th>
+            <th scope="col">Class</th>
+            <th scope="col">Description</th>
           </tr>
         </thead>
         <tbody>
@@ -1383,10 +1437,10 @@
       <table class="table">
         <thead>
           <tr>
-            <th>#</th>
-            <th>Column heading</th>
-            <th>Column heading</th>
-            <th>Column heading</th>
+            <th scope="col">#</th>
+            <th scope="col">Column heading</th>
+            <th scope="col">Column heading</th>
+            <th scope="col">Column heading</th>
           </tr>
         </thead>
         <tbody>
@@ -1452,7 +1506,7 @@
 
 
     <h2 id="tables-responsive">Responsive tables</h2>
-    <p>Create responsive tables by wrapping any <code>.table</code> in <code>.table-responsive</code> to make them scroll horizontally up to small devices (under 768px). When viewing on anything larger than 768px wide, you will not see any difference in these tables.</p>
+    <p>Create responsive tables by wrapping any <code>.table</code> in <code>.table-responsive</code> to make them scroll horizontally up to small devices (under 768px). When viewing on anything larger than 768px wide, you will not see any difference in these tables. <strong>Acessibility note:</strong> the <code>scope="col"</code> attribe is required for all column header "th" cells. If the table includes row headers, the <code>scope="row"</code> attribute is required on the row "th" cells, as well.</p>
     <div class="bs-example">
       <div class="table-responsive">
         <table class="table">
@@ -1755,6 +1809,7 @@
 
     <h3>Select Drop-Down Lists</h3>
     <p>This standard form component is needed for presenting a mutually exclusive selection from a list of options in a drop-down list that then displays as the chosen selection. To meet accessibility requirements, <strong>the component must always be preceded by a label</strong> as the label includes the <code>for="[id value]"</code> that corresponds to <code>id="[id value]"</code>attribute in the select tag. To make standard "select" drop-down lists meet branding guidelines, the "web-kit" treatment needs to be surpressed in CSS and a background image added to create the 'signifier' of a drop-down list. </p>
+    <h5><a href="https://intranet.teachscape.com/display/UXDPL/ts-dropdown-list" target="_blank">Open to the Design Pattern in a New Browser Tab <span class="icon-link-ext-alt"></span></a></h5>
     <form class="bs-example">
       <span class="control-label">
         <label for="scores">Scores</label>
