@@ -7047,3 +7047,20 @@ select::-ms-expand {
 .ActionButton {
   margin-left: 10px;
 }
+.table-striped > tbody > tr:nth-child(even) > td,
+.table-striped > tbody > tr:nth-child(even) > th {
+  background-color: #eeeeee;
+}
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: #ffffff;
+}
+table.table thead {
+  font-weight: normal;
+  color: #222222;
+}
+table.table thead tr th {
+  color: #732843;
+  font-weight: normal;
+  background-color: #dddddd;
+}
