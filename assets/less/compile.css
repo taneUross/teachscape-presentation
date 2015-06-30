@@ -5851,12 +5851,11 @@ a:hover {
   border: 1px solid #dddddd;
   border-radius: 0px;
 }
-<<<<<<< HEAD
 @media (min-width: 768px) {
   .navbar-nav.navbar-right:last-child {
     margin-right: 0;
   }
-=======
+}
 .table-striped > tbody > tr:nth-child(even) > td,
 .table-striped > tbody > tr:nth-child(even) > th {
   background-color: #eeeeee;
@@ -5870,7 +5869,7 @@ table.table thead {
   color: #222222;
 }
 table.table thead tr th {
-  color: #732843;
+  color: #8d2964;
   font-weight: normal;
   background-color: #dddddd;
 }
@@ -6094,7 +6093,6 @@ fieldset[disabled] .btn {
   font-size: 12px;
   line-height: 1.5;
   border-radius: 4px;
->>>>>>> cf03c3f96035ad73718c1de3f0bebb9f0b018261
 }
 /* alignment and position */
 .display-inline {
@@ -6656,6 +6654,16 @@ fieldset[disabled] .btn {
 .bold {
   font-weight: bold;
 }
+.notation {
+  font-style: italic;
+  color: #888888;
+}
+.no-caps {
+  text-transform: none;
+}
+.caps {
+  text-transform: capitalize;
+}
 .small {
   font-size: 90%;
 }
@@ -6688,6 +6696,11 @@ fieldset[disabled] .btn {
 }
 .i20 {
   font-size: 20px;
+}
+a.headline-right-sublink {
+  font-size: 13px;
+  margin-left: 15px;
+  text-transform: none;
 }
 .hover-white:hover {
   color: white;
@@ -7123,6 +7136,9 @@ fieldset[disabled] .btn {
  */
 .navbar-tsdark {
   background: #424d5f;
+  -webkit-box-shadow: 0px -3px 5px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px -3px 5px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px -3px 5px 0px rgba(0, 0, 0, 0.3);
   border: none;
   border-radius: 0;
   margin-bottom: 0;
@@ -7148,14 +7164,7 @@ fieldset[disabled] .btn {
   border-right: 1px solid #deebf8;
   border-left: 1px solid #deebf8;
 }
-<<<<<<< HEAD
 #subnav-interstitial .nav .nav-dark a {
-=======
-#subnav-interstitial > .nav > .nav-dark.active > a:hover {
-  color: #424d5f;
-}
-#subnav-interstitial > .nav > .nav-dark > a {
->>>>>>> cf03c3f96035ad73718c1de3f0bebb9f0b018261
   color: #deebf8;
 }
 #subnav-interstitial .nav .nav-dark a:hover {
@@ -7186,14 +7195,8 @@ fieldset[disabled] .btn {
 #subnav-interstitial .navbar-right .nav-icon a:hover {
   color: #fff;
 }
-<<<<<<< HEAD
 #subnav-interstitial .navbar-right .call-to-action {
   padding: 8px;
-=======
-.nav-dark {
-  border-right: 1px solid #deebf8;
-  border-left: 1px solid #deebf8;
->>>>>>> cf03c3f96035ad73718c1de3f0bebb9f0b018261
 }
 /* This solution should replace the current breadcrumbs  */
 .breadcrumb-508 {
@@ -7341,24 +7344,6 @@ select::-ms-expand {
 .ActionButton {
   margin-left: 10px;
 }
-<<<<<<< HEAD
-.table-striped > tbody > tr:nth-child(even) > td,
-.table-striped > tbody > tr:nth-child(even) > th {
-  background-color: #eeeeee;
-}
-.table-striped > tbody > tr:nth-child(odd) > td,
-.table-striped > tbody > tr:nth-child(odd) > th {
-  background-color: #ffffff;
-}
-table.table thead {
-  font-weight: normal;
-  color: #222222;
-}
-table.table thead tr th {
-  color: #8d2964;
-  font-weight: normal;
-  background-color: #dddddd;
-}
 .row-component {
   padding: 5px 15px;
   color: #000;
@@ -7373,5 +7358,3 @@ table.table.table-summary thead tr th {
   text-transform: uppercase;
   color: #333333;
 }
-=======
->>>>>>> cf03c3f96035ad73718c1de3f0bebb9f0b018261
