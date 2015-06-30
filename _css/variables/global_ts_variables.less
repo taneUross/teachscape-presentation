@@ -32,7 +32,7 @@
 @link-color:                @ts-blue;
 @linkColorHover:            darken(@ts-blue, 10%);
 @link-hover-color:          @linkColorHover;
-@link-color-light:          ##DEEBF8;
+@link-color-light:          #DEEBF8;
 @link-color-lightHover:     white;
 
 // Product colors
@@ -88,6 +88,14 @@
 @font-size-h4:            ceil((@font-size-base * 1.55));   // 22px
 @font-size-h5:            ceil((@font-size-base * 1.25));   // 20px
 @font-size-h6:            @font-size-base;                 // 14px
+a {
+  color:  @ts-blue;
+}
+
+a:hover {
+  color:  @linkColorHover;
+  text-decoration: none;
+}
 
 @font-face{
   font-family: arial;

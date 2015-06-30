@@ -5833,6 +5833,13 @@ td.visible-print {
     display: none !important;
   }
 }
+a {
+  color: #0e419b;
+}
+a:hover {
+  color: #0a2d6c;
+  text-decoration: none;
+}
 @font-face {
   font-family: arial;
 }
@@ -5843,6 +5850,11 @@ td.visible-print {
   background-color: rgba(255, 255, 255, 0.7);
   border: 1px solid #dddddd;
   border-radius: 0px;
+}
+@media (min-width: 768px) {
+  .navbar-nav.navbar-right:last-child {
+    margin-right: 0;
+  }
 }
 /* alignment and position */
 .display-inline {
@@ -6407,6 +6419,9 @@ td.visible-print {
 .small {
   font-size: 90%;
 }
+.smaller {
+  font-size: 70%;
+}
 .font-size-9 {
   font-size: 9px;
 }
@@ -6430,6 +6445,9 @@ td.visible-print {
 }
 .font-size-inherit {
   font-size: inherit;
+}
+.i20 {
+  font-size: 20px;
 }
 .hover-white:hover {
   color: white;
@@ -6702,6 +6720,9 @@ td.visible-print {
   margin-right: -15px;
   height: 40px;
 }
+.btn-reverse {
+  border: 0px;
+}
 .pad-all-0 {
   padding: 0px;
 }
@@ -6862,16 +6883,20 @@ td.visible-print {
  */
 .navbar-tsdark {
   background: #424d5f;
-  -webkit-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.43);
-  -moz-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.43);
-  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.43);
   border: none;
   border-radius: 0;
+  margin-bottom: 0;
 }
 .avatar-id {
-  padding: 4px 15px;
+  padding: 5px 15px;
   min-width: 275px;
   font-size: 14px;
+  color: #fff;
+}
+.avatar-id div a {
+  color: #deebf8;
+}
+.avatar-id div a:hover {
   color: #fff;
 }
 #subnav-interstitial {
@@ -6879,27 +6904,43 @@ td.visible-print {
   padding: 0;
   margin: 0;
 }
-#subnav-interstitial > .nav > .nav-dark.active > a {
-  color: #424d5f;
+#subnav-interstitial .nav .nav-dark {
+  border-right: 1px solid #deebf8;
+  border-left: 1px solid #deebf8;
 }
-#subnav-interstitial > .nav > .nav-dark.active > a:hover {
-  color: #424d5f;
+#subnav-interstitial .nav .nav-dark a {
+  color: #deebf8;
 }
-#subnav-interstitial > .nav > .nav-dark > a {
-  color: ##DEEBF8;
-}
-#subnav-interstitial > .nav > .nav-dark > a:hover {
+#subnav-interstitial .nav .nav-dark a:hover {
   color: #fff;
   opacity: 1;
-  background: #000;
-  /*should just darken, not make black*/
+  background: #2d3541;
 }
-#subnav-interstitial > .nav > .nav-dark > .a-i20 {
-  padding: 14px 15px;
+#subnav-interstitial .nav .nav-dark .a-i20 {
+  padding: 12px 15px;
 }
-.nav-dark {
-  border-right: 1px solid ##DEEBF8;
-  border-left: 1px solid ##DEEBF8;
+#subnav-interstitial .nav .nav-dark.active a {
+  color: #2d3541;
+  background: #fff;
+  opacity: .8;
+}
+#subnav-interstitial .nav .nav-dark.active a:hover {
+  color: #2d3541;
+  background: #fff;
+  opacity: .8;
+}
+#subnav-interstitial .navbar-right .nav-icon {
+  padding: 0;
+}
+#subnav-interstitial .navbar-right .nav-icon a {
+  color: #deebf8;
+  padding: 14px;
+}
+#subnav-interstitial .navbar-right .nav-icon a:hover {
+  color: #fff;
+}
+#subnav-interstitial .navbar-right .call-to-action {
+  padding: 8px;
 }
 /* This solution should replace the current breadcrumbs  */
 .breadcrumb-508 {
@@ -7060,7 +7101,21 @@ table.table thead {
   color: #222222;
 }
 table.table thead tr th {
-  color: #732843;
+  color: #8d2964;
   font-weight: normal;
   background-color: #dddddd;
+}
+.row-component {
+  padding: 5px 15px;
+  color: #000;
+  background: #ccc;
+  width: 100%;
+}
+table.table.table-summary {
+  border: 1px solid #ccc;
+}
+table.table.table-summary thead tr th {
+  background: none;
+  text-transform: uppercase;
+  color: #333333;
 }

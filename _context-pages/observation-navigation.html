@@ -29,26 +29,6 @@
 
 /*utilities and globals */
 
-    	.mar-left-45 {
-    		margin-left: 55px;
-    	}
-
-    	.link-light {
-    		color: #DEEBF8;/*@link-color-light*/
-    		padding:0;
-    		margin:0;
-    		display: block;
-    		text-decoration: none;
-    	}
-
-    	.link-light:hover  {
-    		color:#ffffff;
-			text-decoration: none;
-    	}
-
-      span.i20 {
-        font-size: 20px;
-      }
 
 
     </style>
@@ -67,29 +47,70 @@
   <span class="active">Data</span>
 </div>
 <nav class="navbar navbar-default navbar-tsdark">
-  <div class="container-fluid">
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <div id="subnav-interstitial">
-        <ul class="nav navbar-nav" >
-        	<li>
-        		<div class="avatar-id">
-  				    <span style="width:40px; height:40px; background: #FFD180;border-radius: 6px; padding:5px; text-align:center; color:#000000" class="pull-left">TR</span>
-        			<div class="mar-left-45">Last Name, First Name</div>
-        			<div class="mar-left-45" ><a href="#" class="link-light">email address</a></div>
-        		</div>
-        	</li>
+        <ul class="nav navbar-nav" role="Navigation">
+          <li>
+            <div class="avatar-id">
+              <!-- swap out with the ui commons avatars -->
+              <span style="width:40px; height:40px; background: #FFD180;border-radius: 6px; padding:5px; text-align:center; color:#000000; font-size:20px; line-height:1.6;" class="pull-left">TR</span>
+              <div class="mar-left-45">Last Name, First Name</div>
+              <div class="mar-left-45" ><a href="#" class="link-light">email address</a></div>
+            </div>
+          </li>
           <li class="nav-dark active"><a href="#">Notes & Evidence <span class="sr-only">(current)</span></a></li>
           <li class="nav-dark"><a href="#">Summary</a></li>   
         </ul>
-       
-        <ul class="nav navbar-nav navbar-right" >
-          <li class="nav-dark"><a href="#" class="a-i20"><span class="i20 icon-print"></span></a></li>
-        </ul>
+        <form class="navbar-form navbar-right">
+            <button type="button" role="button" class="btn btn-default btn-reverse">Exit</button>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-icon"><a href="#"><span class="i20 icon-download-alt"></span></a></li></ul>   
     </div>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
 </nav>
-  </body>
+<div class="container">
+<h3 class="mar-top-15">Summary</h3>
+<div class="row-component">
+  <h5>[parent/domain_title]</h5>
+</div>
+<table class="table table-bordered table-summary">
+  <thead>
+    <tr>
+      <th scope="col" width="500px">[rubric:parent/domain_title "1a. Preperation"]</th>
+      <th scope="col" class="text-align-center"><!-- swap out with the ui commons avatars -->
+              <span class="disp-block" style="width:40px; height:40px; background: #FFD180;border-radius: 6px; padding:5px; text-align:center; color:#000000; font-size:20px; line-height:1.6;" class="pull-left">TR</span>
+              <div class="smaller disp-block">[observer1_last, observer1_first]</div></th>
+      <th scope="col" class="text-align-center"><!-- swap out with the ui commons avatars -->
+              <span class="disp-block" style="width:40px; height:40px; background: #FFD180;border-radius: 6px; padding:5px; text-align:center; color:#000000; font-size:20px; line-height:1.6;" class="pull-left">TR</span>
+              <div class="smaller disp-block">[observer1_last, observer1_first]</div></th>
+      <th scope="col" class="text-align-center"><!-- swap out with the ui commons avatars -->
+              <span class="disp-block" style="width:40px; height:40px; background: #FFD180;border-radius: 6px; padding:5px; text-align:center; color:#000000; font-size:20px; line-height:1.6;" class="pull-left">TR</span>
+              <div class="smaller disp-block">[observer1_last, observer1_first]</div></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+</div>
+</body>
 </html>
