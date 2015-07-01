@@ -16,6 +16,7 @@
 <!-- make the code display all pretty -->
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=html"></script>
 
+
 <!-- Bootstrap core CSS -->
 <link href="assets/less/compile.css" rel="stylesheet">
       <link href="assets/css/docs.css" rel="stylesheet">
@@ -1605,10 +1606,7 @@
   <span class="nt">&lt;/table&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </code></pre></div>
-
-  </div>
-
-
+</div>
 
   <!-- Forms
   ================================================== -->
@@ -1618,22 +1616,77 @@
     </div>
 
     <p id="forms-example">For all forms except for forms with 1 or 2 form fields, the labels are top aligned, as shown in the basic example below. </p>
-    <p>Rationale: Top aligned labels reduce completion times more so than other label alignment types. (Reference: Wroblewski, Luke, &quot;Top, Right or Left Aligned Form Labels&quot;, <a href="http://www.lukew.com/ff/entry.asp?504" target="_blank">http://www.lukew.com/ff/entry.asp?504 <span aria-hidden="true" data-icon="&#xe017"><span class="visuallyhidden">Link opens new window</span></span></a>)</p>
-    <h2>Basic example</h2>
-    <p>Individual form controls automatically receive some global styling. All textual <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, and <code>&lt;select&gt;</code> elements with <code>.form-control</code> are set to <code>width: 100%;</code> by default. Wrap labels and controls in <code>.form-group</code> for optimum spacing.</p>
+    <p>Rationale: Top aligned labels reduce completion times more so than other label alignment types. (Reference: Wroblewski, Luke, &quot;Top, Right or Left Aligned Form Labels&quot;, <a href="http://www.lukew.com/ff/entry.asp?504" target="_blank">http://www.lukew.com/ff/entry.asp?504 <span class="icon-link-ext-alt" aria-hidden="true"></span><span class="sr-only">Link opens new window</span></a></p>
+    <div class="bs-callout bs-callout-danger">
+      <h4>Important: Do Not Use Ghost Text</h4>
+      <p>While it may be a common practice in websites and applications to insert "grayed-out" ghost text directly in input fields, usability research has shown that such "ghost" promts confuse users more than help them. With some specific exceptions, ghost text should not be used. The research on this can be found here:
+      <a href="http://www.nngroup.com/articles/form-design-placeholders/" target="_blank">http://www.nngroup.com/articles/form-design-placeholders/ <span class="icon-link-ext-alt" aria-hidden="true"></span><span class="sr-only">Link opens new window</span></a></p>
+    </div>
+    
+    <h2>Text Box and Text Area</h2>
+    <p>Individual form controls automatically receive some global styling. All textual <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, and <code>&lt;select&gt;</code> elements with <code>.form-control</code> are set to <code>width: 100%;</code> by default. Wrap labels and controls in <code>.form-group</code> for optimum spacing. To meet accessibility requiremnents, the <code>for="[id name]"</code> must be present and correspont to the input tag id.</p>
+    <div class="bs-callout bs-callout-danger">
+      <h4>Important Note About Widths</h4>
+      <p>While the <i>default</i> width may be set to 100%, it should not be assumed that all text boxes, text areas, and select drop-down list should remain at the default width. Widths should be additionally identified on tyhe basis of the context of the field and set to the appropriate width for that context leveraging the <code>id=""</code> attribute to set width based og the <i>type</i> of input (i.e. name, email, password, etc.). Refer to the examples.</p>
+    </div>
+    <h4>Text Box</h4>
+    <h5> <a href="https://intranet.teachscape.com/display/UXDPL/ts-input-default" target="_blank">Open the Design Pattern in a New Browser Tab <span class="icon-link-ext-alt"></span></a></h5>
     <form class="bs-example" role="form">
+      <h4 aria-labelledby="true">Form Title</h4>
       <div class="form-group">
-        <label for="exampleInputEmail1">Email Address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+        <label for="email">Email Address <span class="asterisk">*</span></label>
+        <input type="email" class="form-control" id="email" tabindex="1">
       </div>
       <div class="form-group">
-        <label for="exampleInputPassword1">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        <label for="password">Password <span class="asterisk">*</span></label>
+        <input type="password" class="form-control" id="password" tabindex="2">
       </div>
         <div class="form-group">
-            <label for="Required1">Required Field Name <span class="asterisk">*</span></label>
-            <input type="password" class="form-control" id="Required1" placeholder="Required Field Name">
+            <label for="organization">Organization</label>
+            <input type="text" class="form-control" id="organization" tabindex="3">
         </div>
+    </form>
+    <!-- /example -->
+<div class="highlight"><pre class="prettyprint"><code class="html">&lt;form class=&quot;bs-example&quot; role=&quot;form&quot;&gt;
+  &lt;h4 aria-labelledby=&quot;true&quot;&gt;Form Title&lt;/h4&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;email&quot;&gt;Email Address &lt;span class=&quot;asterisk&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
+     &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;email&quot; tabindex=&quot;1&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;password&quot;&gt;Password &lt;span class=&quot;asterisk&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
+    &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;password&quot; tabindex=&quot;2&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+   &lt;label for=&quot;organization&quot;&gt;Organization&lt;/label&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;organization&quot; tabindex=&quot;3&quot;&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre></div>
+  <h4>Text Area</h4>
+    <h5> <a href="https://intranet.teachscape.com/display/UXDPL/ts-input-default" target="_blank">Open the Design Pattern in a New Browser Tab <span class="icon-link-ext-alt"></span></a></h5>
+    <form class="bs-example" role="form">
+      <h4 aria-labelledby="true">Form Title</h4>
+      <div class="form-group">
+        <label for="textarea">Comments</label>
+        <textarea rows="4" cols=="50" maxlength="200" type="text" class="form-control" id="textarea" tabindex="4"></textarea>
+        <div class="char-countdown" id="textarea_feedback"></div>
+      </div>
+    </form>
+    <!-- /example -->
+    <div class="highlight"><pre class="prettyprint"><code class="html">&lt;form class=&quot;bs-example&quot; role=&quot;form&quot;&gt;
+  &lt;h4 aria-labelledby=&quot;true&quot;&gt;Form Title&lt;/h4&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;textarea&quot;&gt;Comments&lt;/label&gt;
+    &lt;textarea rows=&quot;4&quot; cols==&quot;50&quot; maxlength=&quot;200&quot; type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;textarea&quot; tabindex=&quot;4&quot;&gt;&lt;/textarea&gt;
+    &lt;div class=&quot;char-countdown&quot; id=&quot;textarea_feedback&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre></div>
+
+
+
+    <h2>File Input</h2>
+    <p>Individual form controls automatically receive some global styling. All textual <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, and <code>&lt;select&gt;</code> elements with <code>.form-control</code> are set to <code>width: 100%;</code> by default. Wrap labels and controls in <code>.form-group</code> for optimum spacing.</p>
+    <form class="bs-example" role="form">
       <div class="form-group">
         <label for="exampleInputFile">File input</label>
         <input type="file" id="exampleInputFile">
@@ -1645,29 +1698,10 @@
         </label>
       </div>
       <button type="submit" class="btn btn-default">Submit</button>
-    </form><!-- /example -->
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;form</span> <span class="na">role=</span><span class="s">&quot;form&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;form-group&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;exampleInputEmail1&quot;</span><span class="nt">&gt;</span>Email address<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;email&quot;</span> <span class="na">class=</span><span class="s">&quot;form-control&quot;</span> <span class="na">id=</span><span class="s">&quot;exampleInputEmail1&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Enter email&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;form-group&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;exampleInputPassword1&quot;</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;password&quot;</span> <span class="na">class=</span><span class="s">&quot;form-control&quot;</span> <span class="na">id=</span><span class="s">&quot;exampleInputPassword1&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Password&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;form-group&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;exampleInputFile&quot;</span><span class="nt">&gt;</span>File input<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;file&quot;</span> <span class="na">id=</span><span class="s">&quot;exampleInputFile&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;help-block&quot;</span><span class="nt">&gt;</span>Example block-level help text here.<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span> Check me out
-    <span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;/form&gt;</span>
-</code></pre></div>
+    </form>
+     <!-- /example -->
+
+
 
 
     <h2 id="forms-inline">Inline form</h2>

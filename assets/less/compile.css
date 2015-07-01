@@ -5846,6 +5846,10 @@ a:hover {
 @font-face {
   font-family: Arial;
 }
+.asterisk {
+  color: #c40e43;
+  display: inline-block;
+}
 .well {
   background-color: #ffffff;
   border: 1px solid #dddddd;
@@ -6093,6 +6097,20 @@ fieldset[disabled] .btn {
   font-size: 12px;
   line-height: 1.5;
   border-radius: 4px;
+}
+.form-control#email {
+  width: 100%;
+}
+.form-control#password {
+  width: 200px;
+}
+.form-control#organization {
+  width: 400px;
+}
+.char-countdown {
+  font-size: 12px;
+  float: right;
+  color: #888888;
 }
 /* alignment and position */
 .display-inline {
