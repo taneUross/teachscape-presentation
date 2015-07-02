@@ -5874,6 +5874,7 @@ table.table thead {
 }
 table.table thead tr th {
   color: #8d2964;
+  text-transform: capitalize;
   font-weight: normal;
   background-color: #dddddd;
 }
@@ -7341,6 +7342,9 @@ a.headline-right-sublink {
   color: #deebf8;
   text-decoration: none;
 }
+.breadcrumb-reverse > .crumb a:hover {
+  color: #fff;
+}
 .breadcrumb-reverse > .active {
   color: #fff;
 }
@@ -7352,7 +7356,7 @@ a.headline-right-sublink {
   font-size: 13px;
 }
 .breadcrumb-display > .icon-caret-right {
-  color: #deebf8;
+  color: #888888;
   font-size: 14px;
   vertical-align: top;
   margin-top: 3px;
@@ -7362,10 +7366,10 @@ a.headline-right-sublink {
 .breadcrumb-display > .crumb {
   margin-left: 0px;
   margin-right: 0px;
-  color: #deebf8;
+  color: #888888;
 }
 .breadcrumb-display > .active {
-  color: #deebf8;
+  color: #fff;
 }
 /* This solution should be used to override system controls     */
 select {
