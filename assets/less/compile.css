@@ -6118,6 +6118,13 @@ fieldset[disabled] .btn {
   background-color: #2aabd2;
   border-color: #28a4c9;
 }
+.btn-reverse {
+  border: 0px;
+}
+.btn-reverse:hover,
+.btn-reverse:focus {
+  border: 0px;
+}
 .btn-lg {
   padding: 10px 16px;
   font-size: 18px;
@@ -7070,9 +7077,6 @@ a.headline-right-sublink {
   margin-left: -15px;
   margin-right: -15px;
   height: 40px;
-}
-.btn-reverse {
-  border: 0px;
 }
 .pad-all-0 {
   padding: 0px;
