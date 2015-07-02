@@ -5873,6 +5873,43 @@ table.table thead tr th {
   font-weight: normal;
   background-color: #dddddd;
 }
+table.table-summary {
+  border: 1px solid #ccc;
+  width: 100%;
+}
+table.table-summary thead tr th {
+  background: none;
+  text-transform: uppercase;
+  color: #333333;
+}
+table.table-summary tr td,
+table.table-summary th td {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+table.table-summary tr td.cell-clickable,
+table.table-summary th td.cell-clickable {
+  padding: 0;
+}
+table.table-summary tr td.cell-clickable a.cell-link,
+table.table-summary th td.cell-clickable a.cell-link {
+  display: block;
+  width: 500px;
+  padding: 8px;
+}
+table.table-summary tr td.cell-clickable a.cell-link:hover,
+table.table-summary th td.cell-clickable a.cell-link:hover {
+  background: #e7e7e7;
+}
+tr.table-row-light {
+  background: #eeeeee;
+}
+.row-component {
+  padding: 5px 15px;
+  color: #000;
+  background: #ccc;
+  width: 100%;
+}
 .btn-default,
 .btn-primary,
 .btn-success,
@@ -7343,18 +7380,4 @@ select::-ms-expand {
 }
 .ActionButton {
   margin-left: 10px;
-}
-.row-component {
-  padding: 5px 15px;
-  color: #000;
-  background: #ccc;
-  width: 100%;
-}
-table.table.table-summary {
-  border: 1px solid #ccc;
-}
-table.table.table-summary thead tr th {
-  background: none;
-  text-transform: uppercase;
-  color: #333333;
 }
