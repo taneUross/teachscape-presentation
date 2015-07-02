@@ -1767,76 +1767,122 @@
 </code></pre></div>
 
 
-    <h3>Checkboxes and radios</h3>
-    <p>Checkboxes are for selecting one or several options in a list while radios are for selecting one option from many.</p>
+    <h3>Check Boxes and Radio Buttons</h3>
+    <p>Checkboxes are for selecting one or several options in a list while radios are for selecting one option from many. To meet usability and accessibility requirements, such lists should be stacked vertically, <strong>contained</strong> within a <code>&lt;fieldset&gt;</code> tag, and preceded by the <code>&lt;legend&gt;</code> tag that presents the summarizing title of the list. Only list that are self explainatory (e.g. a radio button szelection of male vs. female) do not require a label to be present.</p>
     <h4>Default (stacked)</h4>
     <form class="bs-example">
       <fieldset>
-        <legend>User Experience Books</legend>
+        <legend>User Experience Books Everyone Should Read</legend>
           <div class="checkbox">      
             <label class="checkbox">
-              <input type="checkbox" name="UX book" value="">Don't Make Me Think, by Steve Krug<br>
+              <input type="checkbox" name="UX book" value="Don't Make Me Think">Don't Make Me Think, by Steve Krug<br>
             </label>
             <label class="checkbox">
-              <input type="checkbox" name="UX book" value="">Mental Models, by Indi Young<br> 
+              <input type="checkbox" name="UX book" value="Mental Models">Mental Models, by Indi Young<br> 
             </label>
             <label class="checkbox">
-              <input type="checkbox" name="UX book" value="">About Face, by Alan Cooper<br>
+              <input type="checkbox" name="UX book" value="About Face">About Face, by Alan Cooper<br>
             </label>
             <label class="checkbox">
-              <input type="checkbox" name="UX book" value="">The Design of Everyday Things, by Don Norman<br>
+              <input type="checkbox" name="UX book" value="The Design of Everyday Things">The Design of Everyday Things, by Don Norman<br>
             </label>
           </div>
         </legend>
       </fieldset>
       <br>
-      <div class="radio">
-        <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-          Option one is this and that&mdash;be sure to include why it's great
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-          Option two can be something else and selecting it will deselect option one
-        </label>
-      </div>
-
+      <fieldset>
+        <legend>Your UX City</legend>
+        <div class="radio">
+          <label>
+            <input type="radio" name="UX-City" id="UX-City1" value="San Francisco Bay Area" checked>San Francisco Bay Area
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="UX-City" id="UX-City2" value="New York City">New York City
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="UX-City" id="UX-City3" value="London">London, UK
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="UX-City" id="UX-City4" value="Boston">Boston, Mass.
+          </label>
+        </div>
+      </fieldset>
     </form>
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;checkbox&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">value=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
-    Option one is this and that<span class="ni">&amp;mdash;</span>be sure to include why it&#39;s great
-  <span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
+    <!-- /example -->
+<div class="highlight"><pre class="prettyprint"><code class="html">
+&lt;form class=&quot;bs-example&quot;&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;User Experience Books Everyone Should Read&lt;/legend&gt;
+      &lt;div class=&quot;checkbox&quot;&gt;      
+        &lt;label class=&quot;checkbox&quot;&gt;
+          &lt;input type=&quot;checkbox&quot; name=&quot;UX book&quot; value=&quot;Don't Make Me Think&quot;&gt;Don't Make Me Think, by Steve Krug&lt;br&gt;
+        &lt;/label&gt;
+        &lt;label class=&quot;checkbox&quot;&gt;
+          &lt;input type=&quot;checkbox&quot; name=&quot;UX book&quot; value=&quot;Mental Models&quot;&gt;Mental Models, by Indi Young&lt;br&gt; 
+        &lt;/label&gt;
+        &lt;label class=&quot;checkbox&quot;&gt;
+          &lt;input type=&quot;checkbox&quot; name=&quot;UX book&quot; value=&quot;About Face&quot;&gt;About Face, by Alan Cooper&lt;br&gt;
+        &lt;/label&gt;
+        &lt;label class=&quot;checkbox&quot;&gt;
+          &lt;input type=&quot;checkbox&quot; name=&quot;UX book&quot; value=&quot;The Design of Everyday Things&quot;&gt;The Design of Everyday Things, by Don Norman&lt;br&gt;
+        &lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/legend&gt;
+  &lt;/fieldset&gt;
+  &lt;br&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Your UX City&lt;/legend&gt;
+    &lt;div class=&quot;radio&quot;&gt;
+      &lt;label&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;UX-City&quot; id=&quot;UX-City1&quot; value=&quot;San Francisco Bay Area&quot; checked&gt;San Francisco Bay Area
+      &lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;radio&quot;&gt;
+      &lt;label&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;UX-City&quot; id=&quot;UX-City2&quot; value=&quot;New York City&quot;&gt;New York City
+      &lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;radio&quot;&gt;
+      &lt;label&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;UX-City&quot; id=&quot;UX-City3&quot; value=&quot;London&quot;&gt;London, UK
+      &lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;radio&quot;&gt;
+      &lt;label&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;UX-City&quot; id=&quot;UX-City4&quot; value=&quot;Boston&quot;&gt;Boston, Mass.
+      &lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;</code></pre></div>
 
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">name=</span><span class="s">&quot;optionsRadios&quot;</span> <span class="na">id=</span><span class="s">&quot;optionsRadios1&quot;</span> <span class="na">value=</span><span class="s">&quot;option1&quot;</span> <span class="na">checked</span><span class="nt">&gt;</span>
-    Option one is this and that<span class="ni">&amp;mdash;</span>be sure to include why it&#39;s great
-  <span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;radio&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;radio&quot;</span> <span class="na">name=</span><span class="s">&quot;optionsRadios&quot;</span> <span class="na">id=</span><span class="s">&quot;optionsRadios2&quot;</span> <span class="na">value=</span><span class="s">&quot;option2&quot;</span><span class="nt">&gt;</span>
-    Option two can be something else and selecting it will deselect option one
-  <span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre></div>
 
     <h4>Inline checkboxes</h4>
-    <p>Use <code>.checkbox-inline</code> or <code>.radio-inline</code> class to a series of checkboxes or radios for controls appear on the same line.</p>
+    <p>Use <code>.checkbox-inline</code> or <code>.radio-inline</code> class to a series of checkboxes or radios for controls appear on the same line. Inline check boxes and radio buttons should only be used when the information being presented represents choices to be made accross a sequential "spectrum" of choices that follow a logical order (see example below).</p>
     <form class="bs-example">
-      <label class="checkbox-inline">
-        <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+      <fieldset>
+        <legend>Cats can and do show affection to their human family.</legend>
+        <label class="radio-inline">
+          <input type="radio" id="inlineCheckbox1" name="likert-scale" value="strongly agree"> Strongly Agree
+        </label>
+        <label class="radio-inline">
+          <input type="radio" id="inlineCheckbox1" name="likert-scale" value="agree"> Agree
+        </label>
+        <label class="radio-inline">
+          <input type="radio" id="inlineCheckbox1" name="likert-scale" value="neutral"> Am Neutral
+        </label>
+        <label class="radio-inline">
+          <input type="radio" id="inlineCheckbox1" name="likert-scale" value="disagree"> Disagree
+        </label>
+        <label class="radio-inline">
+          <input type="radio" id="inlineCheckbox1" name="likert-scale" value="strongly disagree"> Strongly Disagree
       </label>
-      <label class="checkbox-inline">
-        <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
-      </label>
-      <label class="checkbox-inline">
-        <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
-      </label>
+      </fieldset>
     </form>
 <div class="highlight"><pre><code class="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;checkbox-inline&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">id=</span><span class="s">&quot;inlineCheckbox1&quot;</span> <span class="na">value=</span><span class="s">&quot;option1&quot;</span><span class="nt">&gt;</span> 1
