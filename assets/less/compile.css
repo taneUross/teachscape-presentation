@@ -7455,3 +7455,6 @@ select::-ms-expand {
 .ActionButton {
   margin-left: 10px;
 }
+.sublevel-jump {
+  padding-bottom: 40px;
+}
