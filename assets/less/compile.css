@@ -6195,8 +6195,8 @@ fieldset legend {
   font-size: 16px;
   margin-bottom: 0px;
 }
-.checkbox {
-  margin-right: -10px;
+.radio-array {
+  margin-bottom: 10px;
 }
 /* alignment and position */
 .display-inline {
@@ -7298,6 +7298,13 @@ a.headline-right-sublink {
 }
 #subnav-interstitial .navbar-right .call-to-action {
   padding: 8px;
+}
+.btn-reverse {
+  border: 0px;
+}
+.btn-reverse:hover,
+.btn-reverse:focus {
+  border: 0px;
 }
 /* This solution should replace the current breadcrumbs  */
 .breadcrumb-508 {
