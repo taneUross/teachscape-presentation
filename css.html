@@ -164,6 +164,7 @@
     <li><a href="#forms-inline">Inline form</a></li>
     <li><a href="#forms-controls">Supported controls</a></li>
     <li><a href="#forms-checkradio">Checkboxes and Radios</a></li>
+    <li><a href="#select">Select Drop-Down Lists</a></li>
     <li><a href="#forms-controls-static">Static control</a></li>
     <li><a href="#forms-control-states">Control states</a></li>
     <li><a href="#forms-control-sizes">Control sizing</a></li>
@@ -1135,7 +1136,8 @@
      <p class="lead">Indicate the current page's location within a navigational hierarchy.</p>
     <p> Repo: <a href="https://github.com/Teachscape/teachscape-presentation">https://github.com/Teachscape/teachscape-presentation</a>  master branch.  Relevant .less files:  "tables.less" (under Overrides)</p>
     
-    <h2 id="tables-example">Basic example</h2>
+    <div id="tables-example" class="sublevel-jump"></div>
+    <h2>Basic example</h2>
     <p>For basic styling&mdash;light padding and only horizontal dividers&mdash;add the base class <code>.table</code> to any <code>&lt;table&gt;</code>. It may seem super redundant, but given the widespread use of tables for other plugins like calendars and date pickers, we've opted to isolate our custom table styles. <strong>Acessibility note:</strong> the <code>scope="col"</code> attribe is required for all column header "th" cells. If the table includes row headers, the <code>scope="row"</code> attribute is required on the row "th" cells, as well.</p>
     <div class="bs-example">
       <table class="table">
@@ -1201,7 +1203,8 @@
 &lt;/table&gt;</code></pre></div> 
 
 
-    <h2 id="tables-striped">Striped rows</h2>
+    <div id="tables-striped" class="sublevel-jump"></div>
+    <h2>Striped rows</h2>
     <p>Use <code>.table-striped</code> to add zebra-striping to any table row within the <code>&lt;tbody&gt;</code>. <strong>Acessibility note:</strong> the <code>scope="col"</code> attribe is required for all column header "th" cells. If the table includes row headers, the <code>scope="row"</code> attribute is required on the row "th" cells, as well.</p>
     <h5> <a href="https://intranet.teachscape.com/display/UXDPL/ts-table-default" target="_blank">Open the Design Pattern in a New Browser Tab <span class="icon-link-ext-alt"></span></a></h5>
 
@@ -1274,7 +1277,8 @@
 &lt;/table&gt;</code></pre></div>
 
 
-    <h2 id="tables-bordered">Bordered table</h2>
+    <div id="tables-bordered" class="sublevel-jump"></div>
+    <h2>Bordered table</h2>
     <p>Add <code>.table-bordered</code> for borders on all sides of the table and cells. <strong>Acessibility note:</strong> the <code>scope="col"</code> attribe is required for all column header "th" cells. If the table includes row headers, the <code>scope="row"</code> attribute is required on the row "th" cells, as well.</p>
     <div class="bs-example">
       <table class="table table-bordered">
@@ -1317,8 +1321,8 @@
 <span class="nt">&lt;/table&gt;</span>
 </code></pre></div>
 
-
-    <h2 id="tables-hover-rows">Hover rows</h2>
+    <div id="tables-hover-rows" class="sublevel-jump"></div>
+    <h2>Hover rows</h2>
     <p>Add <code>.table-hover</code> to enable a hover state on table rows within a <code>&lt;tbody&gt;</code>. <strong>Acessibility note:</strong> the <code>scope="col"</code> attribe is required for all column header "th" cells. If the table includes row headers, the <code>scope="row"</code> attribute is required on the row "th" cells, as well.</p>
     <div class="bs-example">
       <table class="table table-hover">
@@ -1356,8 +1360,8 @@
 <span class="nt">&lt;/table&gt;</span>
 </code></pre></div>
 
-
-    <h2 id="tables-condensed">Condensed table</h2>
+    <div id="tables-condensed" class="sublevel-jump"></div>
+    <h2>Condensed table</h2>
     <p>Add <code>.table-condensed</code> to make tables more compact by cutting cell padding in half. <strong>Acessibility note:</strong> the <code>scope="col"</code> attribe is required for all column header "th" cells. If the table includes row headers, the <code>scope="row"</code> attribute is required on the row "th" cells, as well.</p>
     <div class="bs-example">
       <table class="table table-condensed">
@@ -1395,8 +1399,8 @@
 <span class="nt">&lt;/table&gt;</span>
 </code></pre></div>
 
-
-    <h2 id="tables-contextual-classes">Contextual classes</h2>
+    <div id="tables-contextual-classes" class="sublevel-jump"></div>
+    <h2>Contextual classes</h2>
     <p>Use contextual classes to color table rows or individual cells. <strong>Acessibility note:</strong> the <code>scope="col"</code> attribe is required for all column header "th" cells. If the table includes row headers, the <code>scope="row"</code> attribute is required on the row "th" cells, as well.</p>
     <div class="table-responsive">
       <table class="table table-bordered table-striped">
@@ -1509,8 +1513,8 @@
 <span class="nt">&lt;/tr&gt;</span>
 </code></pre></div>
 
-
-    <h2 id="tables-responsive">Responsive tables</h2>
+    <div id="tables-responsive" class="sublevel-jump"></div>
+    <h2>Responsive tables</h2>
     <p>Create responsive tables by wrapping any <code>.table</code> in <code>.table-responsive</code> to make them scroll horizontally up to small devices (under 768px). When viewing on anything larger than 768px wide, you will not see any difference in these tables. <strong>Acessibility note:</strong> the <code>scope="col"</code> attribe is required for all column header "th" cells. If the table includes row headers, the <code>scope="row"</code> attribute is required on the row "th" cells, as well.</p>
     <div class="bs-example">
       <div class="table-responsive">
@@ -1918,6 +1922,7 @@
 &lt;/form&gt;</code></pre></div>
 
 
+    <div id="select" class="sublevel-jump"></div>
     <h3>Select Drop-Down Lists</h3>
     <p>This standard form component is needed for presenting a mutually exclusive selection from a list of options in a drop-down list that then displays as the chosen selection. To meet accessibility requirements, <strong>the component must always be preceded by a label</strong> as the label includes the <code>for="[id value]"</code> that corresponds to <code>id="[id value]"</code>attribute in the select tag. To make standard "select" drop-down lists meet branding guidelines, the "web-kit" treatment needs to be surpressed in CSS and a background image added to create the 'signifier' of a drop-down list. </p>
     <h5><a href="https://intranet.teachscape.com/display/UXDPL/ts-dropdown-list" target="_blank">Open to the Design Pattern in a New Browser Tab <span class="icon-link-ext-alt"></span></a></h5>
@@ -1968,8 +1973,8 @@
 &lt;/form&gt;
 </code></pre></div>
 
-
-    <h2 id="forms-controls-static">Static control</h2>
+    <div id="forms-controls-static" class="sublevel-jump"></div>
+    <h2>Static control</h2>
     <p>When you need to place plain text next to a form label within a horizontal form, use the <code>.form-control-static</code> class on a <code>&lt;p&gt;</code>.</p>
     <form class="bs-example form-horizontal">
       <div class="form-group">
@@ -2076,7 +2081,8 @@
 <span class="nt">&lt;/form&gt;</span>
 </code></pre></div>
 
-    <h3 id="forms-validation">Validation states</h3>
+    <div id="forms-validation" class="sublevel-jump"></div>
+    <h3>Validation states</h3>
     <p>Bootstrap includes validation styles for error, warning, and success states on form controls. To use, add <code>.has-warning</code>, <code>.has-error</code>, or <code>.has-success</code> to the parent element. Any <code>.control-label</code>, <code>.form-control</code>, and <code>.help-block</code> within that element will receive the validation styles.</p>
 
     <form class="bs-example">

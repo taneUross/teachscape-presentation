@@ -6000,17 +6000,17 @@ fieldset[disabled] .btn {
   text-shadow: 0 1px 0 #fff;
   background-image: none;
   border: 1px solid red;
-  border-color: #ccc;
+  border-color: #0e419b;
 }
 .btn-default:hover,
 .btn-default:focus {
   border: 1px solid #0e419b;
-  border-color: #ccc;
+  border-color: #0e419b;
 }
 .btn-default:active,
 .btn-default.active {
   background-color: #e0e0e0;
-  border-color: #dbdbdb;
+  border-color: #0e419b;
 }
 /* disabled */
 .btn-default-disab {
@@ -6197,6 +6197,9 @@ fieldset legend {
 }
 .radio-array {
   margin-bottom: 10px;
+}
+label.checkbox {
+  padding-left: 0px;
 }
 /* alignment and position */
 .display-inline {
