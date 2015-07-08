@@ -1773,6 +1773,90 @@
   </div>
 
 
+<!-- Expand/Collapse
+  ================================================== -->
+  <div class="bs-docs-section">
+    <div class="page-header">
+      <h1 id="expand-collapse">Expand / Collapse</h1>
+    </div>
+    
+
+<div role="application">
+
+<h2>Happy Time Pizza On-line Ordering System</h2>
+
+<form>
+<div id="accordian1" class="tabpanel" role="tablist" multiselectable="true">
+
+  <h5 id="tab1" class="tab accordian" aria-selected="false" aria-controls="panel1" aria-expanded="false" role="tab" tabindex="0">
+    <img src="http://www.oaa-accessibility.org/media/examples/images/contracted.gif" alt="collapsed" />
+    Crust
+  </h5>
+
+  <div id="panel1" class="panel accordian" aria-labelledby="tab1" aria-hidden="false" role="tabpanel">
+    <h3 tabindex="0">Select Crust</h3>
+     
+          <ul class="controlList">
+            <li><input id="p1_opt1" type="radio" name="crust" value="crust1" /><label for="p1_opt1">Deep Dish</label></li>
+            <li><input id="p1_opt2" type="radio" name="crust" value="crust2" checked="checked" /><label for="p1_opt2">Thick and cheesy</label></li>
+            <li><input id="p1_opt3" type="radio" name="crust" value="crust3" /><label for="p1_opt3">Thick and spicy</label></li>
+            <li><input id="p1_opt4" type="radio" name="crust" value="crust4" /><label for="p1_opt4">Thin</label></li>
+         </ul>
+  </div>
+
+  <h5 id="tab2" class="tab accordian" aria-selected="false" aria-controls="panel2" aria-expanded="false" role="tab" tabindex="-1">
+    <img src="http://www.oaa-accessibility.org/media/examples/images/contracted.gif" alt="collapsed" />
+    Veggies
+  </h5>
+  <div id="panel2" class="panel accordian" aria-labelledby="tab2" aria-hidden="true" role="tabpanel">
+    <h3 tabindex="0">Select Vegetables</h3>  
+     
+         <ul class="controlList">
+            <li><input id="p2_opt1" type="checkbox" name="veg" value="black olives" /><label for="p2_opt1">Black Olives</label></li>
+            <li><input id="p2_opt2" type="checkbox" name="veg" value="green olives" /><label for="p2_opt2">Green Olives</label></li>
+            <li><input id="p2_opt3" type="checkbox" name="veg" value="green peppers" /><label for="p2_opt3">Green Peppers</label></li>
+            <li><input id="p2_opt4" type="checkbox" name="veg" value="mushrooms" /><label for="p2_opt4">Mushrooms</label></li>
+            <li><input id="p2_opt5" type="checkbox" name="veg" value="onions" /><label for="p2_opt5">Onions</label></li>
+            <li><input id="p2_opt6" type="checkbox" name="veg" value="pineapple" /><label for="p2_opt6">Pineapple</label></li>
+         </ul>
+  </div>
+
+  <h5 id="tab3" class="tab accordian" aria-selected="false" aria-controls="panel3" aria-expanded="false" role="tab" tabindex="-1">
+    <img src="http://www.oaa-accessibility.org/media/examples/images/contracted.gif" alt="collapsed" />
+    Carnivore
+  </h5>
+  <div id="panel3" class="panel accordian" aria-labelledby="tab3" aria-hidden="true" role="tabpanel">
+    <h3 tabindex="0">Select Carnivore Options</h3>
+     
+          <ul class="controlList">
+            <li><input id="p3_opt1" type="checkbox" name="meat" value="pepperoni" /><label for="p3_opt1">Pepperoni</label></li>
+            <li><input id="p3_opt2" type="checkbox" name="meat" value="sausage" /><label for="p3_opt2">Italian Sausage</label></li>
+            <li><input id="p3_opt3" type="checkbox" name="meat" value="ham" /><label for="p3_opt3">Ham</label></li>
+            <li><input id="p3_opt4" type="checkbox" name="meat" value="hamburger" /><label for="p3_opt4">Hamburger</label></li>
+          </ul>
+  </div>
+
+  <h5 id="tab4" class="tab accordian" aria-selected="false" aria-controls="panel4" aria-expanded="false" role="tab" tabindex="-1">
+    <img src="http://www.oaa-accessibility.org/media/examples/images/contracted.gif" alt="collapsed" />
+    Delivery
+  </h5>
+  <div id="panel4" class="panel accordian" aria-labelledby="tab4" aria-hidden="true" role="tabpanel">
+     <h3 tabindex="0">Select Delivery Method</h3>
+     
+    <ul class="controlList">
+      <li><input id="p4_opt1" type="radio" name="delivery" value="delivery1" checked="checked" /><label for="p4_opt1">Delivery</label></li>
+      <li><input id="p4_opt2" type="radio" name="delivery" value="delivery2" /><label for="p4_opt2">Eat in</label></li>
+      <li><input id="p4_opt3" type="radio" name="delivery" value="delivery3" /><label for="p4_opt3">Carry out</label></li>
+      <li><input id="p4_opt4" type="radio" name="delivery" value="delivery4" /><label for="p4_opt4">Overnight mail</label></li>
+    </ul>
+  </div>
+</div>
+</form>
+
+</div>
+
+
+  </div>
 
   <!-- Affix
   ================================================== -->
@@ -1846,6 +1930,9 @@
 
     </div>
 
+
+
+
     <!-- Footer
     ================================================== -->
     <footer class="bs-footer" role="contentinfo">
@@ -1868,7 +1955,7 @@
 <script src="assets/js/bootstrap.js"></script>
 <script src="assets/js/holder.js"></script>
 <script src="assets/js/application.js"></script>
-
+<script src="assets/js/expand-collapse.js"></script>
 
 
 

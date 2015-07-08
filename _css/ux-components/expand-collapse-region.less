@@ -1,0 +1,84 @@
+
+.tabpanel {
+  margin: 0px;
+  padding: 0;
+  border-bottom: 1px solid @gray-light;
+}
+.tablist {
+  margin: 0 0px;
+  padding: 0;
+  list-style: none;
+}
+
+.tab {
+  margin: .2em 1px -1px -1px;
+  padding: 8px;
+  height: 38px;
+  font-weight: bold;
+  background-color: #f3f3f3;
+
+  border-top: 1px solid @gray-light;
+  border-left: 1px solid @gray-light;
+  border-right: 1px solid @gray-light;
+  -webkit-border-radius-topright: 5px;
+  -webkit-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-topleft: 5px;
+  border-radius-topright: 5px;
+  border-radius-topleft: 5px;
+
+  float: left;
+}
+
+.panel {
+  clear: both;
+  margin: 0 0 0 0;
+  padding: 10px;
+  width: auto;
+  border-left: 1px solid @gray-light;
+  border-right: 1px solid @gray-light;
+  -webkit-border-radius-topright: 10px;
+  -webkit-border-radius-bottomleft: 10px;
+  -webkit-border-radius-bottomright: 10px;
+  -moz-border-radius-topright: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  -moz-border-radius-bottomright: 10px;
+  border-radius-topright: 10px;
+  border-radius-bottomleft: 10px;
+  border-radius-bottomright: 10px;
+}
+
+ul.controlList {
+  list-style-type: none;
+}
+
+h3[aria-selected="true"] {
+  background-color: #fc5;
+}
+
+.focus {
+  color: black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  background-color: #fff !important;
+  margin-top: 0;
+}
+
+div[aria-hidden="true"] {
+   display: none;
+}
+
+.accordian {
+  margin: 0;
+  float: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  width: auto;
+}
+
+.hidden {
+  position: absolute;
+  left: -300em;
+  top: -30em;
+}
