@@ -1600,6 +1600,113 @@
                         </div><!-- end example -->
                         
                          </div>
+
+<!--   scribetime score summary -->
+ <div class="bs-docs-section">
+                    <div class="page-header">
+                        <h2><span id="section1" aria-hidden="true" data-icon="&#xe002;" class="focus"></span> Scribetime Scoring </h2>
+                    </div>
+ <div class="divider-horz"></div>                       
+<!-- Score Summery Table ================================================== -->      
+<h3 id="CF-0">Score Summary Table</h3>
+    <p>The following is for the interim score summary table within scribetime</p>
+    <!-- begin example -->
+    <div class="bs-example">
+        <div class="container-fluid constrained">
+          <h3 class="mar-top-15">Summary</h3>
+          <div class="row-component">
+            <h5>[parent/domain_title]</h5>
+          </div>
+        <!--  table -->
+          <table class="table-summary mar-all-0">
+            <tr>
+              <td scope="col" width="500px"></td>
+              <td scope="col" class="text-align-center"><!-- swap out with the ui commons avatars -->
+                      <span class="disp-block" style="width:40px; height:40px; background: #FFD180;border-radius: 6px; padding:5px; text-align:center; color:#000000; font-size:20px; line-height:1.6;" class="pull-left">TR</span>
+                      <div class="smaller disp-block">[observer1_last, observer1_first]</div>
+                      <div class="smaller">mm/dd/yyyy</div></td>
+              <td scope="col" class="text-align-center"><!-- swap out with the ui commons avatars -->
+                      <span class="disp-block" style="width:40px; height:40px; background: #FFD180;border-radius: 6px; padding:5px; text-align:center; color:#000000; font-size:20px; line-height:1.6;" class="pull-left">SB</span>
+                      <div class="smaller disp-block">[observer1_last, observer1_first]</div>
+                      <div class="smaller">mm/dd/yyyy</div></td>
+              <td scope="col" class="text-align-center"><!-- swap out with the ui commons avatars -->
+                      <span class="disp-block" style="width:40px; height:40px; background: #FFD180;border-radius: 6px; padding:5px; text-align:center; color:#000000; font-size:20px; line-height:1.6;" class="pull-left">SJ</span>
+                      <div class="smaller disp-block">[observer1_last, observer1_first]</div>
+                      <div class="smaller"></div></td>
+            </tr>
+            <tr class="table-row-light">
+              <td >[ rubric:1_Component_Name ]</td>
+              <td class="text-align-center"><span class="large">Proficient (3)</span></td>
+              <td class="text-align-center"><span class="large">Proficient (3)</span></td>
+              <td class="text-align-center"><span class="notation ">Not Scored</span></td>
+            </tr>
+            <tr class="table-row-light">
+              <td >[ rubric:1_Component_Name ]</td>
+              <td class="text-align-center"><span class="large">Proficient (3)</span></td>
+              <td class="text-align-center"><span class="large">Proficient (3)</span></td>
+              <td class="text-align-center"><span class="notation ">Not Scored</span></td>
+            </tr>
+            <tr class="table-row-light">
+              <td >[ rubric:1_Component_Name ]</td>
+              <td class="text-align-center"><span class="large">Proficient (3)</span></td>
+              <td class="text-align-center"><span class="large">Proficient (3)</span></td>
+              <td class="text-align-center"><span class="notation ">Not Scored</span></td>
+            </tr>
+          </table>
+        </div>
+
+    </div><!-- end score table example-->   
+<div class="highlight"><pre class="prettyprint"><code class="html">
+
+&lt;div class=&quot;container-fluid constrained&quot;&gt;
+          &lt;h3 class=&quot;mar-top-15&quot;&gt;Summary&lt;/h3&gt;
+          &lt;div class=&quot;row-component&quot;&gt;
+            &lt;h5&gt;[parent/domain_title]&lt;/h5&gt;
+          &lt;/div&gt;
+        &lt;!--  table --&gt;
+          &lt;table class=&quot;table-summary mar-all-0&quot;&gt;
+            &lt;tr&gt;
+              &lt;td scope=&quot;col&quot; width=&quot;500px&quot;&gt;&lt;/td&gt;
+              &lt;td scope=&quot;col&quot; class=&quot;text-align-center&quot;&gt;&lt;!-- swap out with the ui commons avatars --&gt;
+                      &lt;span class=&quot;disp-block&quot; style=&quot;width:40px; height:40px; background: #FFD180;border-radius: 6px; padding:5px; text-align:center; color:#000000; font-size:20px; line-height:1.6;&quot; class=&quot;pull-left&quot;&gt;TR&lt;/span&gt;
+                      &lt;div class=&quot;smaller disp-block&quot;&gt;[observer1_last, observer1_first]&lt;/div&gt;
+                      &lt;div class=&quot;smaller&quot;&gt;mm/dd/yyyy&lt;/div&gt;&lt;/td&gt;
+              &lt;td scope=&quot;col&quot; class=&quot;text-align-center&quot;&gt;&lt;!-- swap out with the ui commons avatars --&gt;
+                      &lt;span class=&quot;disp-block&quot; style=&quot;width:40px; height:40px; background: #FFD180;border-radius: 6px; padding:5px; text-align:center; color:#000000; font-size:20px; line-height:1.6;&quot; class=&quot;pull-left&quot;&gt;SB&lt;/span&gt;
+                      &lt;div class=&quot;smaller disp-block&quot;&gt;[observer1_last, observer1_first]&lt;/div&gt;
+                      &lt;div class=&quot;smaller&quot;&gt;mm/dd/yyyy&lt;/div&gt;&lt;/td&gt;
+              &lt;td scope=&quot;col&quot; class=&quot;text-align-center&quot;&gt;&lt;!-- swap out with the ui commons avatars --&gt;
+                      &lt;span class=&quot;disp-block&quot; style=&quot;width:40px; height:40px; background: #FFD180;border-radius: 6px; padding:5px; text-align:center; color:#000000; font-size:20px; line-height:1.6;&quot; class=&quot;pull-left&quot;&gt;SJ&lt;/span&gt;
+                      &lt;div class=&quot;smaller disp-block&quot;&gt;[observer1_last, observer1_first]&lt;/div&gt;
+                      &lt;div class=&quot;smaller&quot;&gt;&lt;/div&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr class=&quot;table-row-light&quot;&gt;
+              &lt;td &gt;[ rubric:1_Component_Name ]&lt;/td&gt;
+              &lt;td class=&quot;text-align-center&quot;&gt;&lt;span class=&quot;large&quot;&gt;Proficient (3)&lt;/span&gt;&lt;/td&gt;
+              &lt;td class=&quot;text-align-center&quot;&gt;&lt;span class=&quot;large&quot;&gt;Proficient (3)&lt;/span&gt;&lt;/td&gt;
+              &lt;td class=&quot;text-align-center&quot;&gt;&lt;span class=&quot;notation &quot;&gt;Not Scored&lt;/span&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr class=&quot;table-row-light&quot;&gt;
+              &lt;td &gt;[ rubric:1_Component_Name ]&lt;/td&gt;
+              &lt;td class=&quot;text-align-center&quot;&gt;&lt;span class=&quot;large&quot;&gt;Proficient (3)&lt;/span&gt;&lt;/td&gt;
+              &lt;td class=&quot;text-align-center&quot;&gt;&lt;span class=&quot;large&quot;&gt;Proficient (3)&lt;/span&gt;&lt;/td&gt;
+              &lt;td class=&quot;text-align-center&quot;&gt;&lt;span class=&quot;notation &quot;&gt;Not Scored&lt;/span&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr class=&quot;table-row-light&quot;&gt;
+              &lt;td &gt;[ rubric:1_Component_Name ]&lt;/td&gt;
+              &lt;td class=&quot;text-align-center&quot;&gt;&lt;span class=&quot;large&quot;&gt;Proficient (3)&lt;/span&gt;&lt;/td&gt;
+              &lt;td class=&quot;text-align-center&quot;&gt;&lt;span class=&quot;large&quot;&gt;Proficient (3)&lt;/span&gt;&lt;/td&gt;
+              &lt;td class=&quot;text-align-center&quot;&gt;&lt;span class=&quot;notation &quot;&gt;Not Scored&lt;/span&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/table&gt;
+        &lt;/div&gt;
+    
+</code></pre></div>
+ 
+
+
+
+
                      <!-- END CUSTOM REFLECT  
 ================================================== -->
 
