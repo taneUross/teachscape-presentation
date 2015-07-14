@@ -131,6 +131,7 @@
     <li><a href="#grid-nesting">Nesting columns</a></li>
     <li><a href="#grid-column-ordering">Column ordering</a></li>
     <li><a href="#grid-less">LESS mixins and variables</a></li>
+    <li><a href="#grid-constrained">TS Constrained Fluid Container</a></li>
   </ul>
 </li>
 <li>
@@ -320,6 +321,13 @@
             <td>750px</td>
             <td>970px</td>
             <td>1170px</td>
+          </tr>
+          <tr>
+            <th>Constrained fluid container</th>
+            <td>Min 768px</td>
+            <td>fluid</td>
+            <td>fluid</td>
+            <td>Max 1460px</td>
           </tr>
           <tr>
             <th>Class prefix</th>
@@ -750,7 +758,15 @@
 
   </div>
 
+<h4 id="grid-constrained">Teachscape Fluid Container</h4>
+For content areas requiring fluidity between small and large screens and fixed sizes at the extremes, add the clas ".constrained" to the "container-fluid" div.
 
+<div class="highlight"><pre class="prettyprint"><code class="html">
+&lt;div class=&quot;container-fluid constrained&quot;&gt;
+  ...
+&lt;/div&gt;
+
+</code></pre></div>
 
 
   <!-- Typography
