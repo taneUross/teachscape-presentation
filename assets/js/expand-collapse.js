@@ -146,7 +146,7 @@ tabpanel.prototype.togglePanel = function($tab) {
 
   if ($panel.attr('aria-hidden') == 'true') {
     $panel.attr('aria-hidden', 'false');
-    $tab.find('img').attr('src', 'http://www.oaa-accessibility.org/media/examples/images/expanded.gif').attr('alt', 'expanded');
+    $tab.find('span').attr('class', 'icon-down-dir').attr('name', 'expanded');
 
       // update the aria-expanded attribute
       $tab.attr('aria-expanded', 'true');
@@ -154,7 +154,7 @@ tabpanel.prototype.togglePanel = function($tab) {
   else {
     $panel.attr('aria-hidden', 'true');
     $panel.slideUp(100);
-    $tab.find('img').attr('src', 'http://www.oaa-accessibility.org/media/examples/images/contracted.gif').attr('alt', 'collapsed');
+    $tab.find('span').attr('class', 'icon-right-dir').attr('name', 'collapsed');
 
       // update the aria-expanded attribute
       $tab.attr('aria-expanded', 'false');

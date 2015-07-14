@@ -7477,6 +7477,9 @@ select::-ms-expand {
   height: 38px;
   font-weight: bold;
   background-color: #f3f3f3;
+  font-size: 16px;
+  font-weight: normal;
+  color: #0e419b;
   border-top: 1px solid #888888;
   border-left: 1px solid #888888;
   border-right: 1px solid #888888;
@@ -7486,7 +7489,11 @@ select::-ms-expand {
   -moz-border-radius-topleft: 5px;
   border-radius-topright: 5px;
   border-radius-topleft: 5px;
+  cursor: pointer;
   float: left;
+}
+.tab a {
+  width: auto;
 }
 .panel {
   clear: both;
@@ -7512,10 +7519,10 @@ h3[aria-selected="true"] {
   background-color: #fc5;
 }
 .focus {
-  color: black;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  background-color: #fff !important;
+  color: #0e419b;
+  border-top: 1px solid #888888;
+  border-left: 1px solid #888888;
+  border-right: 1px solid #888888;
   margin-top: 0;
 }
 div[aria-hidden="true"] {
@@ -7533,4 +7540,342 @@ div[aria-hidden="true"] {
   position: absolute;
   left: -300em;
   top: -30em;
+}
+.NormalText {
+  display: block;
+  clear: left;
+}
+div.table-panel {
+  display: block;
+  width: 1004px;
+  height: 300px !important;
+  overflow-y: scroll;
+  position: relative;
+  border-bottom: 1px solid #888;
+  margin-right: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-image: url("texture.png") repeat;
+}
+table {
+  table-layout: fixed;
+  width: 100%;
+  height: 300px !important;
+  *margin-left: -100px;
+  /*ie7*/
+  border-collapse: collapse;
+}
+/* The following control the left fixed column */
+th.y-axis1 {
+  vertical-align: top;
+  background-color: #fff;
+  border-bottom: 1px solid #888;
+  border-right: 1px solid #888;
+  border-left: 1px solid #888;
+  border-top: 1px solid #888;
+  padding-top: 3px;
+  padding-bottom: 2px;
+  width: 60px;
+}
+th.y-axis1 a {
+  text-decoration: none;
+  color: #333333;
+}
+th.x-axis1 {
+  position: absolute;
+  *position: relative;
+  /*ie7*/
+  left: 0;
+  background-color: #e1e1e1;
+  border-bottom: 1px solid #888;
+  border-right: 1px solid #888;
+  border-left: 1px solid #888;
+  border-top: 1px solid #888;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  width: 422px;
+}
+th.x-axis-level1 {
+  position: absolute;
+  *position: relative;
+  /*ie7*/
+  left: 0;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #888;
+  border-right: 1px solid #888;
+  border-left: 1px solid #888;
+  border-top: 1px solid #888;
+  padding-left: 10px;
+  padding-top: 9px;
+  padding-bottom: 11px;
+  width: 422px;
+}
+th.x-axis-level2 {
+  position: absolute;
+  *position: relative;
+  /*ie7*/
+  left: 0;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #888;
+  border-right: 1px solid #888;
+  border-left: 1px solid #888;
+  border-top: 1px solid #888;
+  padding-left: 25px;
+  padding-top: 9px;
+  padding-bottom: 11px;
+  width: 422px;
+}
+th.x-axis-level3 {
+  position: absolute;
+  *position: relative;
+  /*ie7*/
+  left: 0;
+  background-color: #e1e1e1;
+  border-bottom: 1px solid #888;
+  border-right: 1px solid #888;
+  border-left: 1px solid #888;
+  border-top: 1px solid #888;
+  padding-left: 40px;
+  padding-top: 9px;
+  padding-bottom: 11px;
+  width: 422px;
+}
+/* Activity icons */
+.x-axis-level3 .icon-tag {
+  float: left;
+  color: #888888;
+  margin-right: 4px;
+}
+/* Controls the entire table */
+.outer {
+  position: relative;
+}
+/* Controls the positioning and width of right side table "window" */
+.inner {
+  overflow-x: scroll;
+  overflow-y: visible;
+  width: 506px;
+  margin-left: 452px;
+  background-image: url("/images/texture.png");
+}
+/* Left Column Headers */
+.activity-task-header {
+  float: left;
+  font-family: Arial;
+  font-weight: lighter;
+  font-size: 13px;
+  color: #86065E;
+  margin-left: 0px;
+  margin-top: 6px;
+  margin-bottom: 5px;
+}
+.activity-task-header-right {
+  float: right;
+  font-family: Arial;
+  font-weight: lighter;
+  font-size: 13px;
+  color: #86065E;
+  margin-right: 10px;
+  margin-top: 6px;
+  margin-bottom: 5px;
+}
+.owner {
+  float: right;
+  font-family: Arial;
+  font-size: 14px;
+  margin-right: 20px;
+}
+.more-actions {
+  display: inline-block;
+  float: left;
+  font-family: Arial;
+  vertical-align: top;
+  padding-top: 0px;
+  font-size: 14px;
+  margin-left: 0px;
+  margin-right: 6px;
+}
+.more-actions a:link {
+  text-decoration: none;
+  color: #86065E;
+}
+.more-actions a:visited {
+  text-decoration: none;
+  color: #86065E !important;
+}
+.owner-duplicate {
+  float: left;
+  font-family: Arial;
+  font-size: 14px;
+}
+.activity-task {
+  float: left;
+  font-family: Arial;
+  font-size: 14px;
+  margin-left: 0px;
+}
+.activity-task a:link {
+  color: #333333;
+}
+.activity-task a:visited {
+  color: #333;
+}
+.count {
+  float: right;
+  font-family: Interface;
+  font-size: 14px;
+  margin-right: 14px;
+}
+td.matrix-landing {
+  border-bottom: 1px solid #888;
+  border-right: 1px solid #888;
+  border-left: 1px solid #888;
+  border-top: 1px solid #888;
+  background-color: #f5f5f5;
+}
+td.matrix-landing a {
+  width: 60px;
+  height: 36px;
+  display: block;
+  text-decoration: none;
+}
+td.matrix-notstarted {
+  vertical-align: middle;
+  text-align: center;
+  font-size: 17px;
+  border: 1px solid #888;
+  font-family: Interface;
+  background-color: #d7d7d7;
+}
+td.matrix-notstarted a {
+  width: 60px;
+  display: block;
+  padding: 6px 0px 6px 0px;
+  color: #333333;
+  text-decoration: none;
+}
+td.matrix-inprogress {
+  vertical-align: middle;
+  text-align: center;
+  font-size: 17px;
+  border: 1px solid #888;
+  font-family: Interface;
+  background-color: #adb4c9;
+}
+td.matrix-inprogress a {
+  width: 60px;
+  display: block;
+  padding: 6px 0px 6px 0px;
+  color: #333333;
+  text-decoration: none;
+}
+td.matrix-submitted {
+  vertical-align: middle;
+  text-align: center;
+  font-size: 17px;
+  border: 1px solid #888;
+  font-family: Interface;
+  background-color: #ccff90;
+}
+td.matrix-submitted a {
+  width: 60px;
+  display: block;
+  padding: 6px 0px 6px 0px;
+  color: #333333;
+  text-decoration: none;
+}
+td.matrix-completed {
+  vertical-align: middle;
+  text-align: center;
+  font-size: 17px;
+  border: 1px solid #888;
+  font-family: Interface;
+  background-color: #47cd8e;
+}
+td.matrix-completed a {
+  width: 60px;
+  display: block;
+  padding: 6px 0px 6px 0px;
+  color: #333333;
+  text-decoration: none;
+}
+td.transparent {
+  vertical-align: middle;
+  text-align: center;
+  font-size: 17px;
+  border: 1px solid #888;
+  font-family: Interface;
+  background-color: none;
+}
+div.avatarPractitioner {
+  display: block;
+  width: 40px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-top: 9px;
+  padding-bottom: 8px;
+  border-radius: 10px;
+  background-color: #ffd180;
+}
+.avatartext {
+  display: block;
+  font-family: Arial;
+  font-weight: lighter;
+  font-size: 20px;
+  text-align: center;
+  margin-left: auto !important;
+  margin-right: auto!important;
+}
+td a {
+  text-decoration: none;
+}
+div.barleft {
+  display: block;
+  position: absolute;
+  float: left;
+  top: 0px;
+  left: 422px;
+  z-index: 100;
+  Width: 30px;
+  height: 100%;
+  padding-right: 2px;
+}
+div.barleft a {
+  text-decoration: none;
+}
+div.barright {
+  display: block;
+  position: absolute;
+  float: right;
+  top: 0px;
+  right: 0px;
+  z-index: 100;
+  width: 30px;
+  height: 100%;
+  padding-left: 0px;
+}
+div.barright a {
+  text-decoration: none;
+}
+.bar {
+  height: 100%;
+  color: #ffffff;
+  font-family: Interface;
+  font-style: normal;
+  font-size: 22px;
+  vertical-align: middle;
+  margin-top: 180px;
+}
+#grad {
+  background: -webkit-linear-gradient(left, #bcd1fa, #9db5e4);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #bcd1fa, #9db5e4);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #bcd1fa, #9db5e4);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #bcd1fa, #9db5e4);
+  /* Standard syntax */
 }

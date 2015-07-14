@@ -22,7 +22,7 @@
 
 <!-- Documentation extras -->
 <link href="assets/css/pygments-manni.css" rel="stylesheet">
-
+<link rel="stylesheet" href="assets/css/interface_font/interface.css">
 
 
 
@@ -173,10 +173,16 @@
   </ul>
 </li>
 <li>
-  <a href="#collapse">Collapse</a>
+  <a href="#accordion">Accordion</a>
   <ul class="nav">
     <li><a href="#collapse-examples">Examples</a></li>
     <li><a href="#collapse-usage">Usage</a></li>
+  </ul>
+</li>
+<li>
+  <a href="#expand-collapse">Expand/Collapse</a>
+  <ul class="nav">
+    <li><a href="#region">Region</a></li>
   </ul>
 </li>
 <li>
@@ -1557,11 +1563,11 @@
 
 
 
-  <!-- Collapse
+  <!-- Accodion
   ================================================== -->
   <div class="bs-docs-section">
     <div class="page-header">
-      <h1 id="collapse">Collapse <small>collapse.js</small></h1>
+      <h1 id="collapse">Accordion <small>collapse.js</small></h1>
     </div>
 
     <h3>About</h3>
@@ -1779,83 +1785,107 @@
     <div class="page-header">
       <h1 id="expand-collapse">Expand / Collapse</h1>
     </div>
+    <p>There are three types of expand/collapse components. Those are:</p>
+    <ul>
+      <li>Content</li>
+      <li>List</li>
+      <li>Region</li>
+    </ul>
+    <p>Each type has distinct acceptance criteria for defaults and interaction behavior and should only be used for instances that ae appropriate to the interaction.</p>
     
 
-<div role="application">
-
-<h2>Happy Time Pizza On-line Ordering System</h2>
-
-<form>
-<div id="accordian1" class="tabpanel" role="tablist" multiselectable="true">
-
-  <h5 id="tab1" class="tab accordian" aria-selected="false" aria-controls="panel1" aria-expanded="false" role="tab" tabindex="0">
-    <img src="http://www.oaa-accessibility.org/media/examples/images/contracted.gif" alt="collapsed" />
-    Crust
-  </h5>
-
-  <div id="panel1" class="panel accordian" aria-labelledby="tab1" aria-hidden="false" role="tabpanel">
-    <h3 tabindex="0">Select Crust</h3>
-     
-          <ul class="controlList">
-            <li><input id="p1_opt1" type="radio" name="crust" value="crust1" /><label for="p1_opt1">Deep Dish</label></li>
-            <li><input id="p1_opt2" type="radio" name="crust" value="crust2" checked="checked" /><label for="p1_opt2">Thick and cheesy</label></li>
-            <li><input id="p1_opt3" type="radio" name="crust" value="crust3" /><label for="p1_opt3">Thick and spicy</label></li>
-            <li><input id="p1_opt4" type="radio" name="crust" value="crust4" /><label for="p1_opt4">Thin</label></li>
-         </ul>
-  </div>
-
-  <h5 id="tab2" class="tab accordian" aria-selected="false" aria-controls="panel2" aria-expanded="false" role="tab" tabindex="-1">
-    <img src="http://www.oaa-accessibility.org/media/examples/images/contracted.gif" alt="collapsed" />
-    Veggies
-  </h5>
-  <div id="panel2" class="panel accordian" aria-labelledby="tab2" aria-hidden="true" role="tabpanel">
-    <h3 tabindex="0">Select Vegetables</h3>  
-     
-         <ul class="controlList">
-            <li><input id="p2_opt1" type="checkbox" name="veg" value="black olives" /><label for="p2_opt1">Black Olives</label></li>
-            <li><input id="p2_opt2" type="checkbox" name="veg" value="green olives" /><label for="p2_opt2">Green Olives</label></li>
-            <li><input id="p2_opt3" type="checkbox" name="veg" value="green peppers" /><label for="p2_opt3">Green Peppers</label></li>
-            <li><input id="p2_opt4" type="checkbox" name="veg" value="mushrooms" /><label for="p2_opt4">Mushrooms</label></li>
-            <li><input id="p2_opt5" type="checkbox" name="veg" value="onions" /><label for="p2_opt5">Onions</label></li>
-            <li><input id="p2_opt6" type="checkbox" name="veg" value="pineapple" /><label for="p2_opt6">Pineapple</label></li>
-         </ul>
-  </div>
-
-  <h5 id="tab3" class="tab accordian" aria-selected="false" aria-controls="panel3" aria-expanded="false" role="tab" tabindex="-1">
-    <img src="http://www.oaa-accessibility.org/media/examples/images/contracted.gif" alt="collapsed" />
-    Carnivore
-  </h5>
-  <div id="panel3" class="panel accordian" aria-labelledby="tab3" aria-hidden="true" role="tabpanel">
-    <h3 tabindex="0">Select Carnivore Options</h3>
-     
-          <ul class="controlList">
-            <li><input id="p3_opt1" type="checkbox" name="meat" value="pepperoni" /><label for="p3_opt1">Pepperoni</label></li>
-            <li><input id="p3_opt2" type="checkbox" name="meat" value="sausage" /><label for="p3_opt2">Italian Sausage</label></li>
-            <li><input id="p3_opt3" type="checkbox" name="meat" value="ham" /><label for="p3_opt3">Ham</label></li>
-            <li><input id="p3_opt4" type="checkbox" name="meat" value="hamburger" /><label for="p3_opt4">Hamburger</label></li>
-          </ul>
-  </div>
-
-  <h5 id="tab4" class="tab accordian" aria-selected="false" aria-controls="panel4" aria-expanded="false" role="tab" tabindex="-1">
-    <img src="http://www.oaa-accessibility.org/media/examples/images/contracted.gif" alt="collapsed" />
-    Delivery
-  </h5>
-  <div id="panel4" class="panel accordian" aria-labelledby="tab4" aria-hidden="true" role="tabpanel">
-     <h3 tabindex="0">Select Delivery Method</h3>
-     
-    <ul class="controlList">
-      <li><input id="p4_opt1" type="radio" name="delivery" value="delivery1" checked="checked" /><label for="p4_opt1">Delivery</label></li>
-      <li><input id="p4_opt2" type="radio" name="delivery" value="delivery2" /><label for="p4_opt2">Eat in</label></li>
-      <li><input id="p4_opt3" type="radio" name="delivery" value="delivery3" /><label for="p4_opt3">Carry out</label></li>
-      <li><input id="p4_opt4" type="radio" name="delivery" value="delivery4" /><label for="p4_opt4">Overnight mail</label></li>
-    </ul>
-  </div>
-</div>
-</form>
-
-</div>
-
-
+    <div id="region" class="sublevel-jump"></div>
+    <h3>Expand/Collapse "Region"</h3>
+    <p>This example of Expand/Collapse Region leverages Javascrip (expand-collapse.js under "Assets") and CSS to make this component accessible to both mobility impaired and visually impaired users. In the follwing example, common to Teachscape expand/collapse scenarios, the component is used in an array of expandanble/collapsable panels, each headed by a selectable horizontal "tab". Important to accessibility are the <code>role="tabpanel"</code> in the array's containing div, the <code>aria-selected="false" aria-controls="panel1" aria-expanded="false" role="tab" tabindex="-1"</code> attributes in the containing div of each tab, the <code>aria-labelledby="tab1" aria-hidden="false" role="tabpanel"</code> attributes in the containing div of the hidden panel, and the use of <code>aria-hidden="true"</code> in the span that calls the arrow icons. Also important and the interaction parameters as defined in the Javascript dedicated to this component. The accessible interaction behavior this script enables is defined in the accessibility section of the Expand/Collpase region design pattern.</p>
+    <h5> <a href="https://intranet.teachscape.com/display/UXDPL/ts-collapse-region" target="_blank">Open the Design Pattern in a New Browser Tab <span class="icon-link-ext-alt"></span></a></h5>
+    <div class="bs-example">
+      <div role="application">
+        <h5>The Ten Usability Heuristics for User Interface Design</h5>
+        <div id="accordian1" class="tabpanel" role="tablist" multiselectable="true">
+          <!-- Tab 1 -->
+          <div href="#" id="tab1" class="tab accordian" aria-selected="false" aria-controls="panel1" aria-expanded="false" role="tab" tabindex="-1">
+            <span class="icon-right-dir" aria-hidden="true" name="collapsed"></span>
+            Visibility of system status
+          </div>
+          <div id="panel1" class="panel accordian" aria-labelledby="tab1" aria-hidden="false" role="tabpanel">
+            <p>The system should always keep users informed about what is going on, through appropriate feedback within reasonable time.</p>
+          </div>
+          <!-- Tab 2 -->
+          <div id="tab2" class="tab accordian" aria-selected="false" aria-controls="panel2" aria-expanded="false" role="tab" tabindex="-1">
+            <span class="icon-right-dir" aria-hidden="true" name="collapsed"></span>
+            Match between system and the real world
+          </div>
+          <div id="panel2" class="panel accordian" aria-labelledby="tab2" aria-hidden="true" role="tabpanel">
+            <p>The system should speak the users' language, with words, phrases and concepts familiar to the user, rather than system-oriented terms. Follow real-world conventions, making information appear in a natural and logical order.</p>
+          </div>
+          <!-- Tab 3 -->  
+          <div id="tab3" class="tab accordian" aria-selected="false" aria-controls="panel3" aria-expanded="false" role="tab" tabindex="-1">
+            <span class="icon-right-dir" aria-hidden="true" name="collapsed"></span>
+            User control and freedom
+          </div>
+          <div id="panel3" class="panel accordian" aria-labelledby="tab3" aria-hidden="true" role="tabpanel">
+            <p>Users often choose system functions by mistake and will need a clearly marked "emergency exit" to leave the unwanted state without having to go through an extended dialogue. Support undo and redo.</p>
+          </div>
+          <!-- Tab 4 -->
+          <div id="tab4" class="tab accordian" aria-selected="false" aria-controls="panel4" aria-expanded="false" role="tab" tabindex="-1">
+            <span class="icon-right-dir" aria-hidden="true" name="collapsed"></span>
+            Consistency and standards
+          </div>
+          <div id="panel4" class="panel accordian" aria-labelledby="tab4" aria-hidden="true" role="tabpanel">
+            <p>Users should not have to wonder whether different words, situations, or actions mean the same thing. Follow platform conventions.</p>
+          </div>
+          <!-- Tab 5 -->
+          <div id="tab5" class="tab accordian" aria-selected="false" aria-controls="panel5" aria-expanded="false" role="tab" tabindex="-1">
+            <span class="icon-right-dir" aria-hidden="true" name="collapsed"></span>
+            Error prevention
+          </div>
+          <div id="panel5" class="panel accordian" aria-labelledby="tab5" aria-hidden="true" role="tabpanel">
+            <p>Even better than good error messages is a careful design which prevents a problem from occurring in the first place. Either eliminate error-prone conditions or check for them and present users with a confirmation option before they commit to the action.</p>
+          </div>
+          <!-- Tab 6 -->
+          <div id="tab6" class="tab accordian" aria-selected="false" aria-controls="panel6" aria-expanded="false" role="tab" tabindex="-1">
+            <span class="icon-right-dir" aria-hidden="true" name="collapsed"></span>
+            Recognition rather than recall
+          </div>
+          <div id="panel6" class="panel accordian" aria-labelledby="tab6" aria-hidden="true" role="tabpanel">
+            <p>Minimize the user's memory load by making objects, actions, and options visible. The user should not have to remember information from one part of the dialogue to another. Instructions for use of the system should be visible or easily retrievable whenever appropriate.
+            (Read full article on <a href="http://www.nngroup.com/articles/recognition-and-recall/">recognition vs. recall in UX</a>.)</p>
+          </div>
+          <!-- Tab 7 -->
+          <div id="tab7" class="tab accordian" aria-selected="false" aria-controls="panel7" aria-expanded="false" role="tab" tabindex="-1">
+            <span class="icon-right-dir" aria-hidden="true" name="collapsed"></span>
+            Flexibility and efficiency of use
+          </div>
+          <div id="panel7" class="panel accordian" aria-labelledby="tab7" aria-hidden="true" role="tabpanel">
+            <p>Accelerators -- unseen by the novice user -- may often speed up the interaction for the expert user such that the system can cater to both inexperienced and experienced users. Allow users to tailor frequent actions.</p>
+          </div>
+          <!-- Tab 8 -->
+          <div id="tab8" class="tab accordian" aria-selected="false" aria-controls="panel8" aria-expanded="false" role="tab" tabindex="-1">
+            <span class="icon-right-dir" aria-hidden="true" name="collapsed"></span>
+            Aesthetic and minimalist design
+          </div>
+          <div id="panel8" class="panel accordian" aria-labelledby="tab8" aria-hidden="true" role="tabpanel">
+            <p>Dialogues should not contain information which is irrelevant or rarely needed. Every extra unit of information in a dialogue competes with the relevant units of information and diminishes their relative visibility.</p>
+          </div>
+          <!-- Tab 9 -->
+          <div id="tab9" class="tab accordian" aria-selected="false" aria-controls="panel9" aria-expanded="false" role="tab" tabindex="-1">
+            <span class="icon-right-dir" aria-hidden="true" name="collapsed"></span>
+            Help users recognize, diagnose, and recover from errors
+          </div>
+          <div id="panel9" class="panel accordian" aria-labelledby="tab9" aria-hidden="true" role="tabpanel">
+            <p>Error messages should be expressed in plain language (no codes), precisely indicate the problem, and constructively suggest a solution.</p>
+          </div>
+          <!-- Tab 10 -->
+          <div id="tab10" class="tab accordian" aria-selected="false" aria-controls="panel10" aria-expanded="false" role="tab" tabindex="-1">
+            <span class="icon-right-dir" aria-hidden="true" name="collapsed"></span>
+            Help and documentation
+          </div>
+          <div id="panel10" class="panel accordian" aria-labelledby="tab10" aria-hidden="true" role="tabpanel">
+            <p>Even though it is better if the system can be used without documentation, it may be necessary to provide help and documentation. Any such information should be easy to search, focused on the user's task, list concrete steps to be carried out, and not be too large.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Affix
