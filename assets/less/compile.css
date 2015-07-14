@@ -7185,7 +7185,6 @@ div[aria-hidden="true"] {
   left: -300em;
   top: -30em;
 }
-<<<<<<< HEAD
 .NormalText {
   display: block;
   clear: left;
@@ -7523,7 +7522,7 @@ div.barright a {
   /* For Firefox 3.6 to 15 */
   background: linear-gradient(to right, #bcd1fa, #9db5e4);
   /* Standard syntax */
-=======
+}
 .container-fluid.constrained {
   min-width: 768px;
   max-width: 1460px;
@@ -7908,5 +7907,4 @@ label.checkbox {
   .container-fluid.constrained {
     padding: 0 30px;
   }
->>>>>>> 7c41a2bf3e856e4da41c73e4812fe32826ff355b
 }
