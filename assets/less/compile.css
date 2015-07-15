@@ -7192,7 +7192,7 @@ div[aria-hidden="true"] {
 div.table-panel {
   display: block;
   width: 1004px;
-  height: 300px !important;
+  height: 400px !important;
   overflow-y: scroll;
   position: relative;
   border-bottom: 1px solid #888;
@@ -7222,10 +7222,18 @@ th.y-axis1 {
   padding-top: 3px;
   padding-bottom: 2px;
   width: 60px;
+  text-align: center;
 }
 th.y-axis1 a {
   text-decoration: none;
   color: #333333;
+}
+.avatar-truncate {
+  width: 50px;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-left: 5px;
+  text-overflow: ellipsis;
 }
 th.x-axis1 {
   position: absolute;
@@ -7288,7 +7296,16 @@ th.x-axis-level3 {
   width: 422px;
 }
 /* Activity icons */
-.x-axis-level3 .icon-tag {
+.x-axis-level3 .icon {
+  float: left;
+  color: #888888;
+  margin-right: 4px;
+}
+th.x-axis-level3.group {
+  background-color: #f5f5f5;
+}
+/* Activity icons */
+.x-axis-level3 .icon {
   float: left;
   color: #888888;
   margin-right: 4px;
@@ -7313,8 +7330,8 @@ th.x-axis-level3 {
   font-size: 13px;
   color: #86065E;
   margin-left: 0px;
-  margin-top: 6px;
-  margin-bottom: 5px;
+  margin-top: 14px;
+  margin-bottom: 10px;
 }
 .activity-task-header-right {
   float: right;
@@ -7323,8 +7340,8 @@ th.x-axis-level3 {
   font-size: 13px;
   color: #86065E;
   margin-right: 10px;
-  margin-top: 6px;
-  margin-bottom: 5px;
+  margin-top: 14px;
+  margin-bottom: 10px;
 }
 .owner {
   float: right;
@@ -7360,6 +7377,7 @@ th.x-axis-level3 {
   font-family: Arial;
   font-size: 14px;
   margin-left: 0px;
+  margin-right: 8px;
 }
 .activity-task a:link {
   color: #333333;
@@ -7440,6 +7458,71 @@ td.matrix-completed {
   background-color: #47cd8e;
 }
 td.matrix-completed a {
+  width: 60px;
+  display: block;
+  padding: 6px 0px 6px 0px;
+  color: #333333;
+  text-decoration: none;
+}
+td.matrix-event-completed {
+  text-align: center;
+  font-size: 12px;
+  border: 1px solid #888;
+  font-family: arial;
+  font-weight: normal;
+  background-color: #47cd8e;
+}
+td.matrix-event-completed a {
+  width: 60px;
+  height: 40px;
+  display: block;
+  padding: 12px 0px 10px 0px;
+  color: #333333;
+  text-decoration: none;
+}
+td.matrix-event-scheduled {
+  vertical-align: middle;
+  text-align: center;
+  font-size: 12px;
+  border: 1px solid #888;
+  font-family: arial;
+  font-weight: normal;
+  background-color: #d7d7d7;
+}
+td.matrix-event-scheduled a {
+  width: 60px;
+  height: 40px;
+  display: block;
+  padding: 12px 0px 10px 0px;
+  color: #333333;
+  text-decoration: none;
+}
+td.matrix-event-notscheduled {
+  vertical-align: middle;
+  text-align: center;
+  font-size: 12px;
+  border: 1px solid #888;
+  font-family: arial;
+  font-weight: normal;
+  background-color: #d7d7d7;
+}
+td.matrix-event-notscheduled a {
+  width: 60px;
+  height: 40px;
+  display: block;
+  padding: 12px 0px 10px 0px;
+  color: #333333;
+  text-decoration: none;
+}
+td.matrix-finalized {
+  vertical-align: middle;
+  text-align: center;
+  font-size: 17px;
+  border: 1px solid #888;
+  font-family: Interface;
+  background-color: #33ccff;
+}
+td.matrix-finalized a {
   width: 60px;
   display: block;
   padding: 6px 0px 6px 0px;
