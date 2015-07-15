@@ -7038,7 +7038,7 @@ select {
   /*Removes default chrome and safari style*/
   -moz-appearance: none;
   /* Removes Default Firefox style*/
-  background: #ffffff url(http://www.jrgdesignworks.com/images/Drop-Down-Arrow-BG.png) no-repeat right;
+  background: #ffffff url(/images) no-repeat right;
   width: auto;
   /*Width of select dropdown to give space for arrow image*/
   text-indent: 0.01px;
@@ -7525,7 +7525,7 @@ div.barright a {
 }
 .container-fluid.constrained {
   min-width: 768px;
-  max-width: 1460px;
+  max-width: 1600px;
 }
 .well {
   background-color: #ffffff;
@@ -7872,11 +7872,6 @@ fieldset legend {
 }
 label.checkbox {
   padding-left: 0px;
-}
-@media (min-width: 768px) {
-  .navbar-nav.navbar-right:last-child {
-    margin-right: 0;
-  }
 }
 @media (min-width: 768px) {
   .breadcrumb-reverse,
