@@ -9,6 +9,9 @@
 
 Maintained by:
 Tane Ross, UX, tane.ross@teachscape.com
+display:http://teachscape.github.io/teachscape-presentation/;
+
+REPO:  https://github.com/Teachscape/teachscape-presentation
 
 */
 
@@ -18,10 +21,20 @@ Tane Ross, UX, tane.ross@teachscape.com
 @import "../assets/less/bootstrap/bootstrap.less";
 
 
-//from teachscape.less
+//====================================================
+//for use with development
 
 //variables
 @import "variables/global_ts_variables";  
+
+
+//overrides
+@import "overrides/grid";
+@import "overrides/well";
+@import "overrides/tables";
+@import "overrides/buttons-new";
+@import "overrides/inputs";
+@import "overrides/media_queries";
 
 
 //utilities
@@ -48,10 +61,4 @@ Tane Ross, UX, tane.ross@teachscape.com
 @import "ux-components/split-table";
 
 
-//overrides
-@import "overrides/grid";
-@import "overrides/well";
-@import "overrides/tables";
-@import "overrides/buttons-new";
-@import "overrides/inputs";
-@import "overrides/media_queries";
+
