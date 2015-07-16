@@ -8,6 +8,9 @@
 
 Maintained by:
 Tane Ross, UX, tane.ross@teachscape.com
+display:http://teachscape.github.io/teachscape-presentation/;
+
+REPO:  https://github.com/Teachscape/teachscape-presentation
 
 */
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
@@ -7483,7 +7486,7 @@ select::-ms-expand {
   margin-left: 10px;
 }
 .sublevel-jump {
-  padding-bottom: 0px;
+  padding-bottom: 60px;
 }
 .tabpanel {
   margin: 0px;
