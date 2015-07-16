@@ -297,7 +297,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #0a2d6c;
+  color: #082455;
   text-decoration: underline;
 }
 a:focus {
@@ -2304,7 +2304,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #0a2d6c;
+  color: #082455;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -3043,7 +3043,7 @@ input[type="button"].btn-block {
 .dropdown-menu > li > a:focus {
   text-decoration: none;
   color: #333333;
-  background-color: #dae6fc;
+  background-color: #c3d7fa;
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
@@ -3051,7 +3051,7 @@ input[type="button"].btn-block {
   color: #ffffff;
   text-decoration: none;
   outline: 0;
-  background-color: #dae6fc;
+  background-color: #c3d7fa;
 }
 .dropdown-menu > .disabled > a,
 .dropdown-menu > .disabled > a:hover,
@@ -4169,7 +4169,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .pagination > li > span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus {
-  color: #0a2d6c;
+  color: #082455;
   background-color: #eeeeee;
   border-color: #dddddd;
 }
@@ -5837,7 +5837,7 @@ a {
   color: #0e419b;
 }
 a:hover {
-  color: #0a2d6c;
+  color: #082455;
   text-decoration: none;
 }
 @font-face {
@@ -7038,7 +7038,7 @@ select {
   /*Removes default chrome and safari style*/
   -moz-appearance: none;
   /* Removes Default Firefox style*/
-  background: #ffffff url(/images) no-repeat right;
+  background: #ffffff url(http://www.jrgdesignworks.com/images/Drop-Down-Arrow-BG.png) no-repeat right;
   width: auto;
   /*Width of select dropdown to give space for arrow image*/
   text-indent: 0.01px;
@@ -7103,7 +7103,7 @@ select::-ms-expand {
   margin-left: 10px;
 }
 .sublevel-jump {
-  padding-bottom: 80px;
+  padding-bottom: 0px;
 }
 .tabpanel {
   margin: 0px;
@@ -7191,16 +7191,13 @@ div[aria-hidden="true"] {
 }
 div.table-panel {
   display: block;
-  width: 1004px;
+  width: 904px;
   height: 400px !important;
   overflow-y: scroll;
   position: relative;
-  border-bottom: 1px solid #888;
+  border-bottom: 1px solid #888888;
   margin-right: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
+  padding: 0px;
   background-image: url("texture.png") repeat;
 }
 table {
@@ -7214,11 +7211,8 @@ table {
 /* The following control the left fixed column */
 th.y-axis1 {
   vertical-align: top;
-  background-color: #fff;
-  border-bottom: 1px solid #888;
-  border-right: 1px solid #888;
-  border-left: 1px solid #888;
-  border-top: 1px solid #888;
+  background-color: #ffffff;
+  border: 1px solid #888888;
   padding-top: 3px;
   padding-bottom: 2px;
   width: 60px;
@@ -7235,16 +7229,13 @@ th.y-axis1 a {
   margin-left: 5px;
   text-overflow: ellipsis;
 }
-th.x-axis1 {
+th.x-axis-header {
   position: absolute;
   *position: relative;
   /*ie7*/
   left: 0;
-  background-color: #e1e1e1;
-  border-bottom: 1px solid #888;
-  border-right: 1px solid #888;
-  border-left: 1px solid #888;
-  border-top: 1px solid #888;
+  background-color: #d7d7d7;
+  border: 1px solid #888888;
   padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 12px;
@@ -7255,14 +7246,11 @@ th.x-axis-level1 {
   *position: relative;
   /*ie7*/
   left: 0;
-  background-color: #f5f5f5;
-  border-bottom: 1px solid #888;
-  border-right: 1px solid #888;
-  border-left: 1px solid #888;
-  border-top: 1px solid #888;
+  background-color: #efefef;
+  border: 1px solid #888888;
   padding-left: 10px;
-  padding-top: 9px;
-  padding-bottom: 11px;
+  padding-top: 10px;
+  padding-bottom: 12px;
   width: 422px;
 }
 th.x-axis-level2 {
@@ -7270,11 +7258,8 @@ th.x-axis-level2 {
   *position: relative;
   /*ie7*/
   left: 0;
-  background-color: #f5f5f5;
-  border-bottom: 1px solid #888;
-  border-right: 1px solid #888;
-  border-left: 1px solid #888;
-  border-top: 1px solid #888;
+  background-color: #efefef;
+  border: 1px solid #888888;
   padding-left: 25px;
   padding-top: 9px;
   padding-bottom: 11px;
@@ -7285,15 +7270,16 @@ th.x-axis-level3 {
   *position: relative;
   /*ie7*/
   left: 0;
-  background-color: #e1e1e1;
-  border-bottom: 1px solid #888;
-  border-right: 1px solid #888;
-  border-left: 1px solid #888;
-  border-top: 1px solid #888;
+  background-color: #d7d7d7;
+  border: 1px solid #888888;
   padding-left: 40px;
   padding-top: 9px;
   padding-bottom: 11px;
   width: 422px;
+}
+/* level 3 color override for a group */
+th.x-axis-level3.group {
+  background-color: #efefef;
 }
 /* Activity icons */
 .x-axis-level3 .icon {
@@ -7301,10 +7287,6 @@ th.x-axis-level3 {
   color: #888888;
   margin-right: 4px;
 }
-th.x-axis-level3.group {
-  background-color: #f5f5f5;
-}
-/* Activity icons */
 .x-axis-level3 .icon {
   float: left;
   color: #888888;
@@ -7318,17 +7300,17 @@ th.x-axis-level3.group {
 .inner {
   overflow-x: scroll;
   overflow-y: visible;
-  width: 506px;
+  width: 406px;
   margin-left: 452px;
   background-image: url("/images/texture.png");
 }
-/* Left Column Headers */
+/* Left Column Header Text */
 .activity-task-header {
   float: left;
   font-family: Arial;
   font-weight: lighter;
   font-size: 13px;
-  color: #86065E;
+  color: #732843;
   margin-left: 0px;
   margin-top: 14px;
   margin-bottom: 10px;
@@ -7338,7 +7320,7 @@ th.x-axis-level3.group {
   font-family: Arial;
   font-weight: lighter;
   font-size: 13px;
-  color: #86065E;
+  color: #732843;
   margin-right: 10px;
   margin-top: 14px;
   margin-bottom: 10px;
@@ -7361,11 +7343,11 @@ th.x-axis-level3.group {
 }
 .more-actions a:link {
   text-decoration: none;
-  color: #86065E;
+  color: #0e419b;
 }
 .more-actions a:visited {
   text-decoration: none;
-  color: #86065E !important;
+  color: #0e419b !important;
 }
 .owner-duplicate {
   float: left;
@@ -7383,7 +7365,7 @@ th.x-axis-level3.group {
   color: #333333;
 }
 .activity-task a:visited {
-  color: #333;
+  color: #333333;
 }
 .count {
   float: right;
@@ -7392,11 +7374,8 @@ th.x-axis-level3.group {
   margin-right: 14px;
 }
 td.matrix-landing {
-  border-bottom: 1px solid #888;
-  border-right: 1px solid #888;
-  border-left: 1px solid #888;
-  border-top: 1px solid #888;
-  background-color: #f5f5f5;
+  border: 1px solid #888888;
+  background-color: #efefef;
 }
 td.matrix-landing a {
   width: 60px;
@@ -7408,7 +7387,7 @@ td.matrix-notstarted {
   vertical-align: middle;
   text-align: center;
   font-size: 17px;
-  border: 1px solid #888;
+  border: 1px solid #888888;
   font-family: Interface;
   background-color: #d7d7d7;
 }
@@ -7423,7 +7402,7 @@ td.matrix-inprogress {
   vertical-align: middle;
   text-align: center;
   font-size: 17px;
-  border: 1px solid #888;
+  border: 1px solid #888888;
   font-family: Interface;
   background-color: #adb4c9;
 }
@@ -7438,7 +7417,7 @@ td.matrix-submitted {
   vertical-align: middle;
   text-align: center;
   font-size: 17px;
-  border: 1px solid #888;
+  border: 1px solid #888888;
   font-family: Interface;
   background-color: #ccff90;
 }
@@ -7453,7 +7432,7 @@ td.matrix-completed {
   vertical-align: middle;
   text-align: center;
   font-size: 17px;
-  border: 1px solid #888;
+  border: 1px solid #888888;
   font-family: Interface;
   background-color: #47cd8e;
 }
@@ -7467,7 +7446,7 @@ td.matrix-completed a {
 td.matrix-event-completed {
   text-align: center;
   font-size: 12px;
-  border: 1px solid #888;
+  border: 1px solid #888888;
   font-family: arial;
   font-weight: normal;
   background-color: #47cd8e;
@@ -7484,10 +7463,10 @@ td.matrix-event-scheduled {
   vertical-align: middle;
   text-align: center;
   font-size: 12px;
-  border: 1px solid #888;
+  border: 1px solid #888888;
   font-family: arial;
   font-weight: normal;
-  background-color: #d7d7d7;
+  background-color: #adb4c9;
 }
 td.matrix-event-scheduled a {
   width: 60px;
@@ -7501,7 +7480,7 @@ td.matrix-event-notscheduled {
   vertical-align: middle;
   text-align: center;
   font-size: 12px;
-  border: 1px solid #888;
+  border: 1px solid #888888;
   font-family: arial;
   font-weight: normal;
   background-color: #d7d7d7;
@@ -7518,7 +7497,7 @@ td.matrix-finalized {
   vertical-align: middle;
   text-align: center;
   font-size: 17px;
-  border: 1px solid #888;
+  border: 1px solid #888888;
   font-family: Interface;
   background-color: #33ccff;
 }
@@ -7533,7 +7512,7 @@ td.transparent {
   vertical-align: middle;
   text-align: center;
   font-size: 17px;
-  border: 1px solid #888;
+  border: 1px solid #888888;
   font-family: Interface;
   background-color: none;
 }
@@ -7554,7 +7533,7 @@ div.avatarPractitioner {
   font-size: 20px;
   text-align: center;
   margin-left: auto !important;
-  margin-right: auto!important;
+  margin-right: auto !important;
 }
 td a {
   text-decoration: none;
@@ -7589,7 +7568,7 @@ div.barright a {
 }
 .bar {
   height: 100%;
-  color: #ffffff;
+  color: Tst-white-opaque;
   font-family: Interface;
   font-style: normal;
   font-size: 22px;
