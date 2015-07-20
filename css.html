@@ -1665,15 +1665,15 @@ For content areas requiring fluidity between small and large screens and fixed s
       <h4 aria-labelledby="true">Form Title</h4>
       <div class="form-group">
         <label for="email">Email Address <span class="asterisk">*</span></label>
-        <input type="email" class="form-control" id="email" tabindex="1">
+        <input type="email" class="form-control" id="email">
       </div>
       <div class="form-group">
         <label for="password">Password <span class="asterisk">*</span></label>
-        <input type="password" class="form-control" id="password" tabindex="2">
+        <input type="password" class="form-control" id="password">
       </div>
         <div class="form-group">
             <label for="organization">Organization</label>
-            <input type="text" class="form-control" id="organization" tabindex="3">
+            <input type="text" class="form-control" id="organization">
         </div>
     </form>
     <!-- /example -->
@@ -1681,15 +1681,15 @@ For content areas requiring fluidity between small and large screens and fixed s
   &lt;h4 aria-labelledby=&quot;true&quot;&gt;Form Title&lt;/h4&gt;
   &lt;div class=&quot;form-group&quot;&gt;
     &lt;label for=&quot;email&quot;&gt;Email Address &lt;span class=&quot;asterisk&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
-     &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;email&quot; tabindex=&quot;1&quot;&gt;
+    &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;email&quot;&gt;
   &lt;/div&gt;
   &lt;div class=&quot;form-group&quot;&gt;
     &lt;label for=&quot;password&quot;&gt;Password &lt;span class=&quot;asterisk&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
-    &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;password&quot; tabindex=&quot;2&quot;&gt;
+    &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;password&quot;&gt;
   &lt;/div&gt;
   &lt;div class=&quot;form-group&quot;&gt;
-   &lt;label for=&quot;organization&quot;&gt;Organization&lt;/label&gt;
-    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;organization&quot; tabindex=&quot;3&quot;&gt;
+      &lt;label for=&quot;organization&quot;&gt;Organization&lt;/label&gt;
+      &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;organization&quot;&gt;
   &lt;/div&gt;
 &lt;/form&gt;</code></pre></div>
 
@@ -1705,7 +1705,7 @@ For content areas requiring fluidity between small and large screens and fixed s
       <h4 aria-labelledby="true">Form Title</h4>
       <div class="form-group">
         <label for="textarea">Comments</label>
-        <textarea rows="4" cols=="50" maxlength="200" type="text" class="form-control" id="textarea" tabindex="4"></textarea>
+        <textarea rows="4" cols=="50" maxlength="200" type="text" class="form-control" id="textarea"></textarea>
         <div class="char-countdown" id="textarea_feedback"></div>
       </div>
     </form>
@@ -1714,7 +1714,7 @@ For content areas requiring fluidity between small and large screens and fixed s
   &lt;h4 aria-labelledby=&quot;true&quot;&gt;Form Title&lt;/h4&gt;
   &lt;div class=&quot;form-group&quot;&gt;
     &lt;label for=&quot;textarea&quot;&gt;Comments&lt;/label&gt;
-    &lt;textarea rows=&quot;4&quot; cols==&quot;50&quot; maxlength=&quot;200&quot; type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;textarea&quot; tabindex=&quot;4&quot;&gt;&lt;/textarea&gt;
+    &lt;textarea rows=&quot;4&quot; cols==&quot;50&quot; maxlength=&quot;200&quot; type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;textarea&quot;&gt;&lt;/textarea&gt;
     &lt;div class=&quot;char-countdown&quot; id=&quot;textarea_feedback&quot;&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/form&gt;</code></pre></div>
@@ -1830,16 +1830,16 @@ For content areas requiring fluidity between small and large screens and fixed s
         <legend>User Experience Books Everyone Should Read</legend>
           <div class="checkbox">      
             <label class="checkbox">
-              <input type="checkbox" name="UX book" value="Don't Make Me Think">Don't Make Me Think, by Steve Krug<br>
+              <input type="checkbox" id="UX1" name="UX book" value="Don't Make Me Think">Don't Make Me Think, by Steve Krug<br>
             </label>
             <label class="checkbox">
-              <input type="checkbox" name="UX book" value="Mental Models">Mental Models, by Indi Young<br> 
+              <input type="checkbox" id="UX2" name="UX book" value="Mental Models">Mental Models, by Indi Young<br> 
             </label>
             <label class="checkbox">
-              <input type="checkbox" name="UX book" value="About Face">About Face, by Alan Cooper<br>
+              <input type="checkbox" id="UX3" name="UX book" value="About Face">About Face, by Alan Cooper<br>
             </label>
             <label class="checkbox">
-              <input type="checkbox" name="UX book" value="The Design of Everyday Things">The Design of Everyday Things, by Don Norman<br>
+              <input type="checkbox" id="UX4" name="UX book" value="The Design of Everyday Things">The Design of Everyday Things, by Don Norman<br>
             </label>
           </div>
         </legend>
@@ -1870,22 +1870,21 @@ For content areas requiring fluidity between small and large screens and fixed s
       </fieldset>
     </form>
     <!-- /example -->
-<div class="highlight"><pre class="prettyprint"><code class="html">
-&lt;form class=&quot;bs-example&quot;&gt;
+<div class="highlight"><pre class="prettyprint"><code class="html">&lt;form class=&quot;bs-example&quot;&gt;
   &lt;fieldset&gt;
     &lt;legend&gt;User Experience Books Everyone Should Read&lt;/legend&gt;
       &lt;div class=&quot;checkbox&quot;&gt;      
         &lt;label class=&quot;checkbox&quot;&gt;
-          &lt;input type=&quot;checkbox&quot; name=&quot;UX book&quot; value=&quot;Don't Make Me Think&quot;&gt;Don't Make Me Think, by Steve Krug&lt;br&gt;
+          &lt;input type=&quot;checkbox&quot; id=&quot;UX1&quot; name=&quot;UX book&quot; value=&quot;Don't Make Me Think&quot;&gt;Don't Make Me Think, by Steve Krug&lt;br&gt;
         &lt;/label&gt;
         &lt;label class=&quot;checkbox&quot;&gt;
-          &lt;input type=&quot;checkbox&quot; name=&quot;UX book&quot; value=&quot;Mental Models&quot;&gt;Mental Models, by Indi Young&lt;br&gt; 
+          &lt;input type=&quot;checkbox&quot; id=&quot;UX2&quot; name=&quot;UX book&quot; value=&quot;Mental Models&quot;&gt;Mental Models, by Indi Young&lt;br&gt; 
         &lt;/label&gt;
         &lt;label class=&quot;checkbox&quot;&gt;
-          &lt;input type=&quot;checkbox&quot; name=&quot;UX book&quot; value=&quot;About Face&quot;&gt;About Face, by Alan Cooper&lt;br&gt;
+          &lt;input type=&quot;checkbox&quot; id=&quot;UX3&quot; name=&quot;UX book&quot; value=&quot;About Face&quot;&gt;About Face, by Alan Cooper&lt;br&gt;
         &lt;/label&gt;
         &lt;label class=&quot;checkbox&quot;&gt;
-          &lt;input type=&quot;checkbox&quot; name=&quot;UX book&quot; value=&quot;The Design of Everyday Things&quot;&gt;The Design of Everyday Things, by Don Norman&lt;br&gt;
+          &lt;input type=&quot;checkbox&quot; id=&quot;UX4&quot; name=&quot;UX book&quot; value=&quot;The Design of Everyday Things&quot;&gt;The Design of Everyday Things, by Don Norman&lt;br&gt;
         &lt;/label&gt;
       &lt;/div&gt;
     &lt;/legend&gt;
@@ -1919,23 +1918,24 @@ For content areas requiring fluidity between small and large screens and fixed s
 
     <h4>Inline Check Boxes and Radio Buttons</h4>
     <p>Use <code>.checkbox-inline</code> or <code>.radio-inline</code> class to a series of checkboxes or radios for controls appear on the same line. Inline check boxes and radio buttons should only be used when the information being presented represents choices to be made accross a sequential "spectrum" of choices that follow a logical order (see example below).</p>
-    <h5><a href="https://intranet.teachscape.com/display/UXDPL/ts-checkbox" target="_blank">Open to the Design Pattern in a New Browser Tab <span class="icon-link-ext-alt"></span></a></h5><form class="bs-example">
+    <h5><a href="https://intranet.teachscape.com/display/UXDPL/ts-checkbox" target="_blank">Open to the Design Pattern in a New Browser Tab <span class="icon-link-ext-alt"></span></a></h5>
+    <form class="bs-example">
       <fieldset>
         <legend class="radio-array">Cats can and do show affection to their human families.</legend>
         <label class="radio-inline">
           <input type="radio" id="inlineCheckbox1" name="likert-scale" value="strongly agree"> Strongly Agree
         </label>
         <label class="radio-inline">
-          <input type="radio" id="inlineCheckbox1" name="likert-scale" value="agree"> Agree
+          <input type="radio" id="inlineCheckbox2" name="likert-scale" value="agree"> Agree
         </label>
         <label class="radio-inline">
-          <input type="radio" id="inlineCheckbox1" name="likert-scale" value="neutral"> Am Neutral
+          <input type="radio" id="inlineCheckbox3" name="likert-scale" value="neutral"> Am Neutral
         </label>
         <label class="radio-inline">
-          <input type="radio" id="inlineCheckbox1" name="likert-scale" value="disagree"> Disagree
+          <input type="radio" id="inlineCheckbox4" name="likert-scale" value="disagree"> Disagree
         </label>
         <label class="radio-inline">
-          <input type="radio" id="inlineCheckbox1" name="likert-scale" value="strongly disagree"> Strongly Disagree
+          <input type="radio" id="inlineCheckbox5" name="likert-scale" value="strongly disagree"> Strongly Disagree
       </label>
       </fieldset>
     </form>
@@ -1947,16 +1947,16 @@ For content areas requiring fluidity between small and large screens and fixed s
       &lt;input type=&quot;radio&quot; id=&quot;inlineCheckbox1&quot; name=&quot;likert-scale&quot; value=&quot;strongly agree&quot;&gt; Strongly Agree
     &lt;/label&gt;
     &lt;label class=&quot;radio-inline&quot;&gt;
-      &lt;input type=&quot;radio&quot; id=&quot;inlineCheckbox1&quot; name=&quot;likert-scale&quot; value=&quot;agree&quot;&gt; Agree
+      &lt;input type=&quot;radio&quot; id=&quot;inlineCheckbox2&quot; name=&quot;likert-scale&quot; value=&quot;agree&quot;&gt; Agree
     &lt;/label&gt;
     &lt;label class=&quot;radio-inline&quot;&gt;
-      &lt;input type=&quot;radio&quot; id=&quot;inlineCheckbox1&quot; name=&quot;likert-scale&quot; value=&quot;neutral&quot;&gt; Am Neutral
+      &lt;input type=&quot;radio&quot; id=&quot;inlineCheckbox3&quot; name=&quot;likert-scale&quot; value=&quot;neutral&quot;&gt; Am Neutral
     &lt;/label&gt;
     &lt;label class=&quot;radio-inline&quot;&gt;
-      &lt;input type=&quot;radio&quot; id=&quot;inlineCheckbox1&quot; name=&quot;likert-scale&quot; value=&quot;disagree&quot;&gt; Disagree
+      &lt;input type=&quot;radio&quot; id=&quot;inlineCheckbox4&quot; name=&quot;likert-scale&quot; value=&quot;disagree&quot;&gt; Disagree
     &lt;/label&gt;
     &lt;label class=&quot;radio-inline&quot;&gt;
-      &lt;input type=&quot;radio&quot; id=&quot;inlineCheckbox1&quot; name=&quot;likert-scale&quot; value=&quot;strongly disagree&quot;&gt; Strongly Disagree
+      &lt;input type=&quot;radio&quot; id=&quot;inlineCheckbox5&quot; name=&quot;likert-scale&quot; value=&quot;strongly disagree&quot;&gt; Strongly Disagree
     &lt;/label&gt;
   &lt;/fieldset&gt;
 &lt;/form&gt;</code></pre></div>
