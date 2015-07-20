@@ -7583,7 +7583,7 @@ div.table-panel {
   padding: 0px;
   background-image: url("texture.png") repeat;
 }
-table {
+table.reflect-dashboard {
   table-layout: fixed;
   width: 100%;
   height: 300px !important;
