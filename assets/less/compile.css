@@ -6203,24 +6203,6 @@ fieldset legend {
 label.checkbox {
   padding-left: 0px;
 }
-@media (min-width: 768px) {
-  .breadcrumb-reverse,
-  .breadcrumb-display {
-    padding: 8px 15px;
-  }
-  .navbar-tsdark {
-    padding: 0 15px;
-  }
-}
-@media (min-width: 992px) {
-  .breadcrumb-reverse,
-  .breadcrumb-display {
-    padding: 8px 15px;
-  }
-  .navbar-tsdark {
-    padding: 0 15px;
-  }
-}
 @media (min-width: 1200px) {
   .breadcrumb-reverse,
   .breadcrumb-display {
@@ -7278,6 +7260,7 @@ a.headline-right-sublink {
   border: none;
   border-radius: 0;
   margin-bottom: 0;
+  min-width: 768px;
 }
 .avatar-id {
   padding: 5px 15px 5px 0;
@@ -7336,6 +7319,48 @@ a.headline-right-sublink {
 .btn-reverse:focus {
   border: 0px;
 }
+@media (max-width: 768px) {
+  #subnav-interstitial .nav .nav-dark {
+    display: inline-block;
+  }
+  #subnav-interstitial .nav li {
+    display: inline-block;
+  }
+  #subnav-interstitial .nav li a {
+    padding: 15px;
+    margin: 0;
+  }
+  #subnav-interstitial .navbar-form {
+    display: inline-block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: 0px;
+  }
+  #subnav-interstitial .navbar-right {
+    display: inline-block;
+    margin: 0px;
+    float: right !important;
+  }
+  #subnav-interstitial .navbar-nav {
+    margin: 0 0 0 15px;
+    display: inline-block;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-tsdark {
+    padding: 0 15px;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-tsdark {
+    padding: 0 15px;
+  }
+}
+@media (min-width: 1200px) {
+  .navbar-tsdark {
+    padding: 0 30px;
+  }
+}
 /* This solution should replace the current breadcrumbs  */
 .breadcrumb-508 {
   padding: 8px 30px;
@@ -7364,6 +7389,7 @@ a.headline-right-sublink {
   background-color: #434d60;
   border-radius: 0px;
   font-size: 13px;
+  min-width: 768px;
 }
 .breadcrumb-reverse > .icon-caret-right {
   color: #d6d6d6;
@@ -7410,6 +7436,30 @@ a.headline-right-sublink {
 }
 .breadcrumb-display > .active {
   color: #fff;
+}
+@media (max-width: 768px) {
+  .breadcrumb-reverse,
+  .breadcrumb-display {
+    padding: 8px 15px;
+  }
+}
+@media (min-width: 768px) {
+  .breadcrumb-reverse,
+  .breadcrumb-display {
+    padding: 8px 15px;
+  }
+}
+@media (min-width: 992px) {
+  .breadcrumb-reverse,
+  .breadcrumb-display {
+    padding: 8px 15px;
+  }
+}
+@media (min-width: 1200px) {
+  .breadcrumb-reverse,
+  .breadcrumb-display {
+    padding: 8px 30px;
+  }
 }
 /* This solution should be used to override system controls     */
 select {
