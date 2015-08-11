@@ -5858,9 +5858,11 @@ a:hover {
   max-width: 1600px;
 }
 .well {
-  background-color: #ffffff;
-  border: 1px solid #dddddd;
+  background-color: #f3fbfc;
+  border: 0;
   border-radius: 0px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 .table-striped > tbody > tr:nth-child(even) > td,
 .table-striped > tbody > tr:nth-child(even) > th {
@@ -6816,8 +6818,14 @@ label.checkbox {
 .font-size-inherit {
   font-size: inherit;
 }
+label {
+  font-weight: normal;
+}
 .i20 {
   font-size: 20px;
+}
+.action-icons {
+  font-size: 16px;
 }
 a.headline-right-sublink {
   font-size: 13px;
@@ -8043,6 +8051,9 @@ div.barright a {
   background: #fff;
   padding: 15px;
   display: inline-block;
+  width: 30%;
+  text-align: left;
+  margin: 0 8px;
 }
 .panel-group-center {
   margin: 0 auto;
