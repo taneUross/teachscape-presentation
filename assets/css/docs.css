@@ -108,6 +108,28 @@ body {
   background-color: #463265;
   border-color: #463265;
 }
+.subnav {
+  display: inline-block;
+  float: right;
+  border: 1px solid red;
+}
+
+li.sub-nav > a {
+  display: inline-block;
+  float: left;
+  background-color: #463265;
+  color: #cdbfe3;
+  padding: 10px;
+}
+li.sub-nav > a:hover {
+  color: #fff;
+}
+.bs-docs-nav .navbar-nav > .active > a,
+.bs-docs-nav .navbar-nav > .active > a:hover {
+  color: #fff;
+  background-color: #463265;
+}
+
 
 
 /*
