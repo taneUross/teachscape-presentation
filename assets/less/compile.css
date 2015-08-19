@@ -6274,6 +6274,7 @@ div.col-md-3 {
   text-decoration: none;
   background-color: #888888 !important;
   border-right: 1px solid #dbd8e0;
+  text-shadow: 0 0 0 #fff !important;
 }
 .bs-sidebar .nav > .active > a,
 .bs-sidebar .nav > .active:hover > a,
@@ -6282,6 +6283,7 @@ div.col-md-3 {
   color: #222222 !important;
   background-color: #ccc !important;
   border-right: 1px solid #ccc !important;
+  text-shadow: 0 0 0 #fff !important;
 }
 /* Nav: second level (shown on .active) */
 .bs-sidebar .nav .nav {
@@ -8207,14 +8209,6 @@ div.barright a {
   display: block;
   text-align: left;
 }
-.panel-group-center {
-  margin: 0 auto;
-}
-.tutorial-focus {
-  background-image: url("../../_css/images/tutorials-focus.png");
-  background-size: 306px 170px;
-  background-color: #333333;
-}
 .tutorial-wrap img {
   background-color: #333333;
   border: 1px solid #000;
@@ -8226,4 +8220,5 @@ a .reflect:hover,
 a .focus:hover,
 a .learn:hover {
   color: #0e419b;
+  text-decoration: none;
 }
