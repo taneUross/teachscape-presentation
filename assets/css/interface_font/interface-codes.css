@@ -85,7 +85,7 @@
 .icon-file-video:before { content: '\76'; } /* 'v' */
 .icon-doc:before { content: '\77'; } /* 'w' */
 .icon-doc-text:before { content: '\78'; } /* 'x' */
-.icon-submited:before { content: '\7b'; } /* '{' */
+.icon-submitted:before { content: '\7b'; } /* '{' */
 .icon-not-started:before { content: '\7c'; } /* '|' */
 .icon-file-code:before { content: '\7d'; } /* '}' */
 .icon-complete:before { content: '\7e'; } /* '~' */
