@@ -1,7 +1,7 @@
 
 .icon-attach { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x21;&nbsp;'); }
 .icon-trash { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x22;&nbsp;'); }
-.icon-list-alt-1 { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x23;&nbsp;'); }
+.icon-list-alt { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x23;&nbsp;'); }
 .icon-ok { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x24;&nbsp;'); }
 .icon-pencil { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x25;&nbsp;'); }
 .icon-remove { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x26;&nbsp;'); }
@@ -85,10 +85,8 @@
 .icon-file-video { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x76;&nbsp;'); }
 .icon-doc { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x77;&nbsp;'); }
 .icon-doc-text { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x78;&nbsp;'); }
-.icon-complete-confirm { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x79;&nbsp;'); }
-.icon-complete-wait { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x7a;&nbsp;'); }
-.icon-submitted { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x7b;&nbsp;'); }
+.icon-submited { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x7b;&nbsp;'); }
 .icon-not-started { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x7c;&nbsp;'); }
 .icon-file-code { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x7d;&nbsp;'); }
 .icon-complete { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x7e;&nbsp;'); }
-.icon-list-alt { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe800;&nbsp;'); }
+.icon-list-alt-1 { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe800;&nbsp;'); }
