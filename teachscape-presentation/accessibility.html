@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>
+  
+    Accessibility &middot; Teachscape Bootstrap Theme
+  
+</title>
+
+<!-- make the code display all pretty -->
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=html"></script>
+
+<!-- Bootstrap core CSS -->
+<link href="assets/less/compile.css" rel="stylesheet">
+
+
+<!-- Documentation extras -->
+<link href="assets/css/docs.css" rel="stylesheet">
+<link href="assets/css/pygments-manni.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="../assets/js/html5shiv.js"></script>
+  <script src="../assets/js/respond.min.js"></script>
+<![endif]-->
+
+<!-- Favicons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="assets/ico/favicon.png">
+
+    <!-- Place anything custom after this. -->
+  </head>
+  <body>
+    <a class="sr-only" href="#content">Skip navigation</a>
+
+    <!-- Docs master nav -->
+    <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="index.html" class="navbar-brand"><span aria-hidden="true" data-icon="&#xe001;"><span class="visuallyhidden">Teachscape Bootstrap Theme</span></span></a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="getting-started.html">Getting started</a>
+        </li>
+        <li>
+          <a href="css.html">CSS</a>
+        </li>
+        <li>
+          <a href="components.html">Components</a>
+        </li>
+        <li>
+          <a href="javascript.html">JavaScript</a>
+        </li>
+        <li>
+          <a href="icomoon.html">IcoMoon</a>
+        </li>
+        <li>
+          <a href="product-specific.html">Product Specific</a>
+        </li>
+        <li class="active">
+          <a href="accessibility.html">Accessibility</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+    <!-- Docs page layout -->
+    <div class="bs-header" id="content">
+      <div class="container">
+        <h1>Accessibility</h1>
+        <p>"The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect."</p>
+		 <p>Tim Berners-Lee, W3C Director and inventor of the World Wide Web</p>
+      </div>
+    </div>
+
+	<!-- Callout -->
+    <div class="bs-old-docs">
+  		<div class="container"> <strong>For more information on accessibility visit, <a href="http://www.w3.org/WAI/" target="_blank">http://www.w3.org/WAI/</a>.
+      </strong> </div>
+    </div>
+
+    <div class="container bs-docs-container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="bs-sidebar hidden-print" role="complementary">
+            <ul class="nav bs-sidenav">
+                <li>
+                  <a href="#accessibility">Accessibility Guidelines</a>
+                </li>
+                <li>
+                  <a href="#IcoMoon-classes">Form Fields</a>
+                  <ul class="nav">
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Examples</a></li>
+                    <li><a href="#">Best Practise</a></li>
+                    <li><a href="#">Bootstrap Implementation</a></li>
+                  </ul>
+                </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-9" role="main">
+           
+            <!-- Accessibility
+            ================================================== -->
+            <div class="bs-docs-section">
+                <div class="page-header">
+                    <h1>Accessibility</h1>
+                </div>
+                <p class="lead">Bootstrap follows common web standards, and with minimal extra effort, can be used to create sites that are accessibile to those using <abbr title="Assistive Technology" class="initialism">AT</abbr>.</p>
+                
+                <h3>Skip navigation</h3>
+                <p>If your navigation contains many links and comes before the main content in the DOM, add a <code>Skip to content</code> link immediately after your opening <code>&lt;body&gt;</code> tag. <a href="http://a11yproject.com/posts/skip-nav-links/">(read why)</a></p>
+                <div class="highlight"><pre><code class="html"><span class="nt">&lt;body&gt;</span>
+                <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#content&quot;</span> <span class="na">class=</span><span class="s">&quot;sr-only&quot;</span><span class="nt">&gt;</span>Skip to content<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;container&quot;</span> <span class="na">id=</span><span class="s">&quot;content&quot;</span><span class="nt">&gt;</span>
+                The main page content.
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/body&gt;</span>
+                </code></pre></div>
+                
+                <h3>Nested headers</h3>
+                <p>Another "gotcha" has to do with how you nest your <code>&lt;header&gt;</code> elements. <a href="http://squizlabs.github.io/HTML_CodeSniffer/Standards/Section508/">Section 508</a> states that your largest header must be an <code>h1</code>, and the next header must be an <code>&lt;h2&gt;</code>, etc. This is hard to achieve in practice, but if the largest header on your site is smaller than Bootstrap's default 38px, you should consider modifying your stylesheets before using a smaller header element.</p>
+                
+                <h3>Additional resources</h3>
+                    <ul>
+                        <li><a href="https://github.com/squizlabs/HTML_CodeSniffer">"HTML Codesniffer" bookmarklet for identifying accessibility issues</a></li>
+                        <li><a href="http://a11yproject.com/">The A11Y Project</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Accessibility">MDN accessibility documentation</a></li>
+                    </ul>
+            </div>
+
+
+   		 </div>
+      </div>
+
+    </div>
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="bs-footer" role="contentinfo">
+      <div class="container">
+        <ul class="footer-links">
+			<li class="current-version">Current Version v3.0.0</li>
+            <li class="muted">&middot;</li>
+            <li><a href="http://getbootstrap.com/" target="_blank">Bootstrap docs</a></li>
+            <li></li>
+            <li class="current-version"></li>
+            <li class="current-version"></li></ul>
+      </div>
+    </footer>
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="assets/js/jquery-1.10.2.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/holder.js"></script>
+<script src="assets/js/application.js"></script>
+
+  </body>
+</html>

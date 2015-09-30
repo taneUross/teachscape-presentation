@@ -1,0 +1,72 @@
+//BS override table striping on even
+.table-striped > tbody > tr:nth-child(even) > td, .table-striped > tbody > tr:nth-child(even) > th {
+	background-color: #eeeeee;
+}
+.table-striped > tbody > tr:nth-child(odd) > td, .table-striped > tbody > tr:nth-child(odd) > th {
+	background-color: #ffffff;
+}
+table.table {
+	thead {
+		font-weight: normal;
+		color:@gray-darker;
+		tr {
+			th {
+				color: @ts-plum;
+				text-transform: capitalize;
+				font-weight: normal;
+				background-color: @ts-gray;
+			}
+		}
+	}
+	tbody {
+		tr {
+			td {
+				
+			}
+		}
+	}
+}
+
+
+// SUMMARY TABLE //
+table.table-summary {
+	border: 1px solid #ccc;
+	width: 100%;
+	thead tr th {
+		background:none;
+		text-transform: uppercase;
+		color: @gray-dark;
+	}
+	tr, th {
+		td {
+			padding:8px;
+			border: 1px solid #ccc;
+		}
+		td.cell-clickable {
+			padding:0;
+			a.cell-link {
+				display: block;
+				width:500px;
+				padding: 8px;
+			} 
+			a.cell-link:hover {
+				background:darken(@gray-lighter, 3%);
+			}
+		}
+	}
+}
+
+tr.table-row-light {
+	background: @gray-lighter;
+}
+
+
+.row-component {
+	padding:5px 15px;
+	color:#000;
+	background:#ccc;
+	width:100%;
+}
+
+
+

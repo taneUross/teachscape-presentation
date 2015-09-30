@@ -1,0 +1,125 @@
+// Brand colors
+// ---------------------------------
+@burgundy:              #732843;
+@brand-primary:         @burgundy;
+//plumtint is now burgundy
+@deep:			        #3B2030;
+@tsRed:                 #C40E43;
+
+// Product colors
+// -------------------------
+@focus:						#175473;
+@reflect: 					#006b33;
+@learn: 					#6c2a92;
+@advance: 					#bd4800;
+
+@focus_background:		    lighten(@focus, 75%);
+@reflect_background: 	    #f3f9e6;
+@learn_background: 			lighten(@learn, 75%);
+@advance_background: 	    lighten(@advance, 75%);
+
+//== Form states and alerts
+//
+//## Define colors for form feedback states and, by default, alerts.
+
+@state-success-text:             @gray-dark;
+@state-success-bg:               #B5DD88;
+@state-success-border:           darken(spin(@state-success-bg, -10), 5%);
+
+@state-info-text:                @gray-dark;
+@state-info-bg:                  #C3D9E2;
+@state-info-border:              darken(spin(@state-info-bg, -10), 7%);
+
+@state-warning-text:             @gray-dark;
+@state-warning-bg:               #FFFFA0;
+@state-warning-border:           darken(spin(@state-warning-bg, -10), 5%);
+
+@state-danger-text:              @gray-dark;
+@state-danger-bg:                #FFDDE3;
+@state-danger-border:            darken(spin(@state-danger-bg, -10), 5%);
+
+@state-success:                   #2F8D29;
+@state-info:                     #155570;
+@state-warning:                  #8a6d3b;
+@state-danger:                   #A42732;
+
+// Links
+// -------------------------
+
+@link-color:                @burgundy;
+@linkColorHover:            darken(@link-color, 10%);
+
+// Typography
+//
+@font-family-sans-serif: 	Arial, sans-serif;
+@font-size-base: 			14px;
+@font-size-xlarge:  		ceil((@font-size-base * 1.7)); // ~32px
+@headings-font-weight:    	normal;
+
+
+// Components
+// -------------------------
+// Based on 14px font-size and 1.428 line-height (~20px to start)
+
+@border-radius-base:             0.5em;
+@border-radius-large:            0.5em;
+@border-radius-small:            0.5em;
+
+// Buttons
+// -------------------------
+@btn-default-color:              @link-color;
+@btn-default-border:             fade(@btn-primary-bg, 80%);
+@btn-primary-bg:                 @link-color;
+@disabled-color:		         @gray-light;
+//disabled buttons should be transparent with background with medium grey border and text
+
+// Forms
+// -------------------------
+@input-border-radius:            0;
+@input-border-focus:             lighten(#155570, 45%);
+
+// Dropdowns
+// -------------------------
+@dropdown-link-hover-color:      @gray-dark;
+@dropdown-link-hover-bg:         lighten(@link-hover-color, 69%);
+@dropdown-link-active-bg:        lighten(@link-hover-color, 69%);
+
+//Small grid
+@media (min-width: @screen-sm-min) {
+  .container {
+    max-width: @container-sm;
+  }
+}
+
+// Medium grid
+@media (min-width: @screen-md-min) {
+  .container {
+    max-width: @container-md;
+  }
+}
+
+// Large grid
+@media (min-width: @screen-lg-min) {
+  .container {
+    max-width: @container-lg;
+  }
+}
+
+// Modals
+// -------------------------
+@modal-backdrop-bg:           #155570;
+
+//==Footer
+@footerHeight:          40px;
+
+//Header
+@tsMiddot:              @gray-light;
+@tsUsername:            @deep;
+
+
+
+
+
+
+
+

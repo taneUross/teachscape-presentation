@@ -1,0 +1,144 @@
+/*
+* TR working css until node.js is working 
+ */
+ .navbar-tsdark {
+	background: @ts-bluedark; 
+	-webkit-box-shadow: 0px -3px 5px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px -3px 5px 0px rgba(0,0,0,0.3);
+	box-shadow: 0px -3px 5px 0px rgba(0,0,0,0.3);
+	border:none;
+	border-radius: 0;
+	margin-bottom: 0;
+	min-width: 768px;
+}
+
+.avatar-id {
+	padding: 5px 15px 5px 0;
+	min-width: 275px;
+	font-size: 14px;
+	color:#fff;
+	div {
+		a {
+			color: @link-color-light;
+		}
+		a:hover {
+			color: #fff;
+		}
+	}
+}
+
+#subnav-interstitial {
+	border:0;
+	padding:0;
+	margin: 0;
+}
+
+#subnav-interstitial {
+ 	.nav {
+ 		.nav-dark {
+ 				border-right: 1px solid @link-color-light;
+				border-left: 1px solid @link-color-light;
+ 			a {
+ 				color: @link-color-light;
+ 			}
+ 			a:hover {
+ 				color: #fff;
+				opacity: 1;
+				background:darken(@ts-bluedark, 10%);
+ 			}
+ 			.a-i20{
+	 			padding: 12px 15px;
+	 		}
+ 		}
+ 		.nav-dark.active {
+			a {
+				color: darken(@ts-bluedark, 10%);
+				background:#fff;
+				opacity:1;
+			}
+		}
+	}
+	.navbar-right {
+		.nav-icon {
+			padding:0;
+			a {
+ 				color: @link-color-light;
+ 				padding:14px;
+ 			}
+ 			a:hover {
+ 				color: #fff;
+			}
+		}
+		.call-to-action {
+			padding:8px;
+
+		}
+	}
+}
+
+//DUPed in Buttons
+//when buttons are on dark
+.btn-reverse {
+  border:0px;
+}
+
+.btn-reverse:hover,  .btn-reverse:focus{
+  border:0px;
+}
+
+//media queries
+@media (max-width: @screen-sm-min) {
+	#subnav-interstitial {
+ 		.nav {
+ 			.nav-dark {
+	  			display: inline-block;
+	  		}
+	  		li {
+	  			display: inline-block;
+	  			a {
+	  				padding:15px;
+	  				margin: 0;
+	  			}
+	  		}
+	  	}
+	  	.navbar-form {
+	  		display: inline-block;
+	  		margin-top: 0px;
+	  		margin-bottom: 0px;
+	  		border: 0px;
+	  	}
+	  	.navbar-right {
+	  		display: inline-block;
+	  		margin: 0px;
+	  		float: right !important;
+
+	  	}
+	  	.navbar-nav {
+	  		margin: 0 0 0 15px;
+
+		display: inline-block;
+	  	}
+	  	.navbar-tsdark {
+	  	}
+	}
+}
+  @media (min-width: @screen-sm-min) {
+    
+     .navbar-tsdark {
+      padding: 0 15px;
+     }   
+  }
+
+  @media (min-width: @screen-md-min) {
+     .navbar-tsdark {
+      padding: 0 15px;
+     }   
+  }
+
+  @media (min-width: @screen-lg-min) {
+    .navbar-tsdark {
+      padding: 0 30px;
+    }
+  }
+
+

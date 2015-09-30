@@ -1,0 +1,54 @@
+/* LESS Document */
+
+// CF-0.0 background & grid & containers
+// CF-1.0 typography
+// CF-2.0 navigation & buttons
+// CF-3.0 panels & sections
+// CF-4.0 forms & inputs
+// CF-5.0 tables
+// CF-6.0 components (labels, badges) & lists & sidebar
+// CF-7.0 feature specific (ie evidence collection)
+// CF-8.0
+// CF-9.0 responsiveness media queries (cf specific)  
+// CF-10.0 utilities 
+
+/* CF-0.0 background & grid & containers ================================== */
+
+//CF-0.2 video player 
+.row-player-dark {
+  background:@gray-darker;
+  margin:0px;
+  padding:20px;
+  width:100%;
+  text-align:center;
+  z-index:0;
+}
+
+.admin-content, .evaluator-content {
+  padding: 0 50px;
+}
+
+.background-blue {
+  background: @focus_background_light;
+}
+
+// CF-0.3 windows
+
+.container-350scroll {
+  height: 350px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border-bottom: 1px solid @gray-lighter;
+}
+
+ .container-view-evidence {
+  height: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding:10px 15px;
+  margin-top: 20px;
+     -moz-box-shadow:    inset 0 0 5px @gray-dark;
+   -webkit-box-shadow: inset 0 0 5px @gray-dark;
+   box-shadow:         inset 0 0 5px @gray-dark;
+}
+

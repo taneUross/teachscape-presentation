@@ -1,0 +1,403 @@
+.NormalText {
+	display: block;
+	clear: left;
+	}
+
+div.table-panel {
+	display: block;
+	width: 904px;
+	height: 400px !important;
+	overflow-y:scroll;
+	position: relative;
+	border-bottom: 1px solid @gray-light;
+    margin-right: 0px;
+	padding: 0px;
+    background-image: url("texture.png") repeat;
+	}
+table.reflect-dashboard {
+  table-layout: fixed; 
+  width: 100%;
+  height: 300px !important;
+  *margin-left: -100px;/*ie7*/
+  border-collapse: collapse;
+}
+
+/* The following control the left fixed column */
+
+th.y-axis1 {
+  vertical-align: top;
+  background-color: @ts-white-opaque;
+  border: 1px solid @gray-light;
+  padding-top:3px;
+  padding-bottom:2px;
+  width: 60px;
+  text-align: center;
+}
+th.y-axis1 a {
+	text-decoration: none; 
+	color: @gray-dark;
+	}
+.avatar-truncate {
+  width: 50px;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-left: 5px;
+  text-overflow: ellipsis;
+}
+
+th.x-axis-header {
+  position:absolute;
+  *position: relative; /*ie7*/     
+  left:0; 
+  background-color: @bar-not-started;
+  border: 1px solid @gray-light;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  width:422px;
+}
+
+th.x-axis-level1 {
+  position:absolute;
+  *position: relative; /*ie7*/
+  left:0; 
+  background-color: @bar-container;
+  border: 1px solid @gray-light;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  width:422px;
+}
+th.x-axis-level2 {
+  position:absolute;
+  *position: relative; /*ie7*/
+  left:0; 
+  background-color: @bar-container;
+  border: 1px solid @gray-light;
+  padding-left: 25px;
+  padding-top: 9px;
+  padding-bottom: 11px;
+  width:422px;
+}
+th.x-axis-level3 {
+  position:absolute;
+  *position: relative; /*ie7*/
+  left:0; 
+  background-color: @bar-not-started;
+  border: 1px solid @gray-light;
+  padding-left: 40px;
+  padding-top: 9px;
+  padding-bottom: 11px;
+  width:422px;
+}
+/* level 3 color override for a group */
+th.x-axis-level3.group {
+  background-color: @bar-container;
+}
+/* Activity icons */
+
+.x-axis-level3 .icon {
+	float: left;
+	color: @gray-light;
+	margin-right: 4px;
+}
+
+.x-axis-level3 .icon {
+	float: left;
+	color: @gray-light;
+	margin-right: 4px;
+
+}
+
+/* Controls the entire table */
+.outer {
+	position:relative;
+	}
+
+/* Controls the positioning and width of right side table "window" */
+.inner {
+  overflow-x:scroll;
+  overflow-y:visible;
+  width:406px; 
+  margin-left:452px;
+  background-image: url("/images/texture.png");
+}
+
+/* Left Column Header Text */
+.activity-task-header {
+	float: left;
+	font-family: Arial;
+	font-weight: lighter;
+	font-size: 13px;
+	color: @ts-burgundy;
+	margin-left: 0px;
+	margin-top: 14px;
+	margin-bottom: 10px;
+	}
+
+.activity-task-header-right {
+	float: right;
+	font-family: Arial;
+	font-weight: lighter;
+	font-size: 13px;
+	color: @ts-burgundy;
+	margin-right: 10px;
+	margin-top: 14px;
+	margin-bottom: 10px;
+	}
+.owner {
+	float: right;
+	font-family: Arial;
+	font-size: 14px;
+	margin-right: 20px;
+	}
+.more-actions {
+	display: inline-block;
+	float: left;
+	font-family: Arial;
+	vertical-align: top;
+	padding-top: 0px;
+	font-size: 14px;
+	margin-left: 0px;
+	margin-right: 6px;
+	}
+.more-actions a:link {
+	text-decoration:none;
+	color: @ts-blue;
+	}
+.more-actions a:visited {
+	text-decoration:none;
+	color: @ts-blue !important;
+	}
+.owner-duplicate {
+	float: left;
+	font-family: Arial;
+	font-size: 14px;
+	}
+.activity-task {
+	float: left;
+	font-family: Arial;
+	font-size: 14px;
+	margin-left: 0px;
+	margin-right: 8px;
+	}
+.activity-task a:link {
+	color: @gray-dark;
+	}
+.activity-task a:visited {
+	color: @gray-dark;
+	}
+.count {
+	float: right;
+	font-family: Interface;
+	font-size: 14px;
+	margin-right: 14px;
+	}
+td.matrix-landing {
+  border: 1px solid @gray-light;
+  background-color: @bar-container;
+}
+td.matrix-landing a {
+	width:60px;
+	height: 36px;
+	display: block;
+	text-decoration:none;
+  }
+td.matrix-notstarted {
+  vertical-align: middle;
+  text-align: center;
+  font-size: 17px;
+  border: 1px solid @gray-light;
+  font-family: Interface;
+  background-color: @bar-not-started;
+}
+td.matrix-notstarted a {
+	width:60px;
+	display:block;
+	padding: 6px 0px 6px 0px;
+	color: @gray-dark;
+	text-decoration:none;
+  }
+td.matrix-inprogress {
+  vertical-align: middle;
+  text-align: center;
+  font-size: 17px;
+  border: 1px solid @gray-light;
+  font-family: Interface;
+  background-color: @bar-progress;
+}
+td.matrix-inprogress a {
+	width:60px;
+	display:block;
+	padding: 6px 0px 6px 0px;
+	color: @gray-dark;
+	text-decoration:none;
+  }
+td.matrix-submitted {
+  vertical-align: middle;
+  text-align: center;
+  font-size: 17px;
+  border: 1px solid @gray-light;
+  font-family: Interface;
+  background-color: @bar-submitted;
+}
+td.matrix-submitted a {
+	width:60px;
+	display:block;
+	padding: 6px 0px 6px 0px;
+	color: @gray-dark;
+	text-decoration:none;
+  }
+td.matrix-completed {
+  vertical-align: middle;
+  text-align: center;
+  font-size: 17px;
+  border: 1px solid @gray-light;
+  font-family: Interface;
+  background-color: @bar-complete;
+}
+td.matrix-completed a {
+	width:60px;
+	display:block;
+	padding: 6px 0px 6px 0px;
+	color: @gray-dark;
+	text-decoration:none;
+  }
+td.matrix-event-completed {
+  text-align: center;
+  font-size: 12px;
+  border: 1px solid @gray-light;
+  font-family: arial;
+  font-weight: normal;
+  background-color: @bar-complete;
+}
+td.matrix-event-completed a {
+	width:60px;
+	height: 40px;
+	display:block;
+	padding: 12px 0px 10px 0px;
+	color: @gray-dark;
+	text-decoration:none;
+}
+td.matrix-event-scheduled {
+  vertical-align: middle;
+  text-align: center;
+  font-size: 12px;
+  border: 1px solid @gray-light;
+  font-family: arial;
+  font-weight: normal;
+  background-color: @bar-progress;
+}
+td.matrix-event-scheduled a {
+	width:60px;
+	height: 40px;
+	display:block;
+	padding: 12px 0px 10px 0px;
+	color: @gray-dark;
+	text-decoration:none;
+  }
+ td.matrix-event-notscheduled {
+  vertical-align: middle;
+  text-align: center;
+  font-size: 12px;
+  border: 1px solid @gray-light;
+  font-family: arial;
+  font-weight: normal;
+  background-color: @bar-not-started;
+}
+td.matrix-event-notscheduled a {
+	width:60px;
+	height: 40px;
+	display:block;
+	padding: 12px 0px 10px 0px;
+	color: @gray-dark;
+	text-decoration:none;
+  }
+ td.matrix-finalized {
+  vertical-align: middle;
+  text-align: center;
+  font-size: 17px;
+  border: 1px solid @gray-light;
+  font-family: Interface;
+  background-color: @bar-lock;
+}
+td.matrix-finalized a {
+	width:60px;
+	display:block;
+	padding: 6px 0px 6px 0px;
+	color: @gray-dark;
+	text-decoration:none;
+  }
+ td.transparent {
+  vertical-align: middle;
+  text-align: center;
+  font-size: 17px;
+  border: 1px solid @gray-light;
+  font-family: Interface;
+  background-color: none;
+}
+div.avatarPractitioner {
+	display:block;
+	width:40px;
+	margin-left: auto !important;
+  	margin-right: auto !important;
+  	padding-top: 9px;
+	padding-bottom: 8px;
+	border-radius: 10px;
+	background-color: #ffd180;
+	}
+.avatartext {
+	display: block;
+	font-family: Arial;
+	font-weight: lighter;
+	font-size: 20px;
+	text-align: center;
+	margin-left: auto !important;
+  	margin-right: auto !important;
+  	}
+td a {
+	text-decoration: none;
+	}
+div.barleft {
+	display: block;
+	position: absolute;
+    float: left;
+    top: 0px;
+	left: 422px;
+    z-index: 100;
+	Width: 30px;
+	height: 100%;
+	padding-right: 2px;
+	}
+div.barleft a {
+	text-decoration:none;
+	}
+div.barright {
+	display: block;
+	position: absolute;
+    float: right;
+    top: 0px;
+	right: 0px;
+    z-index: 100;
+	width: 30px;
+	height: 100%;
+	padding-left: 0px;
+}
+div.barright a {
+	text-decoration:none;
+	}
+.bar {
+	height: 100%;
+	color: Tst-white-opaque;
+    font-family: Interface;
+	font-style:normal;
+	font-size: 22px;
+	vertical-align: middle;
+	margin-top: 180px;
+  }
+#grad {
+  background: -webkit-linear-gradient(left, #bcd1fa , #9DB5E4); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #bcd1fa, #9DB5E4); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #bcd1fa, #9DB5E4); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #bcd1fa , #9DB5E4); /* Standard syntax */
+}
