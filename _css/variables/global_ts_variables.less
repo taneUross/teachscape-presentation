@@ -1,0 +1,232 @@
+//Gray: Found in Bootstrap Lib (please do not uncomment)
+
+@gray-darker:            lighten(#000, 13.5%); // #222
+@gray-dark:              lighten(#000, 20%);   // #333
+@gray:                   lighten(#000, 33.5%); // #555
+@gray-light:             #888888;
+@gray-lighter:           lighten(#000, 93.5%); // #eee
+
+
+// Brand colors
+
+@ts-deep:			    #3B2030;
+@ts-burgundy:           #732843;
+@ts-plum:               #8D2964;
+@ts-magenta:            #DB0066;
+@ts-red:                #C40E43;
+
+@ts-white-opaque:       #ffffff;
+@ts-highlight-blue:     #F3FBFC;
+@ts-gray:               #dddddd;
+@ts-bluegray:           #99AAD6;
+@ts-blue:               #0E419B;
+@ts-teal:               #45AFCC;
+@ts-green:              #45B46D;
+@ts-bluedark:           #424D5F; 
+
+@brand-primary:         @ts-blue;
+@ts-admin:              @ts-gray;
+
+
+  // Links<a href="#">
+
+@link-color:                @ts-blue;
+@linkColorHover:            darken(@ts-blue, 15%);
+@link-hover-color:          @linkColorHover;
+@link-color-light:          #DEEBF8;
+@link-color-lightHover:     white;
+
+// Product colors
+
+@focus:						#10738E;
+@reflect: 				#357758;
+@learn: 					#A83BD4;
+
+@focus-light:		  #45AFCC;
+@reflect-light: 	#3DAD79;
+@learn-light: 		#C17DDC;
+
+
+//ts status colors
+
+@exact:				        #45B46D;
+@adjacent:			      #F9CF5C;
+@discrepant:		    	#DB0066;
+
+@exact-light:				  lighten(@exact, 30%);
+@adjacent-light:			lighten(@adjacent, 20%);
+@discrepant-light:		lighten(@discrepant, 50%);
+
+@exact-dark:				  darken(@exact, 30%);
+@adjacent-dark:			  darken(@adjacent, 40%);
+@discrepant-dark:			darken(@discrepant, 30%);
+
+//avatar colors
+@avatar-practitioner:  #ffd180;
+@avatar-logged:        #e57373;
+@avatar-observer:      #d5c5fc;
+
+
+
+//focus status colors
+
+@cat1:                 #02A0D6;
+@cat2:                 #90E3FF;
+@cat3:                 #D3E8EE;
+
+//reflect task status colors
+@i-not-started:   #999999;
+@i-progress:      #979FC9;
+@i-submitted:     #CDDC1C;
+@i-complete:      #00CC00;
+@i-lock:          #33CCFF;
+
+@bar-not-started:   #D7D7D7;
+@bar-progress:      #ADB4C9;
+@bar-submitted:     #CCFF90;
+@bar-complete:      #47CD8E;
+@bar-lock:          #33CCFF;
+@bar-container:     #EFEFEF;
+
+
+
+// Typography
+
+//.font-regular {
+//  @font-family-sans-serif: 	'lato-regular', Arial, sans-serif;
+//  @headings-font-weight:    400;
+//}
+
+
+// removed 2015-04-01
+// switching to Arial for July release. May switch back after release.
+// @font-family-sans-serif: 	'lato-regular', Arial, sans-serif;
+@font-family-sans-serif:  Arial, sans-serif;
+// @headings-font-weight:      400;
+@font-size-base: 			    14px;
+@font-size-h1:            floor((@font-size-base * 2.7));  // 37px
+@font-size-h2:            ceil((@font-size-base * 2.2));   // 31px
+@font-size-h3:            floor((@font-size-base * 1.9));  // 26px
+@font-size-h4:            ceil((@font-size-base * 1.55));   // 22px
+@font-size-h5:            ceil((@font-size-base * 1.25));   // 20px
+@font-size-h6:            @font-size-base;                 // 14px
+a {
+  color:  @ts-blue;
+}
+
+a:hover {
+  color:  @linkColorHover;
+  text-decoration: none;
+}
+
+
+@font-face{
+  font-family: arial;
+  // removed 2015-04-01
+  // switching to Arial for July release. May switch back after release.
+  // font-family: 'lato-regular';
+  // src:
+  //     url('../font/lato-light-webfont.eot') format('embedded-opentype'),
+  //     url('../font/lato-light-webfont.woff') format('woff'),
+  //     url('../font/lato-light-webfont.ttf') format('truetype'),
+  //     url('../font/lato-light-webfont.svg') format('svg');
+}
+
+@font-face{
+  font-family: Arial;
+  // removed 2015-04-01
+  // switching to Arial for July release. May switch back after release.
+  // font-family: 'lato-regular';
+
+  // src:
+  //     url('../font/lato-regular-webfont.eot') format('embedded-opentype'),
+  //     url('../font/lato-regular-webfont.woff') format('woff'),
+  //     url('../font/lato-regular-webfont.ttf') format('truetype'),
+  //     url('../font/lato-regular-webfont.svg') format('svg');
+}
+
+//font should be 300 for headlines and 400 regular
+
+
+// Components
+@border-radius-large:            4px;
+@border-radius-small:            4px;
+
+// remember to get rid of box shadow on input
+
+
+// Buttons
+// -------------------------
+@btn-default-color:              @link-color;
+@btn-default-border:             @ts-blue;
+@btn-primary-bg:                 @ts-blue;
+
+
+// Dropdowns
+// -------------------------
+@dropdown-link-hover-color:      @gray-dark;
+@dropdown-link-hover-bg:         lighten(@link-hover-color, 69%);
+@dropdown-link-active-bg:        lighten(@link-hover-color, 69%);
+
+
+// Common Form Elements
+// -------------------------
+.asterisk {
+  color: @ts-red;
+  display: inline-block;
+}
+
+//== Media queries breakpoints=====================
+
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+// Note: Deprecated @screen-xs and @screen-phone as of v3.0.1
+@screen-xs:                  480px;
+@screen-xs-min:              @screen-xs;
+@screen-phone:               @screen-xs-min;
+
+// Small screen / tablet
+// Note: Deprecated @screen-sm and @screen-tablet as of v3.0.1
+@screen-sm:                  768px;
+@screen-sm-min:              @screen-sm;
+@screen-tablet:              @screen-sm-min;
+
+// Medium screen / desktop
+// Note: Deprecated @screen-md and @screen-desktop as of v3.0.1
+@screen-md:                  992px;
+@screen-md-min:              @screen-md;
+@screen-desktop:             @screen-md-min;
+
+// Large screen / wide desktop
+// Note: Deprecated @screen-lg and @screen-lg-desktop as of v3.0.1
+@screen-lg:                  1200px;
+@screen-lg-min:              @screen-lg;
+@screen-lg-desktop:          @screen-lg-min;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:              (@screen-sm-min - 1);
+@screen-sm-max:              (@screen-md-min - 1);
+@screen-md-max:              (@screen-lg-min - 1);
+
+
+//== Container sizes===========================
+
+//## Define the maximum width of `.container` for different screen sizes.
+
+// Small screen / tablet
+@container-tablet:             ((768px + @grid-gutter-width));
+//** For `@screen-sm-min` and up.
+@container-sm:                 @container-tablet;
+
+// Medium screen / desktop
+@container-desktop:            ((992px + @grid-gutter-width));
+//** For `@screen-md-min` and up.
+@container-md:                 @container-desktop;
+
+// Large screen / wide desktop
+@container-large-desktop:      ((1200px + @grid-gutter-width));
+//** For `@screen-lg-min` and up.
+@container-lg:                 @container-large-desktop;
+
+

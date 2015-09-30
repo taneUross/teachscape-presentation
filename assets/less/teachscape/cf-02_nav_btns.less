@@ -1,0 +1,747 @@
+/* LESS Document */
+
+
+// CF-0.0 background & grid & containers
+// CF-1.0 typography
+// CF-2.0 navigation & buttons
+// CF-3.0 panels & sections
+// CF-4.0 forms & inputs
+// CF-5.0 tables
+// CF-6.0 components (labels, badges) & lists & sidebar
+// CF-7.0 feature specific (ie evidence collection)
+// CF-8.0
+// CF-9.0 responsiveness media queries (cf specific)  
+// CF-10.0 utilities 
+
+
+
+
+/* CF-2.0 navigation & buttons ======================== */
+.navbar-ts {
+/*  background-color: white;
+  border-radius: 0px;
+  border: 0px;
+  min-height: 40px;
+  margin-bottom: 0;
+  margin:0;
+  .navbar-collapse {
+    padding-left:0px;
+    padding-right:0px;
+  }
+  */
+}
+
+.navbar-focus {
+  background:@gray-darker;
+  .navbar-nav {
+    li {
+      a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+
+li.nav-focus {
+  background: @focus;
+  color:white;
+  padding:8px;
+  padding-left:20px;
+  font-size: 18px;
+}
+li.nav-arrow-focus {
+  width: 0; 
+  height: 0; 
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  
+  border-left: 20px solid @focus;
+
+}
+
+.nav-ts {
+  li.active {
+    background:@gray-lighter;
+    color:@gray-dark;
+    a {
+      color:@gray-dark;
+    }
+    a:hover {
+      background:@gray-lighter;
+      color:@gray-dark;
+      cursor:arrow;
+    }
+  }
+  li {
+    a:hover {
+      color:white;
+      background:@link-color;
+    }
+  }
+}
+
+.header-call {
+  width:100%;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  margin:0;
+  padding:23px 20px 20px 20px;
+  position:relative;
+  z-index:900;
+  background-color: white;
+  margin-top:20px;
+  div {
+    h1, h2, h3, h4 {
+      margin:0;
+    }
+    .btn-group {
+      margin-top:7px;
+    }
+  }
+}
+
+
+//CF-2.2 buttons
+
+//CF-2.2.1 rubric buttons
+button.btn-score {
+  background:none;
+  border:none;
+  color: @link-color;
+}
+button.btn-score:hover {
+  text-decoration:underline;
+  border:none;
+}
+
+button.btn-score:before {
+  content: "";
+  background: url("../../images/icon_rubric.png") no-repeat -24px 1px;
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin: 0 6px 0 0;
+}
+
+button.btn-score.active:before {
+    content: "";
+    background: url("../../images/icon_rubric.png") no-repeat 0px 1px;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 6px 0 0;
+}
+
+span.before-add:before {
+    content: "";
+    background: url("../../images/icon_rubric.png") no-repeat -45px 3px;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 6px 0 0;
+}
+
+.insert-action {
+  bottom:0px;
+  right:15px;
+  position:absolute;
+}
+
+.no-score-button {
+  left:110px;
+}
+
+
+//CF-2.2.2 generic round buttons
+.btn-round {
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  height:40px;
+  width:40px;
+  text-align:center;
+  border:none;
+  .gradient(top, lighten(@link-color, 10%), @link-color);
+  color:lighten(#fff, 65%);
+  font-size:16px;
+}
+
+.btn-round:hover {
+  color:white;
+  .gradient(top, @link-color, darken(@link-color, 15%));
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+}
+
+.round-delete-invisible,  {
+  position:absolute;
+  right:15px;
+  top:-10px;
+  color:@link-color;
+  .gradient(top, lighten(@focus, 65%), lighten(@focus, 65%));
+}
+.round-delete:hover {
+  color:white;
+  .gradient(top, @link-color, darken(@link-color, 10%));
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+}
+.round-edit {
+  position:absolute;
+  top:-10px;
+  left:180px;
+}
+
+.round-default {
+  position:relative;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  height:40px;
+  width:40px;
+  text-align:center;
+  color:@link-color;
+  .gradient(top, darken(white, 1%), darken(white, 5%));
+  border:1px solid @gray-light;
+  font-size:16px;
+}
+
+.round-default:hover {
+  .gradient(top, darken(white, 5%), darken(white, 1%));
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+}
+
+.round-transparent {
+  position:relative;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  height:40px;
+  width:40px;
+  text-align:center;
+  color:@link-color;
+  background:white;
+  border:none;
+}
+
+.round-transparent:hover {
+  .gradient(top, darken(white, 5%), darken(white, 1%));
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+}
+
+//CF-2.3 breadcrumb
+
+//gone global
+
+
+/* CF-3.0 panels and sections ======================== */
+
+.section-bar {
+  border-radius: 0;
+  margin:0;
+}
+
+.bar-1 {
+  margin-left:0;
+  margin-top:20px;
+}
+.bar-2 {
+  margin-left:10px;
+  margin-top:10px;
+}
+.bar-3 {
+  margin-left:20px;
+  margin-top:10px;
+}
+.bar-4 {
+  margin-left:30px;
+  margin-top:10px;
+}
+.bar-5 {
+  margin-left:40px;
+  margin-top:10px;
+}
+
+.tree-0 {
+	padding-left:10px;
+}
+.tree-1 {
+	padding-left:20px;
+}
+.tree-2 {
+	padding-left:30px;
+}
+.tree-3 {
+	padding-left:40px;
+}
+.tree-4 {
+	padding-left:50px;
+}
+
+
+.section-dotted {
+  margin-top: 25px ;
+  margin-bottom: 25px;
+  border-bottom:1px dotted @gray-light;
+}
+
+/* CF-4.0 Forms ======================== */
+
+// CF-4.1.0 dynamic text edit (rubric)
+.text-edit {
+  border:1px solid white;
+  padding:0px 5px;
+  margin:0;
+  width: 100%;
+  -webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.0);
+  box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.0);
+}
+
+.text-edit:hover {
+  border: 1px solid @gray-light;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+}
+
+.text-code {
+	margin-right: 5px;
+	width: auto;
+	min-width: 30px;
+	max-width: 60px;
+  font-size: @font-size-large;
+}
+
+.text-title {
+  width:300px;
+  min-width: 150px;
+  font-size: @font-size-large;
+}
+
+.text-description {
+  font-size: @font-size-base;
+  width:100%;
+  height:auto;
+  margin-top: 10px;
+}
+
+.text-headline {
+	font-size: @font-size-xlarge;
+}
+
+
+/* CF-5.0 tables ============================ */
+
+// CF-5.1.1 borderless for small tables
+
+table.borderless, .table.table-borderless, .table-borderless {
+  width:100%;
+	thead {
+		td {
+			color:@gray-darker;
+			padding:0px 0px 5px 0px;
+			border-bottom:2px solid @gray-lighter;
+		}
+	}
+	tbody {
+		td {
+			color:@gray;
+			padding:10px 0;
+			border:none;
+			h1,h2,h3,h4,h5, p {
+				margin:0;
+			}
+		}
+	}
+
+  width:100%;
+  
+
+  //   td:first-child {
+  //         width: 20%;
+  //       }
+  //       td:first-child + td{
+  //         width: 20%;
+  //       }
+  //       td:first-child + td + td{
+  //         width: 20%;
+  //       }
+  //       td:first-child + td + td + td{
+  //         width: 20%;
+  //       }
+  //       td:first-child + td + td + td{
+  //         width: 20%;
+  //       }
+
+}
+
+// CF-5.2 dotted border
+table.dotted, .table-dotted {
+	tbody tr > td, tr >td {
+		border-top:none;
+		border-bottom:none;
+    border-left: none;
+    border-right: none;
+	}
+	tbody tr, tr {
+
+		border-top:1px dotted @gray-light;
+		border-bottom:1px dotted @gray-light;
+		&:first-child {
+			border-top:0;
+		}
+		&:last-child {
+			border-bottom:0;
+		}
+	}
+}
+
+// CF-5.3 gradient selectable rows 
+.table-selection-rows {
+    tr {
+
+    .gradient(top, darken(#ffffff,2%), darken(#ffffff, 10%));
+      td {
+        padding:10px 10px 5px 10px;
+        border-bottom:1px solid @gray-light;
+        label {
+          cursor: pointer;
+        }
+      }
+      td.col-info-btn {
+          text-align: center;
+          border-left: 1px solid @gray-light;
+      }
+      td:hover, td.active {
+        background:@focus_background_light;
+      }
+    }
+}
+
+.selection-row {
+  .gradient(top, darken(#ffffff,2%), darken(#ffffff, 10%));
+  padding:15px 15px 15px 15px;
+  border-bottom:1px solid @gray-light;
+  margin-top: -5px;
+  &:first-child {
+    margin-top:0;
+  }
+}
+
+.selection-row.row-icon {
+  .gradient(top, darken(#ffffff,2%), darken(#ffffff, 10%));
+  padding:15px 17px 17px 17px;
+  margin-left: -4px;
+  border-bottom:1px solid @gray-light;
+  text-align: center;
+  border-left: 1px solid @gray-light;
+  font-size:17px;
+}
+
+.selection-row:hover, .selection-row.active {
+        background:@focus_background_light;
+}
+
+/* CF-6.0 components ======================== */
+
+// CF-6.1 labels and badges
+
+
+
+
+
+.label-blue-light {
+  background: @focus_background_light;
+  color:@gray-dark;
+}
+
+.label-saved, .badge-saved, .badge-draft {
+  background: @gray-light;
+}
+
+.label-published, .badge-published {
+  background: @focus;
+}
+.label-locked, .badge-locked, .badge-expired {
+  background: @gray-dark;
+}
+
+.label-success, .badge-success, .badge-open{
+	background: @brand-success;
+}
+
+.label-exact, .badge-exact {
+	color:@gray-darker;
+	background: @exact-bg;	
+}
+
+.label-adjacent, .badge-adjacent {
+	color:@gray-darker;
+	background: @adjacent-bg;	
+}
+
+.label-discrepant, .badge-discrepant {
+	color:@gray-darker;
+	background: @discrepant-bg;	
+}
+
+// CF-6.2 accordions collapse
+.panel-default {
+	.panel-heading {
+		background:white;
+	}
+}
+
+// CF-6.3.1 custom lists: rubric scoring columns
+ul.scoring {
+	overflow: auto;
+	list-style:none;
+	font-size:14px;
+	width:auto;
+	height:300px;
+	white-space: nowrap;
+	padding:0;
+	display:block;
+	li {
+		border-left:1px dotted @gray-light;
+		padding: 0px 15px;
+		display:inline-table;
+		width: 24%;
+		// &:first-child {
+		// 	border-left: 0px;
+		// }
+		label {
+			display:block;
+			margin-top:10px;
+			margin-bottom:0px;
+		}
+	}
+}
+
+// CF-6.3.2 custom lists: sidebar with filter inputs
+.filter-sidebar {
+	list-style:none;
+	font-size:14px;
+	display:block;
+	margin:0;
+	padding:0;
+	padding-right:20px;
+	li.search {
+		margin:0 0 30px 0;
+		border-bottom:0px;
+	}
+	li.header {
+		padding-bottom:5px;
+		h4 {
+			display:inline-block;
+			margin:0;
+		}
+		a {
+			display:inline-block;
+			font-size:12px;
+			margin:0;
+			margin-left:25px;
+		}
+	}
+	li {
+		margin-top:30px;
+		border-bottom:1px dotted @gray-light;
+		padding-bottom:10px;
+		
+		&:last-child {
+			border-bottom:0px;
+		}
+	}
+	
+}
+
+//CF-6.4.1 sidebar elements
+.sidebar-wrap{
+  z-index:10;
+  background:#737373;
+  // height: 999px;
+  ul {
+    list-style:none;
+    padding:0;
+    margin:0;
+    font-size:14px;
+	bottom:0px;
+	height:100%;
+    li {
+      padding-top:20px;
+      padding-right:23px;
+      padding-bottom:15px;
+      width:100%;
+      border-bottom:1px solid @gray-light;
+      color:@gray-lighter;
+	  .gradient(top, darken(#737373,05%), darken(#737373, 10%));
+      position:relative;
+      line-height:1.2;
+
+	  &:first-child {
+	  	margin-top:30px;
+	  	border-top:2px solid  @gray-light;
+	  }
+      a {
+        color:@gray-lighter;
+      }
+      a:hover {
+        color:white;
+        text-decoration:none;
+      }
+      .arrow-left {
+        display: none;
+      }
+    }
+    li.active {
+      .gradient(top, darken(#737373,20%), darken(#737373, 30%));
+      color:white;
+      a {
+        color:white;
+      }
+      a:hover {
+        color:white;
+      }
+      .arrow-left {
+        display: inline-block;
+      }
+    }
+    li:hover {
+      .gradient(top, darken(#737373, 20%), darken(#737373, 30%));
+      cursor: pointer;
+      a {
+        color:white;
+      }
+    }
+  }
+}
+
+.arrow-left {
+	width:20px;
+	height:100%;
+	background: url('../../images/arrow.svg') right center no-repeat;
+	background-size: 20px 100%;
+	position:absolute;
+	top:0;
+	right:0;
+}
+
+.arrow-up {
+	width: 0; 
+	height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid @gray-light;
+}
+
+
+//6.5.1  wells
+
+
+.well-focus {
+	background: @focus_background;
+}
+
+//6.6.1 list - observer open calibrations
+ul.open-calibrations {
+  height:auto;
+  width:100%;
+  padding:0;
+  display: block;
+  margin: 0;
+  li {
+      margin:0 1px 0 0;
+      padding:0;
+      position:relative;
+      list-style: none;
+      width:25%;
+      min-height:200px;
+      display: inline-table;
+  }
+  h4 {
+    margin-bottom: 25px;
+  }
+}
+
+div.open-card {
+      padding:20px 30px;
+      text-align:center;
+      min-width:150px;
+      min-height:200px;
+      background:@focus_background_light;
+      position: relative;
+}
+div.title-card {
+  padding:30px 35px;
+  text-align:left;
+  background:@focus;
+  color:white;
+  margin-top:-3px;
+  display:inherit;
+  min-height:220px;
+}
+
+div.open-card-table {
+  padding:25px 15px;
+}
+
+.row-open-table {
+  border:2px solid @focus_background_light;
+  margin:20px 0 0 0;
+  table.dotted {
+    tbody {
+      tr {
+        td {
+          padding: ;
+        }
+      }
+    }
+  }
+}
+
+
+//6.7.1 list - dotted rows
+
+ul.dotted {
+  list-style: none;
+  padding: 10px 0;
+  li {
+    padding:5px 0;
+    border-bottom:1px dotted @gray-light;
+  }
+
+}
+
+/* CF-7.0  features ======================== */
+
+.evidence-entry {
+  padding:10px ;
+} 
+
+.evidence-entry:hover {
+  background: #eef4f7;
+}
+
+/* CF-10.0 Utilities ======================== */
+
+.icon-divider-blue {
+  color: @focus_background_light;
+  font-size: 12px;
+  margin: 0 10px 3px 10px;
+  text-align: center;
+}
+
+.pos-relative {
+  position:relative;
+}
+
+.pos-absolute {
+  position:absolute;
+}

@@ -1,0 +1,108 @@
+/* This solution should replace the current breadcrumbs  */
+.breadcrumb-508 {
+  padding: 8px 30px;
+  margin-bottom: 21px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+
+}
+.breadcrumb-508 > .icon-caret-right {
+  color: #888888;
+  font-size: 14px;
+  vertical-align: top;
+  margin-top: 3px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.breadcrumb-508 > .crumb {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.breadcrumb-508 > .active {
+  color: #888888;
+}
+.breadcrumb-reverse {
+  padding: 8px 30px;
+  margin-bottom: 0;
+  background-color: #434d60;
+  border-radius: 0px;
+  font-size: 13px;
+  min-width: 768px;
+}
+.breadcrumb-reverse > .icon-caret-right {
+  color: #d6d6d6;
+  font-size: 14px;
+  vertical-align: top;
+  margin-top: 3px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.breadcrumb-reverse > .crumb {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.breadcrumb-reverse > .crumb a {
+  /*color: #d4ebf8;*/
+  color: @link-color-light;
+  text-decoration: none;
+}
+
+.breadcrumb-reverse > .crumb a:hover {
+  color:#fff;
+}
+
+.breadcrumb-reverse > .active {
+  color: #fff;
+}
+.breadcrumb-display {
+  padding: 8px 30px;
+  margin-bottom: 0;
+  background-color: #434d60;
+  border-radius: 0px;
+  font-size: 13px;
+}
+.breadcrumb-display > .icon-caret-right {
+  color: @gray-light;
+  font-size: 14px;
+  vertical-align: top;
+  margin-top: 3px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.breadcrumb-display > .crumb {
+  margin-left: 0px;
+  margin-right: 0px;
+  color: @gray-light;
+}
+
+.breadcrumb-display > .active {
+  color: #fff;
+}
+
+
+//MEDIA QUERIES===============
+@media (max-width: @screen-sm-min) { //when small
+    .breadcrumb-reverse, .breadcrumb-display {
+      padding: 8px 15px;
+     }
+
+}
+
+ @media (min-width: @screen-sm-min) {
+    .breadcrumb-reverse, .breadcrumb-display {
+      padding: 8px 15px;
+    }
+
+  }
+  @media (min-width: @screen-md-min) {
+    .breadcrumb-reverse, .breadcrumb-display {
+      padding: 8px 15px;
+    }
+       
+  }
+  @media (min-width: @screen-lg-min) {
+    .breadcrumb-reverse, .breadcrumb-display {
+      padding: 8px 30px;
+    }
+  }
